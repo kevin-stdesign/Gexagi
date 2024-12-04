@@ -1,0 +1,261 @@
+:root{
+    --dark-blue:rgb(111, 0, 255);
+    --black-blue:#19172C;
+   }
+
+@media(max-width:1200px){
+    .solution-section-img-div {
+        gap: 96px;
+    }
+
+    .solution-section-img-div-2 {
+        gap: 119px;
+    }
+}
+
+@media(max-width:991px){
+    div#navbarSupportedContent {
+        padding: 10px;
+        background-color: var(--black-blue) ;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-menu-a.active {
+        width: fit-content;
+    }
+
+    .toggle-btn i{
+        color: white;
+    }
+    .toggle-btn{
+        border: 1px solid white;
+    }
+
+    .text-btn-div .text-div p.text-p{
+        padding-top: 20px;
+    }
+
+    .section-title {
+        font-size: 47px;
+        line-height: 78px;
+    }
+
+    
+    .card-title {
+        font-size: 29px;
+    }
+
+    .card-div{
+        height: 100%;
+    }
+
+    .solution-sub-div-img img {
+        max-width: 106px;
+    }
+
+    .footer-link-sub-div {
+        gap: 175px;
+    }
+
+    .text-policy {
+        font-size: 20px;
+    }
+
+    .business-growth-section .section-title-h2 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+
+    .main-page-header {
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+    section.product-policy-img-section {
+        margin-top: 50px;
+    }
+
+    .business-growth-section {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:768px){
+    
+    .solution-section-img-div-2 {
+        gap: 179px;
+    }
+
+    .solution-section-img-div {
+        gap: 146px;
+    }
+
+    .footer-link-sub-div {
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    section.about-other-sections {
+        margin-top: 250px;
+    }
+
+    .about-square-img {
+        max-width: 320px;
+    }
+
+    .about-square-img{
+        margin-top: 50px;
+    }
+
+    .about-square-img-main-div{
+        order: -1;
+    }
+
+    .collaborative-order{
+        order: -1;
+    }
+
+    section.product-policy-img-section {
+        margin-top: 160px;
+    }
+
+
+}
+
+@media(max-width:576px){
+    .banner-section-title {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .text-btn-div {
+        padding-top: 19px;
+    }
+
+    .site-logo {
+        max-width: 160px;
+    }
+
+    .section-title-h2 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .text-p{
+        font-size: 14px;
+    }
+
+    .benefits-icon img {
+        max-width: 48px;   
+     }
+
+     .icon-name-text {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 34px;
+        line-height: 46px;
+        margin-top: 20px;
+    }
+
+    .benefits-sub-div{
+        padding: 24px 12px 25px 12px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .card-img {
+        width: auto;
+        height: 48px;
+    }
+
+    .text-policy {
+        font-size: 20px;
+    }
+
+    .policy-card-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .policy-card-div {
+        height: 435px;
+    }
+    .footer-link-sub-div {
+        flex-direction: column;
+    }
+
+    .solution-section-img-div {
+        gap: 80px;
+    }
+
+    .solution-section-img-div-2 {
+        gap: 80px;
+    }
+
+    .footer-link-title {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .about-description{
+        font-size: 14px;
+    }
+
+    .about-section h4 {
+        font-size: 20px;
+    }
+
+    .about-title {
+        font-size: 28px;
+        line-height: 28.4px;
+        margin-bottom: 18px;
+    }
+
+    .about-square-img {
+        max-width: 100%;
+        width: 100%;
+        height: 272px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about-section {
+        min-height: 678px;
+    }
+
+    .we-do-are {
+        margin-bottom: 46px;
+    }
+
+    .main-page-header {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .product-policy .section-title-h2 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:480px){
+    
+}
+
+@media(max-width:422px){
+    section.product-policy-img-section {
+        /* margin-top: 250px; */
+    }
+}
+
+@media (max-width: 360px) {
+    .benefits-icon img {
+        max-width: 40px;
+    }
+}
