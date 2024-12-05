@@ -3,6 +3,12 @@
     --black-blue:#19172C;
    }
 
+@media(max-width:1400px){
+    .card-use-case-title-text {
+        font-size: 17px;
+    }
+   }
+
 @media(max-width:1200px){
     .solution-section-img-div {
         gap: 96px;
@@ -11,6 +17,15 @@
     .solution-section-img-div-2 {
         gap: 119px;
     }
+
+    .card-use-case-title-text {
+        font-size: 14px;
+    }
+
+    .card-use-case-title-text {
+        padding: 31px 16px;
+    }
+
 }
 
 @media(max-width:991px){
@@ -79,6 +94,26 @@
     .business-growth-section {
         padding: 40px 0;
     }
+
+    .card-use-case-title-text {
+        font-size: 14px;
+        padding: 22px 16px;
+        line-height: 20px;
+        min-height: 90px;
+    }
+
+    .btn-requst-demo {
+        font-size: 20px;
+    }
+
+    .use-case-section-row {
+        padding-bottom: 26px;
+    }
+
+    .blog-card-section .about-description {
+        height: 112px;
+    }
+
 }
 
 @media(max-width:768px){
@@ -119,6 +154,25 @@
     section.product-policy-img-section {
         margin-top: 160px;
     }
+
+    .text-policy {
+        font-size: 17px;
+    }
+    .btn-requst-demo {
+        font-size: 17px;
+        line-height: 30px;
+        padding: 10px 20px;
+    }
+
+    .experience-section-main-div {
+        padding: 26px;
+        border-radius: 20px;
+    }
+
+    .blog-img{
+        max-width: 150px;
+        height: auto;
+     }
 
 
 }
@@ -176,7 +230,7 @@
     }
 
     .text-policy {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .policy-card-title {
@@ -241,6 +295,39 @@
 
     .product-policy .section-title-h2 {
         font-size: 24px;
+    }
+
+    .card-use-case-img {
+        max-width: unset;
+    }
+
+    .experience-section .text-policy br{
+        display: none;
+    }
+
+    .blog-card-section .about-description {
+        height: unset;
+        padding-bottom: 10px;
+    }
+
+    .blog-future-img-div {
+        max-width: unset;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .blog-card-section{
+        margin-top: 50px;
+    }
+
+    .bog-card-cotent {
+        padding: 0 16px 0px 16px;
+    }
+
+    .blog-reade-time {
+        padding-bottom: 20px;
+        font-size: 14px;
     }
 }
 

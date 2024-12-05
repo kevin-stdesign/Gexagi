@@ -33,6 +33,7 @@ p {
     --extra-dark-blue:#052A7B;
     --footer-link-color:#A6B7DB;
     --footer-link-title:#CCD8F1;
+    --aqua-color:#00D9FF;
 }
 
 /* header */
@@ -468,8 +469,8 @@ Footer
 About page
 ================================== */
 
-body.bg-dark-blue{
-    background: linear-gradient(179.13deg, #050021 50.75%, #1245A8 106.35%);
+.bg-dark-blue{
+    background: linear-gradient(0deg, rgba(18, 69, 168, 1) 0%, rgba(5, 0, 33, 1) 100%);
 }
 
 .about-section{
@@ -644,9 +645,9 @@ body.bg-dark-blue{
     max-width: 489px;
  }
 
- .business-growth-section{
-    padding: 56px 0;
- }
+ .business-growth-section {
+    padding: 56px 0 85px 0;
+}
 
  .card-use-case-sub-div{
     border-radius: 8px;
@@ -654,7 +655,7 @@ body.bg-dark-blue{
  }
 
  .card-use-case-sub-div:hover .card-use-case-img img{
-   transform: scale(1.2);
+   transform: scale(1.25);
  }
 
  .card-use-case-img img{
@@ -663,10 +664,15 @@ body.bg-dark-blue{
  }
 
  .card-use-case-img{
-    max-width: 300px;
-    height: auto;
+    max-width: 450px;
+    height: 200px;
     overflow: hidden;
     border-radius: 8px 8px 0 0 ;
+ }
+
+ .card-use-case-img img{
+    object-fit: cover;
+    object-position: center;
  }
 
  .card-use-case-title{
@@ -678,7 +684,143 @@ body.bg-dark-blue{
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
-    padding: 16px 45px;
+    padding: 45px 16px;
  }
+
+ .use-case-section-row{
+    padding-bottom: 56px;
+ }
+
+ .experience-section-main-div{
+    max-width: 845px;
+    width: 100%;
+    background-color: var(--aqua-color);
+    border-radius: 32px;
+    padding: 32px;
+    margin: auto;
+ }
+
+ .btn-requst-demo{
+    padding: 16px 24px;
+    width: fit-content;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    border-radius: 100px;
+    text-decoration: none   ;
+ }
+
+ .experience-section{
+    padding-bottom: 25px;
+ }
+
+ /* ================================
+ blog page 
+ =================================== */
+ 
+ .banner-sectrion-blog {
+    background: url(../img/about-bg.png) no-repeat center / cover;
+    padding: 130px 0 0;
+    min-height: 648px;
+    margin-bottom: -228px;
+}
+
+ .blog-img{
+    max-width: 260px;
+    height: auto;
+ }
+
+ .blog-card-section{
+    padding-bottom: 56px;
+ }
+
+ .blog-card-section .about-description{
+    height: 72px;
+ }
+
+ .blog-reade-time{
+    color:#939EB4;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 40px;
+ }
+
+ .bog-card-cotent{
+    padding: 0 24px 12px 24px;
+ }
+
+ .blog-future-img-div{
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    max-width: 500px;
+ }
+
+ .blog-future-img-div img{
+    border-radius: 20px 20px 0 0;
+    transition: 0.3s all ease-in-out;
+ }
+
+ .blog-card-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 16px;
+    margin-top: -31px;
+}
+
+ .blog-card-main-div{
+    background-color: black;
+    border-radius: 20px;
+ }
+
+ .blog-card-main-div:hover .blog-future-img-div img{
+    transform: scale(1.2);
+ }
+
+ /* =====================
+ conatct page 
+ ======================== */
+
+ .conatct-text-p{
+    font-size: 24px;
+    color: white;
+    line-height: 36px;
+    font-weight: 600;
+    padding: 24px 32px;
+    border: 2px solid white;
+    width: fit-content;
+ }
+
+ .contact-main-div{
+    padding: 160px 0 100px 0 ;
+ }
+
+ .banner-section-contact{
+    background-image: url(../img/conntact-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+ }
+
+ .get-touch-section-title{
+    font-size: 36px;
+    line-height: 54px;
+    color: #D69D00;
+    padding: 24px 0;
+
+ }
+
+ .contact-infomation-sub-div-title{
+    color: #D69D00;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+ }
+
+ .contact-infomation-sub-div img{
+    max-width: 24px;
+ }
+
 
  
