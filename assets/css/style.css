@@ -29,11 +29,11 @@ p {
     --dark-blue: #6156DF;
     --black-blue: #19172C;
     --extralight-blue: #7086B0;
-    --light-blue:#D8E4FD;
-    --extra-dark-blue:#052A7B;
-    --footer-link-color:#A6B7DB;
-    --footer-link-title:#CCD8F1;
-    --aqua-color:#00D9FF;
+    --light-blue: #D8E4FD;
+    --extra-dark-blue: #052A7B;
+    --footer-link-color: #A6B7DB;
+    --footer-link-title: #CCD8F1;
+    --aqua-color: #00D9FF;
 }
 
 /* header */
@@ -48,6 +48,7 @@ p {
     left: 0;
     width: 100%;
     padding: 20px 0;
+    z-index: 2;
 }
 
 .main-header ul {
@@ -61,12 +62,12 @@ p {
     color: white !important;
 }
 
-.main-header ul .nav-item a{
+.main-header ul .nav-item a {
     transition: 0.3s all linear;
 }
 
-.main-header ul .nav-item a:hover{
-    border-bottom:1px solid white ;
+.main-header ul .nav-item a:hover {
+    border-bottom: 1px solid white;
 }
 
 .dropdown-toggle::after {
@@ -178,7 +179,7 @@ p {
     background-color: var(--dark-blue);
 }
 
-.btn-know-more:hover svg path{
+.btn-know-more:hover svg path {
     fill: var(--dark-blue);
 }
 
@@ -302,14 +303,14 @@ policy-card
     border-radius: 8px;
 }
 
-.policy-card-title{
+.policy-card-title {
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
     position: absolute;
     z-index: 2;
     transition: 0.3s all ease-in-out;
-    
+
 }
 
 .policy-card-div:hover img.policy-card-bg-img {
@@ -338,26 +339,26 @@ policy-card
     translate: 0px 84px;
 }
 
-.policy-card-div:hover .policy-card-title{
-   translate: -5px -5px ;
+.policy-card-div:hover .policy-card-title {
+    translate: -5px -5px;
 }
 
-.ifrem-video{
+.ifrem-video {
     position: relative;
 }
 
-.ifrem-video iframe{
+.ifrem-video iframe {
     border-radius: 16px;
 }
 
-.play-btn{
+.play-btn {
     width: 80px;
     height: 80px;
     border-radius: 100%;
     background-color: white;
 }
 
-.play-btn i{
+.play-btn i {
     color: rgb(240, 117, 2);
     font-size: 29px;
 }
@@ -365,28 +366,28 @@ policy-card
 /* ===============================
 solution section
 ================================ */
-.solution-section{
-    padding: 56px 0 ;
+.solution-section {
+    padding: 56px 0;
 }
 
-.solution-section .btn-know-more{
+.solution-section .btn-know-more {
     width: fit-content;
 }
 
-.solution-sub-div-img img{
+.solution-sub-div-img img {
     max-width: 166px;
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.solution-section-img-div{
+.solution-section-img-div {
     justify-content: end;
     align-items: center;
     gap: 226px;
 }
 
-.solution-section-img-div-2{
+.solution-section-img-div-2 {
     justify-content: start;
     align-items: center;
     gap: 249px;
@@ -397,26 +398,26 @@ solution section
 Footer 
 ============================= */
 
-.footer{
+.footer {
     background-color: #052A7B;
 }
 
-.footer-row{
+.footer-row {
     padding: 24px 0;
 }
 
-.footer-link-title{
+.footer-link-title {
     color: var(--light-blue);
     font-size: 24px;
     line-height: 36px;
     font-weight: 500;
 }
 
-.link-div{
+.link-div {
     padding-top: 16px;
 }
 
-.link-div a{
+.link-div a {
     color: var(--footer-link-color);
     font-size: 14px;
     font-weight: 400;
@@ -425,42 +426,42 @@ Footer
     transition: 0.3s all ease-in-out;
 }
 
-.link-div a:hover{
-    color:#066AA3;
+.link-div a:hover {
+    color: #066AA3;
 }
 
-.link-div a path{
+.link-div a path {
     transition: 0.3s all ease-in-out;
 }
 
-.link-div a:hover path{
-    fill:#066AA3;
+.link-div a:hover path {
+    fill: #066AA3;
 }
 
 
-.link-div span{
+.link-div span {
     margin-right: 4px;
 }
 
-.footer-link-sub-div{
+.footer-link-sub-div {
     gap: 56px;
 }
 
-.link-div-title{
+.link-div-title {
     font-size: 16px;
-    color:var(--footer-link-title);
+    color: var(--footer-link-title);
     font-weight: 500;
     line-height: 24px;
 }
 
-.contact-us-sub-div p{
+.contact-us-sub-div p {
     color: var(--footer-link-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
 }
 
-.footer-all-rights-div{
+.footer-all-rights-div {
     background-color: #07003C;
     padding: 16px 0;
 }
@@ -469,18 +470,20 @@ Footer
 About page
 ================================== */
 
-.bg-dark-blue{
-    background: linear-gradient(0deg, rgba(18, 69, 168, 1) 0%, rgba(5, 0, 33, 1) 100%);
+.bg-dark-blue {
+    /* background: linear-gradient(0deg, rgba(18, 69, 168, 1) 0%, rgba(5, 0, 33, 1) 100%); */
+    background: linear-gradient(179.52deg, #04001A 41.9%, #1245A8 96.69%);
+
 }
 
-.about-section{
+.about-section {
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 120px 0 0;
     min-height: 738px;
     margin-bottom: -228px;
 }
 
-.about-section h4{
+.about-section h4 {
     font-size: 24px;
     font-weight: 600;
     line-height: 28.8px;
@@ -488,7 +491,7 @@ About page
     margin-bottom: 8px;
 }
 
-.about-title{
+.about-title {
     font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
@@ -496,7 +499,7 @@ About page
     margin-bottom: 32px;
 }
 
-.about-description{
+.about-description {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -504,7 +507,7 @@ About page
     margin-bottom: 0;
 }
 
-.about-square-img{
+.about-square-img {
     border: 1px solid #B6B6E9;
     border-radius: 8px;
     max-width: 350px;
@@ -512,7 +515,7 @@ About page
     overflow: hidden;
 }
 
-.about-square-img img{
+.about-square-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -520,17 +523,17 @@ About page
 }
 
 .row:hover .about-img img,
-.row:hover .about-square-img img{
+.row:hover .about-square-img img {
     scale: 1.1;
     transform: rotate(5deg);
 }
 
-.about-tab{
+.about-tab {
     position: relative;
     padding-bottom: 48px;
 }
 
-.about-tab .tabs{
+.about-tab .tabs {
     display: flex;
     background-color: #000000;
     position: sticky;
@@ -539,7 +542,7 @@ About page
     margin-bottom: 48px;
 }
 
-.about-tab .tabs a{
+.about-tab .tabs a {
     text-decoration: none;
     color: #676B80;
     padding: 8px 12px;
@@ -549,12 +552,12 @@ About page
 }
 
 .about-tab .tabs a:hover,
-.about-tab .tabs a.active{
+.about-tab .tabs a.active {
     color: #FFFFFF;
     border-bottom: 2px solid #0F3384;
 }
 
-.we-do-are .about-img{
+.we-do-are .about-img {
     border: 1px solid #B6B6E9;
     border-radius: 8px;
     max-width: 500px;
@@ -562,205 +565,205 @@ About page
     overflow: hidden;
 }
 
-.about-img img{
+.about-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: all .6s ease-in-out;
 }
 
-.we-do-are{
+.we-do-are {
     margin-bottom: 96px;
 }
 
-.we-serve .we-serve-sub-div-title{
+.we-serve .we-serve-sub-div-title {
     color: white;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
 }
 
-.solution-sub-div-img img{
+.solution-sub-div-img img {
     transition: 0.3s all ease-in-out;
     border-radius: 10px;
 }
 
-.solution-sub-div-img:hover img{
+.solution-sub-div-img:hover img {
     box-shadow: 0 0 15px 7px #031086;
 }
 
 /*==============================
  About US Page End
  ================================ */
- /* ===============================
+/* ===============================
  Product page 
  ================================== */
 
- .product-policy{
+.product-policy {
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 130px 0 0;
     min-height: 738px;
     margin-bottom: -228px;
- }
+}
 
- .main-page-header{
+.main-page-header {
     font-size: 44px;
     font-weight: 500;
     line-height: 72px;
     max-width: 1128px;
     margin: auto;
 
- }
+}
 
- .product-policy .section-title-h2{
+.product-policy .section-title-h2 {
     font-size: 32px;
- }
+}
 
- .product-policy .text-p{
+.product-policy .text-p {
     font-weight: 400;
     max-width: 1128px;
     text-align: center;
     margin: auto;
- }
+}
 
- .product-img-div{
+.product-img-div {
     max-width: 1008px;
     height: auto;
     margin: auto;
- }
+}
 
- .text-p-400{
+.text-p-400 {
     font-weight: 400;
- }
+}
 
- .business-growth-section .btn-know-more{
+.business-growth-section .btn-know-more {
     width: fit-content;
- }
+}
 
- .business-growth-section .section-title-h2{
+.business-growth-section .section-title-h2 {
     font-size: 32px;
- }
+}
 
- .business-growth-section-img{
+.business-growth-section-img {
     max-width: 489px;
- }
+}
 
- .business-growth-section {
+.business-growth-section {
     padding: 56px 0 85px 0;
 }
 
- .card-use-case-sub-div{
+.card-use-case-sub-div {
     border-radius: 8px;
     border: 1px solid black;
- }
+}
 
- .card-use-case-sub-div:hover .card-use-case-img img{
-   transform: scale(1.25);
- }
+.card-use-case-sub-div:hover .card-use-case-img img {
+    transform: scale(1.25);
+}
 
- .card-use-case-img img{
+.card-use-case-img img {
     transition: 0.4s all ease-in-out;
-    border-radius: 8px 8px 0 0 ;
- }
+    border-radius: 8px 8px 0 0;
+}
 
- .card-use-case-img{
+.card-use-case-img {
     max-width: 450px;
     height: 200px;
     overflow: hidden;
-    border-radius: 8px 8px 0 0 ;
- }
+    border-radius: 8px 8px 0 0;
+}
 
- .card-use-case-img img{
+.card-use-case-img img {
     object-fit: cover;
     object-position: center;
- }
+}
 
- .card-use-case-title{
+.card-use-case-title {
     border-radius: 0 0 8px 8px;
- }
+}
 
- .card-use-case-title-text{
+.card-use-case-title-text {
     color: white;
     font-size: 20px;
     line-height: 30px;
     font-weight: 600;
     padding: 45px 16px;
- }
+}
 
- .use-case-section-row{
+.use-case-section-row {
     padding-bottom: 56px;
- }
+}
 
- .experience-section-main-div{
+.experience-section-main-div {
     max-width: 845px;
     width: 100%;
     background-color: var(--aqua-color);
     border-radius: 32px;
     padding: 32px;
     margin: auto;
- }
+}
 
- .btn-requst-demo{
+.btn-requst-demo {
     padding: 16px 24px;
     width: fit-content;
     font-size: 24px;
     line-height: 36px;
     font-weight: 600;
     border-radius: 100px;
-    text-decoration: none   ;
- }
+    text-decoration: none;
+}
 
- .experience-section{
+.experience-section {
     padding-bottom: 25px;
- }
+}
 
- /* ================================
+/* ================================
  blog page 
  =================================== */
- 
- .banner-sectrion-blog {
+
+.banner-sectrion-blog {
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 130px 0 0;
     min-height: 648px;
     margin-bottom: -228px;
 }
 
- .blog-img{
+.blog-img {
     max-width: 260px;
     height: auto;
- }
+}
 
- .blog-card-section{
+.blog-card-section {
     padding-bottom: 56px;
- }
+}
 
- .blog-card-section .about-description{
+.blog-card-section .about-description {
     height: 72px;
- }
+}
 
- .blog-reade-time{
-    color:#939EB4;
+.blog-reade-time {
+    color: #939EB4;
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 40px;
- }
+}
 
- .bog-card-cotent{
+.bog-card-cotent {
     padding: 0 24px 12px 24px;
- }
+}
 
- .blog-future-img-div{
+.blog-future-img-div {
     border-radius: 20px 20px 0 0;
     overflow: hidden;
     max-width: 500px;
- }
+}
 
- .blog-future-img-div img{
+.blog-future-img-div img {
     border-radius: 20px 20px 0 0;
     transition: 0.3s all ease-in-out;
- }
+}
 
- .blog-card-title {
+.blog-card-title {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -768,20 +771,20 @@ About page
     margin-top: -31px;
 }
 
- .blog-card-main-div{
+.blog-card-main-div {
     background-color: black;
     border-radius: 20px;
- }
+}
 
- .blog-card-main-div:hover .blog-future-img-div img{
+.blog-card-main-div:hover .blog-future-img-div img {
     transform: scale(1.2);
- }
+}
 
- /* =====================
+/* =====================
  conatct page 
  ======================== */
 
- .conatct-text-p{
+.conatct-text-p {
     font-size: 24px;
     color: white;
     line-height: 36px;
@@ -789,38 +792,313 @@ About page
     padding: 24px 32px;
     border: 2px solid white;
     width: fit-content;
- }
+}
 
- .contact-main-div{
-    padding: 160px 0 100px 0 ;
- }
+.contact-main-div {
+    padding: 160px 0 100px 0;
+}
 
- .banner-section-contact{
+.banner-section-contact {
     background-image: url(../img/conntact-banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
- }
+}
 
- .get-touch-section-title{
+.get-touch-section-title {
     font-size: 36px;
+    font-style: italic;
+    font-weight: 400;
     line-height: 54px;
     color: #D69D00;
-    padding: 24px 0;
+    padding: 24px 0 64px;
 
- }
+}
 
- .contact-infomation-sub-div-title{
+.contact-title {
     color: #D69D00;
+    margin-bottom: 16px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 30px;
- }
+    line-height: 30px;    
+}
 
- .contact-infomation-sub-div img{
-    max-width: 24px;
- }
+.contact-information{
+    display: flex;
+    text-align: center;
+    gap: 72px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
 
+.contact-information img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+}
 
- 
+.contact-information span a{
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-information a:hover{
+    color: #D69D00;
+}
+
+.contact-information span{
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    line-height: 24px;
+    text-align: center;
+}
+
+.contact-information div:nth-child(2){
+    max-width: 480px;
+}
+
+/* About US Page Start */
+.section-full-bg {
+    position: relative;
+}
+
+.section-full-bg::before {
+    content: ' ';
+    background: url(../img/about-bg.png) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 58vh;
+    z-index: -1;
+}
+
+.section-full-bg::after {
+    content: ' ';
+    background: linear-gradient(179.52deg, #04001A 0%, #1245A8 100%);
+    position: absolute;
+    top: 57vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.pt-108 {
+    padding-top: 108px !important;
+}
+
+.aboutus-section {
+    padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 32px;
+}
+
+.pagination p,
+.pagination a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 21px !important;
+    margin: 0 !important;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+}
+
+.aboutus-section h1 {
+    color: #FFFFFF;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 84px;
+    margin-bottom: 40px;
+}
+
+.aboutus-section p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+/* About US Page End */
+
+/* FAQ Page Start */
+.faq-section .subtitle {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 32px;
+}
+
+.faq-accordion .accordion-item {
+    margin-bottom: 24px;
+    background: #000000B2;
+    border: 1px solid #fff;
+    border-left-width: 3px;
+    border-radius: 3px;
+}
+
+.faq-accordion .accordion-button {
+    background: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    box-shadow: none !important;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 19px;
+}
+
+.faq-accordion .accordion-body {
+    border-top: 1px solid #FFFFFF;
+}
+
+.faq-accordion .accordion-button::after {
+    display: none;
+}
+
+.faq-accordion .accordion-arrow {
+    max-width: 12px;
+    transition: all .4s ease-in-out;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) .accordion-arrow{
+    rotate: 180deg;
+}
+
+.faq-accordion .accordion-body{
+    padding: 24px 24px 16px;
+}
+
+.faq-accordion h5{
+    margin-bottom: 8px;
+    color: #F6F6FF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.8px;
+}
+
+.faq-accordion p{
+    color: #F6F6FF;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.faq-accordion ul{
+    margin-bottom: 8px;
+}
+
+.faq-accordion ul li{
+    list-style-type: disc;
+    color: #F6F6FF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.8px;
+}
+
+.faq-accordion ul li span{
+    font-weight: 500;
+}
+/* FAQ Page End */
+
+/* Contact Us Page Start  */
+.get-touch-section{
+    background: linear-gradient(179.52deg, #04001A 41.9%, #1245A8 96.69%);
+}
+
+.contact-form{
+    padding-bottom: 40px;
+}
+
+.contact-form h5{
+    color: #B0BDED;
+    margin: 0 auto 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.contact-form .form-group{
+    margin-bottom: 14px;
+}
+
+.contact-form .form-control{
+    margin: 0 auto 2px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    padding: 14px 16px 13px;
+    background: #1D2248;
+    color: #fff;
+    border: 1px solid #1D2248;
+    max-width: 500px;
+    display: block;
+}
+
+.contact-form textarea.form-control{
+    height: 150px;
+    resize: none;
+}
+
+.contact-form .form-control::placeholder{
+    color: #92A7E3;
+}
+
+.contact-form .form-control:focus{
+    border-color: #FFFFFF;
+}
+
+.contact-form input[type=number]::-webkit-inner-spin-button, 
+.contact-form input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.btn-outline-light{
+    color: #FFFFFF;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+}
+
+.btn-outline-light:hover{
+    color: #07003C;
+}
+
+.contact-map{
+    display: flex;
+}
+
+.contact-map iframe{
+    width: 100%;
+    aspect-ratio: 1440/376;
+    min-height: 220px;
+}
+/* Contact Us Page End */
