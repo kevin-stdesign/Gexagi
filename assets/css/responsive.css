@@ -1,15 +1,15 @@
-:root{
-    --dark-blue:rgb(111, 0, 255);
-    --black-blue:#19172C;
-   }
+:root {
+    --dark-blue: rgb(111, 0, 255);
+    --black-blue: #19172C;
+}
 
-@media(max-width:1400px){
+@media(max-width:1400px) {
     .card-use-case-title-text {
         font-size: 17px;
     }
-   }
+}
 
-@media(max-width:1200px){
+@media(max-width:1200px) {
     .solution-section-img-div {
         gap: 96px;
     }
@@ -26,12 +26,19 @@
         padding: 31px 16px;
     }
 
+    .contact-information{
+        gap: 24px;
+    }
+    .contact-information div:nth-child(2) {
+        max-width: 390px;
+    }
+
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
     div#navbarSupportedContent {
         padding: 10px;
-        background-color: var(--black-blue) ;
+        background-color: var(--black-blue);
         width: 100%;
         margin-top: 20px;
     }
@@ -40,14 +47,15 @@
         width: fit-content;
     }
 
-    .toggle-btn i{
+    .toggle-btn i {
         color: white;
     }
-    .toggle-btn{
+
+    .toggle-btn {
         border: 1px solid white;
     }
 
-    .text-btn-div .text-div p.text-p{
+    .text-btn-div .text-div p.text-p {
         padding-top: 20px;
     }
 
@@ -56,12 +64,12 @@
         line-height: 78px;
     }
 
-    
+
     .card-title {
         font-size: 29px;
     }
 
-    .card-div{
+    .card-div {
         height: 100%;
     }
 
@@ -114,10 +122,22 @@
         height: 112px;
     }
 
+    .aboutus-section h1 {
+        font-size: 42px;
+        line-height: normal;
+    }
+    .contact-information div:nth-child(2){
+        order: 2;
+        max-width: 100%;
+    }
+    .contact-information{
+        flex-wrap: wrap;
+    }
+
 }
 
-@media(max-width:768px){
-    
+@media(max-width:768px) {
+
     .solution-section-img-div-2 {
         gap: 179px;
     }
@@ -139,15 +159,15 @@
         max-width: 320px;
     }
 
-    .about-square-img{
+    .about-square-img {
         margin-top: 50px;
     }
 
-    .about-square-img-main-div{
+    .about-square-img-main-div {
         order: -1;
     }
 
-    .collaborative-order{
+    .collaborative-order {
         order: -1;
     }
 
@@ -158,6 +178,7 @@
     .text-policy {
         font-size: 17px;
     }
+
     .btn-requst-demo {
         font-size: 17px;
         line-height: 30px;
@@ -169,15 +190,21 @@
         border-radius: 20px;
     }
 
-    .blog-img{
+    .blog-img {
         max-width: 150px;
         height: auto;
-     }
+    }
 
-
+    .aboutus-section h1 {
+        font-size: 32px;
+        margin-bottom: 28px;
+    }
+    .aboutus-section p{
+        font-size: 15px;
+    }
 }
 
-@media(max-width:576px){
+@media(max-width:576px) {
     .banner-section-title {
         font-size: 32px;
         font-weight: 500;
@@ -197,15 +224,15 @@
         line-height: 30px;
     }
 
-    .text-p{
+    .text-p {
         font-size: 14px;
     }
 
     .benefits-icon img {
-        max-width: 48px;   
-     }
+        max-width: 48px;
+    }
 
-     .icon-name-text {
+    .icon-name-text {
         font-size: 16px;
     }
 
@@ -215,7 +242,7 @@
         margin-top: 20px;
     }
 
-    .benefits-sub-div{
+    .benefits-sub-div {
         padding: 24px 12px 25px 12px;
     }
 
@@ -241,6 +268,7 @@
     .policy-card-div {
         height: 435px;
     }
+
     .footer-link-sub-div {
         flex-direction: column;
     }
@@ -258,7 +286,7 @@
         line-height: 22px;
     }
 
-    .about-description{
+    .about-description {
         font-size: 14px;
     }
 
@@ -301,7 +329,7 @@
         max-width: unset;
     }
 
-    .experience-section .text-policy br{
+    .experience-section .text-policy br {
         display: none;
     }
 
@@ -316,8 +344,8 @@
         object-fit: cover;
         object-position: center;
     }
-    
-    .blog-card-section{
+
+    .blog-card-section {
         margin-top: 50px;
     }
 
@@ -329,13 +357,49 @@
         padding-bottom: 20px;
         font-size: 14px;
     }
+    .pagination{
+        margin-bottom: 22px;
+    }
+    .aboutus-section h1 {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+    .aboutus-section p{
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+    .faq-accordion .accordion-button{
+        font-size: 14px;
+        gap: 8px;
+        padding: 8px 12px;    
+    }
+    .faq-accordion .accordion-body{
+        padding: 16px 16px 8px;
+    }
+    .faq-accordion ul{
+        padding-left: 16px;
+    }
+    .faq-accordion h5,
+    .faq-accordion ul li{
+        font-size: 14px;
+    }
+    .get-touch-section-title {
+        font-size: 24px;
+        line-height: normal;
+        padding: 24px 0 34px;
+    }
+    .btn-outline-light{
+        padding: 12px 28px;
+    }    
+    .contact-form .form-control{
+        padding: 12px;
+    }
 }
 
-@media(max-width:480px){
-    
-}
+@media(max-width:480px) {}
 
-@media(max-width:422px){
+@media(max-width:422px) {
     section.product-policy-img-section {
         /* margin-top: 250px; */
     }
