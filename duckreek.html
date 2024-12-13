@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEXIGI</title>
+    <title>About Us</title>
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,11 +17,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body>
+<body class="">
     <!-- header -->
     <header class="main-header">
         <div class="container">
@@ -40,10 +41,10 @@
                         <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
                             <ul class="navbar-nav main-menu-ul me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link main-menu-a active" aria-current="page" href="/">Home</a>
+                                    <a class="nav-link main-menu-a " aria-current="page" href="#">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link main-menu-a" href="about.html">About Us</a>
+                                    <a class="nav-link main-menu-a active" href="#">About Us</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
@@ -83,300 +84,192 @@
         </div>
     </header>
     <!-- herder section end  -->
-    <!-- section start -->
-    <main class="bg-dark-blue">
-        <!-- Banner section   -->
-        <section class="home-baaner-section">
+    <main class=" bg-dark-blue section-full-bg  ">
+        <section class="aboutus-section pt-108 bg-img-duckreek-section">
             <div class="container">
-                <div class="row">
-                    <h1 class="banner-section-title text-white">
-                        Transforming Traditional Insurance
-                        Process Into a Modern, Secure Future
-                        with AGI.
-                    </h1>
-                    <div class="text-btn-div d-lg-flex justify-content-between align-items-center">
-                        <div class="btn-div">
-                            <a href=""
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                        fill="white" />
-                                </svg>
-
-                            </a>
+                <div class="pagination">
+                    <a href="#">Home</a>
+                    <p> > </p><a href="#">Our Expertise</a>
+                </div>
+                <div class="expertise">
+                    <p class="text-p">The GEXAGI strives to provide clients with market-leading P&C software Services to
+                        global insurers of all sizes. We offer various services to the ever-growing Property And
+                        Casualty Insurance Industry.</p>
+                </div>
+                <div class="tabs-main-div">
+                    <ul class=" tans-ul nav nav-tabs d-flex flex-column" id="myTab" role="tablist">
+                        <li class=" tabs-li nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Duck Creek Implementation Services</button>
+                            <div class="tabs-arrow"><img src="assets/icon/arrow-icon-tabs.svg" alt=""></div>
+                        </li>
+                        <li class=" tabs-li nav-item" role="presentation">
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Duck Creek Upgrade
+                                Services</button>
+                            <div class="tabs-arrow"><img src="assets/icon/arrow-icon-tabs.svg" alt=""></div>
+                        </li>
+                        <li class=" tabs-li nav-item" role="presentation">
+                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                aria-controls="contact-tab-pane" aria-selected="false">Digital Transformation & Cloud
+                                Enablement</button>
+                            <div class="tabs-arrow"><img src="assets/icon/arrow-icon-tabs.svg" alt=""></div>
+                        </li>
+                        <li class=" tabs-li nav-item" role="presentation">
+                            <button class="nav-link" id="support-tab" data-bs-toggle="tab"
+                                data-bs-target="#support-tab-pane" type="button" role="tab"
+                                aria-controls="support-tab-pane" aria-selected="false">Solution & Support</button>
+                            <div class="tabs-arrow"><img src="assets/icon/arrow-icon-tabs.svg" alt=""></div>
+                        </li>
+                    </ul>
+                    <div class="tab-content tabs-content-main-div" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <div class="tabs-img-div">
+                                <img src="assets/img/tabs-1-img.png" alt="">
+                            </div>
+                            <div class="tabs-content">
+                                <h3 class="tabs-content-title">Fast-Track Your Insurance Innovation.</h3>
+                                <p class="text-p">
+                                    Transform your insurance business with our streamlined Duck Creek implementation
+                                    services. Tailor-made to enhance your operations, our services leverage Duck Creek's
+                                    robust capabilities for a comprehensive digital overhaul.
+                                </p>
+                            </div>
                         </div>
-                        <div class="text-div">
-                            <p class="text-p text-white ">At GEXAGI, we're at the forefront of harnessing artificial
-                                intelligence (AI) to catalyze digital transformation within the insurance sector. </p>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                            tabindex="0">
+                            <div class="tabs-img-div">
+                                <img src="assets/img/tabs-2-img.png" alt="">
+                            </div>
+                            <div class="tabs-content">
+                                <h3 class="tabs-content-title">Streamline Your System with the Latest Innovations.</h3>
+                                <p class="text-p">
+                                    Upgrade your Duck Creek solutions effortlessly with our focused services, ensuring
+                                    you leverage the latest features and system enhancements for peak performance and
+                                    compliance.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                            tabindex="0">
+                            coming soon
+                        </div>
+                        <div class="tab-pane fade" id="support-tab-pane" role="tabpanel" aria-labelledby="support-tab"
+                            tabindex="0">
+                            coming soon
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Benefits section -->
-        <section class="benefits-section">
+        <section class="key-benefits-section">
             <div class="container">
-                <div class="row">
-                    <div class="benefits-sub-div">
-                        <h2 class="section-title-h2">Benefits</h2>
-                        <p class="text-p text-white pt-2 pb-3 mb-1 ">With GEXAGI Services for Duck Creek & Guidewire,
-                            insurance companies can get numerous benefits</p>
-                        <div class="row benefits-row-1 g-4">
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-1.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Predictive</h5>
+                <div class="slider-key-benefits-div">
+                    <h3 class="slider-title-text">Key Benefits</h3>
+
+                    <div class="swiper mySwiper key-benefits-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">01</h4>
+                                    <h4 class="tabs-content-title">Custom Configurations</h4>
+                                    <p class="text-p">
+                                        Adapt Duck Creek's solutions to your unique business model and objectives.
+                                    </p>
+                                </div>
                             </div>
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-2.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Scalable</h5>
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">02</h4>
+                                    <h4 class="tabs-content-title">Efficiency Through Automation</h4>
+                                    <p class="text-p">
+                                        Automate processes for improved efficiency and customer satisfaction.
+                                    </p>
+                                </div>
                             </div>
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-3.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Secure</h5>
-                            </div>
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-4.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Customizable</h5>
-                            </div>
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-5.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Intelligent</h5>
-                            </div>
-                            <div
-                                class="col-lg-4 col-sm-6 col-5 d-flex justify-content-start benefits-icon align-items-center gap-sm-2 gap-1">
-                                <img src="assets/icon/icon-6.svg" alt="icon-Predictive">
-                                <h5 class="icon-name-text">Transformative</h5>
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">01</h4>
+                                    <h4 class="tabs-content-title">Custom Configurations</h4>
+                                    <p class="text-p">
+                                        Adapt Duck Creek's solutions to your unique business model and objectives.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="section-main-title">
-                        <h3 class="section-title text-center text-white">Innovating today for smarter insurance tomorrow
-                        </h3>
-                    </div>
-                    <div class="benefits-section-card">
-                        <div class="row g-sm-5 g-3 pt-5 ">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="card-div card-div-2">
-                                    <img class="card-img" src="assets/icon/card-1.svg" alt="icon">
-                                    <h4 class="card-title text-white text-center my-sm-4 my-3">Envision <br>
-                                        a different world</h4>
-                                    <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                        <p class="btn-text mb-0">Know More</p><svg width="26" height="13"
-                                            viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </a>
-                                </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="key-benefits-slider-btn">
+                            <div class="swiper-button-next">
+                                <img src="assets/icon/slider-arrow-right-white.svg" alt="">
                             </div>
-                            <div class="col-lg-4 col-sm-6  ">
-                                <div class="card-div">
-                                    <img class="card-img" src="assets/icon/card-2.svg" alt="icon">
-                                    <h4 class="card-title text-white text-center my-sm-4 my-3">See your future with
-                                        machine learning</h4>
-                                    <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                        <p class="btn-text mb-0">Know More</p><svg width="26" height="13"
-                                            viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6 ">
-                                <div class="card-div">
-                                    <img class="card-img" src="assets/icon/card-3.svg" alt="icon">
-                                    <h4 class="card-title text-white text-center my-sm-4 my-3">Innovation today
-                                        to lead tomorrow'</h4>
-                                    <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                        <p class="btn-text mb-0">Know More</p><svg width="26" height="13"
-                                            viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                                fill="white" />
-                                        </svg>
-
-                                    </a>
-                                </div>
+                            <div class="swiper-button-prev">
+                                <img src="assets/icon/slider-arrow-left-white.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="key-benefits-section key-benefits-section-2">
             <div class="container">
-                <div class="row g-4">
-                    <div class="main-div-policyxagi">
-                        <h5 class="text-policy text-center">Welcome to PolicyXAGI</h5>
-                        <h2 class="section-title-h2 mt-3 text-center">Empower Your Decision-Making with Advanced Data
-                            Analytics</h2>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6  ">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Holistic View <br>
-                                of Your Data</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, maiores dolorem.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-1.png" alt="">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
+                <div class="slider-key-benefits-div">
+                    <h3 class="slider-title-text">Our Service Highlights</h3>
 
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6  ">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Real-Time <br>
-                                Insights</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, maiores dolorem.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-2.png" alt="">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6  ">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Strategic <br>
-                                Decision Support </h3>
-                            <p class="text-p text-white policy-card-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, maiores dolorem.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-3.png" alt="">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6  ">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Intuitive User <br>
-                                Experience</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, maiores dolorem.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-4.png" alt="">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="section-title-h2 mt-3 text-center my-4 py-2">We focus on the future of Machine Learning
-                        and Deep Learning</h2>
-                    <div class="ifrem-video d-flex justify-content-center align-items-center">
-                        <iframe width="945" height="531"
-                            src="https://www.youtube.com/embed/MYFN2HRrK3g?si=N38bD_E2uTwHa5iO"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!-- <div class="position-absolute" id="player">
-                            <div class="play-btn d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="solution-section">
-                <div class="container">
-                    <div class="row d-flex ">
-                        <div class="col-md-4 pt-4 mt-2">
-                            <h5 class="text-policy mb-2">What We Can Do</h5>
-                            <h2 class="section-title-h2 mb-4">Solutions & Services
-                                we can help you withs</h2>
-                            <a href=""
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                <p class="btn-text mb-0">See All Services</p><svg width="26" height="13"
-                                    viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                        fill="white" />
-                                </svg>
-
-                            </a>
-                        </div>
-                        <div class="col-md-8 mt-md-0 mt-4">
-                            <div class="row">
-                                <div class="solution-section-img-div d-flex">
-                                    <div class=" solution-sub-div-img">
-                                        <img src="assets/img/solution-1.png" alt="">
-                                    </div>
-                                    <div class=" solution-sub-div-img">
-                                        <img src="assets/img/solution-2.png" alt="">
-                                    </div>
+                    <div class="swiper mySwiper key-benefits-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">01</h4>
+                                    <h4 class="tabs-content-title">Strategic Planning</h4>
+                                    <p class="text-p">
+                                        Alignment with your business goals for a targeted implementation. </p>
                                 </div>
-                                <div class="solution-section-img-div-2 d-flex">
-                                    <div class=" solution-sub-div-img">
-                                        <img src="assets/img/solution-3.png" alt="">
-                                    </div>
-                                    <div class=" solution-sub-div-img">
-                                        <img src="assets/img/solution-4.png" alt="">
-                                    </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">02</h4>
+                                    <h4 class="tabs-content-title">Seamless Integration</h4>
+                                    <p class="text-p">
+                                        Smooth integration with existing systems, ensuring data integrity and
+                                        operational continuity. </p>
                                 </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-content">
+                                    <h4 class="slider-number-div">01</h4>
+                                    <h4 class="tabs-content-title">Strategic Planning</h4>
+                                    <p class="text-p">
+                                        Alignment with your business goals for a targeted implementation. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="key-benefits-slider-btn">
+                            <div class="swiper-button-next">
+                                <img src="assets/icon/slider-arrow-right-white.svg" alt="">
+                            </div>
+                            <div class="swiper-button-prev">
+                                <img src="assets/icon/slider-arrow-left-white.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section-text-p">
+            <div class="container">
+                <p class="text-p text-white">
+                    Innovate and excel in the competitive insurance market with Duck Creek. Our expertise ensures a
+                    seamless transition, positioning your business for success.
+                </p>
             </div>
         </section>
     </main>
-    <!-- section end  -->
+
     <!-- Footer start -->
     <footer class="footer">
         <div class="container">
@@ -638,9 +531,11 @@
         </div>
     </footer>
 
+
     <!-- link script -->
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootsrap/bootstap.js"></script>
+    <script src="assets/plugin/swiper/swiper.js"></script>
     <script src="assets/js/custome.js"></script>
 </body>
 
