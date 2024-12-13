@@ -3,11 +3,13 @@
     --black-blue: #19172C;
 }
 
-@media(max-width:1400px) {
-    .card-use-case-title-text {
-        font-size: 17px;
+@media(max-width:1399px){
+
+    .key-benefits-slider-btn {
+        width: 13%;
     }
 }
+
 
 @media(max-width:1200px) {
     .solution-section-img-div {
@@ -19,11 +21,12 @@
     }
 
     .card-use-case-title-text {
-        font-size: 14px;
+        padding: 20px 10px;
     }
 
     .card-use-case-title-text {
-        padding: 31px 16px;
+        font-size: 25px;
+        line-height: 31px;
     }
 
     .contact-information{
@@ -33,6 +36,77 @@
         max-width: 390px;
     }
 
+    .slider-use-case-div {
+        min-height: 602px;
+    }
+
+   .slider-use-case-div .slider-use-case-sub-slider .btn-know-more{
+    margin-top: 0;
+    }
+
+    .slider-use-case-div .swiper-slide-active .card-use-case-img {
+        height: 337px;
+    }
+
+    .slider-use-case-div .swiper-slide-next .card-use-case-sub-div {
+        width: 80%;
+    }
+    
+    .slider-use-case-div .swiper-slide-prev .card-use-case-sub-div {
+        width: 80%;
+    }
+
+    .tabs-main-div {
+        gap: 50px;
+    }
+
+    .tans-ul .tabs-li button {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .tans-ul .tabs-li {
+        padding: 27px 4px;
+    }
+
+    .tabs-content-title {
+        font-size: 27px;
+        line-height: 32.2px;
+    }
+
+    .tabs-content .text-p {
+        font-size: 16px;
+        line-height: 22.4px;
+        margin-top: 15px;
+    }
+
+    .tabs-img-div {
+        max-width: 200.88px;
+    }
+
+    .key-benefits-slider-btn {
+        width: 15%;
+    }
+
+    .slider-number-div {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .key-benefits-section .tabs-content-title {
+        margin-bottom: 16px;
+        height: 36px;
+    }
+
+    .slider-title-text {
+        font-size: 33px;
+        line-height: 35.8px;
+    }
+
+    .property-and-casualty-main-div {
+        align-items: start;
+    }
+   
 }
 
 @media(max-width:991px) {
@@ -82,7 +156,7 @@
     }
 
     .text-policy {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .business-growth-section .section-title-h2 {
@@ -103,15 +177,9 @@
         padding: 40px 0;
     }
 
-    .card-use-case-title-text {
-        font-size: 14px;
-        padding: 22px 16px;
-        line-height: 20px;
-        min-height: 90px;
-    }
-
     .btn-requst-demo {
-        font-size: 20px;
+        font-size: 17px;
+        line-height: normal;
     }
 
     .use-case-section-row {
@@ -134,6 +202,66 @@
         flex-wrap: wrap;
     }
 
+    .slider-use-case-div {
+        min-height: 562px;
+    }
+
+    .slider-use-case-div .swiper-slide-next .card-use-case-sub-div {
+        width: 90%;
+    }
+
+    .slider-use-case-div .swiper-slide-prev .card-use-case-sub-div {
+        width: 90%;
+    }
+
+    .tabs-main-div {
+        gap: 30px;
+    }
+
+    .tabs-main-div {
+        flex-direction: column;
+    }
+
+    .tans-ul .tabs-li {
+        padding: 20px 4px;
+    }
+
+    .key-benefits-section .tabs-content-title {
+        height: 68px;
+    }
+
+    .key-benefits-slider-btn {
+        width: 17%;
+    }
+
+    .key-benefits-section .text-p {
+        font-size: 16px;
+        line-height: 25.4px;
+        color: white;
+        font-weight: 400;
+    }
+
+    .key-benefits-slider .swiper-button-prev, .key-benefits-slider .swiper-button-next {
+        padding: 8px;
+    }
+
+    .key-benefits-section .swiper-pagination {
+        bottom: 20px;
+        left: 129px;
+    }
+
+    .slider-title-text {
+        font-size: 30px;
+        line-height: 35.8px;
+    }
+
+    .key-benefits-slider {
+        padding: 14px 0 80px 0;
+    }
+
+    .key-benefits-section-2 {
+        padding-top: 30px;
+    }
 }
 
 @media(max-width:768px) {
@@ -201,6 +329,70 @@
     }
     .aboutus-section p{
         font-size: 15px;
+    }
+
+    .slider-use-case-div .swiper-slide-active .card-use-case-img {
+        height: 296px;
+    }
+
+    .slider-use-case-div .swiper-slide-prev .card-use-case-sub-div {
+        width: 89%;
+        margin-top: 16px;
+    }
+
+    .slider-use-case-div .swiper-slide-next .card-use-case-sub-div {
+        width: 89%;
+        margin-top: 16px;
+    }
+
+    .card-use-case-title-text {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .use-case-section .container-fluid {
+        padding-top: 40px;
+    }
+
+    .slider-use-case-div {
+        min-height: 472px;
+    }
+
+    .key-benefits-slider-btn {
+        width: 23%;
+    }
+
+    .slider-number-div {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .key-benefits-section-2 {
+        padding-top: 10px;
+    }
+
+    .key-benefits-section {
+        padding: 20px 0;
+    }
+
+    .key-benefits-section .tabs-content-title {
+        height: 38px;
+    }
+
+    .section-text-p .text-p {
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .property-and-casualty-main-div {
+        flex-direction: column;
+    }
+    .property-and-casualty-div-content .text-p:not(:last-child) {
+        margin-bottom: 11px;
+    }
+
+    .property-and-casualty-img-div {
+        width: 164px;
     }
 }
 
@@ -395,15 +587,105 @@
     .contact-form .form-control{
         padding: 12px;
     }
+
+    .card-use-case-title-text {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .card-use-case-title-text {
+        padding: 13px 10px;
+    }
+
+    .slider-use-case-div .swiper-slide-active .card-use-case-img {
+        height: 216px;
+    }
+
+    .slider-use-case-div .swiper-slide-prev .card-use-case-img {
+        height: 175px;
+    }
+
+    .slider-use-case-div .swiper-slide-next .card-use-case-img {
+        height: 175px;
+    }
+
+    .slider-use-case-div .swiper-button-next {
+        padding: 5px;
+    }
+
+    .slider-use-case-div .swiper-button-prev {
+        padding: 5px;
+    }
+
+    .slider-btn {
+        width: 87%;
+        top: 114px;
+        left: 6%;
+    }
+
+    .slider-use-case-div {
+        min-height: 362px;
+    }
+
+    .tans-ul .tabs-li button {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: start;
+    }
+    .tans-ul .tabs-li {
+        padding: 14px 4px;
+    }
+
+    .tabs-main-div {
+        margin-top: 10px;
+    }
+
+    .tabs-main-div {
+        gap: 15px;
+    }
+
+    .tabs-content-title {
+        font-size: 22px;
+        line-height: 30.2px;
+    }
+
+    .tabs-content .text-p {
+        font-size: 14px;
+        line-height: 20.4px;
+        margin-top: 12px;
+    }
+
+    .slider-title-text {
+        font-size: 27px;
+        line-height: 27.8px;
+    }
+
+    .key-benefits-section .tabs-content-title {
+        height: unset;
+    }   
+    .key-benefits-slider-btn {
+        width: 110px;
+    }
+
+    .key-benefits-slider .swiper-button-prev, .key-benefits-slider .swiper-button-next {
+        padding: 6px;
+    }
+
+    .key-benefits-section .text-p {
+        font-size: 15px;
+        line-height: 16.4px;
+        padding-top: 8px;
+    }
+
+    .section-text-p .text-p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
 }
 
 @media(max-width:480px) {}
 
-@media(max-width:422px) {
-    section.product-policy-img-section {
-        /* margin-top: 250px; */
-    }
-}
 
 @media (max-width: 360px) {
     .benefits-icon img {
