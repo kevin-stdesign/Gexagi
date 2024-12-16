@@ -12,12 +12,10 @@
 
 
 @media(max-width:1200px) {
-    .solution-section-img-div {
-        gap: 96px;
-    }
+ 
 
     .solution-section-img-div-2 {
-        gap: 119px;
+        max-width: 77%;
     }
 
     .card-use-case-title-text {
@@ -37,7 +35,7 @@
     }
 
     .slider-use-case-div {
-        min-height: 602px;
+        min-height: 542px;
     }
 
    .slider-use-case-div .slider-use-case-sub-slider .btn-know-more{
@@ -217,7 +215,7 @@
     }
 
     .slider-use-case-div {
-        min-height: 562px;
+        min-height: 522px;
     }
 
     .slider-use-case-div .swiper-slide-next .card-use-case-sub-div {
@@ -276,17 +274,13 @@
     .key-benefits-section-2 {
         padding-top: 30px;
     }
+
+    .about-description {
+        margin-bottom: 28px;
+    }
 }
 
 @media(max-width:768px) {
-
-    .solution-section-img-div-2 {
-        gap: 179px;
-    }
-
-    .solution-section-img-div {
-        gap: 146px;
-    }
 
     .footer-link-sub-div {
         gap: unset;
@@ -480,11 +474,32 @@
     }
 
     .solution-section-img-div {
-        gap: 80px;
+        max-width: 100%;
+        justify-content: center;
+        gap: 21px;
     }
 
     .solution-section-img-div-2 {
-        gap: 80px;
+        max-width: 100%;
+        justify-content: center;
+        gap: 21px;
+    }
+
+    .solution-section-img-div {
+        padding-top:0;
+    }
+
+    .solution-section {
+        padding: 37px 0;
+    }
+
+    .play-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .play-btn i {
+        font-size: 21px;
     }
 
     .footer-link-title {
@@ -519,7 +534,7 @@
     }
 
     .we-do-are {
-        margin-bottom: 46px;
+        margin-bottom: 0px;
     }
 
     .main-page-header {
@@ -638,7 +653,12 @@
     }
 
     .slider-use-case-div {
-        min-height: 362px;
+        min-height: 375px;
+    }
+
+
+    .slider-use-case-div {
+        padding: 24px 0 34px 0;
     }
 
     .tans-ul .tabs-li button {
@@ -699,6 +719,12 @@
     .popup-container {
         width: 120px;
         height: 70px;
+    }
+
+    .btn-requst-demo {
+        font-size: 13px;
+        line-height: 24px;
+        padding: 10px 20px;
     }
 
 }
