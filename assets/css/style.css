@@ -36,6 +36,13 @@ p {
     --aqua-color: #00D9FF;
 }
 
+.text-gradian-color{
+    background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 /* header */
 .site-logo {
     max-width: 200px;
@@ -342,7 +349,7 @@ policy-card
 
 .ifrem-video {
     position: relative;
-    max-width: 945px;
+    /* max-width: 945px; */
     width: 100%;
     margin: auto;
     transform: scale(0.3);
@@ -458,16 +465,18 @@ solution section
 }
 
 .solution-section-img-div {
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    gap: 226px;
+    max-width: 65%;
+    margin-left: auto;
+    padding-top: 20px;
 }
 
 .solution-section-img-div-2 {
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-    gap: 249px;
     margin-top: 16px;
+    max-width: 72%;
 }
 
 /* ==========================
@@ -578,7 +587,7 @@ About page
     font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
-    margin-bottom: 0;
+    margin-bottom: 48px;
 }
 
 .about-square-img {
@@ -861,7 +870,7 @@ About page
 }
 
 .slider-use-case-div {
-    padding: 24px 0;
+    padding: 24px 0 64px 0;
 }
 
 .slider-btn {
@@ -1177,7 +1186,8 @@ About page
 
 /* Contact Us Page Start  */
 .get-touch-section {
-    background: linear-gradient(179.52deg, #04001A 41.9%, #1245A8 96.69%);
+    /* background: linear-gradient(179.52deg, #04001A 41.9%, #1245A8 96.69%); */
+
 }
 
 .contact-form {
@@ -1236,8 +1246,13 @@ About page
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    border: 1px solid #FFFFFF;
     border-radius: 4px;
+    border: 1px solid transparent;
+    /* border-image-source: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%); */
+    /* background-repeat: repeat; */
+    display: inline-block;
+    background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%) border-box
+                linear-gradient(#000000, #000000) padding-box,;
 }
 
 .btn-outline-light:hover {
