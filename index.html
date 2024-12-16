@@ -17,6 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -311,24 +312,31 @@
                                             d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
                                             fill="white" />
                                     </svg>
-
                                 </a>
                             </div>
                         </div>
                     </div>
                     <h2 class="section-title-h2 mt-3 text-center my-4 py-2">We focus on the future of Machine Learning
                         and Deep Learning</h2>
-                    <div class="ifrem-video d-flex justify-content-center align-items-center">
-                        <iframe width="945" height="531"
-                            src="https://www.youtube.com/embed/MYFN2HRrK3g?si=N38bD_E2uTwHa5iO"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <!-- <div class="position-absolute" id="player">
-                            <div class="play-btn d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-play"></i>
+                    <div class="video-section">
+                        <div class="ifrem-video d-flex justify-content-center align-items-center" id="video-tag">
+                            <video controls id="myVideo">
+                                <source src="assets/video/Our Innovation.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-pay-btn position-absolute" id="playPauseButton">
+                                <div class="play-btn d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-play" id="playPauseIcon"></i>
+                                </div>
                             </div>
-                        </div> -->
+                        </div>
+                        <div class="popup-container" id="videoPopup">
+                            <video id="popupVideo">
+                                <source src="assets/video/Our Innovation.mp4" type="video/mp4">
+                            </video>
+                            <div class="popup-closed-btn">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -347,7 +355,6 @@
                                         d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
                                         fill="white" />
                                 </svg>
-
                             </a>
                         </div>
                         <div class="col-md-8 mt-md-0 mt-4">
@@ -387,7 +394,7 @@
                     </h5>
                     <div class="footer-link-sub-div d-flex justify-content-xl-start align-items-start">
                         <div class="link-div d-flex flex-column gap-sm-3 gap-2">
-                            <a href="#">
+                            <a href="/">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -397,7 +404,7 @@
                                 </span>
                                 Home
                             </a>
-                            <a href="#">
+                            <a href="about.html">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -407,7 +414,7 @@
                                 </span>
                                 About Us
                             </a>
-                            <a href="#">
+                            <a href="product.html">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -417,7 +424,7 @@
                                 </span>
                                 Reasearch & Products
                             </a>
-                            <a href="#">
+                            <a href="contact.html">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -429,7 +436,7 @@
                             </a>
                         </div>
                         <div class="link-div d-flex flex-column gap-sm-3 gap-2">
-                            <a href="#">
+                            <a href="duckreek.html">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -439,7 +446,7 @@
                                 </span>
                                 Duckcreek Services
                             </a>
-                            <a href="#">
+                            <a href="">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -449,7 +456,7 @@
                                 </span>
                                 Guidewire Services
                             </a>
-                            <a href="#">
+                            <a href="intro.html">
                                 <span><svg width="16" height="9" viewBox="0 0 16 9" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -641,6 +648,9 @@
     <!-- link script -->
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootsrap/bootstap.js"></script>
+    <script src="assets/plugin/swiper/swiper.js"></script>
+    <script src="assets/plugin/gaps/gaps-2.js"></script>
+    <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
 </body>
 
