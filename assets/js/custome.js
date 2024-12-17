@@ -68,7 +68,49 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   }
 });
 
-// video paly btn 
+document.addEventListener('DOMContentLoaded', function () {
+  let tabs = document.querySelectorAll('.tabs-li');
+  let panels = document.querySelectorAll('.tabs-1-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      let targetTab = this.getAttribute('data-tab');
+
+      // Remove active class from all tabs and panels
+      tabs.forEach(tab => tab.classList.remove('active'));
+      panels.forEach(panel => panel.classList.remove('active'));
+
+      // Add active class to the clicked tab and the corresponding panel
+      this.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  let tabs = document.querySelectorAll('.tabs-2-li');
+  let panels = document.querySelectorAll('.tabs-2-content');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      let targetTab = this.getAttribute('data-tab');
+
+      // Remove active class from all tabs and panels
+      tabs.forEach(tab => tab.classList.remove('active'));
+      panels.forEach(panel => panel.classList.remove('active'));
+
+      // Add active class to the clicked tab and the corresponding panel
+      this.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
+});
+
+
+
+
+
+// // video paly btn 
 const video_1 = document.getElementById("myVideo");
 const circlePlayButton = document.getElementById("playPauseButton");
 
@@ -90,12 +132,12 @@ video_1.addEventListener("pause", function () {
 });
 
 // video paly popup btn  
-const video = document.getElementById('myVideo'); 
-const popup = document.getElementById('videoPopup'); 
-const popupVideo = document.getElementById('popupVideo'); 
+const video = document.getElementById('myVideo');
+const popup = document.getElementById('videoPopup');
+const popupVideo = document.getElementById('popupVideo');
 
-let isVideoPlaying = false; 
-let isPopupOpen = false; 
+let isVideoPlaying = false;
+let isPopupOpen = false;
 
 // Track when the main video is playing
 video.addEventListener('play', () => {
@@ -119,13 +161,13 @@ const syncPlayback = () => {
 
 // Show popup when scrolling out of view and the main video is playing
 window.addEventListener('scroll', () => {
-  const videoRect = video.getBoundingClientRect(); 
+  const videoRect = video.getBoundingClientRect();
   const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
 
   if (isOutOfView && isVideoPlaying && !isPopupOpen) {
     popup.style.display = "flex";
     popup.classList.remove("popup-container-display-none");
-    popupVideo.currentTime = video.currentTime; 
+    popupVideo.currentTime = video.currentTime;
     popupVideo.play();
     isPopupOpen = true;
   } else if (!isOutOfView && isPopupOpen) {
@@ -146,15 +188,22 @@ $(".popup-closed-btn").click(function () {
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".ifrem-video", {
-  scale: 1, 
-  ease: "none", 
+  scale: 1,
+  ease: "none",
   scrollTrigger: {
-    trigger: ".video-section", 
-    start: "top 90%", 
+    trigger: ".video-section",
+    start: "top 90%",
     end: "top 40%",
     scrub: true
   }
 });
+
+
+
+
+
+
+
 
 
 

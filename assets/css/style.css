@@ -36,7 +36,7 @@ p {
     --aqua-color: #00D9FF;
 }
 
-.text-gradian-color{
+.text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -69,11 +69,11 @@ p {
     color: white !important;
 }
 
-.main-header ul .nav-item a {
+.main-menu-a {
     transition: 0.3s all linear;
 }
 
-.main-header ul .nav-item a:hover {
+.main-menu-a:hover {
     border-bottom: 1px solid white;
 }
 
@@ -82,10 +82,10 @@ p {
 }
 
 .main-menu-a.active {
-    position: relative;
+    border-bottom: 1px solid white;
 }
 
-.main-menu-a.active::after {
+/* .main-menu-a.active::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -93,7 +93,7 @@ p {
     left: 0;
     bottom: -1px;
     background-color: white;
-}
+}  */
 
 .main-header ul li a.active {
     color: white !important;
@@ -228,6 +228,7 @@ Benefits section
     border-radius: 24px;
     margin-top: -160px;
     padding: 24px 48px 35px 48px;
+    margin-bottom: 24px;
 }
 
 .section-title {
@@ -358,7 +359,7 @@ policy-card
     border-radius: 20px;
 }
 
-.scroll-animation{
+.scroll-animation {
     transform: none;
 }
 
@@ -380,13 +381,13 @@ policy-card
     font-size: 29px;
 }
 
-.video-pay-btn{
+.video-pay-btn {
     transition: 0.3s all ease-in-out;
 }
 
 
-.ifrem-video:hover .video-pay-btn{
- opacity: 1 !important;
+.ifrem-video:hover .video-pay-btn {
+    opacity: 1 !important;
 }
 
 .popup-container {
@@ -427,16 +428,17 @@ policy-card
     cursor: pointer;
     padding: 0px;
 }
-.popup-closed-btn i{
+
+.popup-closed-btn i {
     color: white;
     font-size: 13px;
 }
 
-.popup-container-display-none{
+.popup-container-display-none {
     display: none !important;
 }
 
-.popup-container .video-pay-btn{
+.popup-container .video-pay-btn {
     top: auto;
     left: auto;
     right: auto;
@@ -587,7 +589,7 @@ About page
     font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
-    margin-bottom: 48px;
+    margin-bottom: 18px;
 }
 
 .about-square-img {
@@ -927,6 +929,7 @@ About page
     border-radius: 20px 20px 0 0;
     overflow: hidden;
     max-width: 500px;
+    height: 300px;
 }
 
 .blog-future-img-div img {
@@ -940,13 +943,15 @@ About page
     line-height: 30px;
     padding-bottom: 16px;
     margin-top: -31px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .blog-card-main-div {
-    background-color: black;
+    background-color: #090231;
     border-radius: 20px;
 }
-
 .blog-card-main-div:hover .blog-future-img-div img {
     transform: scale(1.2);
 }
@@ -1247,13 +1252,17 @@ About page
     font-weight: 400;
     line-height: 24px;
     border-radius: 4px;
-    border: 1px solid transparent;
-    /* border-image-source: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%); */
-    /* background-repeat: repeat; */
+    border: 2px solid transparent;
+    /* Transparent border for the gradient effect */
     display: inline-block;
-    background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%) border-box
-                linear-gradient(#000000, #000000) padding-box,;
+    background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%);
+    background-clip: border-box;
+    /* Gradient applied to the border area */
+    box-shadow: inset 0 0 0 1000px black;
+    /* Black background inside the button */
 }
+
+
 
 .btn-outline-light:hover {
     color: #07003C;
@@ -1289,6 +1298,7 @@ Our Expertise
     max-width: 650px;
     width: 100%;
     margin-bottom: 20px;
+    background-color: black;
 }
 
 .tans-ul .tabs-li {
@@ -1329,6 +1339,7 @@ Our Expertise
     max-width: 239.88px;
     height: auto;
     margin: auto;
+    margin-bottom: 37px;
 }
 
 .tabs-content-title {
@@ -1357,6 +1368,14 @@ Our Expertise
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 739px;
+}
+
+.aboutus-section h1.page-title-duckreek {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 86.4px;
+    margin-bottom: 0px;
 }
 
 .slider-title-text {
@@ -1370,7 +1389,7 @@ Our Expertise
 
 .key-benefits-section .tabs-content-title {
     margin-bottom: 16px;
-    height: 86px;
+    height: auto;
 }
 
 .key-benefits-section .text-p {
@@ -1378,7 +1397,14 @@ Our Expertise
     line-height: 32.4px;
     color: white;
     font-weight: 400;
+}
 
+.key-benefits-section.key-benefits-section-3 {
+    padding-top: 242px;
+}
+
+.key-benefits-section.key-benefits-section-4 {
+    padding: 100px 0 50px 0 ;
 }
 
 .slider-number-div {
@@ -1398,7 +1424,7 @@ Our Expertise
 }
 
 .key-benefits-slider {
-    padding: 30px 0 100px 0;
+    padding: 30px 0 90px 0;
 }
 
 .key-benefits-slider .swiper-button-next img {
@@ -1442,8 +1468,12 @@ Our Expertise
     border-bottom: 1px solid white;
 }
 
+.key-benefits-section-1 {
+    padding: 150px 0 30px 0;
+}
+
 .key-benefits-section {
-    padding: 30px 0;
+    padding: 150px 0 30px 0;
 }
 
 .key-benefits-section-2 {
@@ -1452,6 +1482,7 @@ Our Expertise
 
 .section-text-p {
     padding-bottom: 24px;
+    padding-top: 20px;
 }
 
 .section-text-p .text-p {
@@ -1493,18 +1524,34 @@ usecase pahe
     padding-bottom: 0;
 }
 
-.why-choose-gexiga-section-text{
+.why-choose-gexiga-section-text {
     padding: 40px 0;
 }
 
-.section-title-text{
+.section-title-text {
     margin-bottom: 32px;
 }
 
-.property-and-casualty-main-div-3{
+.property-and-casualty-main-div-3 {
     padding-top: 16px;
 }
 
-.section-title-text-2{
+.section-title-text-2 {
     padding-top: 32px;
+}
+
+.tabs-1-content{
+    display: none;
+}
+
+.tabs-2-content{
+    display: none;
+}
+
+.tabs-1-content.active{
+    display: block;
+}
+
+.tabs-2-content.active{
+    display: block;
 }
