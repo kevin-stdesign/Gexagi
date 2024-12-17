@@ -3,16 +3,28 @@
     --black-blue: #19172C;
 }
 
-@media(max-width:1399px){
+@media(max-width:1399px) {
 
     .key-benefits-slider-btn {
         width: 13%;
+    }
+
+    .tabs-main-div {
+        gap: 50px;
+    }
+
+    .key-benefits-slider {
+        padding: 30px 0 110px 0;
+    }
+
+    .key-benefits-slider {
+        padding: 30px 0 80px 0;
     }
 }
 
 
 @media(max-width:1200px) {
- 
+
 
     .solution-section-img-div-2 {
         max-width: 77%;
@@ -27,9 +39,10 @@
         line-height: 31px;
     }
 
-    .contact-information{
+    .contact-information {
         gap: 24px;
     }
+
     .contact-information div:nth-child(2) {
         max-width: 390px;
     }
@@ -38,8 +51,8 @@
         min-height: 542px;
     }
 
-   .slider-use-case-div .slider-use-case-sub-slider .btn-know-more{
-    margin-top: 0;
+    .slider-use-case-div .slider-use-case-sub-slider .btn-know-more {
+        margin-top: 0;
     }
 
     .slider-use-case-div .swiper-slide-active .card-use-case-img {
@@ -49,7 +62,7 @@
     .slider-use-case-div .swiper-slide-next .card-use-case-sub-div {
         width: 80%;
     }
-    
+
     .slider-use-case-div .swiper-slide-prev .card-use-case-sub-div {
         width: 80%;
     }
@@ -93,7 +106,7 @@
 
     .key-benefits-section .tabs-content-title {
         margin-bottom: 16px;
-        height: 36px;
+        height: unset;
     }
 
     .slider-title-text {
@@ -118,7 +131,28 @@
     .popup-closed-btn i {
         font-size: 8px;
     }
-   
+
+    .aboutus-section h1.page-title-duckreek {
+        font-size: 41px;
+        margin-bottom: 20px;
+    }
+
+    .bg-img-duckreek-section {
+        background-image: url(../img/about-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 649px;
+    }
+
+    .blog-future-img-div {
+        height: 260px;
+    }
+
+    .section-text-p {
+        padding-top: 10px;
+    }
+
 }
 
 @media(max-width:991px) {
@@ -134,7 +168,9 @@
     }
 
     .toggle-btn i {
-        color: white;
+        background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .toggle-btn {
@@ -206,11 +242,13 @@
         font-size: 42px;
         line-height: normal;
     }
-    .contact-information div:nth-child(2){
+
+    .contact-information div:nth-child(2) {
         order: 2;
         max-width: 100%;
     }
-    .contact-information{
+
+    .contact-information {
         flex-wrap: wrap;
     }
 
@@ -253,7 +291,8 @@
         font-weight: 400;
     }
 
-    .key-benefits-slider .swiper-button-prev, .key-benefits-slider .swiper-button-next {
+    .key-benefits-slider .swiper-button-prev,
+    .key-benefits-slider .swiper-button-next {
         padding: 8px;
     }
 
@@ -277,6 +316,39 @@
 
     .about-description {
         margin-bottom: 28px;
+    }
+
+    .aboutus-section h1.page-title-duckreek {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .tabs-main-div {
+        margin-top: 0px;
+    }
+
+    .key-benefits-section-1 {
+        padding: 30px 0 30px 0;
+    }
+
+    .bg-img-duckreek-section {
+        height: unset;
+    }
+
+    .key-benefits-section.key-benefits-section-3 {
+        padding-top: 30px;
+    }
+
+    .key-benefits-section.key-benefits-section-4 {
+        padding: 50px 0 50px 0;
+    }
+
+    .main-header ul li a{
+        width: fit-content;
+    }
+
+    .main-header .navbar-nav .dropdown-menu{
+        border: none;
     }
 }
 
@@ -335,7 +407,8 @@
         font-size: 32px;
         margin-bottom: 28px;
     }
-    .aboutus-section p{
+
+    .aboutus-section p {
         font-size: 15px;
     }
 
@@ -395,12 +468,30 @@
     .property-and-casualty-main-div {
         flex-direction: column;
     }
+
     .property-and-casualty-div-content .text-p:not(:last-child) {
         margin-bottom: 11px;
     }
 
     .property-and-casualty-img-div {
         width: 164px;
+    }
+
+    .aboutus-section h1.page-title-duckreek {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+
+    .key-benefits-section-1 {
+        padding: 349px 0 30px 0;
+    }
+
+    .key-benefits-section-1 {
+        padding: 30px 0 30px 0;
+    }
+
+    .key-benefits-section.key-benefits-section-4 {
+        padding: 30px 0 30px 0;
     }
 }
 
@@ -486,7 +577,7 @@
     }
 
     .solution-section-img-div {
-        padding-top:0;
+        padding-top: 0;
     }
 
     .solution-section {
@@ -578,42 +669,52 @@
         padding-bottom: 20px;
         font-size: 14px;
     }
-    .pagination{
+
+    .pagination {
         margin-bottom: 22px;
     }
+
     .aboutus-section h1 {
         font-size: 22px;
         margin-bottom: 22px;
     }
-    .aboutus-section p{
+
+    .aboutus-section p {
         font-size: 14px;
         line-height: 28px;
         margin-bottom: 18px;
     }
-    .faq-accordion .accordion-button{
+
+    .faq-accordion .accordion-button {
         font-size: 14px;
         gap: 8px;
-        padding: 8px 12px;    
+        padding: 8px 12px;
     }
-    .faq-accordion .accordion-body{
+
+    .faq-accordion .accordion-body {
         padding: 16px 16px 8px;
     }
-    .faq-accordion ul{
+
+    .faq-accordion ul {
         padding-left: 16px;
     }
+
     .faq-accordion h5,
-    .faq-accordion ul li{
+    .faq-accordion ul li {
         font-size: 14px;
     }
+
     .get-touch-section-title {
         font-size: 24px;
         line-height: normal;
         padding: 24px 0 34px;
     }
-    .btn-outline-light{
+
+    .btn-outline-light {
         padding: 12px 28px;
-    }    
-    .contact-form .form-control{
+    }
+
+    .contact-form .form-control {
         padding: 12px;
     }
 
@@ -666,6 +767,7 @@
         line-height: 16px;
         text-align: start;
     }
+
     .tans-ul .tabs-li {
         padding: 14px 4px;
     }
@@ -679,8 +781,8 @@
     }
 
     .tabs-content-title {
-        font-size: 22px;
-        line-height: 30.2px;
+        font-size: 19px;
+        line-height: normal;
     }
 
     .tabs-content .text-p {
@@ -690,24 +792,26 @@
     }
 
     .slider-title-text {
-        font-size: 27px;
-        line-height: 27.8px;
+        font-size: 25px;
+        line-height: normal;
     }
 
     .key-benefits-section .tabs-content-title {
         height: unset;
-    }   
+    }
+
     .key-benefits-slider-btn {
         width: 110px;
     }
 
-    .key-benefits-slider .swiper-button-prev, .key-benefits-slider .swiper-button-next {
+    .key-benefits-slider .swiper-button-prev,
+    .key-benefits-slider .swiper-button-next {
         padding: 6px;
     }
 
     .key-benefits-section .text-p {
-        font-size: 15px;
-        line-height: 16.4px;
+        font-size: 14px;
+        line-height: normal;
         padding-top: 8px;
     }
 
@@ -727,6 +831,27 @@
         padding: 10px 20px;
     }
 
+    .aboutus-section h1.page-title-duckreek {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .key-benefits-section-1 {
+        padding: 260px 0 30px 0;
+    }
+
+    .bg-img-duckreek-section {
+        height: unset;
+    }
+
+    .key-benefits-section-1 {
+        padding: 38px 0 30px 0;
+    }
+
+    .slider-number-div {
+        font-size: 44px;
+        line-height: normal;
+    }
 }
 
 @media(max-width:480px) {}
@@ -736,4 +861,6 @@
     .benefits-icon img {
         max-width: 40px;
     }
+
+
 }
