@@ -98,7 +98,7 @@
                     </h1>
                     <div class="text-btn-div d-lg-flex justify-content-between align-items-center">
                         <div class="btn-div">
-                            <a href=""
+                            <a href="#"
                                 class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
                                 <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +124,7 @@
             <div class="container">
                 <div class="row">
                     <div class="benefits-sub-div">
-                        <h2 class="section-title-h2 text-gradian-color">Benefits</h2>
+                        <h2 class="section-title-h2 text-gradian-color"><span class="text-gradian-color">Benefits</span></h2>
                         <p class="text-p text-white pt-2 pb-3 mb-1 ">With GEXAGI Services for Duck Creek & Guidewire,
                             insurance companies can get numerous benefits</p>
                         <div class="row benefits-row-1 g-4">
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-6 ">
-                                <div class="card-div">
+                                <div class="card-div card-div-3">
                                     <img class="card-img" src="assets/icon/card-3.svg" alt="icon">
                                     <h4 class="card-title text-white text-center my-sm-4 my-3 "> <span
                                             class="text-gradian-color"> Innovation</span> today
@@ -346,7 +346,7 @@
                         </div>
                     </div>
                     <div class="popup-container" id="videoPopup">
-                        <video id="popupVideo">
+                        <video id="popupVideo" controls>
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="popup-closed-btn">
@@ -362,10 +362,10 @@
                     <div class="row d-flex ">
                         <div class="col-12 pt-4 mt-2">
                             <!-- <h5 class="text-policy mb-2">What We Can Do</h5> -->
-                            <h2 class="section-title-h2 mb-4 text-center">Our <span class="text-gradian-color">
+                            <h2 class="section-title-h2  text-center">Our <span class="text-gradian-color">
                                     Solutions </span> & <span class="text-gradian-color">Services </span></h2>
                         </div>
-                        <div class="col-12 mt-md-0 mt-4">
+                        <div class="col-12">
                             <div class="row">
                                 <div class="solution-section-img-div d-flex">
                                     <div class=" solution-sub-div-img">
@@ -651,7 +651,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- costome js for index page  -->
     <!-- link script -->
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootsrap/bootstap.js"></script>
@@ -659,6 +659,136 @@
     <script src="assets/plugin/gaps/gaps-2.js"></script>
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
+
+     <script>
+        //video paly btn 
+        const video_1 = document.getElementById("myVideo");
+        const circlePlayButton = document.getElementById("playPauseButton");
+
+        function togglePlay() {
+            if (video_1.paused || video_1.ended) {
+                video_1.play();
+            } else {
+                video_1.pause();
+
+            }
+        }
+
+        circlePlayButton.addEventListener("click", togglePlay);
+        video_1.addEventListener("playing", function () {
+            circlePlayButton.style.opacity = 0;
+        });
+        video_1.addEventListener("pause", function () {
+            circlePlayButton.style.opacity = 1;
+        });
+
+        // video paly popup btn
+        // const video = document.getElementById('myVideo');
+        // const popup = document.getElementById('videoPopup');
+        // const popupVideo = document.getElementById('popupVideo');
+
+        // let isVideoPlaying = false;
+        // let isPopupOpen = false;
+
+        // video.addEventListener('play', () => {
+        //     isVideoPlaying = true;
+        // });
+
+        // video.addEventListener('pause', () => {
+        //     isVideoPlaying = false;
+        //     if (isPopupOpen) {
+        //         popupVideo.pause();
+        //     }
+        // });
+
+        // const syncPlayback = () => {
+        //     if (isPopupOpen && isVideoPlaying) {
+        //         popupVideo.currentTime = video.currentTime;
+        //     }
+        // };
+
+        // window.addEventListener('scroll', () => {
+        //     const videoRect = video.getBoundingClientRect();
+        //     const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
+
+        //     if (isOutOfView && isVideoPlaying && !isPopupOpen) {
+        //         popup.style.display = "flex";
+        //         popup.classList.remove("popup-container-display-none");
+        //         popupVideo.currentTime = video.currentTime;
+        //         popupVideo.play();
+        //         isPopupOpen = true;
+        //     } else if (!isOutOfView && isPopupOpen) {
+        //         popup.style.display = "none";
+        //         popupVideo.pause();
+        //         video.pause();
+        //         isPopupOpen = false;
+        //     }
+        // });
+        // video.addEventListener('timeupdate', syncPlayback);
+        // popupVideo.addEventListener('timeupdate', syncPlayback);
+
+        const video = document.getElementById('myVideo');
+const popup = document.getElementById('videoPopup');
+const popupVideo = document.getElementById('popupVideo');
+const closeBtn = document.getElementById('popupCloseBtn'); 
+
+let isVideoPlaying = false;
+let isPopupOpen = false;
+
+video.addEventListener('play', () => {
+    isVideoPlaying = true;
+});
+
+video.addEventListener('pause', () => {
+    isVideoPlaying = false;
+    if (isPopupOpen) {
+        popupVideo.pause();
+    }
+});
+
+popupVideo.addEventListener('pause', () => {
+    isPopupOpen = false;
+    if (isVideoPlaying) {
+        video.pause();
+    }
+});
+
+const syncPlayback = () => {
+    if (isPopupOpen && isVideoPlaying) {
+        popupVideo.currentTime = video.currentTime;
+    }
+};
+
+window.addEventListener('scroll', () => {
+    const videoRect = video.getBoundingClientRect();
+    const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
+
+    if (isOutOfView && isVideoPlaying && !isPopupOpen) {
+        popup.style.display = "flex";
+        popup.classList.remove("popup-container-display-none");
+        popupVideo.currentTime = video.currentTime;
+        popupVideo.play();
+        isPopupOpen = true;
+    } else if (!isOutOfView && isPopupOpen) {
+        popup.style.display = "none";
+        popupVideo.pause();
+        video.pause();
+        isPopupOpen = false;
+    }
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.style.display = "none";
+    popupVideo.pause(); // Pause popup video
+    video.pause(); // Pause main video
+    isPopupOpen = false;
+});
+
+video.addEventListener('timeupdate', syncPlayback);
+popupVideo.addEventListener('timeupdate', syncPlayback);
+
+
+    </script>
 </body>
 
 </html>

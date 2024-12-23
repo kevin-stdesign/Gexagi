@@ -25,6 +25,10 @@ p {
     margin-bottom: 0;
 }
 
+.container{
+    max-width: 1128px;
+}
+
 :root {
     --dark-blue: #6156DF;
     --black-blue: #19172C;
@@ -150,8 +154,9 @@ p {
 }
 
 .text-btn-div .text-div p.text-p {
-    max-width: 550px;
+    max-width: 700px;
     line-height: 36px;
+    font-size: 18px;
 }
 
 .btn-text {
@@ -236,14 +241,17 @@ Benefits section
     line-height: 96px;
     font-weight: 500;
     max-width: 1128px;
+    margin: auto;
+}
 
+.card-div-3 .card-title{
+    max-width: 300px;
 }
 
 .card-title {
-    font-size: 32px;
+    font-size: 31px;
     line-height: 38px;
     font-weight: 500;
-    max-width: 320px;
 }
 
 .card-div-2 .card-title {
@@ -271,6 +279,11 @@ Benefits section
     font-weight: 600;
 }
 
+.text-policy-1{
+    font-size: 40px;
+ 
+}
+
 .main-div-policyxagi {
     padding-top: 72px;
     padding-bottom: 36px;
@@ -286,7 +299,6 @@ policy-card
 =============================== */
 
 .policy-card-div {
-    background-color: black;
     height: 470px;
     border-radius: 8px;
     position: relative;
@@ -304,7 +316,7 @@ policy-card
     top: 0;
     left: 0;
     right: 0;
-    transition: 0.8s all ease-in-out;
+    transition: 0.4s all ease-in-out;
     border-radius: 8px;
 }
 
@@ -321,6 +333,9 @@ policy-card
 .policy-card-div:hover img.policy-card-bg-img {
     translate: 500px 700px;
 }
+
+.policy-card-div:hover{
+    background-color: #5192AD;}
 
 
 
@@ -357,6 +372,16 @@ policy-card
     /* transition-duration: 1s; */
     box-shadow: 0 0 10px white;
     border-radius: 20px;
+}
+
+.popOut-bottom {
+    position: fixed;
+    right: 20px;
+    width: 420px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease-in-out forwards;
 }
 
 .scroll-animation {
@@ -452,7 +477,7 @@ policy-card
 solution section
 ================================ */
 .solution-section {
-    padding: 56px 0;
+    padding: 56px 0 72px 0;
 }
 
 .solution-section .btn-know-more {
@@ -471,7 +496,7 @@ solution section
     align-items: center;
     max-width: 65%;
     margin-left: auto;
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .solution-section-img-div-2 {
@@ -613,6 +638,14 @@ About page
     transform: rotate(5deg);
 }
 
+.about-text-div-padding-right{
+    padding-right: 28px;
+}
+
+.about-text-div-padding-left{
+    padding-left: 41px;
+}
+
 .about-tab {
     position: relative;
     padding-bottom: 48px;
@@ -702,6 +735,13 @@ About page
 
 .product-policy .section-title-h2 {
     font-size: 32px;
+}
+
+.solution-section .section-title-h2{
+font-size: 64px;
+font-weight: 600;
+line-height: 76.8px;
+
 }
 
 .product-policy .text-p {
@@ -952,6 +992,7 @@ About page
     background-color: #090231;
     border-radius: 20px;
 }
+
 .blog-card-main-div:hover .blog-future-img-div img {
     transform: scale(1.2);
 }
@@ -992,26 +1033,21 @@ About page
 
 }
 
-.contact-title {
-    color: #D69D00;
-    margin-bottom: 16px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+.contact-information{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 72px;
 }
 
-.contact-information {
-    display: flex;
-    text-align: center;
-    gap: 72px;
-    justify-content: center;
-    margin-bottom: 48px;
+.contact-div-margin-top{
+    margin-top: 140px;
 }
 
 .contact-information img {
     width: 48px;
     height: 48px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .contact-information span a {
@@ -1025,19 +1061,33 @@ About page
     color: #D69D00;
 }
 
-.contact-information span {
-    font-weight: 500;
-    color: #FFFFFF;
-    font-size: 16px;
-    margin-bottom: 8px;
-    display: block;
-    line-height: 24px;
-    text-align: center;
+.intro-page-banner-section-section{
+    height: 738px;
+    padding: 0;
 }
 
-.contact-information div:nth-child(2) {
-    max-width: 480px;
+.intro-page-section {
+    padding-bottom: 32px;
+    padding-top: 90px;
 }
+
+.intro-page-section .text-p{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 32px;
+}
+
+.intro-imf-div{
+    width: 100%;
+    height: auto;
+}
+
+.intro-imf-div img{
+    border-radius: 24px;
+}
+
 
 /* About US Page Start */
 .section-full-bg {
@@ -1190,13 +1240,42 @@ About page
 /* FAQ Page End */
 
 /* Contact Us Page Start  */
-.get-touch-section {
-    /* background: linear-gradient(179.52deg, #04001A 41.9%, #1245A8 96.69%); */
+
+.conatct-page-title {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 120px;
+    color: white;
+}
+
+.location-sub-div img {
+    max-width: 48px;
+    height: 48px;
+}
+
+.section-sub-title {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #00FFF0;
+    margin-bottom: 24px;
 
 }
 
+.contact-information-2 .section-sub-title{
+    margin-bottom: 0;
+}
+
+.contact-information-3{
+    margin-top: 70px;
+}
+
+.contact-main-section {
+    padding: 210px 0 85px 0;
+}
+
 .contact-form {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 .contact-form h5 {
@@ -1205,12 +1284,10 @@ About page
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    text-align: center;
-    max-width: 500px;
 }
 
 .contact-form .form-group {
-    margin-bottom: 14px;
+    margin-bottom: 24px;
 }
 
 .contact-form .form-control {
@@ -1220,7 +1297,6 @@ About page
     background: #1D2248;
     color: #fff;
     border: 1px solid #1D2248;
-    max-width: 500px;
     display: block;
 }
 
@@ -1237,6 +1313,13 @@ About page
     border-color: #FFFFFF;
 }
 
+.form-input-group {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form input[type=number]::-webkit-inner-spin-button,
 .contact-form input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -1247,19 +1330,31 @@ About page
 
 .btn-outline-light {
     color: #FFFFFF;
-    padding: 16px 32px;
+    padding: 16px 42px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     border-radius: 4px;
     border: 2px solid transparent;
-    /* Transparent border for the gradient effect */
     display: inline-block;
     background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%);
     background-clip: border-box;
-    /* Gradient applied to the border area */
     box-shadow: inset 0 0 0 1000px black;
-    /* Black background inside the button */
+}
+
+.text-gradian-color-hover {
+    transition: 0.3s all ease-in-out;
+}
+
+.btn-outline-light:hover .text-gradian-color-hover {
+    background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s all ease-in-out;
+}
+
+.contact-iffo-sub-div{
+    gap: 8px;
 }
 
 
@@ -1289,6 +1384,18 @@ Our Expertise
     line-height: 21px;
 }
 
+.text-p-18 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32.4px;
+    color: white;
+}
+
+a.text-p-18{
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+}
+
 .tabs-arrow img {
     width: 26px;
     height: auto;
@@ -1306,15 +1413,31 @@ Our Expertise
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid white;
-    padding: 32px 16px;
+    padding: 32px 32px 32px 16px;
 }
+
+.tans-ul .tabs-li:hover button{
+    color: #00D9FF;
+}
+
+.tabs-arrow{
+    transition: 0.3s all ease-in-out;
+}
+
+.tans-ul .tabs-li:hover .tabs-arrow{
+    transform: translateX(16px);
+}
+
+
 
 .tans-ul .tabs-li button {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     color: white;
+    text-align: start;
     padding: 0;
+    transition: 0.3s all ease-in-out;
 }
 
 .tans-ul .tabs-li button.active {
@@ -1332,14 +1455,12 @@ Our Expertise
     justify-content: space-between;
     align-items: center;
     gap: 110px;
-    margin-top: 24px;
 }
 
 .tabs-img-div {
-    max-width: 239.88px;
+    max-width: 381px;
     height: auto;
     margin: auto;
-    margin-bottom: 37px;
 }
 
 .tabs-content-title {
@@ -1399,20 +1520,9 @@ Our Expertise
     font-weight: 400;
 }
 
-.key-benefits-section.key-benefits-section-3 {
-    padding-top: 242px;
-}
-
-.key-benefits-section.key-benefits-section-4 {
-    padding: 100px 0 50px 0 ;
-}
-
 .slider-number-div {
     font-size: 72px;
     line-height: 72px;
-    background: linear-gradient(90deg, rgba(0, 255, 240, 1) 0%, rgba(0, 246, 203, 1) 3%, rgba(184, 150, 255, 1) 9%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .key-benefits-slider .swiper-button-prev::after {
@@ -1444,12 +1554,21 @@ Our Expertise
     border-radius: 100%;
     height: auto;
     width: auto;
+    transition: 0.3s all ease-in-out;
 }
 
 .key-benefits-slider-btn {
     position: absolute;
-    width: 11%;
+    width: 13%;
     bottom: 31px;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    border-color: #00D9FF;
+}
+
+.swiper-button-next:hover svg path, .swiper-button-prev:hover svg path{
+    fill: #00D9FF;
 }
 
 .key-benefits-section .slider-title-text {
@@ -1473,11 +1592,15 @@ Our Expertise
 }
 
 .key-benefits-section {
-    padding: 150px 0 30px 0;
+    padding: 50px 0 30px 0;
 }
 
 .key-benefits-section-2 {
     padding-top: 42px;
+}
+
+.tabs-content {
+    padding: 0 0 32px 0;
 }
 
 .section-text-p {
@@ -1540,18 +1663,18 @@ usecase pahe
     padding-top: 32px;
 }
 
-.tabs-1-content{
+.tabs-1-content {
     display: none;
 }
 
-.tabs-2-content{
+.tabs-2-content {
     display: none;
 }
 
-.tabs-1-content.active{
+.tabs-1-content.active {
     display: block;
 }
 
-.tabs-2-content.active{
+.tabs-2-content.active {
     display: block;
 }
