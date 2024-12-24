@@ -47,7 +47,10 @@ p {
 
 }
 
-/* header */
+/*================
+ header
+ =================== */
+
 .site-logo {
     max-width: 200px;
     height: auto;
@@ -88,16 +91,6 @@ p {
 .main-menu-a.active {
     border-bottom: 1px solid white;
 }
-
-/* .main-menu-a.active::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: -1px;
-    background-color: white;
-}  */
 
 .main-header ul li a.active {
     color: white !important;
@@ -274,9 +267,10 @@ Benefits section
 }
 
 .text-policy {
-    color: var(--extralight-blue);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
+    line-height: 38.4px;  
+    color: #7086B0;  
 }
 
 .text-policy-1{
@@ -353,10 +347,15 @@ policy-card
 .policy-card-content {
     translate: 300px 84px;
     transition: 0.5s all ease-in-out;
+    font-weight: 400;
 }
 
 .policy-card-div:hover .policy-card-content {
     translate: 0px 84px;
+}
+
+.policy-card-div-10:hover .policy-card-content {
+    translate: 0px 184px;
 }
 
 .policy-card-div:hover .policy-card-title {
@@ -472,7 +471,6 @@ policy-card
 }
 
 
-
 /* ===============================
 solution section
 ================================ */
@@ -584,6 +582,7 @@ About page
 
 .bg-dark-blue {
     background-color: black;
+    min-height: 90vh;
 }
 
 .about-section {
@@ -713,6 +712,7 @@ About page
 /*==============================
  About US Page End
  ================================ */
+
 /* ===============================
  Product page 
  ================================== */
@@ -1239,7 +1239,9 @@ line-height: 76.8px;
 
 /* FAQ Page End */
 
-/* Contact Us Page Start  */
+/* =================================
+Contact Us Page Start 
+=============================== */
 
 .conatct-page-title {
     font-size: 80px;
@@ -1356,7 +1358,6 @@ line-height: 76.8px;
 .contact-iffo-sub-div{
     gap: 8px;
 }
-
 
 
 .btn-outline-light:hover {
@@ -1616,65 +1617,23 @@ a.text-p-18{
 }
 
 /* ==========================
-usecase pahe 
+usecase page
 =========================== */
 
-.property-and-casualty-img-div {
-    width: 264px;
-    height: auto;
-    flex: 0 0 264px;
+.use-case-cardsection .policy-card-div {
+    height: 400px;
 }
 
-.property-and-casualty-main-div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 24px;
-    padding: 32px 0 0px 0;
+.use-case-card-section {
+    height: 738px;
+    min-height: unset;
+    margin-bottom: -87px;
 }
 
-.property-and-casualty-div-content .text-p {
-    color: white;
-    line-height: 24px;
-    font-weight: 400;
+.ucp-use-case-section {
+    padding: 1050px 0 0 0;
 }
 
-.property-and-casualty-div-content .text-p:not(:last-child) {
-    margin-bottom: 38px;
-}
-
-.property-and-casualty-section {
-    padding-bottom: 0;
-}
-
-.why-choose-gexiga-section-text {
-    padding: 40px 0;
-}
-
-.section-title-text {
-    margin-bottom: 32px;
-}
-
-.property-and-casualty-main-div-3 {
-    padding-top: 16px;
-}
-
-.section-title-text-2 {
-    padding-top: 32px;
-}
-
-.tabs-1-content {
-    display: none;
-}
-
-.tabs-2-content {
-    display: none;
-}
-
-.tabs-1-content.active {
-    display: block;
-}
-
-.tabs-2-content.active {
-    display: block;
+.use-case-cardsection .page-title-duckreek{
+    margin: 48px 0 72px 0;
 }
