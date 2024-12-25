@@ -27,7 +27,7 @@ let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
       slidesPerView: 1.5,
     },
     0: {
-      slidesPerView: 1.8,
+      slidesPerView: 1,
       spaceBetween: 10,
     }
   }
