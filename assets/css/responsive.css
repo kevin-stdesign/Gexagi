@@ -36,10 +36,10 @@
 
 @media(max-width:1199.98px) {
 
-    .container{
+    .container {
         max-width: 960px;
     }
-    
+
 
     .solution-section-img-div-2 {
         max-width: 77%;
@@ -207,34 +207,39 @@
     .intro-page-section {
         padding-top: 0;
     }
+
     .casestudy-detail .lable {
         font-size: 22px;
         margin: 42px 0 12px;
     }
 
     .casestudy-description .action-one h5,
-    .casestudy-detail h1{
+    .casestudy-detail h1 {
         font-size: 43px;
     }
-    .casestudy-detail .date-time h5{
+
+    .casestudy-detail .date-time h5 {
         font-size: 22px;
     }
-    .casestudy-description h5{
+
+    .casestudy-description h5 {
         font-size: 34px;
     }
-    .related-insights h5{
+
+    .related-insights h5 {
         text-wrap: nowrap;
     }
-    .casestudy-detailimg{
+
+    .casestudy-detailimg {
         height: 380px;
-    }   
+    }
 }
 
 @media(max-width:991.98px) {
-    .container{
+    .container {
         max-width: 720px;
     }
-    
+
     div#navbarSupportedContent {
         padding: 10px;
         background-color: var(--black-blue);
@@ -458,58 +463,71 @@
         font-size: 30px;
     }
 
-    .policy-card-title{
+    .policy-card-title {
         font-size: 18px;
     }
-    .policy-card-div-10:hover .policy-card-content{
+
+    .policy-card-div-10:hover .policy-card-content {
         translate: 0px 124px;
         font-size: 15px;
     }
-    .casestudy-detail .lable{
+
+    .casestudy-detail .lable {
         font-size: 18px;
         line-height: normal;
     }
-    .casestudy-description .action-one h5, .casestudy-detail h1{
+
+    .casestudy-description .action-one h5,
+    .casestudy-detail h1 {
         font-size: 32px;
         line-height: 52px;
     }
+
     .casestudy-detail .date-time {
         gap: 36px;
         padding-bottom: 30px;
         margin-bottom: 44px;
     }
 
-    .casestudy-detail .date-time h5{
+    .casestudy-detail .date-time h5 {
         font-size: 18px;
     }
-    .casestudy-detail .date-time::after{
+
+    .casestudy-detail .date-time::after {
         height: 4px;
     }
+
     .casestudy-description,
-    .casestudy-detailimg{
+    .casestudy-detailimg {
         margin-bottom: 64px;
     }
-    .casestudy-description h5{
+
+    .casestudy-description h5 {
         font-size: 28px;
         line-height: normal;
     }
-    .casestudy-description p, .casestudy-description ul li{
+
+    .casestudy-description p,
+    .casestudy-description ul li {
         font-size: 16px;
         line-height: 28px;
     }
 
-    .casestudy-description .action-one{
+    .casestudy-description .action-one {
         padding-block: 28px;
         gap: 24px;
     }
-    .casestudy-description .action-one h5{
+
+    .casestudy-description .action-one h5 {
         line-height: normal;
         margin-bottom: 14px;
     }
-    .related-insights{
+
+    .related-insights {
         gap: 42px;
     }
-    .related-insights a{
+
+    .related-insights a {
         font-size: 18px;
         gap: 18px;
     }
@@ -517,7 +535,7 @@
 
 @media(max-width:767.98px) {
 
-    .container{
+    .container {
         max-width: 540px;
     }
 
@@ -703,28 +721,48 @@
         border-radius: 15px;
     }
 
-    .usecases-main .slider-use-case-div{
+    .usecases-main .slider-use-case-div {
         min-height: 444px;
     }
-    .related-insights{
+
+    .related-insights {
         flex-direction: column;
         gap: 0;
     }
+
     .casestudy-detailimg {
         height: 280px;
     }
-    .casestudy-detail h1{
+
+    .casestudy-detail h1 {
         font-size: 28px;
     }
 
     .casestudy-description h5,
-    .casestudy-description .action-one h5{
+    .casestudy-description .action-one h5 {
         font-size: 24px;
     }
 }
 
 @media(max-width:575.98px) {
-    
+    .discovery-phase-chart {
+        max-width: 604px;
+        margin: 100px auto 24px;
+    }
+
+    .apx-legend-position-bottom {
+        top: -90px !important;
+    }
+
+    .apexcharts-canvas {
+        height: 300px !important;
+    }
+
+    .apexcharts-svg {
+        height: 300px !important;
+    }
+
+
     .banner-section-title {
         font-size: 32px;
         font-weight: 500;
@@ -1042,10 +1080,10 @@
     }
 
     .key-benefits-section .text-p {
-    font-size: 14px;
-    line-height: normal;
-    margin-top: 5px;
-}
+        font-size: 14px;
+        line-height: normal;
+        margin-top: 5px;
+    }
 
     .section-text-p .text-p {
         font-size: 14px;
@@ -1142,11 +1180,11 @@
         border-radius: 10px;
     }
 
-    .benefits-section .row{
+    .benefits-section .row {
         padding: 0 10px;
     }
 
-    .product-policy{
+    .product-policy {
         min-height: unset;
         height: auto;
         margin-bottom: auto;
@@ -1156,73 +1194,87 @@
         margin-top: 50px;
     }
 
-    .about-text-div-padding-right{
+    .about-text-div-padding-right {
         padding-right: 12px;
     }
-    
-    .about-text-div-padding-left{
+
+    .about-text-div-padding-left {
         padding-left: 12px;
     }
 
-    .use-case-card-section .policy-card-div{
+    .use-case-card-section .policy-card-div {
         max-width: 264px;
     }
 
-    .usecases-main .page-title-duckreek{
+    .usecases-main .page-title-duckreek {
         margin-bottom: 32px;
         font-size: 34px;
         text-align: center;
     }
 
-    .usecases-main .slider-use-case-div{
+    .usecases-main .slider-use-case-div {
         min-height: 353px;
         padding: 24px 24px 32px;
     }
 
-    .use-case-card-section.banner-sectrion-blog{
+    .use-case-card-section.banner-sectrion-blog {
         margin-bottom: 34px;
     }
-    .casestudy-detail .lable{
-        font-size: 16px;   
+
+    .casestudy-detail .lable {
+        font-size: 16px;
         margin-top: 28px;
     }
-    .casestudy-detail h1{
+
+    .casestudy-detail h1 {
         font-size: 22px;
         line-height: normal;
         margin-bottom: 28px;
     }
-    .casestudy-detail .date-time{
+
+    .casestudy-detail .date-time {
         flex-direction: column;
         gap: 4px;
         padding-bottom: 12px;
         margin-bottom: 28px;
     }
-    .casestudy-detail .date-time h5{
+
+    .casestudy-detail .date-time h5 {
         font-size: 16px;
     }
+
     .casestudy-detailimg {
         height: 200px;
         margin-bottom: 34px;
     }
+
     .casestudy-detail.section-full-bg::before {
         min-height: 570px;
     }
-    .casestudy-description h5, .casestudy-description .action-one h5{
+
+    .casestudy-description h5,
+    .casestudy-description .action-one h5 {
         font-size: 18px;
     }
-    .casestudy-description p, .casestudy-description ul li{
+
+    .casestudy-description p,
+    .casestudy-description ul li {
         font-size: 14px;
         line-height: normal;
     }
-    .casestudy-description .action-one{
+
+    .casestudy-description .action-one {
         gap: 12px;
     }
-    .related-insights a{
+
+    .related-insights a {
         margin-top: 8px;
         font-size: 14px;
         gap: 8px;
     }
-    .casestudy-description, .casestudy-detailimg{
+
+    .casestudy-description,
+    .casestudy-detailimg {
         margin-bottom: 42px;
     }
 }
@@ -1233,5 +1285,17 @@
 @media (max-width: 360px) {
     .benefits-icon img {
         max-width: 40px;
+    }
+
+    .apexcharts-canvas {
+        height: 400px !important;
+    }
+
+    .apexcharts-svg {
+        height: 400px !important;
+    }
+
+    .discovery-phase-chart {
+        margin-bottom: -50px !important;
     }
 }
