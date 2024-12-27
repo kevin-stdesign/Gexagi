@@ -1814,11 +1814,49 @@ usecase page
 
 .discovery-phase-chart {
     max-width: 604px;
-    margin: 0 auto 24px;
+    margin: 0 auto 0px;
 }
 
 .apx-legend-position-bottom {
-    top: 0 !important;
+    top: -40px !important;
 }
+
+.apexcharts-legend-text {
+    font-size: 14px !important;
+    color: white !important;
+}
+
+.apexcharts-grid {
+    opacity: 0.1;
+}
+
+.apexcharts-grid-borders .apexcharts-gridline {
+    opacity: 0.1;
+}
+
+/* .apexcharts-gridline {
+    opacity: 0.1;
+} */
+.apexcharts-grid-borders line:nth-child(3) {
+    display: none !important;
+}
+
+.apexcharts-svg {
+    overflow: visible !important;
+}
+
+.apexcharts-data-labels {
+    display: none;
+}
+
+foreignObject {
+    height: unset !important;
+    overflow: visible !important;
+}
+
+.apexcharts-canvas {
+    fill-opacity: 1 !important;
+}
+
 
 /* Casestudy Detail Page End */
