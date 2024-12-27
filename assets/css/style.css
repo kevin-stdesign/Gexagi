@@ -25,7 +25,7 @@ p {
     margin-bottom: 0;
 }
 
-.container{
+.container {
     max-width: 1152px;
 }
 
@@ -47,7 +47,7 @@ p {
 
 }
 
-.bg-dark{
+.bg-dark {
     background: #000000 !important;
 }
 
@@ -241,7 +241,7 @@ Benefits section
     margin: auto;
 }
 
-.card-div-3 .card-title{
+.card-div-3 .card-title {
     max-width: 300px;
 }
 
@@ -273,13 +273,13 @@ Benefits section
 .text-policy {
     font-size: 32px;
     font-weight: 600;
-    line-height: 38.4px;  
-    color: #7086B0;  
+    line-height: 38.4px;
+    color: #7086B0;
 }
 
-.text-policy-1{
+.text-policy-1 {
     font-size: 40px;
- 
+
 }
 
 .main-div-policyxagi {
@@ -335,8 +335,9 @@ policy-card
     translate: 500px 700px;
 }
 
-.policy-card-div:hover{
-    background-color: #5192AD;}
+.policy-card-div:hover {
+    background-color: #5192AD;
+}
 
 
 
@@ -643,11 +644,11 @@ About page
     transform: rotate(5deg);
 }
 
-.about-text-div-padding-right{
+.about-text-div-padding-right {
     padding-right: 28px;
 }
 
-.about-text-div-padding-left{
+.about-text-div-padding-left {
     padding-left: 41px;
 }
 
@@ -743,10 +744,10 @@ About page
     font-size: 32px;
 }
 
-.solution-section .section-title-h2{
-font-size: 64px;
-font-weight: 600;
-line-height: 76.8px;
+.solution-section .section-title-h2 {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 76.8px;
 
 }
 
@@ -837,7 +838,7 @@ line-height: 76.8px;
     transition: 0.6s all ease-in-out;
 }
 
-.slider-use-case-div .swiper-slide:not(.swiper-slide-active) .card-use-case-sub-div{
+.slider-use-case-div .swiper-slide:not(.swiper-slide-active) .card-use-case-sub-div {
     margin-top: 50px;
 }
 
@@ -1038,14 +1039,14 @@ line-height: 76.8px;
 
 }
 
-.contact-information{
+.contact-information {
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 72px;
 }
 
-.contact-div-margin-top{
+.contact-div-margin-top {
     margin-top: 140px;
 }
 
@@ -1066,7 +1067,7 @@ line-height: 76.8px;
     color: #D69D00;
 }
 
-.intro-page-banner-section-section{
+.intro-page-banner-section-section {
     height: 738px;
     padding: 0;
 }
@@ -1076,7 +1077,7 @@ line-height: 76.8px;
     padding-top: 90px;
 }
 
-.intro-page-section .text-p{
+.intro-page-section .text-p {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 400;
@@ -1084,12 +1085,12 @@ line-height: 76.8px;
     margin-top: 32px;
 }
 
-.intro-imf-div{
+.intro-imf-div {
     width: 100%;
     height: auto;
 }
 
-.intro-imf-div img{
+.intro-imf-div img {
     border-radius: 24px;
 }
 
@@ -1269,11 +1270,11 @@ Contact Us Page Start
 
 }
 
-.contact-information-2 .section-sub-title{
+.contact-information-2 .section-sub-title {
     margin-bottom: 0;
 }
 
-.contact-information-3{
+.contact-information-3 {
     margin-top: 70px;
 }
 
@@ -1360,7 +1361,7 @@ Contact Us Page Start
     transition: 0.3s all ease-in-out;
 }
 
-.contact-iffo-sub-div{
+.contact-iffo-sub-div {
     gap: 8px;
 }
 
@@ -1397,7 +1398,7 @@ Our Expertise
     color: white;
 }
 
-a.text-p-18{
+a.text-p-18 {
     text-decoration: none;
     transition: 0.3s all ease-in-out;
 }
@@ -1422,15 +1423,15 @@ a.text-p-18{
     padding: 32px 32px 32px 16px;
 }
 
-.tans-ul .tabs-li:hover button{
+.tans-ul .tabs-li:hover button {
     color: #00D9FF;
 }
 
-.tabs-arrow{
+.tabs-arrow {
     transition: 0.3s all ease-in-out;
 }
 
-.tans-ul .tabs-li:hover .tabs-arrow{
+.tans-ul .tabs-li:hover .tabs-arrow {
     transform: translateX(16px);
 }
 
@@ -1569,11 +1570,13 @@ a.text-p-18{
     bottom: 31px;
 }
 
-.swiper-button-next:hover, .swiper-button-prev:hover{
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
     border-color: #00D9FF;
 }
 
-.swiper-button-next:hover svg path, .swiper-button-prev:hover svg path{
+.swiper-button-next:hover svg path,
+.swiper-button-prev:hover svg path {
     fill: #00D9FF;
 }
 
@@ -1639,18 +1642,18 @@ usecase page
     margin-bottom: 104px;
 }
 
-.usecases-main .card-use-case-title-text{
+.usecases-main .card-use-case-title-text {
     text-wrap: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.usecases-main .slider-use-case-div{
+.usecases-main .slider-use-case-div {
     padding: 24px 0 32px;
     min-height: 576px;
 }
 
-.usecases-main .page-title-duckreek{
+.usecases-main .page-title-duckreek {
     margin-bottom: 72px;
     font-size: 48px;
     font-weight: 600;
@@ -1659,11 +1662,11 @@ usecase page
 
 /* Casestudy Detail Page Start  */
 
-.casestudy-detail.section-full-bg::before{
+.casestudy-detail.section-full-bg::before {
     min-height: 730px;
 }
 
-.casestudy-detail .lable{
+.casestudy-detail .lable {
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 400;
@@ -1671,7 +1674,7 @@ usecase page
     margin: 72px 0 16px;
 }
 
-.casestudy-detail h1{
+.casestudy-detail h1 {
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
@@ -1679,7 +1682,7 @@ usecase page
     color: #FFFFFF;
 }
 
-.casestudy-detail .date-time{
+.casestudy-detail .date-time {
     display: flex;
     gap: 56px;
     padding-bottom: 48px;
@@ -1687,7 +1690,7 @@ usecase page
     position: relative;
 }
 
-.casestudy-detail .date-time::after{
+.casestudy-detail .date-time::after {
     content: ' ';
     position: absolute;
     left: 0;
@@ -1698,14 +1701,14 @@ usecase page
     background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%);
 }
 
-.casestudy-detail .date-time h5{
+.casestudy-detail .date-time h5 {
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
 }
 
-.casestudy-detailimg{
+.casestudy-detailimg {
     width: 100%;
     border-radius: 24px;
     object-fit: cover;
@@ -1713,11 +1716,11 @@ usecase page
     margin-bottom: 86px;
 }
 
-.casestudy-description{
+.casestudy-description {
     margin-bottom: 72px;
 }
 
-.casestudy-description h5{
+.casestudy-description h5 {
     color: #F6F6FF;
     margin-bottom: 16px;
     font-size: 36px;
@@ -1725,12 +1728,12 @@ usecase page
     line-height: 64.8px;
 }
 
-.casestudy-description ul{
+.casestudy-description ul {
     padding-left: 28px;
 }
 
 .casestudy-description p,
-.casestudy-description ul li{
+.casestudy-description ul li {
     list-style-type: disc;
     color: #F6F6FF;
     font-size: 18px;
@@ -1739,7 +1742,7 @@ usecase page
     margin-bottom: 18px;
 }
 
-.casestudy-description ul li span{
+.casestudy-description ul li span {
     font-weight: 600;
 }
 
@@ -1750,11 +1753,11 @@ usecase page
     border-bottom: 2px solid #00C0F1;
 }
 
-.casestudy-description .action-one p{
+.casestudy-description .action-one p {
     margin: 0;
 }
 
-.casestudy-description .action-one h5{
+.casestudy-description .action-one h5 {
     color: #FFFFFF;
     margin-bottom: 24px;
     font-size: 48px;
@@ -1762,12 +1765,12 @@ usecase page
     line-height: 57.6px;
 }
 
-.related-insights{
+.related-insights {
     display: flex;
     gap: 64px;
 }
 
-.related-insights a{
+.related-insights a {
     display: flex;
     margin-top: 16px;
     gap: 24px;
@@ -1780,15 +1783,15 @@ usecase page
     position: relative;
 }
 
-.related-insights a img{
+.related-insights a img {
     max-width: 16px;
 }
 
-.related-insights a:hover{
+.related-insights a:hover {
     color: var(--dark-blue);
 }
 
-.related-insights a span{
+.related-insights a span {
     position: relative;
 }
 
@@ -1809,8 +1812,13 @@ usecase page
     transition: 0.5s all ease-in-out;
 }
 
-.discovery-phase-chart{
+.discovery-phase-chart {
     max-width: 604px;
     margin: 0 auto 24px;
 }
+
+.apx-legend-position-bottom {
+    top: 0 !important;
+}
+
 /* Casestudy Detail Page End */
