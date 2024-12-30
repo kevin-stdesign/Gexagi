@@ -1856,7 +1856,7 @@ usecase page
     fill-opacity: 1 !important;
 }
 
-/* Data Collection Chart */
+/* Data Collection Chart 1*/
 
 .data-collection-chart .apexcharts-toolbar {
     display: none;
@@ -1892,6 +1892,26 @@ usecase page
 .data-collection-chart .apexcharts-grid-borders line:nth-child(4) {
     opacity: 0.1;
 }
+
+/* Data Collection Chart 2*/
+.data-collection-line-chart .apexcharts-toolbar {
+    display: none;
+}
+
+.data-collection-line-chart .apexcharts-canvas {
+    margin: 0 auto;
+}
+
+.data-collection-line-chart .apexcharts-grid {
+    opacity: 0.1;
+}
+
+.data-collection-line-chart .apexcharts-grid-borders {
+    opacity: 0.1;
+}
+
+
+
 
 
 
