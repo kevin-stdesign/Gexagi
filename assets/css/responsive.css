@@ -745,20 +745,20 @@
 }
 
 @media(max-width:575.98px) {
-    .discovery-phase-chart {
+    .discovery-phase-chart .discovery-phase-chart {
         max-width: 604px;
         margin: 100px auto 24px;
     }
 
-    .apx-legend-position-bottom {
+    .discovery-phase-chart .apx-legend-position-bottom {
         top: -90px !important;
     }
 
-    .apexcharts-canvas {
+    .discovery-phase-chart .apexcharts-canvas {
         height: 300px !important;
     }
 
-    .apexcharts-svg {
+    .discovery-phase-chart .apexcharts-svg {
         height: 300px !important;
     }
 
@@ -1287,15 +1287,15 @@
         max-width: 40px;
     }
 
-    .apexcharts-canvas {
+    .discovery-phase-chart .apexcharts-canvas {
         height: 400px !important;
     }
 
-    .apexcharts-svg {
+    .discovery-phase-chart .apexcharts-svg {
         height: 400px !important;
     }
 
-    .discovery-phase-chart {
+    .discovery-phase-chart .discovery-phase-chart {
         margin-bottom: -50px !important;
     }
 }
