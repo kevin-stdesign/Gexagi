@@ -199,7 +199,7 @@
                 </div>
             </div>
             <div class="casestudy-description">
-                <div id="discoveryPhaseChart" class="discovery-phase-chart"></div>
+                <div id="datapreprationChart" class="data-prepration-Chart"></div>
                 <p class="mb-4">Highlight the time savings achieved through specific data preparation steps</p>
                 <h5>Results and Postconditions</h5>
                 <ul>
@@ -214,9 +214,6 @@
 
             <div class="casestudy-description">
                 <h5>Key Benefits</h5>
-            </div>
-            <div class="casestudy-description">
-                <h5>Outcomes and Benefits</h5>
                 <ul>
                     <li><span>Risk Management: </span> Better informed, data-driven underwriting and pricing for
                         improved profitability.</li>
@@ -231,23 +228,15 @@
             <div class="casestudy-description">
                 <h5>Addressing the Challenges</h5>
                 <ul>
-                    <li><span>Data Security & Privacy: </span>Overcoming data diversity and format inconsistencies
-                        through meticulous planning and robust integration tools.</li>
-                    <li><span>Data Volume & Quality:</span> Implementing quality checks, validation routines, and
-                        scalable storage solutions.</li>
-                    <li><span>Regulatory Compliance:</span> Navigating complex data protection laws with transparent
-                        governance structures and stringent privacy safeguards.</li>
+                    <li><span>Data Security & Privacy: </span>Enforce strict protocols and encryption methods to protect sensitive policyholder information.</li>
+                    <li><span>Infrastructure Demands: </span> Invest in scalable, resilient data management platforms that can handle complex transformations.</li>
+                    <li><span>Ongoing Quality Management:</span> Establish continual improvement cycles, adjusting processes to new data sources, formats, and business needs.</li>
                 </ul>
             </div>
             <div class="casestudy-description">
                 <h5>Conclusion</h5>
-                <p>In a complex P&C landscape, integrated data ecosystems are a strategic imperative. By unifying
-                    disparate data sources and applying predictive analytics, insurers can significantly improve their
-                    risk management capabilities, accelerate operational workflows, and deliver a superior, more
-                    personalized customer experience—ultimately gaining a competitive edge in the dynamic insurance
-                    market.</p>
+                <p>By rigorously preparing, cleaning, and enriching their data, P&C insurers can fully leverage their information assets. The outcome is better risk insight, operational agility, improved customer experiences, and data-driven strategic decision-making—fundamental steps toward sustained leadership in a competitive insurance landscape.</p>
             </div>
-
             <div class="casestudy-description related-insights">
                 <h5>Related Insights</h5>
                 <div>
@@ -257,15 +246,15 @@
                     </a>
                     <a href="#">
                         <img src="assets/icon/top-right-arrow.svg" alt="Arrow">
-                        <span>Linking data investments to profitable growth</span>
+                        <span>Deploying predictive analytics for improved underwriting accuracy </span>
                     </a>
                     <a href="#">
                         <img src="assets/icon/top-right-arrow.svg" alt="Arrow">
-                        <span>Leveraging AI-driven risk models for competitive differentiation</span>
+                        <span>Transforming claims handling through AI-driven workflows</span>
                     </a>
                     <a href="#">
                         <img src="assets/icon/top-right-arrow.svg" alt="Arrow">
-                        <span>Beyond compliance: Building trust through data transparency</span>
+                        <span>Strengthening compliance and data governance in insurance ecosystems</span>
                     </a>
                 </div>
             </div>
@@ -542,95 +531,28 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/custome.js"></script>
     <script>
-        var options = {
-            chart: {
-                height: 398,
-                type: "bar",
-                toolbar: {
-                    show: false,
-                }
-            },
-            series: [
-                {
-                    name: "AI-Based Risk Pricing",
-                    color: '#00CADC',
-                    type: "column",
-                    data: [10, 15, 28, 40, 55]
-                },
-                {
-                    name: "Predictive Analytics",
-                    color: '#49C3FB',
-                    type: "column",
-                    data: [25, 33, 45, 60, 70]
-                },
-                {
-                    name: "Digital Self-Service",
-                    color: '#65A6FA',
-                    type: "column",
-                    data: [20, 27, 35, 50, 65]
-                },
-                {
-                    name: "Chat-bots & Virtual Agents",
-                    color: '#7E80E7',
-                    type: "column",
-                    data: [5, 10, 20, 30, 45]
-                }
-            ],
-            stroke: {
-                width: [0, 0, 0, 0],
-                curve: 'smooth'
-            },
-            labels: [
-                "2019",
-                "2020",
-                "2021",
-                "2022",
-                "2023"
-            ],
-            xaxis: {
-                labels: {
-                    style: {
-                        colors: '#F6F6FF',
-                        fontFamily: '"Poppins", serif',
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        lineHeight: '32.4px',
-                    },
-                },
-                axisTicks: {
-                    show: false,
-                },
-            },
-            yaxis: {
-                tickAmount: 10,
-                title: {
-                    text: 'Adoption Percentage(%)',
-                    rotate: -90,
-                    offsetX: -10,
-                    offsetY: 0,
-                    style: {
-                        color: '#F6F6FF',
-                        fontFamily: '"Poppins", serif',
-                        fontSize: '16px',
-                        fontWeight: 400,
-                        lineHeight: '32.4px',
-                    },
-                },
-                labels: {
-                    style: {
-                        colors: '#F6F6FF',
-                        fontFamily: '"Poppins", serif',
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        lineHeight: '32.4px',
-                    },
-                },
 
+        var options = {
+          series: [44, 55, 13, 43, 22],
+          chart: {
+          width: 380,
+          type: 'pie',
+        },
+        labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
             }
+          }
+        }]
         };
 
-        var chart = new ApexCharts(document.querySelector("#discoveryPhaseChart"), options);
-
+        var chart = new ApexCharts(document.querySelector("#datapreprationChart"), options);    
         chart.render();
 
     </script>
