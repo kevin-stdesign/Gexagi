@@ -1812,51 +1812,89 @@ usecase page
     transition: 0.5s all ease-in-out;
 }
 
+/* Discovery Phase Chart */
 .discovery-phase-chart {
     max-width: 604px;
     margin: 0 auto 0px;
 }
 
-.apx-legend-position-bottom {
+.discovery-phase-chart .apx-legend-position-bottom {
     top: -40px !important;
 }
 
-.apexcharts-legend-text {
+.discovery-phase-chart .apexcharts-legend-text {
     font-size: 14px !important;
     color: white !important;
 }
 
-.apexcharts-grid {
+.discovery-phase-chart .apexcharts-grid {
     opacity: 0.1;
 }
 
-.apexcharts-grid-borders .apexcharts-gridline {
+.discovery-phase-chart .apexcharts-grid-borders .apexcharts-gridline {
     opacity: 0.1;
 }
 
-/* .apexcharts-gridline {
-    opacity: 0.1;
-} */
-.apexcharts-grid-borders line:nth-child(3) {
+.discovery-phase-chart .apexcharts-grid-borders line:nth-child(3) {
     display: none !important;
 }
 
-.apexcharts-svg {
+.discovery-phase-chart .apexcharts-svg {
     overflow: visible !important;
 }
 
-.apexcharts-data-labels {
+.discovery-phase-chart .apexcharts-data-labels {
     display: none;
 }
 
-foreignObject {
+.discovery-phase-chart foreignObject {
     height: unset !important;
     overflow: visible !important;
 }
 
-.apexcharts-canvas {
+.discovery-phase-chart .apexcharts-canvas {
     fill-opacity: 1 !important;
 }
+
+/* Data Collection Chart */
+
+.data-collection-chart .apexcharts-toolbar {
+    display: none;
+}
+
+.data-collection-chart .apexcharts-grid {
+    opacity: 0.1;
+}
+
+.data-collection-chart .apexcharts-grid-borders .apexcharts-gridline {
+    opacity: 0;
+}
+
+.data-collection-chart .apexcharts-canvas {
+    margin: 0 auto;
+}
+
+.data-collection-chart .apexcharts-yaxis-texts-g tspan {
+    font-size: 14px !important;
+    fill: white !important;
+}
+
+.data-collection-chart .apexcharts-xaxis-texts-g tspan {
+    font-size: 14px !important;
+    fill: white !important;
+    font-family: "Poppins", serif;
+}
+
+.data-collection-chart .apexcharts-grid-borders line:nth-child(3) {
+    display: none !important;
+}
+
+.data-collection-chart .apexcharts-grid-borders line:nth-child(4) {
+    opacity: 0.1;
+}
+
+
+
 
 
 /* Casestudy Detail Page End */

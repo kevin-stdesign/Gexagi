@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEXIGI - Discovery Phase</title>
+    <title>GEXIGI - Data Collection</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/site-icon.svg">
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -201,7 +201,7 @@
                 </div>
             </div>
             <div class="casestudy-description">
-                <div id="discoveryPhaseChart" class="discovery-phase-chart"></div>
+                <div id="datacollectionchart" class="data-collection-chart"></div>
                 <p class="mb-4">Illustrate the primary challenges insurers face during data integration to emphasize the
                     need for robust tools and processes.</p>
                 <h5>From Data to Actionable Insight</h5>
@@ -212,9 +212,9 @@
                     <li>Fraud Detection: Detect anomalies and suspicious patterns early, reducing fraudulent claims.
                     </li>
                 </ul>
+                <div id="datacollectionlinechart" class="data-collection-line-chart"></div>
             </div>
             <div class="casestudy-description">
-                <div id="discoveryPhaseChart" class="discovery-phase-chart"></div>
                 <p class="mb-4">Demonstrate the impact of integrated data and predictive analytics on fraud detection
                     success rate.</p>
                 <ul>
@@ -224,28 +224,42 @@
             </div>
             <div class="casestudy-description">
                 <h5>Implementation & Continuous Improvement</h5>
-                <p>After operational deployment, user-friendly interfaces provide underwriters, adjusters, and service teams with instant access to enriched data sets. Continuous feedback loops ensure that insights gleaned from this integrated environment feed back into model refinement, claims optimization, and evolving engagement strategies—supporting a cycle of perpetual improvement.</p>
+                <p>After operational deployment, user-friendly interfaces provide underwriters, adjusters, and service
+                    teams with instant access to enriched data sets. Continuous feedback loops ensure that insights
+                    gleaned from this integrated environment feed back into model refinement, claims optimization, and
+                    evolving engagement strategies—supporting a cycle of perpetual improvement.</p>
             </div>
             <div class="casestudy-description">
                 <h5>Outcomes and Benefits</h5>
-                    <ul>
-                        <li><span>Risk Management: </span> Better informed, data-driven underwriting and pricing for improved profitability.</li>
-                        <li><span>Operational Efficiency:</span> Faster, more accurate claims decisions and underwriting processes.</li>
-                        <li><span>Customer Retention:</span> FPersonalized, responsive experiences bolster loyalty and long-term relationships.</li>
-                        <li><span>Compliance & Security: </span> A centralized data framework simplifies adherence to industry regulations and enhances data protection measures.</li>
-                    </ul>
+                <ul>
+                    <li><span>Risk Management: </span> Better informed, data-driven underwriting and pricing for
+                        improved profitability.</li>
+                    <li><span>Operational Efficiency:</span> Faster, more accurate claims decisions and underwriting
+                        processes.</li>
+                    <li><span>Customer Retention:</span> FPersonalized, responsive experiences bolster loyalty and
+                        long-term relationships.</li>
+                    <li><span>Compliance & Security: </span> A centralized data framework simplifies adherence to
+                        industry regulations and enhances data protection measures.</li>
+                </ul>
             </div>
             <div class="casestudy-description">
                 <h5>Addressing the Challenges</h5>
-                    <ul>
-                        <li><span>Integration Complexity: </span>Overcoming data diversity and format inconsistencies through meticulous planning and robust integration tools.</li>
-                        <li><span>Data Volume & Quality:</span>  Implementing quality checks, validation routines, and scalable storage solutions.</li>
-                        <li><span>Regulatory Compliance:</span> Navigating complex data protection laws with transparent governance structures and stringent privacy safeguards.</li>
-                    </ul>
+                <ul>
+                    <li><span>Integration Complexity: </span>Overcoming data diversity and format inconsistencies
+                        through meticulous planning and robust integration tools.</li>
+                    <li><span>Data Volume & Quality:</span> Implementing quality checks, validation routines, and
+                        scalable storage solutions.</li>
+                    <li><span>Regulatory Compliance:</span> Navigating complex data protection laws with transparent
+                        governance structures and stringent privacy safeguards.</li>
+                </ul>
             </div>
             <div class="casestudy-description">
                 <h5>Conclusion</h5>
-                <p>In a complex P&C landscape, integrated data ecosystems are a strategic imperative. By unifying disparate data sources and applying predictive analytics, insurers can significantly improve their risk management capabilities, accelerate operational workflows, and deliver a superior, more personalized customer experience—ultimately gaining a competitive edge in the dynamic insurance market.</p>
+                <p>In a complex P&C landscape, integrated data ecosystems are a strategic imperative. By unifying
+                    disparate data sources and applying predictive analytics, insurers can significantly improve their
+                    risk management capabilities, accelerate operational workflows, and deliver a superior, more
+                    personalized customer experience—ultimately gaining a competitive edge in the dynamic insurance
+                    market.</p>
             </div>
 
             <div class="casestudy-description related-insights">
@@ -541,54 +555,50 @@
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/custome.js"></script>
+
     <script>
+
         var options = {
+            series: [{
+                data: [75, 68, 60, 55],
+                color: '#00CADC'
+            }],
             chart: {
-                height: 398,
-                type: "bar",
-                toolbar: {
-                    show: false,
+                type: 'bar',
+                height: 425,
+                width: 644
+            },
+            plotOptions: {
+                bar: {
+                    borderRadius: 4,
+                    horizontal: true,
+                    dataLabels: {
+                        position: 'top',
+                    },
                 }
             },
-            series: [
-                {
-                    name: "AI-Based Risk Pricing",
-                    color: '#00CADC',
-                    type: "column",
-                    data: [10, 15, 28, 40, 55]
-                },
-                {
-                    name: "Predictive Analytics",
-                    color: '#49C3FB',
-                    type: "column",
-                    data: [25, 33, 45, 60, 70]
-                },
-                {
-                    name: "Digital Self-Service",
-                    color: '#65A6FA',
-                    type: "column",
-                    data: [20, 27, 35, 50, 65]
-                },
-                {
-                    name: "Chat-bots & Virtual Agents",
-                    color: '#7E80E7',
-                    type: "column",
-                    data: [5, 10, 20, 30, 45]
+            dataLabels: {
+                enabled: true,
+                offsetX: 16,
+                style: {
+                    fontSize: '12px',
+                    colors: ['#fff']
                 }
-            ],
-            stroke: {
-                width: [0, 0, 0, 0],
-                curve: 'smooth'
+            },
+            tooltip: {
+                shared: true,
+                intersect: false
             },
             labels: [
-                "2019",
-                "2020",
-                "2021",
-                "2022",
-                "2023"
+                "Integration Complexity",
+                "Data Volume & Quality",
+                "Lack of Standaradization",
+                "Regularity Compilance"
             ],
             xaxis: {
                 labels: {
+                    rotate: -90,
+                    offsetY: 20,
                     style: {
                         colors: '#F6F6FF',
                         fontFamily: '"Poppins", serif',
@@ -597,14 +607,121 @@
                         lineHeight: '32.4px',
                     },
                 },
+                title: {
+                    text: '% of Insurers Affected',
+                    rotate: -90,
+                    offsetX: -30,
+                    offsetY: -100,
+                    style: {
+                        color: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '16px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+
+                },
+                axisTicks: {
+                    show: false,
+                },
+                position: 'top',
+            },
+            yaxis: {
+                tickAmount: 20,
+                title: {
+                    text: 'Challange',
+                    rotate: -90,
+                    offsetX: 15,
+                    offsetY: 0,
+                    style: {
+                        color: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '16px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+                },
+                labels: {
+                    style: {
+                        colors: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '14px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+                    maxWidth: 400,  // Allow the Y-axis labels to have a larger width
+                },
+
+
+            }
+
+        };
+
+        var chart = new ApexCharts(document.querySelector("#datacollectionchart"), options);
+        chart.render();
+
+    </script>
+    <script>
+        var options = {
+            series: [{
+                name: "Desktops",
+                data: [10, 41, 35, 51]
+            }],
+            chart: {
+                height: 425,
+                width: 644,
+                type: 'line',
+                zoom: {
+                    enabled: false
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            grid: {
+                row: {
+                    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                    opacity: 0.5
+                },
+            },
+            xaxis: {
+                categories: ['2020', '2021', '2022', '2023'],
+                labels: {
+                    rotate: -90,
+                    offsetY: 20,
+                    style: {
+                        colors: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '14px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+                },
+                title: {
+                    text: '% of Insurers Affected',
+                    rotate: -90,
+                    offsetX: -30,
+                    offsetY: -100,
+                    style: {
+                        color: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '16px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+
+                },
                 axisTicks: {
                     show: false,
                 },
             },
             yaxis: {
-                tickAmount: 10,
+                tickAmount: 20,
                 title: {
-                    text: 'Adoption Percentage(%)',
+                    text: 'Fraud Detection Rate (%)',
                     rotate: -90,
                     offsetX: -10,
                     offsetY: 0,
@@ -624,13 +741,14 @@
                         fontWeight: 400,
                         lineHeight: '32.4px',
                     },
+                    maxWidth: 400,  // Allow the Y-axis labels to have a larger width
                 },
+
 
             }
         };
 
-        var chart = new ApexCharts(document.querySelector("#discoveryPhaseChart"), options);
-
+        var chart = new ApexCharts(document.querySelector("#datacollectionlinechart"), options);
         chart.render();
 
     </script>
