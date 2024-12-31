@@ -199,16 +199,20 @@
                 </div>
             </div>
             <div class="casestudy-description">
-                <div id="datapreprationChart" class="data-prepration-Chart"></div>
+                <div id="datapreprationChart" class="data-prepration-chart"></div>
                 <p class="mb-4">Highlight the time savings achieved through specific data preparation steps</p>
                 <h5>Results and Postconditions</h5>
                 <ul>
-                    <li><span>Improved Risk Assessment </span> Cleaner data underpins more accurate modeling, enabling precise pricing and reducing financial exposure.</li>
-                    <li><span>Efficient Claims Processing:</span> Reliable, well-organized data accelerates claim evaluations and settlements, enhancing operational productivity.</li>
-                    <li><span>Enhanced Customer Satisfaction: </span> Customized communications and service offerings—enabled by rich, accurate profiles—drive loyalty and retention.</li>
+                    <li><span>Improved Risk Assessment </span> Cleaner data underpins more accurate modeling, enabling
+                        precise pricing and reducing financial exposure.</li>
+                    <li><span>Efficient Claims Processing:</span> Reliable, well-organized data accelerates claim
+                        evaluations and settlements, enhancing operational productivity.</li>
+                    <li><span>Enhanced Customer Satisfaction: </span> Customized communications and service
+                        offerings—enabled by rich, accurate profiles—drive loyalty and retention.</li>
                     <li><span>Compliance & Security: </span> A centralized data framework simplifies adherence to
                         industry regulations and enhances data protection measures.</li>
-                    <li><span>Strategic Insight:</span>Consistently high-quality data fuels advanced analytics, guiding strategic initiatives that can boost market competitiveness.</li>
+                    <li><span>Strategic Insight:</span>Consistently high-quality data fuels advanced analytics, guiding
+                        strategic initiatives that can boost market competitiveness.</li>
                 </ul>
             </div>
 
@@ -228,14 +232,20 @@
             <div class="casestudy-description">
                 <h5>Addressing the Challenges</h5>
                 <ul>
-                    <li><span>Data Security & Privacy: </span>Enforce strict protocols and encryption methods to protect sensitive policyholder information.</li>
-                    <li><span>Infrastructure Demands: </span> Invest in scalable, resilient data management platforms that can handle complex transformations.</li>
-                    <li><span>Ongoing Quality Management:</span> Establish continual improvement cycles, adjusting processes to new data sources, formats, and business needs.</li>
+                    <li><span>Data Security & Privacy: </span>Enforce strict protocols and encryption methods to protect
+                        sensitive policyholder information.</li>
+                    <li><span>Infrastructure Demands: </span> Invest in scalable, resilient data management platforms
+                        that can handle complex transformations.</li>
+                    <li><span>Ongoing Quality Management:</span> Establish continual improvement cycles, adjusting
+                        processes to new data sources, formats, and business needs.</li>
                 </ul>
             </div>
             <div class="casestudy-description">
                 <h5>Conclusion</h5>
-                <p>By rigorously preparing, cleaning, and enriching their data, P&C insurers can fully leverage their information assets. The outcome is better risk insight, operational agility, improved customer experiences, and data-driven strategic decision-making—fundamental steps toward sustained leadership in a competitive insurance landscape.</p>
+                <p>By rigorously preparing, cleaning, and enriching their data, P&C insurers can fully leverage their
+                    information assets. The outcome is better risk insight, operational agility, improved customer
+                    experiences, and data-driven strategic decision-making—fundamental steps toward sustained leadership
+                    in a competitive insurance landscape.</p>
             </div>
             <div class="casestudy-description related-insights">
                 <h5>Related Insights</h5>
@@ -529,33 +539,56 @@
     <script src="assets/plugin/gaps/gaps-2.js"></script>
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
     <script src="assets/js/custome.js"></script>
     <script>
-
         var options = {
-          series: [44, 55, 13, 43, 22],
-          chart: {
-          width: 380,
-          type: 'pie',
-        },
-        labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
-        responsive: [{
-          breakpoint: 480,
-          options: {
+            series: [18, 20, 30, 15, 17],
             chart: {
-              width: 200
+                width: 591,
+                height: 353,
+                type: 'pie',
             },
-            legend: {
-              position: 'bottom'
-            }
-          }
-        }]
+            labels: ['Diamond Removal', 'Missing Value Correction', 'Data Standarization', 'Data Merging & Enrichment', 'Quality Assurance Check'], // Add labels here
+            dataLabels: {
+                style: {
+                    color: '#F6F6FF',
+                    fontFamily: '"Poppins", serif',
+                    fontSize: '16px',
+                    fontWeight: 400,
+                    lineHeight: '32.4px',
+                    offsetY: -50,
+                },
+            },
+            colors: ['#94E4FD', '#18A7E1', '#0A7CBA', '#033566', '#F92464'], // Custom colors for each slice
+            offsetY: -330,
+            responsive: [
+                {
+                    breakpoint: 768, // Tablet
+                    options: {
+                        chart: {
+                            height: 350, // Reduced height for smaller screens
+                            width: 450,
+                        },
+                    },
+                },
+                {
+                    breakpoint: 480, // Mobile
+                    options: {
+                        chart: {
+                            height: 280, // Further reduced height for mobile
+                            width: 280,
+                        },
+
+                    },
+                },
+            ],
         };
 
-        var chart = new ApexCharts(document.querySelector("#datapreprationChart"), options);    
+        var chart = new ApexCharts(document.querySelector("#datapreprationChart"), options);
         chart.render();
-
     </script>
+
 </body>
 
 </html>
