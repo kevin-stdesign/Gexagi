@@ -1812,7 +1812,11 @@ usecase page
     transition: 0.5s all ease-in-out;
 }
 
+
+/* Casestudy Detail Page End */
+
 /* Discovery Phase Chart */
+
 .discovery-phase-chart {
     max-width: 604px;
     margin: 0 auto 0px;
@@ -1894,6 +1898,7 @@ usecase page
 }
 
 /* Data Collection Chart 2*/
+
 .data-collection-line-chart .apexcharts-toolbar {
     display: none;
 }
@@ -1910,11 +1915,130 @@ usecase page
     opacity: 0.1;
 }
 
+/* Data Prepration Chart*/
+
+.data-prepration-chart .apexcharts-series path {
+    stroke: 0;
+    stroke-opacity: 0;
+}
+
+.data-prepration-chart .apexcharts-series path {
+    user-select: none;
+    filter: none;
+}
+
+.data-prepration-chart .apexcharts-series path::selection {
+    user-select: none;
+    filter: none;
+}
+
+.data-prepration-chart .apexcharts-legend {
+    gap: 20px;
+    justify-content: center;
+}
+
+.data-prepration-chart .apexcharts-legend-text {
+    color: #fff !important;
+    font-size: 14px !important;
+    fill: white !important;
+    font-family: "Poppins", serif !important;
+    margin-left: 5px !important;
+    padding-left: 0px !important;
+}
+
+.data-prepration-chart .apexcharts-canvas {
+    margin: 0 auto;
+}
+
+.data-prepration-chart {
+    margin-bottom: 75px;
+}
+
+/* Machine Leaning Chart 1*/
+.machine-learning-chart1 .apexcharts-canvas {
+    margin: 0 auto;
+}
+
+.machine-learning-chart1 .apx-legend-position-bottom {
+    top: -12px !important;
+}
+
+.machine-learning-chart1 .apexcharts-legend-text {
+    font-size: 14px !important;
+    color: white !important;
+}
+
+.machine-learning-chart1 .apexcharts-grid {
+    opacity: 0.1;
+}
+
+.machine-learning-chart1 .apexcharts-grid-borders .apexcharts-gridline {
+    opacity: 0.1;
+}
+
+.machine-learning-chart1 .apexcharts-grid-borders line:nth-child(3) {
+    display: none !important;
+}
+
+.machine-learning-chart1 .apexcharts-svg {
+    overflow: visible !important;
+}
+
+.machine-learning-chart1 .apexcharts-data-labels {
+    display: none;
+}
+
+.machine-learning-chart1 foreignObject {
+    height: unset !important;
+    overflow: visible !important;
+}
+
+.casestudy-description.mb-100 {
+    margin-bottom: 100px;
+}
 
 
+/* Machine Leaning Chart 2*/
 
+.machine-learning-chart2 .apexcharts-toolbar {
+    display: none;
+}
 
+.machine-learning-chart2 .apexcharts-grid {
+    opacity: 0.1;
+}
 
+.machine-learning-chart2 .apexcharts-grid-borders .apexcharts-gridline {
+    opacity: 0;
+}
 
+.machine-learning-chart2 .apexcharts-canvas {
+    margin: 0 auto;
+}
 
-/* Casestudy Detail Page End */
+.machine-learning-chart2 .apexcharts-yaxis-texts-g tspan {
+    font-size: 14px !important;
+    fill: white !important;
+}
+
+.machine-learning-chart2 .apexcharts-xaxis-texts-g tspan {
+    font-size: 14px !important;
+    fill: white !important;
+    font-family: "Poppins", serif;
+}
+
+.machine-learning-chart2 .apexcharts-grid-borders line:nth-child(3) {
+    display: none !important;
+}
+
+.machine-learning-chart2 .apexcharts-grid-borders line:nth-child(4) {
+    opacity: 0.1;
+}
+
+.machine-learning-chart2 .apexcharts-datalabels {
+    display: none !important;
+}
+
+.machine-learning-chart2 .apexcharts-grid {
+    transform: translateY(0px);
+}

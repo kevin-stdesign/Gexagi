@@ -535,6 +535,11 @@
 
 @media(max-width:767.98px) {
 
+    .data-prepration-chart .apexcharts-legend {
+        display: none !important;
+        /* display: grid !important; */
+    }
+
     .container {
         max-width: 540px;
     }
