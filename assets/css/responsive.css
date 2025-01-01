@@ -236,6 +236,71 @@
 }
 
 @media(max-width:991.98px) {
+    .offcanvas.offcanvas-end {
+        padding: 28px 10px 10px 10px;
+        background-color: rgba(0, 3, 29, 0.97);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 0px !important;
+        align-items: start;
+    }
+
+    .offcanvas-body {
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100% !important;
+    }
+
+    .main-header .navbar-nav .dropdown-menu {
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .offcanvas-header {
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 28px;
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 36px;
+        right: 20px;
+        height: 24px;
+        width: 41px;
+        border: 1px solid #ffffff;
+        background: unset;
+        opacity: 1;
+    }
+
+    .btn-close i {
+        font-size: 26px;
+        background: linear-gradient(90.01deg, #00FFFF 30.51%, #588DFF 50.04%, #FB537B 72.99%, #F9AF7C 100.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .btn-close:hover {
+        background: linear-gradient(90.01deg, #00FFFF 30.51%, #588DFF 50.04%, #FB537B 72.99%, #F9AF7C 100.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 1;
+    }
+
+    .offcanvas-backdrop {
+        display: none;
+    }
+
     .container {
         max-width: 720px;
     }
@@ -259,6 +324,11 @@
 
     .toggle-btn {
         border: 1px solid white;
+        padding: 8px 18px;
+    }
+
+    .toggle-btn i {
+        font-size: 24px;
     }
 
     .text-btn-div .text-div p.text-p {
@@ -750,6 +820,24 @@
 }
 
 @media(max-width:575.98px) {
+    .footer-all-rights-sub-div {
+        display: unset;
+    }
+
+    .contact-us-sub-div {
+        display: unset;
+        margin-bottom: 20px;
+    }
+
+    .contact-us-sub-div .connect-text {
+        margin-bottom: 20px;
+        border: none !important;
+    }
+
+    .footer-row {
+        padding: 12px 0;
+    }
+
     .discovery-phase-chart .discovery-phase-chart {
         max-width: 604px;
         margin: 100px auto 24px;
@@ -769,9 +857,10 @@
 
 
     .banner-section-title {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 500;
         line-height: 1.4;
+        padding: 0 12px !important;
     }
 
     .text-btn-div {
@@ -829,7 +918,7 @@
     }
 
     .policy-card-div {
-        height: 435px;
+        height: 300px;
     }
 
     .footer-link-sub-div {
@@ -1187,6 +1276,24 @@
 
     .benefits-section .row {
         padding: 0 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-section-card .row .col-lg-4:first-child {
+        padding-left: inherit;
+    }
+
+    .benefits-section-card .row .col-lg-4:last-child {
+        padding-right: inherit;
+    }
+
+    .benefits-row-1 .benefits-column img {
+        height: 45px;
+        width: auto;
+    }
+
+    .home-baaner-section {
+        padding: 116px 0 195px 0;
     }
 
     .product-policy {
