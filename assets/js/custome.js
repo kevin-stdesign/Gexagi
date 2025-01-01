@@ -69,7 +69,6 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
 });
 
 // tabs js 
-
 document.addEventListener('DOMContentLoaded', function () {
   let tabs = document.querySelectorAll('.tabs-li');
   let panels = document.querySelectorAll('.tabs-1-content');
@@ -124,6 +123,9 @@ gsap.to(".ifrem-video", {
         scrub: true
     }
 });
+
+
+
 
 
 
