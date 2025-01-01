@@ -24,74 +24,84 @@
 </head>
 
 <body class="">
-    <!-- header -->
+
+    <!-- header start-->
     <header class="main-header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand site-logo" href="#">
+                        <a class="navbar-brand site-logo" href="index.html">
                             <img src="assets/img/site-icon.png" alt="site-logo">
                         </a>
-                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                            <ul class="navbar-nav main-menu-ul me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a " aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a active" href="about.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Expertise
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand site-logo" href="#">
+                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav main-menu-ul ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a active" href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Expertise
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
 
-                                    <ul class="dropdown-menu drop-down-ul">
-                                        <li><a class="dropdown-item" href="product.html">Research & Products</a></li>
-                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Innovation
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
-                                    <ul class="dropdown-menu drop-down-ul ">
-                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
-                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
-                                        <li><a class="dropdown-item" href="#">Data Analytics</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link main-menu-a">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
-                                </li>
-                            </ul>
+                                        <ul class="dropdown-menu drop-down-ul">
+                                            <li><a class="dropdown-item" href="product.html">Research & Products</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Innovation
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
+                                        <ul class="dropdown-menu drop-down-ul ">
+                                            <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
+                                            <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link main-menu-a">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
+    <!-- header end-->
 
-    <!-- herder section end  -->
     <main class="bg-dark-blue">
         <section class="about-section">
             <div class="container">
-                <div class="row align-items-md-center mb-4 pb-3">
-                    <div class="col-lg-8 col-md-7 about-text-div-padding-right">
-                        <h4>About</h4>
-                        <h2 class="about-title">Welcome to GEXAGI</h2>
+                <div class="row align-items-md-center">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
+                        <h1 class="page-title-duckreek">About GEXAGI</h1>
                         <p class="about-description">We are a Gen X Artificial General Intelligence company with
                             branches in the USA and India. At GeXAGI, we leverage state-of-the-art technologies to
                             revolutionize the property-casualty insurance sector. Our <span
@@ -100,23 +110,30 @@
                             expertise enables us to deliver bespoke services that enhance insurance companie's
                             operational efficiency and digital transformation efforts.</p>
                     </div>
-                    <div class="col-lg-4 col-md-5">
-                        <div class="about-square-img ms-md-auto">
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about-square-img">
                             <img src="assets/img/about-img1.png" alt="About Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="tabs">
+                            <a class="active" href="#we_do_section">What We Do</a>
+                            <a href="#we_are_section">Who We Are</a>
+                            <a href="#we_do_section">Who We Serve</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about-other-sections">
+        <section class="about-sub-section">
             <div class="container">
-                <div class="row align-items-center mb-4 pb-3">
-                    <div class="col-lg-4 col-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
                         <div class="about-square-img me-md-auto">
                             <img src="assets/img/about-mission.png" alt="About Mission Image">
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-7 about-text-div-padding-left about-square-img-main-div">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
                         <h2 class="about-title">Our <span class="text-gradian-color">Mission</span></h2>
                         <p class="about-description">We envision a world where technology streamlines the complexities
                             of insurance, transforming it into a truly seamless experience. Our mission is to harness AI
@@ -124,52 +141,36 @@
                             our clients a previously unattainable level of solutions.</p>
                     </div>
                 </div>
-                <div class="row align-items-center mb-4 pb-3 ">
-                    <div class="col-lg-8 col-md-7 about-text-div-padding-right ">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
                         <h2 class="about-title">Our <span class="text-gradian-color">Vision</span></h2>
-                        <p class="about-description">We are a Gen X Artificial General Intelligence company with
-                            branches in the USA and India. At GeXAGI, we leverage state-of-the-art technologies to
-                            revolutionize the property-casualty insurance sector. Our Duck Creek and Guidewire platform
-                            expertise enables us to deliver bespoke services that enhance insurance companie's
-                            operational efficiency and digital transformation efforts.</p>
+                        <p class="about-description">We believe in a future where machine learning reshapes the very
+                            essence of insurance. Our vision embraces a world in which predictive analytics, AI-driven
+                            risk assessment, and streamlined claims processing define the industry standard—ensuring
+                            more accurate, equitable, and efficient insurance products and services for all.</p>
                     </div>
-                    <div class="col-lg-4 col-md-5">
+                    <div class="col-lg-7 col-md-6">
                         <div class="about-square-img ms-md-auto">
                             <img src="assets/img/about-vision.png" alt="About Vision Image">
                         </div>
                     </div>
                 </div>
-                <div class="row align-items-center mb-4">
-                    <div class="col-lg-4 col-md-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-6">
                         <div class="about-square-img me-md-auto">
                             <img src="assets/img/about-innovation.png" alt="About Collaborative Innovation Image">
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-7 collaborative-order about-text-div-padding-left">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
                         <h2 class="about-title">Collaborative <span class="text-gradian-color">Innovation</span></h2>
-                        <p class="about-description">We are a Gen X Artificial General Intelligence company with
-                            branches in the USA and India. At GeXAGI, we leverage state-of-the-art technologies to
-                            revolutionize the property-casualty insurance sector. Our Duck Creek and Guidewire platform
-                            expertise enables us to deliver bespoke services that enhance insurance companie's
-                            operational efficiency and digital transformation efforts.</p>
+                        <p class="about-description">Strengthened by Strategic Partnerships, Our commitment to
+                            innovation is amplified through our collaborations with tech innovators, researchers, and
+                            industry leaders. These partnerships fuel our research and enhance our product development,
+                            ensuring that we remain at the forefront of the insurance industry.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-tab">
-            <div class="container">
-                <div class="tabs">
-                    <a class="active" href="#we_do_section">What We Do</a>
-                    <a href="#we_are_section">Who We Are</a>
-                    <a href="#we_do_section">Who We Serve</a>
                 </div>
                 <div class="row we-do-are" id="we_do_section">
-                    <div class="col-lg-6 col-md-5">
-                        <div class="about-img">
-                            <img src="assets/img/about-we-do.png" alt="About We Do Image">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-7">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
                         <h2 class="about-title mt-4 mt-md-0"><span class="text-gradian-color">What</span> We Do</h2>
                         <p class="about-description">We empower your business with a modern, digital perspective.
                             Drawing on our deep software engineering legacy, strategic advisory capabilities, and
@@ -179,14 +180,19 @@
                             customer-centric insurance ecosystem—delivering measurable benefits to carriers and
                             policyholders.</p>
                     </div>
+                    <div class="col-lg-7 col-md-6">
+                        <div class="about-img">
+                            <img src="assets/img/about-we-do.png" alt="About We Do Image">
+                        </div>
+                    </div>
                 </div>
                 <div class="row we-do-are" id="we_are_section">
-                    <div class="col-lg-6 col-md-5">
+                    <div class="col-lg-7 col-md-6">
                         <div class="about-img">
                             <img src="assets/img/about-we-are.png" alt="About We Are Image">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-7">
+                    <div class="col-lg-5 col-md-6 about-text-div-padding-right">
                         <h2 class="about-title mt-4 mt-md-0">Who <span class="text-gradian-color">We</span> Are</h2>
                         <p class="about-description">At GeXAGI, we believe we&#39;re at our best when our employees
                             align their personal purpose with the company’s mission. It’s about uniting all our goals,
@@ -196,13 +202,22 @@
                             growing and evolving together to make a difference.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="about-tab">
+            <div class="container">
+
                 <div class="we-serve">
                     <div class="row">
-                        <h2 class="about-title">Who we <span class="text-gradian-color">Serve</span></h2>
-                        <p class="about-description">We aim to help and guide the Insurer community to experience new
-                            cutting-edge technology.Together with our clients, we build a safe, secure AGI for Insurance
-                            eco-system
-                        </p>
+                        <div class="col-lg-12">
+                            <h2 class="about-title">Who we <span class="text-gradian-color">Serve</span></h2>
+                            <p class="about-description">We aim to help and guide the Insurer community to experience
+                                new
+                                cutting-edge technology.Together with our clients, we build a safe, secure AGI for
+                                Insurance
+                                eco-system
+                            </p>
+                        </div>
                         <div class="col-sm-6 col-12 we-serve-sub-div">
                             <h4 class="we-serve-sub-div-title mb-2">Insurance <span
                                     class="text-gradian-color">Agents</span></h4>

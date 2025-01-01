@@ -65,7 +65,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 0;
+    padding: 24px 0;
     z-index: 2;
 }
 
@@ -229,7 +229,7 @@ Benefits section
     background-repeat: no-repeat;
     border-radius: 24px;
     margin-top: -160px;
-    padding: 24px 48px 35px 48px;
+    padding: 24px 48px 30px 48px;
     margin-bottom: 24px;
 }
 
@@ -536,9 +536,9 @@ Footer
 
 .link-div a {
     color: var(--footer-link-color);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 27px;
     text-decoration: none;
     transition: 0.3s all ease-in-out;
 }
@@ -571,16 +571,44 @@ Footer
     line-height: 24px;
 }
 
+.contact-us-sub-div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-all-rights-div p {
+    color: #FFFFFF !important;
+}
+
+.footer-all-rights-sub-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .contact-us-sub-div p {
     color: var(--footer-link-color);
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
+    line-height: 27px;
 }
+
+.contact-us-sub-div .connect-text {
+    padding-right: 24px;
+    border-right: 1px solid #FFFFFF;
+}
+
 
 .footer-all-rights-div {
     background-color: #07003C;
     padding: 16px 0;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 /* ===============================
@@ -594,9 +622,8 @@ About page
 
 .about-section {
     background: url(../img/about-bg.png) no-repeat center / cover;
-    padding: 120px 0 0;
     min-height: 738px;
-    margin-bottom: -228px;
+    /* margin-bottom: -228px; */
 }
 
 .about-section h4 {
@@ -607,28 +634,44 @@ About page
     margin-bottom: 8px;
 }
 
+.about-sub-section .about-square-img {
+    margin: 48px auto 48px auto;
+}
+
 .about-title {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 600;
-    line-height: 38.4px;
+    line-height: 57.6px;
     color: #FFFFFF;
     margin-bottom: 32px;
+}
+
+.about-tab {
+    padding-bottom: 96px;
+}
+
+.about-tab .about-title {
+    margin-bottom: 8px;
 }
 
 .about-description {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 32px;
     color: #FFFFFF;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
+    /* max-width: 480px; */
 }
 
 .about-square-img {
-    border: 1px solid #B6B6E9;
+    height: 400px;
+    max-width: 600px;
+    width: 100%;
     border-radius: 8px;
-    max-width: 350px;
+    /* max-width: 350px; */
     aspect-ratio: 1/1;
     overflow: hidden;
+    margin: 152px auto 48px auto;
 }
 
 .about-square-img img {
@@ -640,53 +683,61 @@ About page
 
 .row:hover .about-img img,
 .row:hover .about-square-img img {
-    scale: 1.1;
+    scale: 1.15;
     transform: rotate(5deg);
 }
 
 .about-text-div-padding-right {
-    padding-right: 28px;
+    padding-right: 12px;
 }
 
 .about-text-div-padding-left {
     padding-left: 41px;
 }
 
-.about-tab {
+/* .about-section {
     position: relative;
     padding-bottom: 48px;
+} */
+.navbar-expand-lg {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
 }
 
-.about-tab .tabs {
+.about-section .tabs {
     display: flex;
     background-color: #000000;
     position: sticky;
     z-index: 1;
     top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    padding-top: 24px;
 }
 
-.about-tab .tabs a {
+.about-section .tabs a {
     text-decoration: none;
     color: #676B80;
-    padding: 8px 12px;
-    font-size: 16px;
+    padding: 16px 12px;
+    font-size: 32px;
     font-weight: 500;
     line-height: 24px;
 }
 
-.about-tab .tabs a:hover,
-.about-tab .tabs a.active {
+.about-section .tabs a:hover,
+.about-section .tabs a.active {
     color: #FFFFFF;
     border-bottom: 2px solid #0F3384;
 }
 
 .we-do-are .about-img {
-    border: 1px solid #B6B6E9;
+    height: 400px;
+    max-width: 600px;
+    width: 100%;
     border-radius: 8px;
-    max-width: 500px;
-    aspect-ratio: 500/297;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
+    margin: 48px auto 48px auto;
 }
 
 .about-img img {
@@ -1515,6 +1566,36 @@ a.text-p-18 {
 
 }
 
+.benefits-section {
+    margin-bottom: 32px;
+}
+
+.benefits-row-1 {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.benefits-section-card .row .col-lg-4:first-child {
+    padding-left: 0;
+}
+
+.benefits-section-card .row .col-lg-4:last-child {
+    padding-right: 0;
+}
+
+.benefits-row-1 .benefits-column {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.benefits-row-1 .benefits-column img {
+    height: 65px;
+    width: auto;
+}
+
 .key-benefits-section .tabs-content-title {
     margin-bottom: 16px;
     height: auto;
@@ -2041,4 +2122,24 @@ usecase page
 
 .machine-learning-chart2 .apexcharts-grid {
     transform: translateY(0px);
+}
+
+/* .mt-48 {
+    margin-top: 48px;
+} */
+.reimagining-insurance .section-title-h2 {
+    margin-bottom: 32px;
+    margin-top: 80px;
+}
+
+.reimagining-insurance {
+    margin-top: 48px;
+}
+
+.about-section .page-title-duckreek {
+    margin-bottom: 32px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 86.4px;
+    color: white;
 }
