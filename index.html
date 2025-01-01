@@ -124,7 +124,8 @@
             <div class="container">
                 <div class="row">
                     <div class="benefits-sub-div">
-                        <h2 class="section-title-h2 text-gradian-color"><span class="text-gradian-color">Benefits</span></h2>
+                        <h2 class="section-title-h2 text-gradian-color"><span class="text-gradian-color">Benefits</span>
+                        </h2>
                         <p class="text-p text-white pt-2 pb-3 mb-1 ">With GEXAGI Services for Duck Creek & Guidewire,
                             insurance companies can get numerous benefits</p>
                         <div class="row benefits-row-1 g-4">
@@ -660,7 +661,7 @@
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
 
-     <script>
+    <script>
         //video paly btn 
         const video_1 = document.getElementById("myVideo");
         const circlePlayButton = document.getElementById("playPauseButton");
@@ -728,64 +729,64 @@
         // popupVideo.addEventListener('timeupdate', syncPlayback);
 
         const video = document.getElementById('myVideo');
-const popup = document.getElementById('videoPopup');
-const popupVideo = document.getElementById('popupVideo');
-const closeBtn = document.getElementById('popupCloseBtn'); 
+        const popup = document.getElementById('videoPopup');
+        const popupVideo = document.getElementById('popupVideo');
+        const closeBtn = document.getElementById('popupCloseBtn');
 
-let isVideoPlaying = false;
-let isPopupOpen = false;
+        let isVideoPlaying = false;
+        let isPopupOpen = false;
 
-video.addEventListener('play', () => {
-    isVideoPlaying = true;
-});
+        video.addEventListener('play', () => {
+            isVideoPlaying = true;
+        });
 
-video.addEventListener('pause', () => {
-    isVideoPlaying = false;
-    if (isPopupOpen) {
-        popupVideo.pause();
-    }
-});
+        video.addEventListener('pause', () => {
+            isVideoPlaying = false;
+            if (isPopupOpen) {
+                popupVideo.pause();
+            }
+        });
 
-popupVideo.addEventListener('pause', () => {
-    isPopupOpen = false;
-    if (isVideoPlaying) {
-        video.pause();
-    }
-});
+        popupVideo.addEventListener('pause', () => {
+            isPopupOpen = false;
+            if (isVideoPlaying) {
+                video.pause();
+            }
+        });
 
-const syncPlayback = () => {
-    if (isPopupOpen && isVideoPlaying) {
-        popupVideo.currentTime = video.currentTime;
-    }
-};
+        const syncPlayback = () => {
+            if (isPopupOpen && isVideoPlaying) {
+                popupVideo.currentTime = video.currentTime;
+            }
+        };
 
-window.addEventListener('scroll', () => {
-    const videoRect = video.getBoundingClientRect();
-    const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
+        window.addEventListener('scroll', () => {
+            const videoRect = video.getBoundingClientRect();
+            const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
 
-    if (isOutOfView && isVideoPlaying && !isPopupOpen) {
-        popup.style.display = "flex";
-        popup.classList.remove("popup-container-display-none");
-        popupVideo.currentTime = video.currentTime;
-        popupVideo.play();
-        isPopupOpen = true;
-    } else if (!isOutOfView && isPopupOpen) {
-        popup.style.display = "none";
-        popupVideo.pause();
-        video.pause();
-        isPopupOpen = false;
-    }
-});
+            if (isOutOfView && isVideoPlaying && !isPopupOpen) {
+                popup.style.display = "flex";
+                popup.classList.remove("popup-container-display-none");
+                popupVideo.currentTime = video.currentTime;
+                popupVideo.play();
+                isPopupOpen = true;
+            } else if (!isOutOfView && isPopupOpen) {
+                popup.style.display = "none";
+                // popupVideo.pause();
+                // video.pause();
+                isPopupOpen = false;
+            }
+        });
 
-closeBtn.addEventListener('click', () => {
-    popup.style.display = "none";
-    popupVideo.pause(); // Pause popup video
-    video.pause(); // Pause main video
-    isPopupOpen = false;
-});
+        closeBtn.addEventListener('click', () => {
+            popup.style.display = "none";
+            // popupVideo.pause(); 
+            // video.pause(); 
+            isPopupOpen = false;
+        });
 
-video.addEventListener('timeupdate', syncPlayback);
-popupVideo.addEventListener('timeupdate', syncPlayback);
+        video.addEventListener('timeupdate', syncPlayback);
+        popupVideo.addEventListener('timeupdate', syncPlayback);
 
 
     </script>
