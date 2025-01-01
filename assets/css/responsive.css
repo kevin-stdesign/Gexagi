@@ -254,6 +254,11 @@
     .casestudy-detailimg {
         height: 380px;
     }
+
+    .about-text-div-padding-right {
+        max-width: 440px;
+        width: 100%;
+    }
 }
 
 @media(max-width:991.98px) {
@@ -662,6 +667,69 @@
         font-size: 18px;
         gap: 18px;
     }
+
+    .about-section .tabs a {
+        font-size: 24px;
+    }
+
+    .about-section .page-title-duckreek {
+        margin-bottom: 13px;
+        font-size: 38px;
+        line-height: normal;
+    }
+
+    .about-description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .about-us-content-div {
+        gap: 25px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .about-section .tabs {
+        padding-top: 0px;
+        margin: 0;
+    }
+
+    .about-title {
+        font-size: 37px;
+        line-height: normal;
+        margin-bottom: 14px;
+    }
+
+    .about-text-div-padding-right {
+        max-width: unset;
+    }
+
+    .about-square-img {
+        order: 1;
+        width: 100%;
+    }
+
+    .about-square-img img{
+        width: 100%;
+    }
+
+    .about-us-content-div-2 {
+        padding-top: 12px !important;
+    }
+
+    .about-us-content-div-2 .about-square-img{
+        width: 100%;
+    }
+
+    .about-tab-content {
+        gap: 40px;
+        margin-top: 8px;
+    }
+
+    .about-tab {
+        padding-bottom: 35px;
+        padding-top: 12px;
+    }
 }
 
 @media(max-width:767.98px) {
@@ -759,11 +827,7 @@
     }
 
     .about-square-img {
-        max-width: 320px;
-    }
-
-    .about-square-img {
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .about-square-img-main-div {
@@ -961,6 +1025,29 @@
     .casestudy-description h5,
     .casestudy-description .action-one h5 {
         font-size: 24px;
+    }
+
+    .about-section .tabs a {
+        font-size: 21px;
+        padding: 11px 6px;
+    }
+
+    .about-sub-section .about-us-content-div {
+        padding-top: 0px;
+    }
+
+    .about-description {
+        line-height: 20px;
+    }
+
+    .about-us-content-div-2 {
+        padding-top: 0px !important;
+    }
+
+    .about-tab-content {
+        gap: 0px;
+        margin-top: 0px;
+        flex-direction: column;
     }
 }
 
@@ -1164,11 +1251,7 @@
     }
 
     .about-square-img {
-        max-width: 100%;
-        width: 100%;
-        height: 272px;
-        object-fit: cover;
-        object-position: center;
+        height: unset;
     }
 
     .about-section {
@@ -1570,6 +1653,43 @@
     .casestudy-description,
     .casestudy-detailimg {
         margin-bottom: 42px;
+    }
+
+    .about-section .page-title-duckreek {
+        margin-bottom: 13px;
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .about-section {
+        position: relative;
+        padding: 109px 0 48px 0;
+    }
+
+    .about-description {
+        margin-bottom: 0px;
+    }
+
+    .about-us-content-div {
+        padding-bottom: 28px;
+    }
+
+    .about-sub-section {
+        padding-top: 28px;
+    }
+
+    .about-section .tabs a {
+        font-size: 16px;
+        padding: 05px 6px;
+    }
+
+    .about-section {
+        position: relative;
+        padding: 109px 0 11px 0;
+    }
+    
+    .about-section .tabs{
+        flex-wrap: wrap;
     }
 }
 
