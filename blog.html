@@ -24,67 +24,79 @@
 </head>
 
 <body class="">
-    <!-- header -->
+
+    <!-- header start-->
     <header class="main-header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand site-logo" href="#">
+                        <a class="navbar-brand site-logo" href="index.html">
                             <img src="assets/img/site-icon.png" alt="site-logo">
                         </a>
-                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
+                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                            <ul class="navbar-nav main-menu-ul me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a " aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a " href="about.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Expertise
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand site-logo" href="#">
+                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav main-menu-ul ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a active " aria-current="page"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a " href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Expertise
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
 
-                                    <ul class="dropdown-menu drop-down-ul">
-                                        <li><a class="dropdown-item" href="product.html">Research & Products</a></li>
-                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Innovation
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
-                                    <ul class="dropdown-menu drop-down-ul ">
-                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
-                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
-                                        <li><a class="dropdown-item" href="#">Data Analytics</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link main-menu-a active">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
-                                </li>
-                            </ul>
+                                        <ul class="dropdown-menu drop-down-ul">
+                                            <li><a class="dropdown-item" href="product.html">Research & Products</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Innovation
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
+                                        <ul class="dropdown-menu drop-down-ul ">
+                                            <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
+                                            <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link main-menu-a">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- herder section end  -->
+    <!-- header end-->
+
     <main class="bg-dark-blue">
         <section class="banner-sectrion-blog">
             <div class="container">
@@ -159,7 +171,8 @@
                                 <h3 class="blog-card-title text-white">
                                     Data Modeling & Aggregation
                                 </h3>
-                                <p class="about-description">Data is structured and modeled for efficient querying and reporting.</p>
+                                <p class="about-description">Data is structured and modeled for efficient querying and
+                                    reporting.</p>
                                 <p class="blog-reade-time">3 min read</p>
                             </div>
                         </div>
@@ -201,7 +214,8 @@
                                 <h3 class="blog-card-title text-white">
                                     Business Intelligence & Reporting
                                 </h3>
-                                <p class="about-description">Dashboards provide insights into performance, trends, and opportunities.</p>
+                                <p class="about-description">Dashboards provide insights into performance, trends, and
+                                    opportunities.</p>
                                 <p class="blog-reade-time">3 min read</p>
                             </div>
                         </div>
@@ -215,7 +229,8 @@
                                 <h3 class="blog-card-title text-white">
                                     Optimization & Scaling
                                 </h3>
-                                <p class="about-description">Enhance Carrier’s Operations with AI and Machine Learning</p>
+                                <p class="about-description">Enhance Carrier’s Operations with AI and Machine Learning
+                                </p>
                                 <p class="blog-reade-time">3 min read</p>
                             </div>
                         </div>
@@ -229,7 +244,8 @@
                                 <h3 class="blog-card-title text-white">
                                     Machine Learning & AI Integration
                                 </h3>
-                                <p class="about-description">Data is prepared for data science teams and machine learning models</p>
+                                <p class="about-description">Data is prepared for data science teams and machine
+                                    learning models</p>
                                 <p class="blog-reade-time">3 min read</p>
                             </div>
                         </div>

@@ -24,73 +24,86 @@
 </head>
 
 <body class="bg-dark-blue"></body>
-<!-- header -->
+
+<!-- header start-->
 <header class="main-header">
     <div class="container">
         <div class="row">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a class="navbar-brand site-logo" href="#">
+                    <a class="navbar-brand site-logo" href="index.html">
                         <img src="assets/img/site-icon.png" alt="site-logo">
                     </a>
-                    <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <!-- <span class="navbar-toggler-icon"></span> -->
+                    <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                        <ul class="navbar-nav main-menu-ul me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link main-menu-a " aria-current="page" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link main-menu-a " href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link main-menu-a active dropdown-toggle " href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Expertise
-                                    <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                </a>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand site-logo" href="#">
+                                <img src="assets/img/site-icon.png" alt="site-logo">
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav main-menu-ul ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link main-menu-a active " aria-current="page"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link main-menu-a " href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Our Expertise
+                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                    </a>
 
-                                <ul class="dropdown-menu drop-down-ul">
-                                    <li><a class="dropdown-item" href="product.html">Research & Products</a></li>
-                                    <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Our Innovation
-                                    <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                </a>
-                                <ul class="dropdown-menu drop-down-ul ">
-                                    <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
-                                    <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
-                                    <li><a class="dropdown-item" href="#">Data Analytics</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="blog.html" class="nav-link main-menu-a">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
-                            </li>
-                        </ul>
+                                    <ul class="dropdown-menu drop-down-ul">
+                                        <li><a class="dropdown-item" href="product.html">Research & Products</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Our Innovation
+                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                    </a>
+                                    <ul class="dropdown-menu drop-down-ul ">
+                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
+                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link main-menu-a">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
 </header>
-<!-- herder section end  -->
+<!-- header end-->
+
 <!-- section start -->
 <main class="bg-dark-blue">
     <section class="product-policy">
         <div class="container">
             <div class="row">
-                <h1 class="main-page-header text-white text-center">Machine learning <span class="text-gradian-color">transforms</span> the essence of property
+                <h1 class="main-page-header text-white text-center">Machine learning <span
+                        class="text-gradian-color">transforms</span> the essence of property
                     and casualty <span class="text-gradian-color">insurance</span>.</h1>
                 <div class="product-policy-div">
                     <h5 class="text-policy text-policy-1 text-center mt-3 pt-2">PolicyXAGI</h5>
@@ -98,7 +111,9 @@
                             class="text-gradian-color">Generative</span> Visualization <span
                             class="text-gradian-color">Application</span>
                         for Insurers</h2>
-                    <p class="text-p text-white mt-4 pb-sm-0 pb-4">We have developed a state-of-the-art platform tailored to simplify business operations for insurers. <br> Our application offers dynamic data visualizations, allowing insurers to <span class="text-gradian-color">explore</span> their
+                    <p class="text-p text-white mt-4 pb-sm-0 pb-4">We have developed a state-of-the-art platform
+                        tailored to simplify business operations for insurers. <br> Our application offers dynamic data
+                        visualizations, allowing insurers to <span class="text-gradian-color">explore</span> their
                         <span class="text-gradian-color">business metrics</span> in various ways.
                     </p>
                 </div>

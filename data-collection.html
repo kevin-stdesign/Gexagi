@@ -24,67 +24,79 @@
 </head>
 
 <body class="bg-dark">
-    <!-- header -->
+
+    <!-- header start-->
     <header class="main-header">
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <a class="navbar-brand site-logo" href="#">
+                        <a class="navbar-brand site-logo" href="index.html">
                             <img src="assets/img/site-icon.png" alt="site-logo">
                         </a>
-                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
+                        <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <i class="fa-solid fa-bars"></i>
                         </button>
-                        <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
-                            <ul class="navbar-nav main-menu-ul me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a " aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link main-menu-a active" href="about.html">About Us</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Expertise
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <a class="navbar-brand site-logo" href="#">
+                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                </a>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav main-menu-ul ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a active " aria-current="page"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link main-menu-a " href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Expertise
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
 
-                                    <ul class="dropdown-menu drop-down-ul">
-                                        <li><a class="dropdown-item" href="product.html">Research & Products</a></li>
-                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Our Innovation
-                                        <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
-                                    </a>
-                                    <ul class="dropdown-menu drop-down-ul ">
-                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
-                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
-                                        <li><a class="dropdown-item" href="#">Data Analytics</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="blog.html" class="nav-link main-menu-a">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
-                                </li>
-                            </ul>
+                                        <ul class="dropdown-menu drop-down-ul">
+                                            <li><a class="dropdown-item" href="product.html">Research & Products</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Our Innovation
+                                            <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
+                                        </a>
+                                        <ul class="dropdown-menu drop-down-ul ">
+                                            <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
+                                            <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link main-menu-a">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
-    <!-- herder section end  -->
+    <!-- header end-->
+
     <main class="section-full-bg pt-108 casestudy-detail">
         <div class="container">
             <div class="pagination">
@@ -213,12 +225,11 @@
                     </li>
                 </ul>
                 <div id="datacollectionlinechart" class="data-collection-line-chart"></div>
-            </div>
-            <div class="casestudy-description">
                 <p class="mb-4">Demonstrate the impact of integrated data and predictive analytics on fraud detection
                     success rate.</p>
                 <ul>
-                    <li>Customer Behavior Analysis: Anticipate policyholder needs, deliver personalized offers, and
+                    <li> <span>Customer Behavior Analysis:</span> Anticipate policyholder needs, deliver personalized
+                        offers, and
                         enhance satisfaction.</li>
                 </ul>
             </div>
@@ -557,7 +568,6 @@
     <script src="assets/js/custome.js"></script>
 
     <script>
-
         var options = {
             series: [{
                 data: [75, 68, 60, 55],
@@ -566,11 +576,12 @@
             chart: {
                 type: 'bar',
                 height: 425,
-                width: 644
+                width: 644,
             },
             plotOptions: {
                 bar: {
                     borderRadius: 4,
+                    borderRadiusApplication: 'end',
                     horizontal: true,
                     dataLabels: {
                         position: 'top',
@@ -651,75 +662,63 @@
                     },
                     maxWidth: 400,  // Allow the Y-axis labels to have a larger width
                 },
-
-
-            }
-
+            },
+            responsive: [
+                {
+                    breakpoint: 768, // Tablet
+                    options: {
+                        chart: {
+                            height: 300, // Further reduced height for mobile
+                            width: 460,
+                        },
+                        yaxis: {
+                            labels: {
+                                maxWidth: 200,  // Allow the Y-axis labels to have a larger width
+                            },
+                        },
+                    },
+                },
+                {
+                    breakpoint: 480, // Mobile
+                    options: {
+                        chart: {
+                            height: 280, // Further reduced height for mobile
+                            width: 280,
+                        },
+                        yaxis: {
+                            labels: {
+                                maxWidth: 50,  // Allow the Y-axis labels to have a larger width
+                            },
+                        },
+                    },
+                },
+            ]
         };
-
         var chart = new ApexCharts(document.querySelector("#datacollectionchart"), options);
         chart.render();
-
     </script>
     <script>
         var options = {
+
             series: [{
-                name: "Desktops",
-                data: [10, 41, 35, 51]
+                data: [55, 65, 75, 85],
+                color: '#8C52FF'
             }],
             chart: {
-                height: 425,
-                width: 644,
+                height: 484,
+                width: 605,
                 type: 'line',
                 zoom: {
                     enabled: false
                 }
             },
             dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'straight'
-            },
-            grid: {
-                row: {
-                    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                    opacity: 0.5
-                },
-            },
-            xaxis: {
-                categories: ['2020', '2021', '2022', '2023'],
-                labels: {
-                    rotate: -90,
-                    offsetY: 20,
-                    style: {
-                        colors: '#F6F6FF',
-                        fontFamily: '"Poppins", serif',
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        lineHeight: '32.4px',
-                    },
-                },
-                title: {
-                    text: '% of Insurers Affected',
-                    rotate: -90,
-                    offsetX: -30,
-                    offsetY: -100,
-                    style: {
-                        color: '#F6F6FF',
-                        fontFamily: '"Poppins", serif',
-                        fontSize: '16px',
-                        fontWeight: 400,
-                        lineHeight: '32.4px',
-                    },
-
-                },
-                axisTicks: {
-                    show: false,
-                },
+                enabled: true
             },
             yaxis: {
-                tickAmount: 20,
+                min: 0,
+                max: 100,
+                tickAmount: 5,
                 title: {
                     text: 'Fraud Detection Rate (%)',
                     rotate: -90,
@@ -733,6 +732,7 @@
                         lineHeight: '32.4px',
                     },
                 },
+
                 labels: {
                     style: {
                         colors: '#F6F6FF',
@@ -741,16 +741,79 @@
                         fontWeight: 400,
                         lineHeight: '32.4px',
                     },
-                    maxWidth: 400,  // Allow the Y-axis labels to have a larger width
+                    maxWidth: 400,
                 },
+            },
+            xaxis: {
+                tickAmount: 4,
+                categories: ['2020', '2021', '2022', '2023'],
+                labels: {
+                    rotate: -90,
+                    offsetY: 0,
+                    style: {
+                        colors: '#F6F6FF',
+                        fontFamily: '"Poppins", serif',
+                        fontSize: '14px',
+                        fontWeight: 400,
+                        lineHeight: '32.4px',
+                    },
+                },
+                axisTicks: {
+                    show: false,
+                },
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            dataLabels: {
+                enabled: false
+            },
+            title: {
+                text: 'Fraud Detection Success Rate',
+                align: 'center',
+                style: {
+                    color: '#F6F6FF',
+                    fontFamily: '"Poppins", serif',
+                    fontSize: '16px',
+                    fontWeight: 400,
+                    lineHeight: '32.4px',
+                },
+            },
+            markers: {
+                size: 4,               // Set marker size
+                colors: ['#8C52FF'],   // Set the color of the dots
+                strokeColor: '#8C52FF',   // Optional: stroke color for markers
+                strokeWidth: 2,        // Optional: stroke width
+                borderRadius: 0,
+                shape: 'rect',
+                hover: {
+                    sizeOffset: 4
+                }
+            },
+            responsive: [
+                {
+                    breakpoint: 768, // Tablet
+                    options: {
+                        chart: {
+                            height: 350, // Reduced height for smaller screens
+                            width: 450,
+                        },
+                    },
+                },
+                {
+                    breakpoint: 480, // Mobile
+                    options: {
+                        chart: {
+                            height: 280, // Further reduced height for mobile
+                            width: 280,
+                        },
 
-
-            }
+                    },
+                },
+            ]
         };
-
         var chart = new ApexCharts(document.querySelector("#datacollectionlinechart"), options);
         chart.render();
-
     </script>
 </body>
 
