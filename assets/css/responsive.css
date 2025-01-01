@@ -40,9 +40,13 @@
         max-width: 960px;
     }
 
+    .card-title {
+        font-size: 24px;
+    }
 
     .solution-section-img-div-2 {
-        max-width: 77%;
+        max-width: 81%;
+        justify-content: space-around;
     }
 
     .card-use-case-title-text {
@@ -162,6 +166,8 @@
 
     .solution-section-img-div {
         padding-top: 50px;
+        max-width: 80%;
+        justify-content: space-around;
     }
 
     .conatct-page-title {
@@ -245,6 +251,22 @@
         display: flex;
         margin-top: 0px !important;
         align-items: start;
+    }
+
+    .benefits-section-card .row .col-lg-4:first-child {
+        padding-left: 24px;
+        padding-right: 0px;
+    }
+
+    .benefits-section-card .row .col-lg-4:last-child {
+        padding-right: 0px;
+        padding-left: 24px;
+        margin-top: 24px;
+    }
+
+    .benefits-row-1 {
+        gap: 24px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .offcanvas-body {
@@ -498,6 +520,15 @@
 
     .solution-section-img-div {
         padding-top: 30px;
+        max-width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .solution-section-img-div-2 {
+        max-width: 100%;
+        justify-content: center;
+        gap: 20px;
     }
 
     .solution-section .section-title-h2 {
@@ -771,6 +802,27 @@
     .banner-section-title {
         font-size: 39px;
         line-height: 45px;
+    }
+
+    .benefits-row-1 .benefits-column img {
+        height: 50px;
+        width: auto;
+    }
+
+    .benefits-row-1 {
+        gap: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits-section-card .row .col-lg-4:first-child {
+        padding-left: 24px;
+        padding-right: 0px;
+    }
+
+    .benefits-section-card .row .col-lg-4:last-child {
+        padding-right: 0px;
+        padding-left: 24px;
+        margin-top: 24px;
     }
 
     .conatct-page-title {
@@ -1280,11 +1332,14 @@
     }
 
     .benefits-section-card .row .col-lg-4:first-child {
-        padding-left: inherit;
+        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .benefits-section-card .row .col-lg-4:last-child {
-        padding-right: inherit;
+        padding-right: 8px;
+        padding-left: 8px;
+        margin-top: 16px;
     }
 
     .benefits-row-1 .benefits-column img {
