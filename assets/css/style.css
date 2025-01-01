@@ -245,6 +245,12 @@ Benefits section
     max-width: 300px;
 }
 
+.benefits-section-card {
+    display: flex;
+    gap: 48px;
+    margin-top: 32px;
+}
+
 .card-title {
     font-size: 31px;
     line-height: 38px;
@@ -261,8 +267,10 @@ Benefits section
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid white;
+    border: 1px solid #A3B7FF;
     border-radius: 8px;
+    width: 100%;
+    height: auto !important;
 }
 
 .card-img {
@@ -302,7 +310,13 @@ policy-card
     position: relative;
     overflow: hidden;
     transition: 0.4s all ease-in-out;
+    padding: 32px;
+    margin-top: 32px;
+}
+
+.policy-card-div:hover {
     padding: 24px;
+    transition: 0.4s all ease-in-out;
 }
 
 .policy-card-div img.policy-card-bg-img {
@@ -482,15 +496,19 @@ policy-card
 solution section
 ================================ */
 .solution-section {
-    padding: 56px 0 72px 0;
+    padding: 80px 0 72px 0;
 }
 
 .solution-section .btn-know-more {
     width: fit-content;
 }
 
+.solution-sub-div-img {
+    margin: 0 auto;
+}
+
 .solution-sub-div-img img {
-    max-width: 166px;
+    max-width: 200px;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -498,17 +516,17 @@ solution section
 
 .solution-section-img-div {
     justify-content: space-between;
-    align-items: center;
-    max-width: 65%;
-    margin-left: auto;
+    align-items: start;
     padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 32px;
+    display: flex;
 }
 
-.solution-section-img-div-2 {
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 16px;
-    max-width: 72%;
+.solution-section-img-div .solution-sub-div-img:nth-child(1),
+.solution-section-img-div .solution-sub-div-img:nth-child(3) {
+    padding-top: 216px;
 }
 
 /* ==========================
@@ -571,12 +589,6 @@ Footer
     line-height: 24px;
 }
 
-.contact-us-sub-div {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
 .footer-all-rights-div p {
     color: #FFFFFF !important;
 }
@@ -585,6 +597,13 @@ Footer
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
+}
+
+.footer-all-rights-sub-div .contact-us-sub-div {
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 .contact-us-sub-div p {
@@ -1574,6 +1593,12 @@ a.text-p-18 {
     display: grid;
     gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.benefits-section-sub-card {}
+
+.benefits-section-card .row .col-lg-4 {
+    margin-top: 32px;
 }
 
 .benefits-section-card .row .col-lg-4:first-child {
