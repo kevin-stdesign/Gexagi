@@ -280,14 +280,24 @@ Benefits section
 }
 
 .text-policy {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
+    color: #7086B0;
 }
 
 .text-policy-1 {
-    font-size: 40px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+    color: #7086B0;
+}
 
+.text-policy-2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    color: #7086B0;
 }
 
 .main-div-policyxagi {
@@ -652,7 +662,7 @@ About page
 }
 
 .about-title {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 57.6px;
     color: #FFFFFF;
@@ -669,10 +679,11 @@ About page
 }
 
 .about-description {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 24px;
     color: #FFFFFF;
+    margin-bottom: 28px;
 }
 
 .about-us-content-div {
@@ -801,9 +812,28 @@ About page
 
 .product-policy {
     background: url(../img/about-bg.png) no-repeat center / cover;
-    padding: 130px 0 0;
-    min-height: 738px;
+    padding: 128px 0 0;
+    min-height: 733px;
     margin-bottom: -228px;
+}
+
+.btn-text {
+    font-size: 16px;
+}
+
+.product-policy-div .text-policy-1 {
+    margin-bottom: 16px;
+}
+
+.business-growth-section .text-white {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.product-policy-div {
+    margin-top: 40px;
 }
 
 .main-page-header {
@@ -853,10 +883,11 @@ About page
 
 .business-growth-section-img {
     max-width: 489px;
+    margin: 32px 0;
 }
 
 .business-growth-section {
-    padding: 76px 0 95px 0;
+    padding: 76px 0 72px 0;
 }
 
 .card-use-case-sub-div {
@@ -1017,6 +1048,7 @@ About page
     background-color: black;
     border: none;
     border-top: 1px solid #00C0F1;
+    border-radius: 0;
 }
 
 .faq-setion .accordion-item-4 {
@@ -1081,6 +1113,8 @@ About page
 .title-24 {
     font-size: 24px;
     font-weight: 600;
+    color: #fff;
+    margin-bottom: 12px;
 }
 
 .faq-content-main-div {
@@ -1138,13 +1172,27 @@ About page
     color: #939EB4;
     font-size: 16px;
     line-height: 24px;
-    padding-bottom: 40px;
+}
+
+.bog-card-cotent h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.blog-card-main-div:hover .bog-card-cotent {
+    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, rgba(9, 2, 49, 0.8) 25.96%) !important;
 }
 
 .bog-card-cotent {
-    padding: 0 24px 12px 24px;
+    padding: 32px 24px 24px 24px;
+    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, #090231 25.96%);
     position: absolute;
-    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 16px 16px;
 }
 
 .blog-future-img-div {
@@ -1169,7 +1217,8 @@ About page
 
 .blog-card-main-div {
     background-color: #090231;
-    border-radius: 20px;
+    border-radius: 16px;
+    position: relative;
 }
 
 .blog-card-main-div:hover .blog-future-img-div img {
@@ -1215,18 +1264,22 @@ About page
 .contact-information {
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: end;
     gap: 72px;
 }
 
 .contact-div-margin-top {
-    margin-top: 140px;
+    margin-top: 144px;
+}
+
+.contact-form.contact-div-margin-top {
+    margin-bottom: -16px;
 }
 
 .contact-information img {
     width: 48px;
     height: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .contact-information span a {
@@ -1452,11 +1505,11 @@ Contact Us Page Start
 }
 
 .contact-main-section {
-    padding: 210px 0 85px 0;
+    padding: 204px 0 85px 0;
 }
 
 .contact-form {
-    padding-bottom: 60px;
+    padding-bottom: 56px;
 }
 
 .contact-form h5 {
@@ -1468,7 +1521,7 @@ Contact Us Page Start
 }
 
 .contact-form .form-group {
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .contact-form .form-control {
@@ -1510,17 +1563,16 @@ Contact Us Page Start
 }
 
 .btn-outline-light {
-    color: #FFFFFF;
     padding: 16px 42px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    transition: 0.10s all ease-in-out;
+    border: 2px solid transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+        linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%) border-box;
     border-radius: 4px;
     border: 2px solid transparent;
-    display: inline-block;
-    background: linear-gradient(90deg, #00FFF0 0%, #588DFF 29.24%, #FB537B 68.94%, #F9AF7C 100%);
-    background-clip: border-box;
-    box-shadow: inset 0 0 0 1000px black;
 }
 
 .text-gradian-color-hover {
@@ -1528,19 +1580,25 @@ Contact Us Page Start
 }
 
 .btn-outline-light:hover .text-gradian-color-hover {
-    background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 0.3s all ease-in-out;
+    color: #fff;
 }
 
 .contact-iffo-sub-div {
     gap: 8px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.d-flex.contact-iffo-sub-div img {
+    margin-bottom: 0;
 }
 
 
 .btn-outline-light:hover {
-    color: #07003C;
+    border: 2px solid transparent;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
+        linear-gradient(90.01deg, #F9AF7C 19.51%, #FB537B 43.04%, #588DFF 74.99%, #00FFF0 99.99%) border-box;
+    box-shadow: 0px 0px 50px 0px #0021F8;
 }
 
 .contact-map {

@@ -178,7 +178,7 @@
     }
 
     .blog-future-img-div {
-        height: 260px;
+        height: 400px;
     }
 
     .section-text-p {
@@ -292,6 +292,9 @@
 
 @media(max-width:991.98px) {
 
+    .blog-future-img-div {
+        height: 350px;
+    }
 
     .discovery-phase-chart .apexcharts-canvas {
         height: 370px !important;
@@ -786,6 +789,9 @@
 }
 
 @media(max-width:767.98px) {
+    .blog-card-main-div {
+        margin-top: 40px;
+    }
 
     .benefits-section-card {
         display: grid;
@@ -908,7 +914,14 @@
     .blog-img {
         max-width: 150px;
         height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
     }
+
+    .banner-sectrion-blog .row {
+        flex-flow: column-reverse;
+    }
+
 
     .aboutus-section h1 {
         font-size: 32px;
@@ -1586,7 +1599,8 @@
     .contact-information img {
         width: 30px;
         height: 30px;
-        margin-bottom: 3px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .text-p-18 {
