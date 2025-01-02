@@ -259,6 +259,35 @@
         max-width: 440px;
         width: 100%;
     }
+
+    .faq-setion .accordion-header button {
+        font-size: 42px;
+        line-height: 56.8px;
+        padding: 32px 0;
+    }
+
+    .faq-setion .accordion-header button img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .faq-content-main-div {
+        gap: 40px;
+        padding: 34px 0;
+    }
+
+    .faq-content-main-div {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .containt-left {
+        max-width: unset;
+    }
+
+    .containt-right {
+        max-width: unset;
+    }
 }
 
 @media(max-width:991.98px) {
@@ -418,10 +447,6 @@
     .card-div {
         height: 100%;
     }
-
-    /* .solution-sub-div-img img {
-        max-width: 106px;
-    } */
 
     .footer-link-sub-div {
         gap: 175px;
@@ -730,6 +755,16 @@
         padding-bottom: 35px;
         padding-top: 12px;
     }
+
+    .faq-setion .accordion-header button {
+        font-size: 32px;
+        line-height: normal;
+        padding: 28px 0;
+    }
+
+    .faq-setion {
+        padding-bottom: 54px;
+    }
 }
 
 @media(max-width:767.98px) {
@@ -816,11 +851,6 @@
     .container {
         max-width: 540px;
     }
-
-    /* .footer-link-sub-div {
-        gap: unset;
-        justify-content: space-between;
-    } */
 
     section.about-other-sections {
         margin-top: 250px;
@@ -1049,6 +1079,29 @@
         margin-top: 0px;
         flex-direction: column;
     }
+
+    .faq-setion .accordion-header button {
+        font-size: 22px;
+        padding: 18px 0;
+    }
+
+    .faq-content-main-div {
+        padding: 24px 0;
+    }
+
+    .faq-setion .accordion-header button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .business-growth-section-img {
+        max-width: 299px;
+        margin: auto;
+    }
+
+    .title-32 {
+        font-size: 22px;
+    }
 }
 
 @media(max-width:575.98px) {
@@ -1185,6 +1238,7 @@
 
     .text-policy {
         font-size: 17px;
+        line-height: normal;
     }
 
     .policy-card-title {
@@ -1384,9 +1438,7 @@
     }
 
     .slider-btn {
-        width: 87%;
-        top: 114px;
-        left: 6%;
+        display: none;
     }
 
     .slider-use-case-div {
@@ -1587,6 +1639,7 @@
         margin-bottom: 32px;
         font-size: 34px;
         text-align: center;
+        line-height: normal;
     }
 
     .usecases-main .slider-use-case-div {
@@ -1691,6 +1744,23 @@
     .about-section .tabs{
         flex-wrap: wrap;
     }
+
+    .faq-setion button span {
+        margin-right: 10px;
+    }
+
+    .faq-setion .accordion-header button {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .title-32 {
+        font-size: 18px;
+    }
+
+    .faq-content-main-div .text-p-18 {
+        margin-bottom: 12px;
+    }
 }
 
 @media(max-width:480.98px) {
@@ -1782,5 +1852,15 @@
 
     .discovery-phase-chart .discovery-phase-chart {
         margin-bottom: -50px !important;
+    }
+
+    .faq-setion .accordion-header button {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .text-p-18 {
+        font-size: 12px;
+        line-height: normal;
     }
 }

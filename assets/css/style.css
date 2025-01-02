@@ -279,10 +279,9 @@ Benefits section
 }
 
 .text-policy {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 38.4px;
-    color: #7086B0;
 }
 
 .text-policy-1 {
@@ -1015,23 +1014,105 @@ About page
     padding-bottom: 72px;
 }
 
-.faq-setion .accordion-item{
+.faq-setion .accordion-item {
     background-color: black;
     border: none;
+    border-top: 1px solid #00C0F1;
 }
 
-.faq-setion .accordion-header button{
+.faq-setion .accordion-item-4 {
+    border-bottom: 1px solid #00C0F1;
+}
+
+
+.faq-setion .accordion-header button {
     background-color: #000000;
-}
-
-.faq-setion button {
+    box-shadow: none !important;
     font-size: 64px;
     font-weight: 400;
     line-height: 76.8px;
+    color: white;
+    padding: 48px 0;
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.faq-setion button span{
+.faq-setion .accordion-header button img {
+    width: 64px;
+    height: 64px;
+}
+
+.faq-setion .accordion-header button[aria-expanded="true"] img.max-icon {
+    display: none;
+}
+
+.faq-setion .accordion-header button img.min-icon {
+    display: none;
+}
+
+.faq-setion .accordion-header button[aria-expanded="true"] img.min-icon {
+    display: block;
+}
+
+.faq-setion .accordion-header button::after {
+    display: none;
+}
+
+.faq-setion button span {
     margin-right: 54px;
+}
+
+.faq-setion .text-p {
+    color: white;
+}
+
+
+.faq-content-main-div .text-p-18 {
+    margin-bottom: 20px;
+}
+
+.title-32 {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.title-24 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.faq-content-main-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    padding: 48px 0;
+}
+
+.faq-setion .accordion-body {
+    padding: 0;
+}
+
+.containt-left {
+    max-width: 700px;
+    width: 100%;
+}
+
+.containt-right {
+    max-width: 379px;
+    width: 100%;
+}
+
+.faq-setion .accordion-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.faq-2-boddy .containt-left {
+    max-width: unset;
 }
 
 /* ================================
@@ -1054,10 +1135,6 @@ About page
     padding-bottom: 56px;
 }
 
-.blog-card-section .about-description {
-    height: 72px;
-}
-
 .blog-reade-time {
     color: #939EB4;
     font-size: 16px;
@@ -1067,13 +1144,17 @@ About page
 
 .bog-card-cotent {
     padding: 0 24px 12px 24px;
+    position: absolute;
+    top: 0;
 }
 
 .blog-future-img-div {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     overflow: hidden;
-    max-width: 500px;
-    height: 300px;
+    max-width: 360px;
+    width: 100%;
+    height: 400px;
+    position: relative;
 }
 
 .blog-future-img-div img {
@@ -1081,15 +1162,10 @@ About page
     transition: 0.3s all ease-in-out;
 }
 
-.blog-card-title {
+.title-20 {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    padding-bottom: 16px;
-    margin-top: -31px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
 
 .blog-card-main-div {
