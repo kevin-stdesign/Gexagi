@@ -662,6 +662,19 @@
     <script src="assets/js/custome.js"></script>
 
     <script>
+         // animtion 
+         gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".ifrem-video", {
+            scale: 1,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".video-section",
+                start: "top 90%",
+                end: "top 40%",
+                scrub: true
+            }
+        });
+
         //video paly btn 
         const video_1 = document.getElementById("myVideo");
         const circlePlayButton = document.getElementById("playPauseButton");
@@ -787,8 +800,6 @@
 
         video.addEventListener('timeupdate', syncPlayback);
         popupVideo.addEventListener('timeupdate', syncPlayback);
-
-
     </script>
 </body>
 

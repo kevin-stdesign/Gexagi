@@ -122,7 +122,10 @@
         <div class="container">
             <div class="row">
                 <div class="product-img-div">
-                    <img src="assets/img/product-page-img.png" alt="img">
+                    <img src="assets/img/sli-1.png" alt="img">
+                    <img src="assets/img/sli-2.png" alt="img">
+                    <img src="assets/img/sli-3.png" alt="img">
+                    <img src="assets/img/sli-4.png" alt="img">
                 </div>
             </div>
         </div>
@@ -650,5 +653,22 @@
 <script src="assets/plugin/gaps/gaps.js"></script>
 <script src="assets/js/custome.js"></script>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.product-img-div img');
+        let currentIndex = 0;
 
+        function showNextImage() {
+            images[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].classList.add('active');
+        }
+
+        // Set the first image as active initially
+        images[currentIndex].classList.add('active');
+
+        // Change image every 0.5 seconds (500ms)
+        setInterval(showNextImage, 500);
+    });
+</script>
 </html>

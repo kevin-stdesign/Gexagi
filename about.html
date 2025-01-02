@@ -115,7 +115,7 @@
                 </div>
                 <div class="">
                     <div class="tabs">
-                        <a class="" href="#we_do_section">What We Do</a>
+                        <a class="active" href="#we_do_section">What We Do</a>
                         <a href="#we_are_section">Who We Are</a>
                         <a href="#who_we_serve">Who We Serve</a>
                     </div>
@@ -523,7 +523,25 @@
     <script src="assets/plugin/gaps/gaps-2.js"></script>
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
+    <script>
+        // Select all tab links
+        const tabs = document.querySelectorAll('.tabs a');
 
+        // Add click event listener to each tab
+        tabs.forEach((tab) => {
+            tab.addEventListener('click', function (event) {
+                // Prevent the default behavior of anchor links
+                event.preventDefault();
+
+                // Remove the active class from all tabs
+                tabs.forEach((t) => t.classList.remove('active'));
+
+                // Add the active class to the clicked tab
+                this.classList.add('active');
+            });
+        });
+
+    </script>
 </body>
 
 </html>
