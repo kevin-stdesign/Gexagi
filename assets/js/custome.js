@@ -38,6 +38,7 @@ let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
 
 let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   slidesPerView: 2,
+  // slidesPerGroup: 2,
   spaceBetween: 90,
   loop: true,
   speed: 600,
@@ -57,6 +58,7 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   },
   breakpoints: {
     768: {
+      slidesPerGroup: 2,
       spaceBetween: 90,
       slidesPerView: 2,
     },
@@ -65,6 +67,7 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
       slidesPerView: 1.5,
     },
     0: {
+      slidesPerGroup: 1,
       spaceBetween: 20,
       slidesPerView: 1.2,
     }
@@ -72,25 +75,6 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
 });
 
 // tabs js 
-document.addEventListener('DOMContentLoaded', function () {
-  let tabs = document.querySelectorAll('.tabs-li');
-  let panels = document.querySelectorAll('.tabs-1-content');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function () {
-      let targetTab = this.getAttribute('data-tab');
-
-      // Remove active class from all tabs and panels
-      tabs.forEach(tab => tab.classList.remove('active'));
-      panels.forEach(panel => panel.classList.remove('active'));
-
-      // Add active class to the clicked tab and the corresponding panel
-      this.classList.add('active');
-      document.getElementById(targetTab).classList.add('active');
-    });
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
   let tabs = document.querySelectorAll('.tabs-2-li');
   let panels = document.querySelectorAll('.tabs-2-content');
@@ -113,29 +97,4 @@ document.addEventListener('DOMContentLoaded', function () {
 jQuery(".popup-closed-btn").click(function () {
   jQuery(".popup-container").addClass("popup-container-display-none");
 });
-
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".ifrem-video", {
-    scale: 1,
-    ease: "none",
-    scrollTrigger: {
-        trigger: ".video-section",
-        start: "top 90%",
-        end: "top 40%",
-        scrub: true
-    }
-});
-
-
-
-
-
-
-
-
-
-
-
-
 

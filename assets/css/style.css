@@ -867,6 +867,21 @@ About page
     max-width: 1008px;
     height: auto;
     margin: auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.product-img-div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-img-div img.active {
+    opacity: 1;
 }
 
 .text-p-400 {
@@ -2329,4 +2344,24 @@ usecase page
     font-weight: 600;
     line-height: 86.4px;
     color: white;
+}
+
+/* ======================
+duck reek 
+======================= */
+
+.tabs-1-content{
+    display: none;
+}
+
+.tabs-2-content{
+    display: none;
+}
+
+.tabs-1-content.active{
+    display: block;
+}
+
+.tabs-2-content.active{
+    display: block;
 }
