@@ -292,6 +292,18 @@
 
 @media(max-width:991.98px) {
 
+    .experience-section .text-policy {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .experience-section .btn-requst-demo {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
     .blog-future-img-div {
         height: 350px;
     }
@@ -784,11 +796,23 @@
     }
 
     .faq-setion {
-        padding-bottom: 54px;
+        padding-bottom: 24px;
     }
 }
 
 @media(max-width:767.98px) {
+    .experience-section .text-policy {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .experience-section .btn-requst-demo {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
     .blog-card-main-div {
         margin-top: 40px;
     }
