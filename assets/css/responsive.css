@@ -292,6 +292,23 @@
 
 @media(max-width:991.98px) {
 
+
+    .discovery-phase-chart .apexcharts-canvas {
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart .apexcharts-legend {
+        margin-top: -10px;
+    }
+
+    .discovery-phase-chart .apexcharts-svg {
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart {
+        padding-top: 50px;
+    }
+
     .solution-section-img-div .solution-sub-div-img:nth-child(1),
     .solution-section-img-div .solution-sub-div-img:nth-child(3) {
         padding-top: 0px;
@@ -714,6 +731,7 @@
         justify-content: start;
         align-items: start;
     }
+
     .about-section .tabs {
         padding-top: 0px;
         margin: 0;
@@ -734,7 +752,7 @@
         width: 100%;
     }
 
-    .about-square-img img{
+    .about-square-img img {
         width: 100%;
     }
 
@@ -742,7 +760,7 @@
         padding-top: 12px !important;
     }
 
-    .about-us-content-div-2 .about-square-img{
+    .about-us-content-div-2 .about-square-img {
         width: 100%;
     }
 
@@ -843,9 +861,9 @@
     }
 
 
+
     .data-prepration-chart .apexcharts-legend {
-        display: none !important;
-        /* display: grid !important; */
+        gap: 0px;
     }
 
     .container {
@@ -1108,7 +1126,7 @@
 
     .benefits-section-card {
         display: grid;
-        gap: 24px;
+        gap: 12px;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -1166,21 +1184,20 @@
         font-size: 16px;
     }
 
-    .discovery-phase-chart .discovery-phase-chart {
-        max-width: 604px;
-        margin: 100px auto 24px;
-    }
-
-    .discovery-phase-chart .apx-legend-position-bottom {
-        top: -90px !important;
-    }
-
     .discovery-phase-chart .apexcharts-canvas {
-        height: 300px !important;
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart .apexcharts-legend {
+        margin-top: 0px;
     }
 
     .discovery-phase-chart .apexcharts-svg {
-        height: 300px !important;
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart {
+        padding-top: 50px;
     }
 
 
@@ -1252,6 +1269,7 @@
 
     .footer-link-sub-div {
         flex-direction: column;
+        gap: 20px;
     }
 
     .solution-section {
@@ -1740,8 +1758,8 @@
         position: relative;
         padding: 109px 0 11px 0;
     }
-    
-    .about-section .tabs{
+
+    .about-section .tabs {
         flex-wrap: wrap;
     }
 
@@ -1772,13 +1790,54 @@
     .solution-sub-div-img img {
         height: 70px;
     }
+
+    .discovery-phase-chart .apexcharts-canvas {
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart .apexcharts-legend {
+        margin-top: -50px;
+    }
+
+    .discovery-phase-chart .apexcharts-svg {
+        height: 370px !important;
+    }
+
+    .discovery-phase-chart {
+        padding-top: 70px;
+    }
+
+    .data-prepration-chart .apexcharts-legend {
+        display: none !important;
+    }
+
 }
 
-
 @media (max-width: 360px) {
+
+    .data-prepration-chart .apexcharts-legend {
+        display: none !important;
+    }
+
+    .discovery-phase-chart .apexcharts-canvas {
+        height: 320px !important;
+    }
+
+    .discovery-phase-chart .apexcharts-legend {
+        margin-top: -60px;
+    }
+
+    .discovery-phase-chart .apexcharts-svg {
+        height: 320px !important;
+    }
+
+    .discovery-phase-chart {
+        padding-top: 70px;
+    }
+
     .benefits-section-card {
         display: grid;
-        gap: 24px;
+        gap: 12px;
         grid-template-columns: 1fr;
     }
 

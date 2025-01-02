@@ -82,10 +82,11 @@ p {
 
 .main-menu-a {
     transition: 0.3s all linear;
+    border-bottom: 2px solid transparent;
 }
 
 .main-menu-a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .dropdown-toggle::after {
@@ -93,7 +94,7 @@ p {
 }
 
 .main-menu-a.active {
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .main-header ul li a.active {
@@ -352,11 +353,9 @@ policy-card
     background-color: #5192AD;
 }
 
-
-
 .policy-card-btn-div {
-    bottom: 20px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     translate: 0 100px;
     transition: 0.5s all ease-in-out;
 }
@@ -372,7 +371,7 @@ policy-card
 }
 
 .policy-card-div:hover .policy-card-content {
-    translate: 0px 84px;
+    translate: 0px 80px;
 }
 
 .policy-card-div-10:hover .policy-card-content {
@@ -693,7 +692,7 @@ About page
 
 .about-section {
     position: relative;
-    padding: 152px 0 48px 0;
+    padding: 152px 0 0px 0;
 }
 
 .navbar-expand-lg {
@@ -1299,7 +1298,7 @@ About page
     display: flex;
     align-items: center;
     gap: 4px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 .pagination p,
@@ -1881,21 +1880,22 @@ usecase page
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    margin: 72px 0 16px;
+    margin: 80px 0 16px;
 }
 
 .casestudy-detail h1 {
     font-size: 48px;
     font-weight: 500;
     line-height: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
     color: #FFFFFF;
 }
 
 .casestudy-detail .date-time {
     display: flex;
     gap: 56px;
-    padding-bottom: 48px;
+    padding-top: 24px;
+    padding-bottom: 34px;
     margin-bottom: 64px;
     position: relative;
 }
