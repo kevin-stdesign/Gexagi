@@ -860,7 +860,6 @@ About page
     line-height: 72px;
     max-width: 1128px;
     margin: auto;
-
 }
 
 .product-policy .section-title-h2 {
@@ -871,7 +870,6 @@ About page
     font-size: 64px;
     font-weight: 600;
     line-height: 76.8px;
-
 }
 
 .product-policy .text-p {
@@ -879,15 +877,6 @@ About page
     max-width: 1128px;
     text-align: center;
     margin: auto;
-}
-
-.product-img-div {
-    max-width: 1008px;
-    height: auto;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-
 }
 
 /* .product-img-div img {
