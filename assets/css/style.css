@@ -749,11 +749,11 @@ About page
     line-height: 24px;
 }
 
-.about-section .tabs a:hover,
+/* .about-section .tabs a:hover,
 .about-section .tabs a.active {
     color: #FFFFFF;
     border-bottom: 2px solid #0F3384;
-}
+} */
 
 .about-square-img {
     overflow: hidden;
@@ -890,7 +890,7 @@ About page
 
 }
 
-.product-img-div img{
+/* .product-img-div img {
     position: absolute;
     top: 0;
     left: 0;
@@ -900,7 +900,7 @@ About page
 
 .product-img-div img.active {
     opacity: 1;
-}
+} */
 
 .text-p-400 {
     font-weight: 400;
@@ -2381,18 +2381,18 @@ usecase page
 duck reek 
 ======================= */
 
-.tabs-1-content{
+.tabs-1-content {
     display: none;
 }
 
-.tabs-2-content{
+.tabs-2-content {
     display: none;
 }
 
-.tabs-1-content.active{
+.tabs-1-content.active {
     display: block;
 }
 
-.tabs-2-content.active{
+.tabs-2-content.active {
     display: block;
 }
