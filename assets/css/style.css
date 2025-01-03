@@ -204,7 +204,7 @@ p {
 }
 
 .btn-know-more:hover::after {
-    width: 100%;
+    width: 72%;
     background-color: var(--dark-blue);
 }
 
@@ -286,10 +286,18 @@ Benefits section
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #A3B7FF;
+    border: 2px solid transparent;
     border-radius: 8px;
     width: 100%;
     height: auto !important;
+    transition: 0.4s ease-in-out;
+    background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%) border-box;
+}
+
+
+
+.card-div:hover {
+    box-shadow: 0px 0px 50px 0px #0021F8;
 }
 
 .card-img {
@@ -368,7 +376,7 @@ policy-card
     width: calc(100% - 48px);
     top: 32px;
     left: 32px;
-    z-index: 2;
+    z-index: 1;
     transition: 0.3s all ease-in-out;
 
 }
@@ -656,6 +664,37 @@ Footer
     align-items: center;
 }
 
+.footer-social-icons .link-in:hover svg path:nth-child(2) {
+    display: none;
+}
+
+.footer-social-icons .link-in:hover svg {
+    fill: white;
+    background: white;
+    border-radius: 50%;
+}
+
+.footer-social-icons .link-in:hover svg path {
+    fill: black;
+}
+
+.footer-social-icons .insta:hover svg {
+    fill: white;
+}
+
+.footer-social-icons .insta:hover svg path {
+    fill: black;
+}
+
+.footer-social-icons .twitter:hover svg {
+    fill: white;
+}
+
+.footer-social-icons .twitter:hover svg rect,
+.footer-social-icons .twitter:hover svg path {
+    stroke: black;
+}
+
 /* ===============================
 About page
 ================================== */
@@ -713,11 +752,11 @@ About page
 }
 
 
-.about-us-content-div:hover .about-img img,
+/* .about-us-content-div:hover .about-img img,
 .about-us-content-div:hover .about-square-img img {
     scale: 1.15;
     transform: rotate(5deg);
-}
+} */
 
 .about-section {
     position: relative;
@@ -749,11 +788,11 @@ About page
     line-height: 24px;
 }
 
-/* .about-section .tabs a:hover,
+.about-section .tabs a:hover,
 .about-section .tabs a.active {
     color: #FFFFFF;
     border-bottom: 2px solid #0F3384;
-} */
+}
 
 .about-square-img {
     overflow: hidden;
@@ -1077,7 +1116,10 @@ About page
     font-size: 24px;
     font-weight: 600;
     line-height: 36px;
+}
 
+.experience-section .btn-requst-demo:hover {
+    background: linear-gradient(96.12deg, #1D16EA 10.13%, #000284 70.25%);
 }
 
 .experience-section .text-policy {
@@ -1681,15 +1723,17 @@ a.text-p-18 {
     background-color: black;
 }
 
-.tans-ul .tabs-li {
+.tans-ul .tabs-li button {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    border-width: 0 0 1px 0 !important; 
     border-bottom: 1px solid white;
     padding: 32px 32px 32px 16px;
 }
 
-.tans-ul .tabs-li:hover button {
+.tans-ul .tabs-li button:hover {
     color: #00D9FF;
 }
 
@@ -1697,7 +1741,7 @@ a.text-p-18 {
     transition: 0.3s all ease-in-out;
 }
 
-.tans-ul .tabs-li:hover .tabs-arrow {
+.tans-ul .tabs-li button:hover .tabs-arrow {
     transform: translateX(16px);
 }
 
@@ -1709,18 +1753,13 @@ a.text-p-18 {
     line-height: 30px;
     color: white;
     text-align: start;
-    padding: 0;
+    /* padding: 0; */
     transition: 0.3s all ease-in-out;
 }
 
 .tans-ul .tabs-li button.active {
     background-color: transparent;
     color: #00D9FF;
-    border: 1px solid transparent;
-}
-
-.tans-ul .tabs-li button:hover {
-    border: 1px solid transparent;
 }
 
 .tabs-main-div {
