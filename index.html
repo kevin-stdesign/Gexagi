@@ -336,23 +336,23 @@
                     </span></h2>
                 <div class="video-section">
                     <div class="ifrem-video d-flex justify-content-center align-items-center" id="video-tag">
-                        <video controls id="myVideo">
+                        <video autoplay muted loop id="myVideo">
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="video-pay-btn position-absolute" id="playPauseButton">
                             <div class="play-btn d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-play" id="playPauseIcon"></i>
+                                <!-- <i class="fa-solid fa-play" id="playPauseIcon"></i> -->
                             </div>
                         </div>
                     </div>
-                    <div class="popup-container" id="videoPopup">
+                    <!-- <div class="popup-container" id="videoPopup">
                         <video id="popupVideo" controls>
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="popup-closed-btn">
                             <i class="fa-solid fa-x"></i>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -662,8 +662,8 @@
     <script src="assets/js/custome.js"></script>
 
     <script>
-         // animtion 
-         gsap.registerPlugin(ScrollTrigger);
+        // animtion 
+        gsap.registerPlugin(ScrollTrigger);
         gsap.to(".ifrem-video", {
             scale: 1,
             ease: "none",
@@ -741,65 +741,87 @@
         // video.addEventListener('timeupdate', syncPlayback);
         // popupVideo.addEventListener('timeupdate', syncPlayback);
 
-        const video = document.getElementById('myVideo');
-        const popup = document.getElementById('videoPopup');
-        const popupVideo = document.getElementById('popupVideo');
-        const closeBtn = document.getElementById('popupCloseBtn');
+        // const video = document.getElementById('myVideo');
+        // const popup = document.getElementById('videoPopup');
+        // const popupVideo = document.getElementById('popupVideo');
+        // const closeBtn = document.getElementById('popupCloseBtn');
 
-        let isVideoPlaying = false;
-        let isPopupOpen = false;
+        // let isVideoPlaying = false;
+        // let isPopupOpen = false;
 
-        video.addEventListener('play', () => {
-            isVideoPlaying = true;
-        });
+        // video.addEventListener('play', () => {
+        //     isVideoPlaying = true;
+        // });
 
-        video.addEventListener('pause', () => {
-            isVideoPlaying = false;
-            if (isPopupOpen) {
-                popupVideo.pause();
+        // video.addEventListener('pause', () => {
+        //     isVideoPlaying = false;
+        //     if (isPopupOpen) {
+        //         popupVideo.pause();
+        //     }
+        // });
+
+        // popupVideo.addEventListener('pause', () => {
+        //     isPopupOpen = false;
+        //     if (isVideoPlaying) {
+        //         video.pause();
+        //     }
+        // });
+
+        // const syncPlayback = () => {
+        //     if (isPopupOpen && isVideoPlaying) {
+        //         popupVideo.currentTime = video.currentTime;
+        //     }
+        // };
+
+        // window.addEventListener('scroll', () => {
+        //     const videoRect = video.getBoundingClientRect();
+        //     const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
+
+        //     if (isOutOfView && isVideoPlaying && !isPopupOpen) {
+        //         popup.style.display = "flex";
+        //         popup.classList.remove("popup-container-display-none");
+        //         popupVideo.currentTime = video.currentTime;
+        //         popupVideo.play();
+        //         isPopupOpen = true;
+        //     } else if (!isOutOfView && isPopupOpen) {
+        //         popup.style.display = "none";
+        //         isPopupOpen = false;
+        //     }
+        // });
+
+        // closeBtn.addEventListener('click', () => {
+        //     popup.style.display = "none";
+        //     isPopupOpen = false;
+        // });
+
+        // video.addEventListener('timeupdate', syncPlayback);
+        // popupVideo.addEventListener('timeupdate', syncPlayback);
+
+        window.addEventListener('load', videoScroll);
+        window.addEventListener('scroll', videoScroll);
+
+        function videoScroll() {
+
+            if (document.querySelectorAll('video[autoplay]').length > 0) {
+                var windowHeight = window.innerHeight,
+                    videoEl = document.querySelectorAll('video[autoplay]');
+
+                for (var i = 0; i < videoEl.length; i++) {
+
+                    var thisVideoEl = videoEl[i],
+                        videoHeight = thisVideoEl.clientHeight,
+                        videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+                    if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
+                        thisVideoEl.play();
+                    } else {
+                        thisVideoEl.pause();
+                    }
+
+                }
             }
-        });
 
-        popupVideo.addEventListener('pause', () => {
-            isPopupOpen = false;
-            if (isVideoPlaying) {
-                video.pause();
-            }
-        });
-
-        const syncPlayback = () => {
-            if (isPopupOpen && isVideoPlaying) {
-                popupVideo.currentTime = video.currentTime;
-            }
-        };
-
-        window.addEventListener('scroll', () => {
-            const videoRect = video.getBoundingClientRect();
-            const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
-
-            if (isOutOfView && isVideoPlaying && !isPopupOpen) {
-                popup.style.display = "flex";
-                popup.classList.remove("popup-container-display-none");
-                popupVideo.currentTime = video.currentTime;
-                popupVideo.play();
-                isPopupOpen = true;
-            } else if (!isOutOfView && isPopupOpen) {
-                popup.style.display = "none";
-                // popupVideo.pause();
-                // video.pause();
-                isPopupOpen = false;
-            }
-        });
-
-        closeBtn.addEventListener('click', () => {
-            popup.style.display = "none";
-            // popupVideo.pause(); 
-            // video.pause(); 
-            isPopupOpen = false;
-        });
-
-        video.addEventListener('timeupdate', syncPlayback);
-        popupVideo.addEventListener('timeupdate', syncPlayback);
+        }
     </script>
 </body>
 
