@@ -103,7 +103,7 @@
             <div class="container">
                 <div class="row">
                     <h1 class="banner-section-title text-white p-0">
-                        <span class="text-gradian-color">Transforming</span>Traditional <span
+                        <span class="text-gradian-color">Transforming</span> Traditional <span
                             class="text-gradian-color">Insurance</span>
                         Process Into a Modern, Secure Future
                         with <span class="text-gradian-color">AGI.</span>
@@ -169,11 +169,11 @@
                     </div>
                     <div class="section-main-title">
                         <h3 class="section-title text-center text-white"> <span
-                                class="text-gradian-color">Innovating</span> today for smarter insurance <span
-                                class="text-gradian-color">tomorrow</span>
+                                class="text-gradian-color">Innovating</span> today for smarter <span
+                                class="text-gradian-color">insurance</span> tomorrow</span>
                         </h3>
                     </div>
-                    <div class="benefits-section-card ps-0 pe-0">
+                    <div class="benefits-section-card">
                         <div class="card-div card-div-2">
                             <img class="card-img" src="assets/icon/card-1.svg" alt="icon">
                             <h4 class="card-title text-white text-center my-sm-4 my-3 "> <span
@@ -663,14 +663,27 @@
 
     <script>
         // animtion 
+        // gsap.registerPlugin(ScrollTrigger);
+        // gsap.to(".ifrem-video", {
+        //     scale: 0.5,
+        //     ease: "none",
+        //     scrollTrigger: {
+        //         trigger: ".video-section",
+        //         start: "top -10%",
+        //         end: "bottom 20%",
+        //         scrub: true
+        //     }
+        // });
         gsap.registerPlugin(ScrollTrigger);
+
         gsap.to(".ifrem-video", {
-            scale: 1,
+            scale: 0.5,
             ease: "none",
+            transformOrigin: "center bottom",
             scrollTrigger: {
                 trigger: ".video-section",
-                start: "top 90%",
-                end: "top 40%",
+                start: "top -10%",
+                end: "bottom 20%",
                 scrub: true
             }
         });
@@ -684,7 +697,6 @@
                 video_1.play();
             } else {
                 video_1.pause();
-
             }
         }
 

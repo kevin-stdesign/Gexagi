@@ -1,3 +1,69 @@
+@media(max-width:2199.98px) {
+    .container {
+        max-width: 2056px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1999.98px) {
+    .container {
+        max-width: 1760px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1899.98px) {
+    .container {
+        max-width: 1756px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1799.98px) {
+    .container {
+        max-width: 1656px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1699.98px) {
+    .container {
+        max-width: 1556px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1599.98px) {
+    .container {
+        max-width: 1456px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1499.98px) {
+    .container {
+        max-width: 1296px;
+    }
+}
+
 @media(max-width:1399.98px) {
 
     .key-benefits-slider-btn {
