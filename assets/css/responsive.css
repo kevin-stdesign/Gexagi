@@ -32,6 +32,14 @@
         font-size: 70px;
         line-height: 90px;
     }
+
+    .banner-section-title {
+        font-size: 65px;
+    }
+
+    .section-title {
+        font-size: 65px;
+    }
 }
 
 @media(max-width:1199.98px) {
@@ -288,6 +296,36 @@
     .containt-right {
         max-width: unset;
     }
+
+    .banner-section-title {
+        font-size: 53px;
+        line-height: normal;
+    }
+
+    .section-title {
+        font-size: 53px;
+    }
+
+    .policy-card-div {
+        margin: 20px 0 0 0;
+    }
+
+    .solution-section-img-div {
+        margin-top: 0px;
+    }
+
+    .solution-sub-div-img img {
+        max-width: 170px;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        margin-top: 90px;
+    }
+
+    .section-title-h2 {
+        font-size: 39px;
+    }
+
 }
 
 @media(max-width:991.98px) {
@@ -473,7 +511,8 @@
 
 
     .card-title {
-        font-size: 29px;
+        font-size: 21px;
+        line-height: normal;
     }
 
     .card-div {
@@ -798,6 +837,28 @@
     .faq-setion {
         padding-bottom: 24px;
     }
+
+    .benefits-section .section-title {
+        margin-top: 40px;
+        line-height: normal;
+    }
+
+    .card-img {
+        height: 50px;
+    }
+
+    .card-div {
+        padding: 20px 12px;
+    }
+
+    .main-div-policyxagi {
+        padding-top: 42px;
+    }
+
+    .section-title-h2 {
+        font-size: 37px;
+    }
+
 }
 
 @media(max-width:767.98px) {
