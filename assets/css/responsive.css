@@ -1,68 +1,4 @@
-@media(max-width:2199.98px) {
-    .container {
-        max-width: 2056px;
-    }
 
-    .policy-card-div {
-        height: 600px;
-    }
-}
-
-@media(max-width:1999.98px) {
-    .container {
-        max-width: 1760px;
-    }
-
-    .policy-card-div {
-        height: 600px;
-    }
-}
-
-@media(max-width:1899.98px) {
-    .container {
-        max-width: 1756px;
-    }
-
-    .policy-card-div {
-        height: 600px;
-    }
-}
-
-@media(max-width:1799.98px) {
-    .container {
-        max-width: 1656px;
-    }
-
-    .policy-card-div {
-        height: 500px;
-    }
-}
-
-@media(max-width:1699.98px) {
-    .container {
-        max-width: 1556px;
-    }
-
-    .policy-card-div {
-        height: 500px;
-    }
-}
-
-@media(max-width:1599.98px) {
-    .container {
-        max-width: 1456px;
-    }
-
-    .policy-card-div {
-        height: 500px;
-    }
-}
-
-@media(max-width:1499.98px) {
-    .container {
-        max-width: 1296px;
-    }
-}
 
 @media(max-width:1399.98px) {
 
@@ -97,6 +33,14 @@
     .conatct-page-title {
         font-size: 70px;
         line-height: 90px;
+    }
+
+    .banner-section-title {
+        font-size: 65px;
+    }
+
+    .section-title {
+        font-size: 65px;
     }
 }
 
@@ -354,6 +298,36 @@
     .containt-right {
         max-width: unset;
     }
+
+    .banner-section-title {
+        font-size: 53px;
+        line-height: normal;
+    }   
+
+    .section-title {
+        font-size: 53px;
+    }
+
+    .policy-card-div {
+        margin: 20px 0 0 0 ;
+    }
+
+    .solution-section-img-div {
+        margin-top: 0px;
+    }
+
+    .solution-sub-div-img img {
+        max-width: 170px;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        margin-top: 90px;
+    }
+
+    .section-title-h2 {
+        font-size: 39px;
+    }
+
 }
 
 @media(max-width:991.98px) {
@@ -539,7 +513,8 @@
 
 
     .card-title {
-        font-size: 29px;
+        font-size: 21px;
+        line-height: normal;
     }
 
     .card-div {
@@ -864,6 +839,28 @@
     .faq-setion {
         padding-bottom: 24px;
     }
+
+    .benefits-section .section-title {
+        margin-top: 40px;
+        line-height: normal;
+    }
+
+    .card-img {
+        height: 50px;
+    }
+
+    .card-div {
+        padding: 20px 12px;
+    }
+
+    .main-div-policyxagi {
+        padding-top: 42px;
+    }
+
+    .section-title-h2 {
+        font-size: 37px;
+    }
+
 }
 
 @media(max-width:767.98px) {
