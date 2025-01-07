@@ -102,7 +102,7 @@
             <div class="container">
                 <div class="row">
                     <h1 class="banner-section-title text-white p-0">
-                        <span class="text-gradian-color">Transforming</span>Traditional <span
+                        <span class="text-gradian-color">Transforming</span> Traditional <span
                             class="text-gradian-color">Insurance</span>
                         Process Into a Modern, Secure Future
                         with <span class="text-gradian-color">AGI.</span>
@@ -168,11 +168,11 @@
                     </div>
                     <div class="section-main-title">
                         <h3 class="section-title text-center text-white"> <span
-                                class="text-gradian-color">Innovating</span> today for smarter insurance <span
-                                class="text-gradian-color">tomorrow</span>
+                                class="text-gradian-color">Innovating</span> today for smarter <span
+                                class="text-gradian-color">insurance</span> tomorrow</span>
                         </h3>
                     </div>
-                    <div class="benefits-section-card ps-0 pe-0">
+                    <div class="benefits-section-card">
                         <div class="card-div card-div-2">
                             <img class="card-img" src="assets/icon/card-1.svg" alt="icon">
                             <h4 class="card-title text-white text-center my-sm-4 my-3 "> <span
@@ -335,23 +335,23 @@
                     </span></h2>
                 <div class="video-section">
                     <div class="ifrem-video d-flex justify-content-center align-items-center" id="video-tag">
-                        <video controls id="myVideo">
+                        <video autoplay muted loop id="myVideo">
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="video-pay-btn position-absolute" id="playPauseButton">
                             <div class="play-btn d-flex justify-content-center align-items-center">
-                                <i class="fa-solid fa-play" id="playPauseIcon"></i>
+                                <!-- <i class="fa-solid fa-play" id="playPauseIcon"></i> -->
                             </div>
                         </div>
                     </div>
-                    <div class="popup-container" id="videoPopup">
+                    <!-- <div class="popup-container" id="videoPopup">
                         <video id="popupVideo" controls>
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="popup-closed-btn">
                             <i class="fa-solid fa-x"></i>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -608,7 +608,7 @@
                                 Connect with Our Experts
                             </p>
                             <div class="footer-social-icons">
-                                <a href="#">
+                                <a href="#" class="link-in">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                         fill="none">
                                         <path
@@ -619,7 +619,7 @@
                                             fill="white" />
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="#" class="insta">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                         fill="none">
                                         <rect x="0.5" y="0.510742" width="47" height="47" rx="23.5" stroke="white" />
@@ -631,7 +631,7 @@
                                             fill="white" />
                                     </svg>
                                 </a>
-                                <a href="#">
+                                <a href="#" class="twitter">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                         fill="none">
                                         <rect x="0.5" y="0.510742" width="47" height="47" rx="23.5" stroke="white" />
@@ -658,15 +658,28 @@
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
     <script>
-         // animtion 
-         gsap.registerPlugin(ScrollTrigger);
+        // animtion 
+        // gsap.registerPlugin(ScrollTrigger);
+        // gsap.to(".ifrem-video", {
+        //     scale: 0.5,
+        //     ease: "none",
+        //     scrollTrigger: {
+        //         trigger: ".video-section",
+        //         start: "top -10%",
+        //         end: "bottom 20%",
+        //         scrub: true
+        //     }
+        // });
+        gsap.registerPlugin(ScrollTrigger);
+
         gsap.to(".ifrem-video", {
-            scale: 1,
+            scale: 0.5,
             ease: "none",
+            transformOrigin: "center bottom",
             scrollTrigger: {
                 trigger: ".video-section",
-                start: "top 90%",
-                end: "top 40%",
+                start: "top -10%",
+                end: "bottom 20%",
                 scrub: true
             }
         });
@@ -680,7 +693,6 @@
                 video_1.play();
             } else {
                 video_1.pause();
-
             }
         }
 
@@ -737,65 +749,87 @@
         // video.addEventListener('timeupdate', syncPlayback);
         // popupVideo.addEventListener('timeupdate', syncPlayback);
 
-        const video = document.getElementById('myVideo');
-        const popup = document.getElementById('videoPopup');
-        const popupVideo = document.getElementById('popupVideo');
-        const closeBtn = document.getElementById('popupCloseBtn');
+        // const video = document.getElementById('myVideo');
+        // const popup = document.getElementById('videoPopup');
+        // const popupVideo = document.getElementById('popupVideo');
+        // const closeBtn = document.getElementById('popupCloseBtn');
 
-        let isVideoPlaying = false;
-        let isPopupOpen = false;
+        // let isVideoPlaying = false;
+        // let isPopupOpen = false;
 
-        video.addEventListener('play', () => {
-            isVideoPlaying = true;
-        });
+        // video.addEventListener('play', () => {
+        //     isVideoPlaying = true;
+        // });
 
-        video.addEventListener('pause', () => {
-            isVideoPlaying = false;
-            if (isPopupOpen) {
-                popupVideo.pause();
+        // video.addEventListener('pause', () => {
+        //     isVideoPlaying = false;
+        //     if (isPopupOpen) {
+        //         popupVideo.pause();
+        //     }
+        // });
+
+        // popupVideo.addEventListener('pause', () => {
+        //     isPopupOpen = false;
+        //     if (isVideoPlaying) {
+        //         video.pause();
+        //     }
+        // });
+
+        // const syncPlayback = () => {
+        //     if (isPopupOpen && isVideoPlaying) {
+        //         popupVideo.currentTime = video.currentTime;
+        //     }
+        // };
+
+        // window.addEventListener('scroll', () => {
+        //     const videoRect = video.getBoundingClientRect();
+        //     const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
+
+        //     if (isOutOfView && isVideoPlaying && !isPopupOpen) {
+        //         popup.style.display = "flex";
+        //         popup.classList.remove("popup-container-display-none");
+        //         popupVideo.currentTime = video.currentTime;
+        //         popupVideo.play();
+        //         isPopupOpen = true;
+        //     } else if (!isOutOfView && isPopupOpen) {
+        //         popup.style.display = "none";
+        //         isPopupOpen = false;
+        //     }
+        // });
+
+        // closeBtn.addEventListener('click', () => {
+        //     popup.style.display = "none";
+        //     isPopupOpen = false;
+        // });
+
+        // video.addEventListener('timeupdate', syncPlayback);
+        // popupVideo.addEventListener('timeupdate', syncPlayback);
+
+        window.addEventListener('load', videoScroll);
+        window.addEventListener('scroll', videoScroll);
+
+        function videoScroll() {
+
+            if (document.querySelectorAll('video[autoplay]').length > 0) {
+                var windowHeight = window.innerHeight,
+                    videoEl = document.querySelectorAll('video[autoplay]');
+
+                for (var i = 0; i < videoEl.length; i++) {
+
+                    var thisVideoEl = videoEl[i],
+                        videoHeight = thisVideoEl.clientHeight,
+                        videoClientRect = thisVideoEl.getBoundingClientRect().top;
+
+                    if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
+                        thisVideoEl.play();
+                    } else {
+                        thisVideoEl.pause();
+                    }
+
+                }
             }
-        });
 
-        popupVideo.addEventListener('pause', () => {
-            isPopupOpen = false;
-            if (isVideoPlaying) {
-                video.pause();
-            }
-        });
-
-        const syncPlayback = () => {
-            if (isPopupOpen && isVideoPlaying) {
-                popupVideo.currentTime = video.currentTime;
-            }
-        };
-
-        window.addEventListener('scroll', () => {
-            const videoRect = video.getBoundingClientRect();
-            const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
-
-            if (isOutOfView && isVideoPlaying && !isPopupOpen) {
-                popup.style.display = "flex";
-                popup.classList.remove("popup-container-display-none");
-                popupVideo.currentTime = video.currentTime;
-                popupVideo.play();
-                isPopupOpen = true;
-            } else if (!isOutOfView && isPopupOpen) {
-                popup.style.display = "none";
-                // popupVideo.pause();
-                // video.pause();
-                isPopupOpen = false;
-            }
-        });
-
-        closeBtn.addEventListener('click', () => {
-            popup.style.display = "none";
-            // popupVideo.pause(); 
-            // video.pause(); 
-            isPopupOpen = false;
-        });
-
-        video.addEventListener('timeupdate', syncPlayback);
-        popupVideo.addEventListener('timeupdate', syncPlayback);
+        }
     </script>
 </body>
 

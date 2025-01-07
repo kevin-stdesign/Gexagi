@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GEXIGI - Product</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/site-icon.svg">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +21,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
-    <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -51,8 +53,7 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav main-menu-ul ms-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link main-menu-a active " aria-current="page"
-                                        href="index.html">Home</a>
+                                    <a class="nav-link main-menu-a" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link main-menu-a " href="about.html">About Us</a>
@@ -63,22 +64,21 @@
                                         Our Expertise
                                         <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
                                     </a>
-
-                                    <ul class="dropdown-menu drop-down-ul">
-                                        <li><a class="dropdown-item" href="product.html">Research & Products</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
+                                    <ul class="dropdown-menu drop-down-ul ">
+                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
+                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link main-menu-a dropdown-toggle" href="#" role="button"
+                                    <a class="nav-link main-menu-a dropdown-toggle active" href="#" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Our Innovation
                                         <img class="down-arrow" src="assets/icon/drop-down.svg" alt="img">
                                     </a>
-                                    <ul class="dropdown-menu drop-down-ul ">
-                                        <li><a class="dropdown-item" href="duckreek.html">Duck Creek</a></li>
-                                        <li><a class="dropdown-item" href="guidewire.html">Guidewire</a></li>
+                                    <ul class="dropdown-menu drop-down-ul">
+                                        <li><a class="dropdown-item" href="product.html">Research & Products</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="usecase.html">Use Cases</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
@@ -122,12 +122,20 @@
     </section>
     <section class="product-policy-img-section">
         <div class="container">
-            <div class="row">
-                <div class="product-img-div">
-                    <img src="assets/img/sli-1.png" alt="img">
-                    <img src="assets/img/sli-2.png" alt="img">
-                    <img src="assets/img/sli-3.png" alt="img">
-                    <img src="assets/img/sli-4.png" alt="img">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/sli-1.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/sli-2.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/sli-3.png" alt="img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/sli-4.png" alt="img">
+                    </div>
                 </div>
             </div>
         </div>
@@ -167,8 +175,8 @@
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button collapse collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <div>
                                 <span>01</span>Holistic View of Your Data
                             </div>
@@ -176,7 +184,7 @@
                             <img class="min-icon" src="assets/icon/min.svg" alt="">
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="faq-img">
                                 <img src="assets/img/faq-1.png" alt="">
@@ -605,7 +613,7 @@
                             Connect with Our Experts
                         </p>
                         <div class="footer-social-icons">
-                            <a href="#">
+                            <a href="#" class="link-in">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                     fill="none">
                                     <path
@@ -616,7 +624,7 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="#" class="insta">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                     fill="none">
                                     <rect x="0.5" y="0.510742" width="47" height="47" rx="23.5" stroke="white" />
@@ -628,7 +636,7 @@
                                         fill="white" />
                                 </svg>
                             </a>
-                            <a href="#">
+                            <a href="#" class="twitter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49"
                                     fill="none">
                                     <rect x="0.5" y="0.510742" width="47" height="47" rx="23.5" stroke="white" />
@@ -648,29 +656,29 @@
 <!-- Footer end -->
 
 <!-- link script -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/plugin/jquery/jquery.js"></script>
 <script src="assets/plugin/bootsrap/bootstap.js"></script>
-<script src="assets/plugin/swiper/swiper.js"></script>
 <script src="assets/plugin/gaps/gaps-2.js"></script>
 <script src="assets/plugin/gaps/gaps.js"></script>
 <script src="assets/js/custome.js"></script>
-</body>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        const images = document.querySelectorAll('.product-img-div img');
-        let currentIndex = 0;
-
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % images.length;
-            images[currentIndex].classList.add('active');
-        }
-
-        // Set the first image as active initially
-        images[currentIndex].classList.add('active');
-
-        // Change image every 0.5 seconds (500ms)
-        setInterval(showNextImage, 500);
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            effect: "fade",
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            }
+        });
     });
+
+    // Swiper Slider
 </script>
+
+</body>
+
 </html>

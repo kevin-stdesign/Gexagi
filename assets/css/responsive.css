@@ -1,3 +1,69 @@
+@media(max-width:2199.98px) {
+    .container {
+        max-width: 2056px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1999.98px) {
+    .container {
+        max-width: 1760px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1899.98px) {
+    .container {
+        max-width: 1756px;
+    }
+
+    .policy-card-div {
+        height: 600px;
+    }
+}
+
+@media(max-width:1799.98px) {
+    .container {
+        max-width: 1656px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1699.98px) {
+    .container {
+        max-width: 1556px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1599.98px) {
+    .container {
+        max-width: 1456px;
+    }
+
+    .policy-card-div {
+        height: 500px;
+    }
+}
+
+@media(max-width:1499.98px) {
+    .container {
+        max-width: 1296px;
+    }
+}
+
 @media(max-width:1399.98px) {
 
     .key-benefits-slider-btn {
@@ -291,6 +357,18 @@
 }
 
 @media(max-width:991.98px) {
+
+    .experience-section .text-policy {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .experience-section .btn-requst-demo {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+    }
 
     .blog-future-img-div {
         height: 350px;
@@ -784,11 +862,24 @@
     }
 
     .faq-setion {
-        padding-bottom: 54px;
+        padding-bottom: 24px;
     }
 }
 
 @media(max-width:767.98px) {
+    .experience-section .text-policy {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .experience-section .btn-requst-demo {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+
     .blog-card-main-div {
         margin-top: 40px;
     }
@@ -909,6 +1000,7 @@
     .experience-section-main-div {
         padding: 26px;
         border-radius: 20px;
+        align-items: center;
     }
 
     .blog-img {
@@ -1488,7 +1580,7 @@
     }
 
     .tans-ul .tabs-li {
-        padding: 14px 14px 14px 14px;
+        padding: 0;
     }
 
     .tabs-main-div {
@@ -1764,13 +1856,13 @@
     }
 
     .about-section .tabs a {
-        font-size: 16px;
+        font-size: 13px;
         padding: 05px 6px;
     }
 
     .about-section {
         position: relative;
-        padding: 109px 0 11px 0;
+        padding: 11px 0 11px 0;
     }
 
     .about-section .tabs {
