@@ -459,7 +459,7 @@ policy-card
     width: 100%;
     margin: auto;
     border-radius: 20px;
-    height: 150vh;
+    height: 100%;
     position: relative;
 }
 
@@ -698,6 +698,32 @@ Footer
     stroke: black;
 }
 
+/* ==============
+video animation 
+=============== */
+
+.reimagining-insurance{
+    padding-top: 500px;
+}
+
+.reimagining-insurance{
+    position: relative;
+    overflow: hidden;
+}
+
+.video-div-2{
+    position: absolute;
+    top: 0;
+    width:inherit;
+    overflow: hidden;
+    height: 200vh;
+    left: 0;
+}
+
+.video-div-2 video{
+    height: inherit;
+}
+
 /* ===============================
 About page
 ================================== */
@@ -722,9 +748,9 @@ About page
 }
 
 .about-title {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 57.6px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: normal;
     color: #FFFFFF;
     margin-bottom: 32px;
 }
@@ -739,7 +765,7 @@ About page
 }
 
 .about-description {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     color: #FFFFFF;
@@ -811,7 +837,7 @@ About page
 }
 
 .about-text-div-padding-right {
-    max-width: 480px;
+    max-width: 648px;
     width: 100%;
 }
 
@@ -834,9 +860,9 @@ About page
 
 .we-serve .we-serve-sub-div-title {
     color: white;
-    font-size: 20px;
+    font-size: 32px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: normal;
 }
 
 .solution-sub-div-img img {
@@ -905,10 +931,10 @@ About page
 }
 
 .main-page-header {
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 72px;
-    max-width: 1128px;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -2404,8 +2430,8 @@ usecase page
 .about-section .page-title-duckreek {
     margin-bottom: 32px;
     font-size: 48px;
-    font-weight: 600;
-    line-height: 86.4px;
+    font-weight: 300;
+    line-height: normal;
     color: white;
 }
 
