@@ -23,6 +23,41 @@
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        .scrub-video-container {
+            /* margin-left: 5rem;
+            margin-right: 5rem; */
+            position: sticky;
+            top: 0px;
+            height: 100vh;
+            transition: all 0.2s;
+        }
+
+        .scrub-video-container.in-view {
+            margin: 0;
+        }
+
+        .scrub-video-container.in-view video {
+            top: 0;
+            height: 100%;
+        }
+
+        .scrub-video-wrapper {
+            height: 250vh;
+        }
+
+        video {
+            position: absolute;
+            top: 3em;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 6em);
+            object-fit: cover;
+            transition: all 0.2s;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -97,6 +132,7 @@
         </div>
     </header>
     <!-- header end-->
+
     <!-- section start -->
     <main class="bg-dark-blue">
         <!-- Banner section   -->
@@ -335,18 +371,23 @@
                     </span> Insurance with the Power of Machine Learning and Deep <span
                         class="text-gradian-color">Learning.
                     </span></h2>
-                <div class="video-section">
+                <!-- <div class="video-section">
                     <div class="ifrem-video d-flex justify-content-center align-items-center" id="video-tag">
                         <video autoplay muted loop id="myVideo">
                             <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                         </video>
                         <div class="video-pay-btn position-absolute" id="playPauseButton">
                             <div class="play-btn d-flex justify-content-center align-items-center">
-                                <!-- <i class="fa-solid fa-play" id="playPauseIcon"></i> -->
                             </div>
                         </div>
                     </div>
+                </div> -->
+                <div class='scrub-video-wrapper'>
+                    <div class='scrub-video-container'>
+                        <video src='/assets/video/Our Innovation.mp4' muted loop>
+                    </div>
                 </div>
+
             </div>
             <div class="video-div-2">
                 <video autoplay muted loop id="myVideo">
@@ -360,7 +401,7 @@
                     <div class="row d-flex ">
                         <div class="col-12">
                             <!-- <h5 class="text-policy mb-2">What We Can Do</h5> -->
-                            <h2 class="section-title text-center">Our <span class="text-gradian-color">
+                            <h2 class="section-title-h2  text-center">Our <span class="text-gradian-color">
                                     Solutions </span> & <span class="text-gradian-color">Services </span></h2>
                         </div>
                         <div class="col-12">
@@ -387,6 +428,7 @@
         </section>
     </main>
     <!-- section end  -->
+
     <!-- Footer start -->
     <footer class="footer">
         <div class="container">
@@ -648,6 +690,7 @@
         </div>
     </footer>
     <!-- Footer end -->
+
     <!-- costome js for index page  -->
     <!-- link script -->
     <script src="assets/plugin/jquery/jquery.js"></script>
@@ -656,6 +699,120 @@
     <script src="assets/plugin/gaps/gaps-2.js"></script>
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="assets/js/custome.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new ScrubVideoManager();
+        });
+
+        class ScrubVideoManager {
+            constructor() {
+                // Get a list of all scrub videos wrappers
+                this.scrubVideoWrappers = document.querySelectorAll(".scrub-video-wrapper");
+
+                // Create the intersectionObserver
+                const observer = new IntersectionObserver(
+                    this.intersectionObserverCallback,
+                    { threshold: 0 } // Set threshold to 0 to detect when the video exits the viewport
+                );
+                // Add a pointer to the manager class so we can refer to it later
+                observer.context = this;
+
+                // Initialise empty cache of wrapper data
+                this.scrubVideoWrappersData = [];
+
+                this.scrubVideoWrappers.forEach((wrapper, index) => {
+                    // Attach observer
+                    observer.observe(wrapper.querySelector(".scrub-video-container"));
+
+                    // Give numerical index
+                    wrapper.setAttribute("data-scrub-video-index", index);
+
+                    // Store reference to video DOM element
+                    const video = wrapper.querySelector("video");
+                    this.scrubVideoWrappersData[index] = {
+                        video: video
+                    };
+
+                    // Force load video and autoplay it
+                    this.fetchVideo(video);
+                    this.autoplayVideo(video);
+                });
+
+                // Store positions of all the wrapper elements
+                this.updateWrapperPositions();
+
+                // Listen to resize events to update positions
+                window.addEventListener("resize", () => {
+                    this.updateWrapperPositions();
+                });
+            }
+
+            fetchVideo(videoElement) {
+                const src = videoElement.getAttribute("src");
+
+                // Get the video
+                fetch(src)
+                    .then((response) => response.blob())
+                    .then((response) => {
+                        // Create a data URL containing the video raw data
+                        const objectURL = URL.createObjectURL(response);
+
+                        // Attach the new source
+                        videoElement.setAttribute("src", objectURL);
+                        console.log("Finished loading " + src);
+                    });
+            }
+
+            autoplayVideo(videoElement) {
+                // Ensure the video is set to autoplay
+                videoElement.setAttribute('autoplay', 'true');
+                videoElement.setAttribute('muted', 'true'); // Add muted if you need it to start without sound
+                videoElement.play(); // Start playing the video immediately
+            }
+
+            updateWrapperPositions() {
+                // Get new positions of video wrappers
+                this.scrubVideoWrappers.forEach((wrapper, index) => {
+                    const clientRect = wrapper.getBoundingClientRect();
+                    const top = clientRect.y + window.scrollY;
+                    const bottom = clientRect.bottom - window.innerHeight + window.scrollY;
+
+                    this.scrubVideoWrappersData[index].top = top;
+                    this.scrubVideoWrappersData[index].bottom = bottom;
+                });
+            }
+
+            intersectionObserverCallback(entries, observer) {
+                entries.forEach((entry) => {
+                    const isWithinViewport = entry.intersectionRatio > 0;
+
+                    // Add or remove 'in-view' class if the element is within the viewport
+                    entry.target.classList.toggle("in-view", isWithinViewport);
+
+                    // If the video is completely out of the viewport (scroll is over), add 'scrolled-over' class
+                    if (entry.intersectionRatio === 0) {
+                        entry.target.classList.add("scrolled-over"); // Add 'scrolled-over' class when video leaves the viewport
+                    } else {
+                        entry.target.classList.remove("scrolled-over"); // Remove 'scrolled-over' class when video is in the viewport
+                    }
+
+                    if (isWithinViewport) {
+                        observer.context.activeVideoWrapper = entry.target.parentNode.getAttribute(
+                            "data-scrub-video-index"
+                        );
+                    } else {
+                        observer.context.activeVideoWrapper = null;
+                    }
+                });
+            }
+        }
+    </script>
+
+
+
     <script>
         // gsap.registerPlugin(ScrollTrigger);
         // gsap.to(".ifrem-video", {
