@@ -24,39 +24,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-    <style>
-        .scrub-video-container {
-            /* margin-left: 5rem;
-            margin-right: 5rem; */
-            position: sticky;
-            top: 0px;
-            height: 100vh;
-            transition: all 0.2s;
-        }
-
-        .scrub-video-container.in-view {
-            margin: 0;
-        }
-
-        .scrub-video-container.in-view video {
-            top: 0;
-            height: 100%;
-        }
-
-        .scrub-video-wrapper {
-            height: 250vh;
-        }
-
-        video {
-            position: absolute;
-            top: 3em;
-            left: 0;
-            width: 100%;
-            height: calc(100% - 6em);
-            object-fit: cover;
-            transition: all 0.2s;
-        }
-    </style>
 
 </head>
 
@@ -270,95 +237,98 @@
                             Your Decision-Making with Advanced <span class="text-gradian-color">Data</span>
                             Analytics</h2>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-0">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Holistic View <br>
-                                of Your Data</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Seamlessly access all your essential insurance metrics in one centralized platform.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-1.png" alt="img">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
+                    <div class="policy-card">
+                        <div class="mt-0">
+                            <div class="policy-card-div">
+                                <h3 class="policy-card-title text-white ">Holistic View <br>
+                                    of Your Data</h3>
+                                <p class="text-p text-white policy-card-content">
+                                    Seamlessly access all your essential insurance metrics in one centralized platform.
+                                </p>
+                                <img class="policy-card-bg-img" src="assets/img/policy-card-1.png" alt="img">
+                                <div class=" policy-card-btn-div position-absolute">
+                                    <a href=""
+                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        <p class="btn-text mb-0">Know More </p>
+                                        <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
+                                                fill="white" />
+                                        </svg>
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-0">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Real-Time <br>
-                                Insights</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Stay ahead with up-to-the-minute data that reflects the current state of your business.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-2.png" alt="img">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
+                        <div class="mt-0">
+                            <div class="policy-card-div">
+                                <h3 class="policy-card-title text-white ">Real-Time <br>
+                                    Insights</h3>
+                                <p class="text-p text-white policy-card-content">
+                                    Stay ahead with up-to-the-minute data that reflects the current state of your
+                                    business.
+                                </p>
+                                <img class="policy-card-bg-img" src="assets/img/policy-card-2.png" alt="img">
+                                <div class=" policy-card-btn-div position-absolute">
+                                    <a href=""
+                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        <p class="btn-text mb-0">Know More </p>
+                                        <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
+                                                fill="white" />
+                                        </svg>
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-0">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Strategic <br>
-                                Decision Support </h3>
-                            <p class="text-p text-white policy-card-content">
-                                Transform raw data into actionable intelligence for strategic planning.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-3.png" alt="img">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
+                        <div class="mt-0">
+                            <div class="policy-card-div">
+                                <h3 class="policy-card-title text-white ">Strategic <br>
+                                    Decision Support </h3>
+                                <p class="text-p text-white policy-card-content">
+                                    Transform raw data into actionable intelligence for strategic planning.
+                                </p>
+                                <img class="policy-card-bg-img" src="assets/img/policy-card-3.png" alt="img">
+                                <div class=" policy-card-btn-div position-absolute">
+                                    <a href=""
+                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        <p class="btn-text mb-0">Know More </p>
+                                        <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
+                                                fill="white" />
+                                        </svg>
 
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12 mt-0">
-                        <div class="policy-card-div">
-                            <h3 class="policy-card-title text-white ">Intuitive User <br>
-                                Experience</h3>
-                            <p class="text-p text-white policy-card-content">
-                                Navigate complex data effortlessly with our user-friendly
-                                interface designed for professionals at all levels.
-                            </p>
-                            <img class="policy-card-bg-img" src="assets/img/policy-card-4.png" alt="img">
-                            <div class=" policy-card-btn-div position-absolute">
-                                <a href=""
-                                    class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
-                                    <p class="btn-text mb-0">Know More </p>
-                                    <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
-                                            fill="white" />
-                                    </svg>
-                                </a>
+                        <div class="mt-0">
+                            <div class="policy-card-div">
+                                <h3 class="policy-card-title text-white ">Intuitive User <br>
+                                    Experience</h3>
+                                <p class="text-p text-white policy-card-content">
+                                    Navigate complex data effortlessly with our user-friendly
+                                    interface designed for professionals at all levels.
+                                </p>
+                                <img class="policy-card-bg-img" src="assets/img/policy-card-4.png" alt="img">
+                                <div class=" policy-card-btn-div position-absolute">
+                                    <a href=""
+                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        <p class="btn-text mb-0">Know More </p>
+                                        <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.5303 7.04109C25.8232 6.7482 25.8232 6.27332 25.5303 5.98043L20.7574 1.20746C20.4645 0.91457 19.9896 0.91457 19.6967 1.20746C19.4038 1.50036 19.4038 1.97523 19.6967 2.26812L23.9393 6.51076L19.6967 10.7534C19.4038 11.0463 19.4038 11.5212 19.6967 11.8141C19.9896 12.107 20.4645 12.107 20.7574 11.8141L25.5303 7.04109ZM0 7.26076H25V5.76076H0V7.26076Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -371,28 +341,15 @@
                     </span> Insurance with the Power of Machine Learning and Deep <span
                         class="text-gradian-color">Learning.
                     </span></h2>
-                <!-- <div class="video-section">
-                    <div class="ifrem-video d-flex justify-content-center align-items-center" id="video-tag">
-                        <video autoplay muted loop id="myVideo">
-                            <source src="assets/video/Our Innovation.mp4" type="video/mp4">
-                        </video>
-                        <div class="video-pay-btn position-absolute" id="playPauseButton">
-                            <div class="play-btn d-flex justify-content-center align-items-center">
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <div class='scrub-video-wrapper'>
-                    <div class='scrub-video-container'>
-                        <video src='/assets/video/Our Innovation.mp4' muted loop>
-                    </div>
-                </div>
-
             </div>
-            <div class="video-div-2">
-                <video autoplay muted loop id="myVideo">
+            <section id="video-main">
+                <video autoplay muted loop id="ani-video">
                     <source src="assets/video/Our Innovation.mp4" type="video/mp4">
                 </video>
+            </section>
+            <div class="spacer"></div>
+            <div class="spacer">
+            </div>
             </div>
         </section>
         <section>
@@ -400,7 +357,6 @@
                 <div class="container">
                     <div class="row d-flex ">
                         <div class="col-12">
-                            <!-- <h5 class="text-policy mb-2">What We Can Do</h5> -->
                             <h2 class="section-title-h2  text-center">Our <span class="text-gradian-color">
                                     Solutions </span> & <span class="text-gradian-color">Services </span></h2>
                         </div>
@@ -696,302 +652,42 @@
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootsrap/bootstap.js"></script>
     <script src="assets/plugin/swiper/swiper.js"></script>
-    <script src="assets/plugin/gaps/gaps-2.js"></script>
-    <script src="assets/plugin/gaps/gaps.js"></script>
+    <script src="assets/plugin/gsap/gsap-2.js"></script>
+    <script src="assets/plugin/gsap/gsap.js"></script>
     <script src="assets/js/custome.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js'></script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new ScrubVideoManager();
-        });
-
-        class ScrubVideoManager {
-            constructor() {
-                // Get a list of all scrub videos wrappers
-                this.scrubVideoWrappers = document.querySelectorAll(".scrub-video-wrapper");
-
-                // Create the intersectionObserver
-                const observer = new IntersectionObserver(
-                    this.intersectionObserverCallback,
-                    { threshold: 0 } // Set threshold to 0 to detect when the video exits the viewport
-                );
-                // Add a pointer to the manager class so we can refer to it later
-                observer.context = this;
-
-                // Initialise empty cache of wrapper data
-                this.scrubVideoWrappersData = [];
-
-                this.scrubVideoWrappers.forEach((wrapper, index) => {
-                    // Attach observer
-                    observer.observe(wrapper.querySelector(".scrub-video-container"));
-
-                    // Give numerical index
-                    wrapper.setAttribute("data-scrub-video-index", index);
-
-                    // Store reference to video DOM element
-                    const video = wrapper.querySelector("video");
-                    this.scrubVideoWrappersData[index] = {
-                        video: video
-                    };
-
-                    // Force load video and autoplay it
-                    this.fetchVideo(video);
-                    this.autoplayVideo(video);
-                });
-
-                // Store positions of all the wrapper elements
-                this.updateWrapperPositions();
-
-                // Listen to resize events to update positions
-                window.addEventListener("resize", () => {
-                    this.updateWrapperPositions();
-                });
-            }
-
-            fetchVideo(videoElement) {
-                const src = videoElement.getAttribute("src");
-
-                // Get the video
-                fetch(src)
-                    .then((response) => response.blob())
-                    .then((response) => {
-                        // Create a data URL containing the video raw data
-                        const objectURL = URL.createObjectURL(response);
-
-                        // Attach the new source
-                        videoElement.setAttribute("src", objectURL);
-                        console.log("Finished loading " + src);
-                    });
-            }
-
-            autoplayVideo(videoElement) {
-                // Ensure the video is set to autoplay
-                videoElement.setAttribute('autoplay', 'true');
-                videoElement.setAttribute('muted', 'true'); // Add muted if you need it to start without sound
-                videoElement.play(); // Start playing the video immediately
-            }
-
-            updateWrapperPositions() {
-                // Get new positions of video wrappers
-                this.scrubVideoWrappers.forEach((wrapper, index) => {
-                    const clientRect = wrapper.getBoundingClientRect();
-                    const top = clientRect.y + window.scrollY;
-                    const bottom = clientRect.bottom - window.innerHeight + window.scrollY;
-
-                    this.scrubVideoWrappersData[index].top = top;
-                    this.scrubVideoWrappersData[index].bottom = bottom;
-                });
-            }
-
-            intersectionObserverCallback(entries, observer) {
-                entries.forEach((entry) => {
-                    const isWithinViewport = entry.intersectionRatio > 0;
-
-                    // Add or remove 'in-view' class if the element is within the viewport
-                    entry.target.classList.toggle("in-view", isWithinViewport);
-
-                    // If the video is completely out of the viewport (scroll is over), add 'scrolled-over' class
-                    if (entry.intersectionRatio === 0) {
-                        entry.target.classList.add("scrolled-over"); // Add 'scrolled-over' class when video leaves the viewport
-                    } else {
-                        entry.target.classList.remove("scrolled-over"); // Remove 'scrolled-over' class when video is in the viewport
-                    }
-
-                    if (isWithinViewport) {
-                        observer.context.activeVideoWrapper = entry.target.parentNode.getAttribute(
-                            "data-scrub-video-index"
-                        );
-                    } else {
-                        observer.context.activeVideoWrapper = null;
-                    }
-                });
-            }
-        }
-    </script>
-
-
-
-    <script>
-        // gsap.registerPlugin(ScrollTrigger);
-        // gsap.to(".ifrem-video", {
-        //     scale: 0.5,
-        //     ease: "none",
-        //     transformOrigin: "center bottom",
-        //     scrollTrigger: {
-        //         trigger: ".video-section",
-        //         start: "top -10%",
-        //         end: "bottom 20%",
-        //         scrub: true
-        //     }
-        // });
         gsap.registerPlugin(ScrollTrigger);
-        gsap.matchMedia().add("(min-width: 991px)", () => {
-            gsap.to(".video-div-2", {
-                scale: 0.7,
-                ease: "none",
-                transformOrigin: "center bottom",
-                scrollTrigger: {
-                    trigger: ".video-section",
-                    start: "top 10%",
-                    end: "top 90%",
-                    scrub: true,
-                    onLeave: () => gsap.to(".video-div-2", { autoAlpha: 0, duration: 0.5 }), // Hides when scrolled past end
-                    onEnterBack: () => gsap.to(".video-div-2", { autoAlpha: 1, duration: 0.5 }) // Shows again when scrolling back up
-                }
+
+        const tl = gsap.timeline({
+            ease: "none"
+        });
+
+        // Initially, set the image/video to full screen
+        tl.from("#video-main #ani-video", {
+            scale: 1, // Starts at full size
+            duration: 1,
+            transformOrigin: "center center", // Center the scaling
+        })
+            .to("#video-main #ani-video", {
+                scale: 0.7, // Scales down the image/video on scroll
+                duration: 1
             });
-        });
 
-
-
-        //video paly btn 
-        const video_1 = document.getElementById("myVideo");
-        const circlePlayButton = document.getElementById("playPauseButton");
-
-        function togglePlay() {
-            if (video_1.paused || video_1.ended) {
-                video_1.play();
-            } else {
-                video_1.pause();
-            }
-        }
-
-        circlePlayButton.addEventListener("click", togglePlay);
-        video_1.addEventListener("playing", function () {
-            circlePlayButton.style.opacity = 0;
-        });
-        video_1.addEventListener("pause", function () {
-            circlePlayButton.style.opacity = 1;
-        });
-
-        // video paly popup btn
-        // const video = document.getElementById('myVideo');
-        // const popup = document.getElementById('videoPopup');
-        // const popupVideo = document.getElementById('popupVideo');
-
-        // let isVideoPlaying = false;
-        // let isPopupOpen = false;
-
-        // video.addEventListener('play', () => {
-        //     isVideoPlaying = true;
-        // });
-
-        // video.addEventListener('pause', () => {
-        //     isVideoPlaying = false;
-        //     if (isPopupOpen) {
-        //         popupVideo.pause();
-        //     }
-        // });
-
-        // const syncPlayback = () => {
-        //     if (isPopupOpen && isVideoPlaying) {
-        //         popupVideo.currentTime = video.currentTime;
-        //     }
-        // };
-
-        // window.addEventListener('scroll', () => {
-        //     const videoRect = video.getBoundingClientRect();
-        //     const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
-
-        //     if (isOutOfView && isVideoPlaying && !isPopupOpen) {
-        //         popup.style.display = "flex";
-        //         popup.classList.remove("popup-container-display-none");
-        //         popupVideo.currentTime = video.currentTime;
-        //         popupVideo.play();
-        //         isPopupOpen = true;
-        //     } else if (!isOutOfView && isPopupOpen) {
-        //         popup.style.display = "none";
-        //         popupVideo.pause();
-        //         video.pause();
-        //         isPopupOpen = false;
-        //     }
-        // });
-        // video.addEventListener('timeupdate', syncPlayback);
-        // popupVideo.addEventListener('timeupdate', syncPlayback);
-
-        // const video = document.getElementById('myVideo');
-        // const popup = document.getElementById('videoPopup');
-        // const popupVideo = document.getElementById('popupVideo');
-        // const closeBtn = document.getElementById('popupCloseBtn');
-
-        // let isVideoPlaying = false;
-        // let isPopupOpen = false;
-
-        // video.addEventListener('play', () => {
-        //     isVideoPlaying = true;
-        // });
-
-        // video.addEventListener('pause', () => {
-        //     isVideoPlaying = false;
-        //     if (isPopupOpen) {
-        //         popupVideo.pause();
-        //     }
-        // });
-
-        // popupVideo.addEventListener('pause', () => {
-        //     isPopupOpen = false;
-        //     if (isVideoPlaying) {
-        //         video.pause();
-        //     }
-        // });
-
-        // const syncPlayback = () => {
-        //     if (isPopupOpen && isVideoPlaying) {
-        //         popupVideo.currentTime = video.currentTime;
-        //     }
-        // };
-
-        // window.addEventListener('scroll', () => {
-        //     const videoRect = video.getBoundingClientRect();
-        //     const isOutOfView = videoRect.bottom < 0 || videoRect.top > window.innerHeight;
-
-        //     if (isOutOfView && isVideoPlaying && !isPopupOpen) {
-        //         popup.style.display = "flex";
-        //         popup.classList.remove("popup-container-display-none");
-        //         popupVideo.currentTime = video.currentTime;
-        //         popupVideo.play();
-        //         isPopupOpen = true;
-        //     } else if (!isOutOfView && isPopupOpen) {
-        //         popup.style.display = "none";
-        //         isPopupOpen = false;
-        //     }
-        // });
-
-        // closeBtn.addEventListener('click', () => {
-        //     popup.style.display = "none";
-        //     isPopupOpen = false;
-        // });
-
-        // video.addEventListener('timeupdate', syncPlayback);
-        // popupVideo.addEventListener('timeupdate', syncPlayback);
-
-        window.addEventListener('load', videoScroll);
-        window.addEventListener('scroll', videoScroll);
-
-        function videoScroll() {
-
-            if (document.querySelectorAll('video[autoplay]').length > 0) {
-                var windowHeight = window.innerHeight,
-                    videoEl = document.querySelectorAll('video[autoplay]');
-
-                for (var i = 0; i < videoEl.length; i++) {
-
-                    var thisVideoEl = videoEl[i],
-                        videoHeight = thisVideoEl.clientHeight,
-                        videoClientRect = thisVideoEl.getBoundingClientRect().top;
-
-                    if (videoClientRect <= ((windowHeight) - (videoHeight * .5)) && videoClientRect >= (0 - (videoHeight * .5))) {
-                        thisVideoEl.play();
-                    } else {
-                        thisVideoEl.pause();
-                    }
-
-                }
-            }
-
+        // Check if the screen width is above or below 768px
+        if (window.innerWidth >= 768) {
+            ScrollTrigger.create({
+                trigger: "#video-main",
+                start: "top top", // Start when the trigger reaches the top of the viewport
+                end: "+=200%", // Scroll for a longer distance, you can adjust this to your needs
+                pin: true, // Pin the element during the scroll
+                animation: tl, // The timeline created above
+                scrub: 0.78, // Smooth scrolling effect, adjust the value to your liking
+                pinSpacing: false // Prevent extra space after pinning
+            });
         }
     </script>
+
 </body>
 
 </html>
