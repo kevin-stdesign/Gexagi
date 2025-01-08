@@ -1,3 +1,20 @@
+
+@media(min-width:1441px){
+    .container{
+        max-width: 90%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .about-text-div-padding-right {
+        max-width: 50%;
+    }
+
+    .about-us-content-div {
+        justify-content: space-between;
+    }
+}
+
 @media(max-width:1399.98px) {
 
     .key-benefits-slider-btn {
@@ -68,10 +85,6 @@
     .benefits-section-card {
         gap: 24px;
         margin-top: 32px;
-    }
-
-    .container {
-        max-width: 960px;
     }
 
     .card-title {
@@ -393,7 +406,7 @@
 
     .solution-section-img-div {
         gap: 20px;
-        padding-top: 0;
+        padding-top: 20px;
     }
 
     .benefits-section-card {
@@ -468,10 +481,6 @@
 
     .offcanvas-backdrop {
         display: none;
-    }
-
-    .container {
-        max-width: 720px;
     }
 
     div#navbarSupportedContent {
@@ -859,6 +868,10 @@
         font-size: 37px;
     }
 
+    .ifrem-video {
+        height: auto;
+    }
+
 }
 
 @media(max-width:767.98px) {
@@ -956,10 +969,6 @@
 
     .data-prepration-chart .apexcharts-legend {
         gap: 0px;
-    }
-
-    .container {
-        max-width: 540px;
     }
 
     section.about-other-sections {
@@ -1112,7 +1121,7 @@
 
     .section-title {
         font-size: 36px;
-        line-height: 45px;
+        line-height: normal;
     }
 
     .banner-section-title {
@@ -1220,6 +1229,7 @@
     .title-32 {
         font-size: 22px;
     }
+
 }
 
 @media(max-width:575.98px) {
@@ -1317,8 +1327,7 @@
     }
 
     .section-title-h2 {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 24px;
     }
 
     .text-p {
@@ -1334,9 +1343,7 @@
     }
 
     .section-title {
-        font-size: 32px;
-        line-height: 40px;
-        margin-top: 20px;
+        font-size: 25px;
     }
 
     .benefits-sub-div {
@@ -1856,8 +1863,7 @@
     }
 
     .about-section {
-        position: relative;
-        padding: 11px 0 11px 0;
+        padding: 110px 0 11px 0;
     }
 
     .about-section .tabs {
@@ -1880,6 +1886,24 @@
     .faq-content-main-div .text-p-18 {
         margin-bottom: 12px;
     }
+
+    .main-header {
+        padding: 24px 12px;
+    }
+
+    .benefits-section .section-title {
+        margin-top: 16px;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        margin-top: 40px;
+    }
+
+    .we-serve .we-serve-sub-div-title {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
 }
 
 @media(max-width:480.98px) {

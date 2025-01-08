@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GEXIGI</title>
+    <title>GEXAGI</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/site-icon.svg">
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- font-ausome i-cone link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
@@ -364,7 +366,7 @@
             </div>
         </section>
         <section class="reimagining-insurance">
-            <div class="container-fluid">
+            <div class="container">
                 <h2 class="section-title-h2 text-center"> <span class="text-gradian-color">Reimagining
                     </span> Insurance with the Power of Machine Learning and Deep <span
                         class="text-gradian-color">Learning.
@@ -386,6 +388,11 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="video-div-2">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/video/Our Innovation.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
         <section>
@@ -807,11 +814,11 @@
 
 
     <script>
-        // animtion 
         // gsap.registerPlugin(ScrollTrigger);
         // gsap.to(".ifrem-video", {
         //     scale: 0.5,
         //     ease: "none",
+        //     transformOrigin: "center bottom",
         //     scrollTrigger: {
         //         trigger: ".video-section",
         //         start: "top -10%",
@@ -820,18 +827,23 @@
         //     }
         // });
         gsap.registerPlugin(ScrollTrigger);
-
-        gsap.to(".ifrem-video", {
-            scale: 0.5,
-            ease: "none",
-            transformOrigin: "center bottom",
-            scrollTrigger: {
-                trigger: ".video-section",
-                start: "top -10%",
-                end: "bottom 20%",
-                scrub: true
-            }
+        gsap.matchMedia().add("(min-width: 991px)", () => {
+            gsap.to(".video-div-2", {
+                scale: 0.7,
+                ease: "none",
+                transformOrigin: "center bottom",
+                scrollTrigger: {
+                    trigger: ".video-section",
+                    start: "top 10%",
+                    end: "top 90%",
+                    scrub: true,
+                    onLeave: () => gsap.to(".video-div-2", { autoAlpha: 0, duration: 0.5 }), // Hides when scrolled past end
+                    onEnterBack: () => gsap.to(".video-div-2", { autoAlpha: 1, duration: 0.5 }) // Shows again when scrolling back up
+                }
+            });
         });
+
+
 
         //video paly btn 
         const video_1 = document.getElementById("myVideo");
