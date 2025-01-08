@@ -102,7 +102,7 @@ p {
 }
 
 .main-header ul li a:focus {
-    color: unset;
+    color: white;
 }
 
 .down-arrow {
@@ -240,6 +240,10 @@ p {
     padding-top: 48px;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
+}
 
 
 /* ==============================
@@ -256,7 +260,7 @@ Benefits section
     height: auto;
 }
 
-.benefits-sub-div .text-p{
+.benefits-sub-div .text-p {
     font-weight: 400;
 }
 
@@ -274,17 +278,17 @@ Benefits section
     border-radius: 24px;
     margin-top: -160px;
     padding: 24px 48px 30px 48px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
-.benefits-section .section-title{
-    margin-top: 110px;
+.benefits-section .section-title {
+    margin-top: 78px;
 }
 
 .section-title {
     font-size: 72px;
     font-weight: 300;
-    text-align: center;    
+    text-align: center;
     color: white;
 }
 
@@ -302,7 +306,7 @@ Benefits section
 
 .card-title {
     font-size: 32px;
-    font-weight: 300;    
+    font-weight: 300;
 }
 
 .card-div-2 .card-title {
@@ -359,8 +363,8 @@ Benefits section
 }
 
 .main-div-policyxagi {
-    padding-top: 72px;
-    padding-bottom: 36px;
+    padding-top: 134px;
+    padding-bottom: 32px;
 }
 
 .section-title-h2 {
@@ -371,6 +375,20 @@ Benefits section
 /* ==========================
 policy-card
 =============================== */
+/* .benefits-section .row.g-4 .col-xl-3:first-child .policy-card-div {
+    margin-left: 0 !important;
+}
+
+.benefits-section .row.g-4 .col-xl-3:last-child .policy-card-div {
+    margin-right: 0 !important;
+} */
+.policy-card {
+    display: grid;
+    gap: 72px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin-top: 0;
+}
 
 .policy-card-div {
     height: 470px;
@@ -379,8 +397,8 @@ policy-card
     overflow: hidden;
     transition: 0.4s all ease-in-out;
     padding: 32px;
-    margin-top: 32px;
-    margin: 12px;
+    margin-top: 0px;
+    /* margin: 0 24px; */
     cursor: pointer;
 }
 
@@ -452,82 +470,25 @@ policy-card
     translate: 0px 184px;
 }
 
+#video-main {
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+}
 
+#ani-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
 
-.ifrem-video {
+.spacer {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
     position: relative;
-    width: 100%;
-    margin: auto;
-    border-radius: 20px;
-    height: 100%;
-    position: relative;
 }
-
-
-.popOut-bottom {
-    position: fixed;
-    right: 20px;
-    width: 420px;
-    max-width: 100%;
-    height: auto;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    animation: slideUp 0.3s ease-in-out forwards;
-}
-
-.scroll-animation {
-    transform: none;
-}
-
-.ifrem-video video {
-    width: 100%;
-    border-radius: 16px;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-
-.video-pay-btn {
-    transition: 0.3s all ease-in-out;
-}
-
-
-.ifrem-video:hover .video-pay-btn {
-    opacity: 1 !important;
-}
-
-
-
-
-.popup-container video {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-} */
-
-.popup-closed-btn {
-    border: 1px solid white;
-    border-radius: 100%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-    padding: 0px;
-}
-
-.popup-closed-btn i {
-    color: white;
-    font-size: 13px;
-}
-
-
-
 
 /* ===============================
 solution section
@@ -702,27 +663,27 @@ Footer
 video animation 
 =============== */
 
-.reimagining-insurance{
+/* .reimagining-insurance {
     padding-top: 500px;
-}
+} */
 
-.reimagining-insurance{
+.reimagining-insurance {
     position: relative;
     overflow: hidden;
 }
 
-.video-div-2{
+/* .video-div-2 {
     position: absolute;
     top: 0;
-    width:inherit;
+    width: inherit;
     overflow: hidden;
     height: 200vh;
     left: 0;
 }
 
-.video-div-2 video{
+.video-div-2 video {
     height: inherit;
-}
+} */
 
 /* ===============================
 About page
@@ -2420,11 +2381,11 @@ usecase page
 
 .reimagining-insurance .section-title-h2 {
     margin-bottom: 32px;
-    margin-top: 160px;
+    margin-top: 48px;
 }
 
 .reimagining-insurance {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 .about-section .page-title-duckreek {
