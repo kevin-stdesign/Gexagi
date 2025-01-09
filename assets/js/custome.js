@@ -98,3 +98,9 @@ jQuery(".popup-closed-btn").click(function () {
   jQuery(".popup-container").addClass("popup-container-display-none");
 });
 
+// Toggle Class
+$(document).ready(function() {
+  $('.theme-toggle .toggle').change(function() {
+      $("body").toggleClass("light-theme");
+  });
+});

@@ -36,6 +36,18 @@ p {
     --aqua-color: #00D9FF;
 }
 
+.light-theme{
+    --dark-blue: #6156DF;
+    --black-blue: #19172C;
+    --extralight-blue: #7086B0;
+    --light-blue: #D8E4FD;
+    --extra-dark-blue: #052A7B;
+    --footer-link-color: #A6B7DB;
+    --footer-link-title: #CCD8F1;
+    --aqua-color: #00D9FF;
+}
+
+
 .text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
@@ -2435,4 +2447,39 @@ duck reek
 
 .tabs-2-content.active {
     display: block;
+}
+
+.theme-toggle{
+    margin-left: 20px;
+}
+
+.toggle-btn{
+    border: 1px solid rgba(103, 107, 128, 1);
+    width: 40px;
+    height: 24px;
+    border-radius: 35px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-btn::after{
+    content: '';
+    height: calc(100% - 6px);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background: rgba(96, 6, 221, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 3px;
+    transition: all 0.2s ease;
+}
+
+.toggle:checked + .toggle-btn{
+    border-color: rgba(0, 0, 0, 1);
+}
+
+.toggle:checked + .toggle-btn:after {
+    left: 50%;
 }
