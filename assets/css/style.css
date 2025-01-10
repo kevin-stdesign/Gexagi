@@ -26,37 +26,38 @@ p {
 }
 
 :root {
+    --white: #ffffff;
+    --black: #000000;
+    --light: #EEF0FF;
+    --white-10: #F6F6FF;
+
     --dark-blue: #6156DF;
     --black-blue: #19172C;
-    --extralight-blue: #7086B0;
+    --extralight-blue:  #7086B0;
     --light-blue: #D8E4FD;
     --extra-dark-blue: #052A7B;
     --footer-link-color: #A6B7DB;
     --footer-link-title: #CCD8F1;
     --aqua-color: #00D9FF;
 }
-
-.light-theme{
-    --dark-blue: #6156DF;
-    --black-blue: #19172C;
-    --extralight-blue: #7086B0;
-    --light-blue: #D8E4FD;
-    --extra-dark-blue: #052A7B;
-    --footer-link-color: #A6B7DB;
-    --footer-link-title: #CCD8F1;
-    --aqua-color: #00D9FF;
-}
-
 
 .text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
 
 .bg-dark {
-    background: #000000 !important;
+    color: var(--white);
+    background: var(--black) !important;
+}
+
+.dark-logo{
+    display: none;
+}
+
+.white-text{
+    color: var(--white);
 }
 
 /*================
@@ -85,7 +86,7 @@ p {
     padding: 0 !important;
     font-size: 16px;
     font-weight: 500;
-    color: #EEF0FF;
+    color: var(--light);
 }
 
 .main-menu-a {
@@ -94,7 +95,7 @@ p {
 }
 
 .main-menu-a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--white);
 }
 
 .dropdown-toggle::after {
@@ -102,19 +103,19 @@ p {
 }
 
 .main-menu-a.active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--white);
 }
 
 .main-header ul li a.active {
-    color: white !important;
+    color: var(--white) !important;
 }
 
 .main-header ul li a:hover {
-    color: white;
+    color: var(--white);
 }
 
 .main-header ul li a:focus {
-    color: white;
+    color: var(--white);
 }
 
 .down-arrow {
@@ -141,13 +142,13 @@ p {
 }
 
 .main-header ul.dropdown-menu li a:hover {
-    background: #000000;
+    background:  var(--black);
     color: #066AA3 !important;
     transition: 0.3s all ease-in-out;
 }
 
 .main-header ul.dropdown-menu li a:focus {
-    background: #000000;
+    background:  var(--black);
     color: #066AA3 !important;
     transition: 0.3s all ease-in-out;
 }
@@ -230,7 +231,7 @@ p {
     height: 1px;
     bottom: -1px;
     left: 0;
-    background-color: white;
+    background-color: var(--white);
     transition: 0.5s all ease-in-out;
 }
 
@@ -254,7 +255,7 @@ p {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: rgb(255 255 255);
+    color: var(--white);
 }
 
 
@@ -264,7 +265,7 @@ Benefits section
 .section-title-h2 {
     font-size: 48px;
     font-weight: 300;
-    color: white;
+    color: var(--white);
 }
 
 .benefits-icon img {
@@ -279,7 +280,7 @@ Benefits section
 .icon-name-text {
     font-size: 20px;
     font-weight: 600;
-    color: white;
+    color: var(--white);
 }
 
 .benefits-sub-div {
@@ -301,7 +302,7 @@ Benefits section
     font-size: 72px;
     font-weight: 300;
     text-align: center;
-    color: white;
+    color: var(--white);
 }
 
 .card-div-3 .card-title {
@@ -357,21 +358,21 @@ Benefits section
     font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
-    color: #7086B0;
+    color:  var(--extralight-blue);
 }
 
 .text-policy-1 {
     font-size: 32px;
     font-weight: 600;
     line-height: 38.4px;
-    color: #7086B0;
+    color:  var(--extralight-blue);
 }
 
 .text-policy-2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 28.8px;
-    color: #7086B0;
+    color:  var(--extralight-blue);
 }
 
 .main-div-policyxagi {
@@ -600,7 +601,7 @@ Footer
 }
 
 .footer-all-rights-div p {
-    color: #FFFFFF !important;
+    color: var(--white) !important;
 }
 
 .footer-all-rights-sub-div {
@@ -625,7 +626,7 @@ Footer
 
 .contact-us-sub-div .connect-text {
     padding-right: 24px;
-    border-right: 1px solid #FFFFFF;
+    border-right: 1px solid var(--white);
 }
 
 
@@ -645,30 +646,30 @@ Footer
 }
 
 .footer-social-icons .link-in:hover svg {
-    fill: white;
-    background: white;
+    fill: var(--white);
+    background: var(--white);
     border-radius: 50%;
 }
 
 .footer-social-icons .link-in:hover svg path {
-    fill: black;
+    fill:  var(--black);
 }
 
 .footer-social-icons .insta:hover svg {
-    fill: white;
+    fill: var(--white);
 }
 
 .footer-social-icons .insta:hover svg path {
-    fill: black;
+    fill:  var(--black);
 }
 
 .footer-social-icons .twitter:hover svg {
-    fill: white;
+    fill: var(--white);
 }
 
 .footer-social-icons .twitter:hover svg rect,
 .footer-social-icons .twitter:hover svg path {
-    stroke: black;
+    stroke:  var(--black);
 }
 
 /* ==============
@@ -719,7 +720,7 @@ About page
 }
 
 .bg-dark-blue {
-    background-color: black;
+    background-color:  var(--black);
     min-height: 90vh;
 }
 
@@ -741,7 +742,7 @@ About page
     font-size: 48px;
     font-weight: 300;
     line-height: normal;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 32px;
 }
 
@@ -759,7 +760,7 @@ About page
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 28px;
 }
 
@@ -800,7 +801,7 @@ About page
 
 .about-section .tabs {
     display: flex;
-    background-color: #000000;
+    background-color:  var(--black);
     position: sticky;
     z-index: 1;
     top: 0;
@@ -821,7 +822,7 @@ About page
 
 .about-section .tabs a:hover,
 .about-section .tabs a.active {
-    color: #FFFFFF;
+    color: var(--white);
     border-bottom: 2px solid #0F3384;
 }
 
@@ -853,7 +854,7 @@ About page
 }
 
 .we-serve .we-serve-sub-div-title {
-    color: white;
+    color: var(--white);
     font-size: 32px;
     font-weight: 600;
     line-height: normal;
@@ -980,7 +981,7 @@ About page
 
 .card-use-case-sub-div {
     border-radius: 8px;
-    border: 1px solid black;
+    border: 1px solid  var(--black);
 }
 
 .swiper-slide-active .card-use-case-sub-div:hover .card-use-case-img img {
@@ -1008,7 +1009,7 @@ About page
 }
 
 .card-use-case-title-text {
-    color: white;
+    color: var(--white);
     font-size: 48px;
     font-weight: 500;
     line-height: 72px;
@@ -1060,7 +1061,7 @@ About page
 
 .slider-use-case-div .swiper-button-prev {
     padding: 12px;
-    background-color: white;
+    background-color: var(--white);
     height: auto;
     width: auto;
     border-radius: 100%;
@@ -1068,7 +1069,7 @@ About page
 
 .slider-use-case-div .swiper-button-next {
     padding: 12px;
-    background-color: white;
+    background-color: var(--white);
     height: auto;
     width: auto;
     border-radius: 100%;
@@ -1133,7 +1134,7 @@ About page
 }
 
 .faq-setion .accordion-item {
-    background-color: black;
+    background-color:  var(--black);
     border: none;
     border-top: 1px solid #00C0F1;
     border-radius: 0;
@@ -1161,12 +1162,12 @@ About page
 
 
 .faq-setion .accordion-header button {
-    background-color: #000000;
+    background-color:  var(--black);
     box-shadow: none !important;
     font-size: 64px;
     font-weight: 400;
     line-height: 76.8px;
-    color: white;
+    color: var(--white);
     padding: 48px 0;
     display: flex;
     justify-content: space-between;
@@ -1199,7 +1200,7 @@ About page
 }
 
 .faq-setion .text-p {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -1210,14 +1211,14 @@ About page
 .title-32 {
     font-size: 32px;
     font-weight: 600;
-    color: white;
+    color: var(--white);
     margin-bottom: 16px;
 }
 
 .title-24 {
     font-size: 24px;
     font-weight: 600;
-    color: #fff;
+    color: var(--white);
     margin-bottom: 12px;
 }
 
@@ -1335,11 +1336,11 @@ About page
 
 .conatct-text-p {
     font-size: 24px;
-    color: white;
+    color: var(--white);
     line-height: 36px;
     font-weight: 600;
     padding: 24px 32px;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     width: fit-content;
 }
 
@@ -1387,7 +1388,7 @@ About page
 }
 
 .contact-information span a {
-    color: #FFFFFF;
+    color: var(--white);
     font-weight: 400;
     text-align: center;
     text-decoration: none;
@@ -1408,7 +1409,7 @@ About page
 }
 
 .intro-page-section .text-p {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1461,7 +1462,7 @@ About page
 .pagination p,
 .pagination a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 14px !important;
     font-weight: 500 !important;
     line-height: 21px !important;
@@ -1473,7 +1474,7 @@ About page
 }
 
 .aboutus-section h1 {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 56px;
     font-weight: 500;
     line-height: 84px;
@@ -1481,7 +1482,7 @@ About page
 }
 
 .aboutus-section p {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
@@ -1492,7 +1493,7 @@ About page
 
 /* FAQ Page Start */
 .faq-section .subtitle {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -1501,15 +1502,15 @@ About page
 
 .faq-accordion .accordion-item {
     margin-bottom: 24px;
-    background: #000000B2;
-    border: 1px solid #fff;
+    background: transparent;
+    border: 1px solid var(--white);
     border-left-width: 3px;
     border-radius: 3px;
 }
 
 .faq-accordion .accordion-button {
     background: transparent;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -1521,7 +1522,7 @@ About page
 }
 
 .faq-accordion .accordion-body {
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid var(--white);
 }
 
 .faq-accordion .accordion-button::after {
@@ -1543,14 +1544,14 @@ About page
 
 .faq-accordion h5 {
     margin-bottom: 8px;
-    color: #F6F6FF;
+    color:  var(--white-10);
     font-size: 16px;
     font-weight: 500;
     line-height: 28.8px;
 }
 
 .faq-accordion p {
-    color: #F6F6FF;
+    color:  var(--white-10);
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: 400;
@@ -1563,7 +1564,7 @@ About page
 
 .faq-accordion ul li {
     list-style-type: disc;
-    color: #F6F6FF;
+    color:  var(--white-10);
     font-size: 16px;
     font-weight: 400;
     line-height: 28.8px;
@@ -1583,7 +1584,7 @@ Contact Us Page Start
     font-size: 80px;
     font-weight: 400;
     line-height: 120px;
-    color: white;
+    color: var(--white);
 }
 
 .location-sub-div img {
@@ -1633,7 +1634,7 @@ Contact Us Page Start
     box-shadow: 0px 4px 4px 0px #00000040;
     padding: 14px 16px 13px;
     background: #1D2248;
-    color: #fff;
+    color: var(--white);
     border: 1px solid #1D2248;
     display: block;
 }
@@ -1648,7 +1649,7 @@ Contact Us Page Start
 }
 
 .contact-form .form-control:focus {
-    border-color: #FFFFFF;
+    border-color: var(--white);
 }
 
 .form-input-group {
@@ -1684,7 +1685,7 @@ Contact Us Page Start
 }
 
 .btn-outline-light:hover .text-gradian-color-hover {
-    color: #fff;
+    color: var(--white);
 }
 
 .contact-iffo-sub-div {
@@ -1730,7 +1731,7 @@ Our Expertise
     font-size: 18px;
     font-weight: 400;
     line-height: 32.4px;
-    color: white;
+    color: var(--white);
 }
 
 a.text-p-18 {
@@ -1747,7 +1748,7 @@ a.text-p-18 {
     max-width: 650px;
     width: 100%;
     margin-bottom: 20px;
-    background-color: black;
+    background-color:  var(--black);
 }
 
 .tans-ul .tabs-li button {
@@ -1756,7 +1757,7 @@ a.text-p-18 {
     justify-content: space-between;
     align-items: center;
     border-width: 0 0 1px 0 !important;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white);
     padding: 32px 32px 32px 16px;
 }
 
@@ -1778,7 +1779,7 @@ a.text-p-18 {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    color: white;
+    color: var(--white);
     text-align: start;
     /* padding: 0; */
     transition: 0.3s all ease-in-out;
@@ -1806,7 +1807,7 @@ a.text-p-18 {
     font-size: 36px;
     font-weight: 500;
     line-height: 43.2px;
-    color: white;
+    color: var(--white);
 }
 
 .tabs-content .text-p {
@@ -1842,7 +1843,7 @@ a.text-p-18 {
     font-size: 36px;
     font-weight: 600;
     line-height: 64.8px;
-    color: white;
+    color: var(--white);
     margin-bottom: 32px;
 
 }
@@ -1856,8 +1857,6 @@ a.text-p-18 {
     gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-.benefits-section-sub-card {}
 
 .benefits-section-card .row .col-lg-4 {
     margin-top: 32px;
@@ -1891,7 +1890,7 @@ a.text-p-18 {
 .key-benefits-section .text-p {
     font-size: 18px;
     line-height: 32.4px;
-    color: white;
+    color: var(--white);
     font-weight: 400;
 }
 
@@ -1925,7 +1924,7 @@ a.text-p-18 {
 .key-benefits-slider .swiper-button-prev,
 .key-benefits-slider .swiper-button-next {
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     border-radius: 100%;
     height: auto;
     width: auto;
@@ -1953,7 +1952,7 @@ a.text-p-18 {
 }
 
 .key-benefits-section .swiper-pagination {
-    color: white;
+    color: var(--white);
     width: fit-content;
     position: absolute;
     bottom: 15px;
@@ -1961,7 +1960,7 @@ a.text-p-18 {
 }
 
 .key-benefits-section .swiper-pagination-current {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--white);
 }
 
 .key-benefits-section-1 {
@@ -2035,7 +2034,7 @@ usecase page
 }
 
 .casestudy-detail .lable {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
@@ -2047,7 +2046,7 @@ usecase page
     font-weight: 500;
     line-height: 60px;
     margin-bottom: 16px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .casestudy-detail .date-time {
@@ -2071,7 +2070,7 @@ usecase page
 }
 
 .casestudy-detail .date-time h5 {
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
@@ -2090,7 +2089,7 @@ usecase page
 }
 
 .casestudy-description h5 {
-    color: #F6F6FF;
+    color:  var(--white-10);
     margin-bottom: 16px;
     font-size: 36px;
     font-weight: 600;
@@ -2104,7 +2103,7 @@ usecase page
 .casestudy-description p,
 .casestudy-description ul li {
     list-style-type: disc;
-    color: #F6F6FF;
+    color:  var(--white-10);
     font-size: 18px;
     font-weight: 400;
     line-height: 32.4px;
@@ -2127,7 +2126,7 @@ usecase page
 }
 
 .casestudy-description .action-one h5 {
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 24px;
     font-size: 48px;
     font-weight: 400;
@@ -2143,7 +2142,7 @@ usecase page
     display: flex;
     margin-top: 16px;
     gap: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -2197,7 +2196,7 @@ usecase page
 
 .discovery-phase-chart .apexcharts-legend-text {
     font-size: 14px !important;
-    color: white !important;
+    color: var(--white) !important;
 }
 
 .discovery-phase-chart .apexcharts-grid {
@@ -2247,14 +2246,30 @@ usecase page
     margin: 0 auto;
 }
 
+.apexcharts-grid-borders line,
+.apexcharts-gridline{
+    stroke: #e0e0e0;
+}
+
+.apexcharts-tooltip{
+    color: var(--black);
+}
+
+.apexcharts-text,
+.apexcharts-xaxis-title-inversed,
+.apexcharts-title-text,
+.apexcharts-yaxis-title{
+    fill: var(--white) !important;
+}
+
 .data-collection-chart .apexcharts-yaxis-texts-g tspan {
     font-size: 14px !important;
-    fill: white !important;
+    fill: var(--white) !important;
 }
 
 .data-collection-chart .apexcharts-xaxis-texts-g tspan {
     font-size: 14px !important;
-    fill: white !important;
+    fill: var(--white) !important;
     font-family: "Poppins", serif;
 }
 
@@ -2307,9 +2322,9 @@ usecase page
 }
 
 .data-prepration-chart .apexcharts-legend-text {
-    color: #fff !important;
+    color: var(--white) !important;
     font-size: 14px !important;
-    fill: white !important;
+    fill: var(--white) !important;
     font-family: "Poppins", serif !important;
     margin-left: 5px !important;
     padding-left: 0px !important;
@@ -2334,7 +2349,7 @@ usecase page
 
 .machine-learning-chart1 .apexcharts-legend-text {
     font-size: 14px !important;
-    color: white !important;
+    color: var(--white) !important;
 }
 
 .machine-learning-chart1 .apexcharts-grid {
@@ -2387,12 +2402,12 @@ usecase page
 
 .machine-learning-chart2 .apexcharts-yaxis-texts-g tspan {
     font-size: 14px !important;
-    fill: white !important;
+    fill: var(--white) !important;
 }
 
 .machine-learning-chart2 .apexcharts-xaxis-texts-g tspan {
     font-size: 14px !important;
-    fill: white !important;
+    fill: var(--white) !important;
     font-family: "Poppins", serif;
 }
 
@@ -2426,7 +2441,7 @@ usecase page
     font-size: 48px;
     font-weight: 300;
     line-height: normal;
-    color: white;
+    color: var(--white);
 }
 
 /* ======================
@@ -2453,7 +2468,7 @@ duck reek
     margin-left: 20px;
 }
 
-.toggle-btn{
+.toggle-button{
     border: 1px solid rgba(103, 107, 128, 1);
     width: 40px;
     height: 24px;
@@ -2462,9 +2477,9 @@ duck reek
     position: relative;
 }
 
-.toggle-btn::after{
+.toggle-button::after{
     content: '';
-    height: calc(100% - 6px);
+    height: calc(100% - 4px);
     aspect-ratio: 1/1;
     border-radius: 100%;
     background: rgba(96, 6, 221, 1);
@@ -2476,10 +2491,14 @@ duck reek
     transition: all 0.2s ease;
 }
 
-.toggle:checked + .toggle-btn{
+.toggle:checked + .toggle-button{
     border-color: rgba(0, 0, 0, 1);
 }
 
-.toggle:checked + .toggle-btn:after {
-    left: 50%;
+.toggle:checked + .toggle-button:after {
+    left: calc(50% - 1px);
+}
+
+.navbar-brand.site-logo{
+    margin-right: auto;
 }

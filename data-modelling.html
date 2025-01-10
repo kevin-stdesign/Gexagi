@@ -9,9 +9,11 @@
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- font-ausome i-cone link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
@@ -20,6 +22,7 @@
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -32,7 +35,8 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand site-logo" href="index.html">
-                            <img src="assets/img/site-icon.png" alt="site-logo">
+                            <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                            <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                         </a>
                         <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -42,7 +46,8 @@
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <a class="navbar-brand site-logo" href="#">
-                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                    <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                                    <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                                 </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                     <i class="fa-solid fa-xmark"></i>
@@ -88,6 +93,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="theme-toggle">
+                            <input class="toggle d-none" id="themeToggle" type="checkbox">
+                            <label class="toggle-button" for="themeToggle"></label>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -97,18 +106,20 @@
 
     <main class="section-full-bg pt-108 casestudy-detail">
         <div class="container">
-            <div class="pagination">
-                <a href="index.html">Home</a>
-                <p>></p>
-                <a href="#">Our Innovative</a>
-                <p>></p>
-                <a href="usecase.html">Use Case</a>
-            </div>
-            <h5 class="lable">CASE STUDY</h5>
-            <h1>Elevating Analytical Capabilities Through Data Modeling & Aggregation</h1>
-            <div class="date-time">
-                <h5>6-MINUTE READ</h5>
-                <h5>JUNE 20, 2024</h5>
+            <div class="dark-theme pt-2">
+                <div class="pagination">
+                    <a href="index.html">Home</a>
+                    <p>></p>
+                    <a href="#">Our Innovative</a>
+                    <p>></p>
+                    <a href="usecase.html">Use Case</a>
+                </div>
+                <h5 class="lable">CASE STUDY</h5>
+                <h1>Elevating Analytical Capabilities Through Data Modeling & Aggregation</h1>
+                <div class="date-time">
+                    <h5>6-MINUTE READ</h5>
+                    <h5>JUNE 20, 2024</h5>
+                </div>
             </div>
             <img src="assets/img/casestudy-img4.png" alt="Case Study" class="casestudy-detailimg">
             <div class="casestudy-description">
@@ -265,7 +276,7 @@
     </main>
 
     <!-- Footer start -->
-    <footer class="footer">
+    <footer class="footer dark-theme">
         <div class="container">
             <div class="row footer-row">
                 <div class=" col-lg-6 col-12 inmporatant-link-div">

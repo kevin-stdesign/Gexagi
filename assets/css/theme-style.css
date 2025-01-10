@@ -1,0 +1,144 @@
+.light-theme .dark-theme>*,
+.light-theme .dark-theme,
+.light-theme {
+    --white: #ffffff;
+    --black: #000000;
+    --light: #EEF0FF;
+    --white-10: #F6F6FF;
+
+    --dark-blue: #6156DF;
+    --black-blue: #19172C;
+    --extralight-blue: #7086B0;
+    --light-blue: #D8E4FD;
+    --extra-dark-blue: #052A7B;
+    --footer-link-color: #A6B7DB;
+    --footer-link-title: #CCD8F1;
+    --aqua-color: #00D9FF;
+}
+
+.light-theme.bg-dark,
+.light-theme .main-header,
+/* .light-theme .text-white, */
+.light-theme div:not(.dark-theme):not(div),
+.light-theme .bg-dark-blue {
+    --white: #000000;
+    --white-10: #000000;
+    --black: #ffffff;
+    --light: #000000;
+    --extralight-blue: rgba(81, 85, 91, 1);
+}
+
+.light-theme .btn-know-more svg path {
+    fill: var(--white);
+}
+
+.light-theme .btn-know-more:hover svg path {
+    fill: var(--dark-blue);
+}
+
+.light-theme .policy-card {
+    --white: #ffffff;
+}
+
+.light-theme .light-logo {
+    display: none;
+}
+
+.light-theme .dark-logo {
+    display: block;
+}
+
+.light-theme .main-header .active .down-arrow,
+.light-theme .main-header .show .down-arrow,
+.light-theme .main-header a:hover .down-arrow {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(92%) saturate(5357%) hue-rotate(268deg) brightness(90%) contrast(115%);
+}
+
+.light-theme .main-header ul.dropdown-menu li a:hover {
+    background: rgb(81 85 91 / 12%);
+}
+
+.light-theme .drop-down-ul,
+.light-theme .main-header {
+    background: var(--black);
+    --light: #000002;
+    --white: #6006DD;
+}
+
+.light-theme .toggle-button {
+    box-shadow: 0 0 0 1px #000;
+}
+
+.light-theme .main-header .down-arrow {
+    filter: brightness(0.2);
+}
+
+.light-theme .offcanvas.offcanvas-end {
+    background-color: #fff;
+}
+
+.light-theme .card-div {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box, linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%) border-box;
+}
+
+.light-theme .contact-form h5{
+    color: #51555B;
+}
+
+.light-theme .contact-form .form-control{
+    background: var(--footer-link-title);
+    border-color: var(--footer-link-title);
+}
+
+.light-theme .contact-form .form-control::placeholder{
+    color: var(--extralight-blue);
+}
+.light-theme .btn-outline-light{
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)) padding-box,
+    linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%) border-box;
+    color: var(--white);
+}
+
+.light-theme .apexcharts-text,
+.light-theme .apexcharts-xaxis-title-inversed,
+.light-theme .apexcharts-title-text,
+.light-theme .apexcharts-yaxis-title{
+    fill: var(--white) !important;
+}
+
+.light-theme .apexcharts-grid-borders line,
+.light-theme .apexcharts-gridline{
+    stroke: #222222;
+}
+
+.light-theme .apexcharts-tooltip{
+    color: var(--white);
+}
+
+.light-theme .swiper-button-next svg path, 
+.light-theme .swiper-button-prev svg path{
+ fill: var(--white);
+}
+
+.light-theme .swiper-button-next:hover svg path, 
+.light-theme .swiper-button-prev:hover svg path{
+    fill: var(--aqua-color);
+}
+
+.light-theme .faq-setion .accordion-header button img,
+.light-theme .faq-accordion .accordion-arrow{
+    filter: brightness(0.1);
+}
+
+.light-theme .experience-section .btn-requst-demo{
+    color: var(--black);
+}
+
+.light-theme .slider-use-case-div .swiper-button-next img,
+.light-theme .slider-use-case-div .swiper-button-prev img{
+    filter: invert(1);
+}
+
+.light-theme .slider-use-case-div .bg-black{
+    background-color: var(--black) !important;
+}
