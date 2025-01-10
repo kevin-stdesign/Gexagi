@@ -7,6 +7,16 @@
     font-family: "Poppins", serif;
 }
 
+[data-theme="light"] {
+    --color-bg: #ffffff;
+    --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -45,6 +55,7 @@ p {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: 400;
 }
 
 .bg-dark {
@@ -69,13 +80,18 @@ p {
     height: auto;
 }
 
+.main-header.sticky {
+    background: #000000;
+    border-bottom: 1px solid #17181c;
+}
+
 .main-header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 24px 0;
-    z-index: 2;
+    z-index: 99;
 }
 
 .main-header ul {
@@ -85,7 +101,7 @@ p {
 .main-header ul li a {
     padding: 0 !important;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--light);
 }
 
@@ -103,6 +119,7 @@ p {
 }
 
 .main-menu-a.active {
+    font-weight: 500;
     border-bottom: 2px solid var(--white);
 }
 
@@ -138,6 +155,7 @@ p {
     padding: 12px 16px !important;
     font-size: 14px;
     font-weight: 400;
+    width: 100%;
     transition: 0.3s all ease-in-out;
 }
 
@@ -164,7 +182,7 @@ p {
 .banner-section-title {
     font-size: 72px;
     font-weight: 300;
-    line-height: 84px;
+    line-height: 108px;
 }
 
 .long-arrow {
@@ -236,7 +254,7 @@ p {
 }
 
 .btn-know-more:hover::after {
-    width: 72%;
+    width: 87px;
     background-color: var(--dark-blue);
     transition: 0.5s all ease-in-out;
 }
@@ -251,6 +269,7 @@ p {
 
 .text-btn-div {
     padding-top: 48px;
+    flex-direction: row-reverse;
 }
 
 .navbar-nav .nav-link.active,
@@ -296,6 +315,7 @@ Benefits section
 
 .benefits-section .section-title {
     margin-top: 78px;
+    line-height: 108px;
 }
 
 .section-title {
@@ -332,7 +352,7 @@ Benefits section
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 8px;
     width: 100%;
     height: auto !important;
@@ -343,7 +363,7 @@ Benefits section
 
 
 .card-div:hover {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
         linear-gradient(90.01deg, #F9AF7C 19.51%, #FB537B 43.04%, #588DFF 74.99%, #00FFF0 99.99%) border-box;
     box-shadow: 0px 0px 50px 0px #0021F8;
@@ -356,17 +376,18 @@ Benefits section
 
 .text-policy {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 38.4px;
     color:  var(--extralight-blue);
 }
 
 .text-policy-1 {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 38.4px;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48px;
     color:  var(--extralight-blue);
 }
+
 
 .text-policy-2 {
     font-size: 24px;
@@ -383,6 +404,12 @@ Benefits section
 .section-title-h2 {
     max-width: 1128px;
     margin: auto;
+    color: #fff;
+    line-height: 86px;
+}
+
+.solution-section .section-title-h2 {
+    font-size: 72px;
 }
 
 /* ==========================
@@ -490,9 +517,9 @@ policy-card
 }
 
 #ani-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: fill;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .spacer {
@@ -531,7 +558,6 @@ solution section
     padding-top: 80px;
     padding-left: 0;
     padding-right: 0;
-    margin-top: 32px;
     display: flex;
 }
 
@@ -709,8 +735,10 @@ About page
 }
 
 .about-section .sticky {
+    /* border-top: 1px solid #676b80; */
+    width: 100%;
     position: fixed;
-    top: 0;
+    top: 104px;
     transition: 0.4s all ease-in-out;
 }
 
@@ -742,12 +770,12 @@ About page
     font-size: 48px;
     font-weight: 300;
     line-height: normal;
+    margin-bottom: 24px;
     color: var(--white);
-    margin-bottom: 32px;
 }
 
 .about-tab {
-    padding-bottom: 96px;
+    padding-bottom: 68px;
     padding-top: 72px;
     transition: 0.4s all ease-in-out;
 }
@@ -759,7 +787,7 @@ About page
 .about-description {
     font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 32px;
     color: var(--white);
     margin-bottom: 28px;
 }
@@ -768,9 +796,9 @@ About page
     display: flex;
     justify-content: space-between;
     gap: 48px;
-    padding-bottom: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 72px;
     align-items: center;
+    transition: 0.4s all ease-in-out;
 }
 
 
@@ -787,7 +815,8 @@ About page
 }
 
 .benefits-sub-div .section-title-h2 {
-    max-width: 100%;
+    max-width: min-content;
+    margin: initial;
 }
 
 .navbar-expand-lg {
@@ -853,11 +882,16 @@ About page
     margin-bottom: 48px;
 }
 
+.brokers-div.about-tab-content {
+    display: block;
+}
+
 .we-serve .we-serve-sub-div-title {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 72px;
+    margin-bottom: 0;
     color: var(--white);
-    font-size: 32px;
-    font-weight: 600;
-    line-height: normal;
 }
 
 .solution-sub-div-img img {
@@ -874,7 +908,7 @@ About page
 }
 
 .about-sub-section .about-us-content-div {
-    padding-top: 48px;
+    margin-top: 48px;
 }
 
 .about-us-content-div-2 {
@@ -903,7 +937,7 @@ About page
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 128px 0 0;
     min-height: 733px;
-    margin-bottom: -228px;
+    margin-bottom: 30px;
 }
 
 .btn-text {
@@ -934,7 +968,9 @@ About page
 }
 
 .product-policy .section-title-h2 {
-    font-size: 32px;
+    font-size: 48px;
+    margin-top: 0 !important;
+    max-width: 100%;
 }
 
 
@@ -944,6 +980,8 @@ About page
     max-width: 1128px;
     text-align: center;
     margin: auto;
+    line-height: 36px;
+    margin-bottom: 24px;
 }
 
 /* .product-img-div img {

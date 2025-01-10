@@ -672,6 +672,55 @@
 <script src="assets/plugin/gaps/gaps.js"></script>
 <script src="assets/js/custome.js"></script>
 
+<!-- Header Add Class  -->
+
+<script>
+    $(document).ready(function () {
+        var header = $('header');  // Select the header element
+
+        // Scroll event listener
+        $(window).scroll(function () {
+            sticky();  // Apply sticky functionality
+            activateTab();  // Activate the corresponding tab based on scroll
+        });
+
+        // Sticky Header Logic
+        function sticky() {
+            var scrollY = window.scrollY;  // Get the vertical offset from the top (scroll position)
+
+            // Add 'sticky' class if the scroll position is greater than 0 (i.e., user has scrolled down)
+            if (scrollY > 0) {
+                header.addClass('sticky');  // Add 'sticky' class when scrolled down
+            } else {
+                header.removeClass('sticky');  // Remove 'sticky' class when at the top
+            }
+        }
+
+        // Initial check to add sticky class if the page is loaded after scrolling down
+        // This check ensures that if the page is already scrolled down after refresh, sticky class is added
+        sticky();
+
+        // Activate Tab Based on Scroll Position
+        function activateTab() {
+            var currentScroll = $(window).scrollTop();
+
+            // Loop through all sections and check which one is in the viewport
+            $('main-header').each(function () {
+                var contentTop = $(this).offset().top;
+                var contentBottom = contentTop + $(this).outerHeight();
+                var sectionId = $(this).attr('id');
+
+                // Check if the section is in the viewport
+                if (currentScroll >= contentTop - 10 && currentScroll < contentBottom) {
+                    // Add active class to the corresponding tab
+                    $('a').removeClass('active');
+                    $('a[href="#' + sectionId + '"]').addClass('active');
+                }
+            });
+        }
+    });
+</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var swiper = new Swiper(".mySwiper", {
@@ -679,7 +728,7 @@
             centeredSlides: true,
             effect: "fade",
             autoplay: {
-                delay: 3000,
+                delay: 1000,
                 disableOnInteraction: false,
             }
         });
