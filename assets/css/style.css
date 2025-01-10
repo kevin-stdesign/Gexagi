@@ -43,7 +43,7 @@ p {
 
     --dark-blue: #6156DF;
     --black-blue: #19172C;
-    --extralight-blue:  #7086B0;
+    --extralight-blue: #7086B0;
     --light-blue: #D8E4FD;
     --extra-dark-blue: #052A7B;
     --footer-link-color: #A6B7DB;
@@ -63,11 +63,11 @@ p {
     background: var(--black) !important;
 }
 
-.dark-logo{
+.dark-logo {
     display: none;
 }
 
-.white-text{
+.white-text {
     color: var(--white);
 }
 
@@ -160,13 +160,13 @@ p {
 }
 
 .main-header ul.dropdown-menu li a:hover {
-    background:  var(--black);
+    background: var(--black);
     color: #066AA3 !important;
     transition: 0.3s all ease-in-out;
 }
 
 .main-header ul.dropdown-menu li a:focus {
-    background:  var(--black);
+    background: var(--black);
     color: #066AA3 !important;
     transition: 0.3s all ease-in-out;
 }
@@ -269,6 +269,7 @@ p {
 
 .text-btn-div {
     padding-top: 48px;
+    padding-left: 0;
     flex-direction: row-reverse;
 }
 
@@ -378,14 +379,14 @@ Benefits section
     font-size: 32px;
     font-weight: 300;
     line-height: 38.4px;
-    color:  var(--extralight-blue);
+    color: var(--extralight-blue);
 }
 
 .text-policy-1 {
     font-size: 40px;
     font-weight: 300;
     line-height: 48px;
-    color:  var(--extralight-blue);
+    color: var(--extralight-blue);
 }
 
 
@@ -393,7 +394,7 @@ Benefits section
     font-size: 24px;
     font-weight: 600;
     line-height: 28.8px;
-    color:  var(--extralight-blue);
+    color: var(--extralight-blue);
 }
 
 .main-div-policyxagi {
@@ -404,7 +405,7 @@ Benefits section
 .section-title-h2 {
     max-width: 1128px;
     margin: auto;
-    color: #fff;
+    color: var(--white);
     line-height: 86px;
 }
 
@@ -486,8 +487,8 @@ policy-card
 
 
 .policy-card-btn-div {
-    bottom: 20px;
-    right: 50px;
+    bottom: 30px;
+    right: 30px;
     translate: 0 100px;
     transition: 0.5s all ease-in-out;
 }
@@ -503,7 +504,7 @@ policy-card
 }
 
 .policy-card-div:hover .policy-card-content {
-    translate: 0px 84px;
+    translate: -8px 84px;
 }
 
 .policy-card-div-10:hover .policy-card-content {
@@ -678,7 +679,7 @@ Footer
 }
 
 .footer-social-icons .link-in:hover svg path {
-    fill:  var(--black);
+    fill: var(--black);
 }
 
 .footer-social-icons .insta:hover svg {
@@ -686,7 +687,7 @@ Footer
 }
 
 .footer-social-icons .insta:hover svg path {
-    fill:  var(--black);
+    fill: var(--black);
 }
 
 .footer-social-icons .twitter:hover svg {
@@ -695,7 +696,7 @@ Footer
 
 .footer-social-icons .twitter:hover svg rect,
 .footer-social-icons .twitter:hover svg path {
-    stroke:  var(--black);
+    stroke: var(--black);
 }
 
 /* ==============
@@ -748,7 +749,7 @@ About page
 }
 
 .bg-dark-blue {
-    background-color:  var(--black);
+    background-color: var(--black);
     min-height: 90vh;
 }
 
@@ -830,7 +831,7 @@ About page
 
 .about-section .tabs {
     display: flex;
-    background-color:  var(--black);
+    background-color: var(--black);
     position: sticky;
     z-index: 1;
     top: 0;
@@ -1019,7 +1020,7 @@ About page
 
 .card-use-case-sub-div {
     border-radius: 8px;
-    border: 1px solid  var(--black);
+    border: 1px solid var(--black);
 }
 
 .swiper-slide-active .card-use-case-sub-div:hover .card-use-case-img img {
@@ -1172,7 +1173,7 @@ About page
 }
 
 .faq-setion .accordion-item {
-    background-color:  var(--black);
+    background-color: var(--black);
     border: none;
     border-top: 1px solid #00C0F1;
     border-radius: 0;
@@ -1200,7 +1201,7 @@ About page
 
 
 .faq-setion .accordion-header button {
-    background-color:  var(--black);
+    background-color: var(--black);
     box-shadow: none !important;
     font-size: 64px;
     font-weight: 400;
@@ -1582,14 +1583,14 @@ About page
 
 .faq-accordion h5 {
     margin-bottom: 8px;
-    color:  var(--white-10);
+    color: var(--white-10);
     font-size: 16px;
     font-weight: 500;
     line-height: 28.8px;
 }
 
 .faq-accordion p {
-    color:  var(--white-10);
+    color: var(--white-10);
     margin-bottom: 8px;
     font-size: 14px;
     font-weight: 400;
@@ -1602,7 +1603,7 @@ About page
 
 .faq-accordion ul li {
     list-style-type: disc;
-    color:  var(--white-10);
+    color: var(--white-10);
     font-size: 16px;
     font-weight: 400;
     line-height: 28.8px;
@@ -1786,7 +1787,7 @@ a.text-p-18 {
     max-width: 650px;
     width: 100%;
     margin-bottom: 20px;
-    background-color:  var(--black);
+    background-color: var(--black);
 }
 
 .tans-ul .tabs-li button {
@@ -2127,7 +2128,7 @@ usecase page
 }
 
 .casestudy-description h5 {
-    color:  var(--white-10);
+    color: var(--white-10);
     margin-bottom: 16px;
     font-size: 36px;
     font-weight: 600;
@@ -2141,7 +2142,7 @@ usecase page
 .casestudy-description p,
 .casestudy-description ul li {
     list-style-type: disc;
-    color:  var(--white-10);
+    color: var(--white-10);
     font-size: 18px;
     font-weight: 400;
     line-height: 32.4px;
@@ -2285,18 +2286,18 @@ usecase page
 }
 
 .apexcharts-grid-borders line,
-.apexcharts-gridline{
+.apexcharts-gridline {
     stroke: #e0e0e0;
 }
 
-.apexcharts-tooltip{
+.apexcharts-tooltip {
     color: var(--black);
 }
 
 .apexcharts-text,
 .apexcharts-xaxis-title-inversed,
 .apexcharts-title-text,
-.apexcharts-yaxis-title{
+.apexcharts-yaxis-title {
     fill: var(--white) !important;
 }
 
@@ -2502,11 +2503,11 @@ duck reek
     display: block;
 }
 
-.theme-toggle{
+.theme-toggle {
     margin-left: 20px;
 }
 
-.toggle-button{
+.toggle-button {
     border: 1px solid rgba(103, 107, 128, 1);
     width: 40px;
     height: 24px;
@@ -2515,7 +2516,7 @@ duck reek
     position: relative;
 }
 
-.toggle-button::after{
+.toggle-button::after {
     content: '';
     height: calc(100% - 4px);
     aspect-ratio: 1/1;
@@ -2529,14 +2530,14 @@ duck reek
     transition: all 0.2s ease;
 }
 
-.toggle:checked + .toggle-button{
+.toggle:checked+.toggle-button {
     border-color: rgba(0, 0, 0, 1);
 }
 
-.toggle:checked + .toggle-button:after {
+.toggle:checked+.toggle-button:after {
     left: calc(50% - 1px);
 }
 
-.navbar-brand.site-logo{
+.navbar-brand.site-logo {
     margin-right: auto;
 }

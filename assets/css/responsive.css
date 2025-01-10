@@ -318,12 +318,22 @@
     }
 
     .banner-section-title {
-        font-size: 53px;
+        font-size: 40px;
         line-height: normal;
     }
 
+    .benefits-section .section-title {
+        margin-top: 10px;
+    }
+
+    .main-div-policyxagi {
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+
     .section-title {
-        font-size: 53px;
+        font-size: 40px;
+        line-height: 50px !important;
     }
 
     .policy-card-div {
@@ -339,16 +349,41 @@
     }
 
     .reimagining-insurance .section-title-h2 {
-        margin-top: 90px;
+        margin-top: 0px;
+    }
+
+    .solution-section .section-title-h2 {
+        font-size: 39px;
     }
 
     .section-title-h2 {
         font-size: 39px;
+        line-height: 50px;
     }
 
 }
 
 @media(max-width:991.98px) {
+    .navbar .container-fluid .navbar-brand {
+        order: 1;
+    }
+
+    .navbar .container-fluid .toggle-btn {
+        order: 3;
+    }
+
+    .navbar .container-fluid .theme-toggle {
+        order: 2;
+        display: flex;
+        align-items: center;
+        margin: auto 14px;
+    }
+
+    .theme-toggle {
+        margin-right: 24px;
+    }
+
+
     .spacer {
         display: none;
     }
@@ -558,7 +593,7 @@
     }
 
     .text-policy {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .business-growth-section .section-title-h2 {
@@ -892,11 +927,27 @@
 
     .section-title-h2 {
         font-size: 37px;
+        line-height: 46px;
     }
 
 }
 
 @media(max-width:767.98px) {
+    .btn-div {
+        padding: 8px;
+        padding-left: 0;
+        margin-top: 24px;
+    }
+
+    .benefits-section {
+        margin-bottom: 0px;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        margin-bottom: 24px;
+        margin-top: 0;
+    }
+
     .spacer {
         display: none;
     }
@@ -904,6 +955,7 @@
     #video-main {
         height: auto;
         width: auto;
+        margin-bottom: 24px;
     }
 
     #ani-video {
@@ -915,7 +967,7 @@
 
     .policy-card {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 24px;
     }
 
     .policy-card-div {
@@ -942,7 +994,7 @@
     .benefits-section-card {
         display: grid;
         gap: 24px;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .solution-section-img-div .solution-sub-div-img:nth-child(1),
@@ -1039,7 +1091,7 @@
     }
 
     .text-policy {
-        font-size: 17px;
+        font-size: 24px;
     }
 
     .btn-requst-demo {
@@ -1159,6 +1211,7 @@
 
     .solution-section .section-title-h2 {
         font-size: 40px;
+        padding-bottom: 20px;
     }
 
     .card-title {
@@ -1280,9 +1333,22 @@
 }
 
 @media(max-width:575.98px) {
+    .link-div {
+        gap: 4px !important;
+        padding-top: 0;
+    }
+
+    .main-div-policyxagi .section-title-h2 {
+        margin-top: 4px !important;
+    }
+
     .policy-card {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 24px;
+    }
+
+    .bg-dark-blue {
+        padding: 0 4px;
     }
 
     .policy-card-div {
@@ -1291,12 +1357,12 @@
 
     .benefits-section-card {
         display: grid;
-        gap: 12px;
-        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        grid-template-columns: 1fr;
     }
 
     .link-div a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .footer-social-icons svg {
@@ -1331,13 +1397,13 @@
     }
 
     .footer-row {
-        padding: 32px 0 0 0;
+        padding: 24px 4px;
     }
 
 
     .contact-us-sub-div {
         display: unset;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
     }
 
     .contact-us-sub-div .connect-text {
@@ -1369,16 +1435,20 @@
     .banner-section-title {
         font-size: 24px;
         font-weight: 300;
-        line-height: 1.4;
+        line-height: 36px;
         padding: 0 12px !important;
     }
 
     .text-btn-div {
-        padding-top: 19px;
+        padding: 24px 12px 12px 12px;
     }
 
     .site-logo {
         max-width: 160px;
+    }
+
+    .text-btn-div .text-div p.text-p {
+        padding-top: 0;
     }
 
     .section-title-h2 {
@@ -1403,7 +1473,8 @@
     }
 
     .benefits-sub-div {
-        padding: 24px 12px 25px 12px;
+        padding: 24px 12px 16px 12px;
+        margin-bottom: 0px;
     }
 
     .card-title {
@@ -1417,7 +1488,7 @@
     }
 
     .text-policy {
-        font-size: 17px;
+        font-size: 18px;
         line-height: normal;
     }
 
@@ -1428,11 +1499,12 @@
 
     .policy-card-div {
         height: 400px;
+        padding: 22px;
     }
 
     .footer-link-sub-div {
         flex-direction: column;
-        gap: 20px;
+        gap: 4px;
     }
 
     .solution-section {
@@ -1441,11 +1513,12 @@
 
     .solution-section-img-div {
         display: grid;
-        gap: 16px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        grid-template-columns: 1fr;
         padding-left: 22px;
         padding-right: 22px;
         padding-top: 0;
+        text-align: center;
     }
 
     .solution-section-img-div .solution-sub-div-img:nth-child(1),
@@ -1454,7 +1527,8 @@
     }
 
     .solution-sub-div-img img {
-        height: 100px;
+        height: 200px;
+        max-width: 200px;
     }
 
     .play-btn {
@@ -1467,8 +1541,9 @@
     }
 
     .footer-link-title {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 22px;
+        margin-bottom: 8px;
     }
 
     .about-description {
@@ -1480,9 +1555,17 @@
     }
 
     .about-title {
-        font-size: 28px;
-        line-height: 28.4px;
+        font-size: 24px;
+        line-height: 50px;
         margin-bottom: 18px;
+    }
+
+    .about-description {
+        line-height: 26px;
+    }
+
+    .about-sub-section .about-us-content-div {
+        margin-top: 0;
     }
 
     .about-square-img {
@@ -1724,8 +1807,8 @@
     }
 
     .solution-section .section-title-h2 {
-        font-size: 32px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 24px;
         line-height: 40px;
     }
 
@@ -1792,7 +1875,7 @@
     }
 
     .home-baaner-section {
-        padding: 116px 0 195px 0;
+        padding: 100px 0 195px 0;
     }
 
     .product-policy {
@@ -1897,8 +1980,8 @@
 
     .about-section .page-title-duckreek {
         margin-bottom: 13px;
-        font-size: 30px;
-        line-height: normal;
+        font-size: 24px;
+        line-height: 36px;
     }
 
     .about-section {
@@ -1963,7 +2046,7 @@
     }
 
     .benefits-section .section-title {
-        margin-top: 16px;
+        margin-top: 24px;
     }
 
     .reimagining-insurance .section-title-h2 {
@@ -1971,8 +2054,10 @@
     }
 
     .we-serve .we-serve-sub-div-title {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 300;
+        line-height: 36px;
+        margin-top: 20px;
     }
 
 }
@@ -1981,16 +2066,18 @@
 
     .policy-card {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 24px;
     }
 
     .solution-section-img-div {
-        gap: 16px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 24px;
+        text-align: center;
+        grid-template-columns: 1fr;
     }
 
     .solution-sub-div-img img {
-        height: 70px;
+        height: 200px;
+        max-width: 200px;
     }
 
     .discovery-phase-chart .apexcharts-canvas {
@@ -2018,7 +2105,7 @@
 @media (max-width: 360px) {
     .policy-card {
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 24px;
     }
 
     .data-prepration-chart .apexcharts-legend {
@@ -2043,7 +2130,7 @@
 
     .benefits-section-card {
         display: grid;
-        gap: 12px;
+        gap: 24px;
         grid-template-columns: 1fr;
     }
 
@@ -2058,16 +2145,17 @@
     }
 
     .solution-section {
-        padding: 40px 0 40px 0;
+        padding: 40px 0 24px 0;
     }
 
     .solution-section-img-div {
         display: grid;
-        gap: 12px;
-        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        grid-template-columns: 1fr;
         padding-left: 22px;
         padding-right: 22px;
         padding-top: 0;
+        text-align: center;
     }
 
     .footer-all-rights-sub-div .contact-us-sub-div {
@@ -2092,7 +2180,8 @@
     }
 
     .solution-sub-div-img img {
-        height: 80px;
+        height: 200px;
+        max-width: 200px;
     }
 
     .link-div a {
