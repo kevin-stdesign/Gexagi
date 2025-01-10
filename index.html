@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 
@@ -36,7 +37,8 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand site-logo" href="index.html">
-                            <img src="assets/img/site-icon.png" alt="site-logo">
+                            <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                            <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                         </a>
                         <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -53,7 +55,8 @@
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <a class="navbar-brand site-logo" href="#">
-                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                    <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                                    <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                                 </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                     <i class="fa-solid fa-xmark"></i>
@@ -100,6 +103,10 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="theme-toggle">
+                            <input class="toggle d-none" id="themeToggle" type="checkbox">
+                            <label class="toggle-button" for="themeToggle"></label>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -110,10 +117,10 @@
     <!-- section start -->
     <main class="bg-dark-blue">
         <!-- Banner section   -->
-        <section class="home-baaner-section">
+        <section class="home-baaner-section dark-theme">
             <div class="container">
                 <div class="row">
-                    <h1 class="banner-section-title text-white p-0">
+                    <h1 class="banner-section-title white-text p-0">
                         <span class="text-gradian-color">Transforming</span> Traditional <span
                             class="text-gradian-color">Insurance</span>
                         Process Into a Modern, Secure Future
@@ -128,7 +135,7 @@
                         </div>
                         <div class="btn-div">
                             <a href="#"
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                 <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -146,10 +153,10 @@
         <section class="benefits-section">
             <div class="container">
                 <div class="row">
-                    <div class="benefits-sub-div">
+                    <div class="benefits-sub-div dark-theme">
                         <h2 class="section-title-h2 text-gradian-color"><span class="text-gradian-color">Benefits</span>
                         </h2>
-                        <p class="text-p text-white pt-2 pb-3 mb-1 ">With GEXAGI Services for Duck Creek & Guidewire,
+                        <p class="text-p white-text pt-2 pb-3 mb-1 ">With GEXAGI Services for Duck Creek & Guidewire,
                             insurance companies can get numerous benefits</p>
                         <div class="row benefits-row-1">
                             <div class="col-lg-4 col-sm-6 col-5 benefits-column">
@@ -179,7 +186,7 @@
                         </div>
                     </div>
                     <div class="section-main-title">
-                        <h3 class="section-title text-center text-white"> <span
+                        <h3 class="section-title text-center white-text"> <span
                                 class="text-gradian-color">Innovating</span> today for smarter <span
                                 class="text-gradian-color">insurance</span> tomorrow</span>
                         </h3>
@@ -187,11 +194,11 @@
                     <div class="benefits-section-card">
                         <div class="card-div card-div-2">
                             <img class="card-img" src="assets/icon/card-1.svg" alt="icon">
-                            <h4 class="card-title text-white text-center my-sm-4 my-3 "> <span
+                            <h4 class="card-title white-text text-center my-sm-4 my-3 "> <span
                                     class="text-gradian-color">Envision </span> <br>
                                 a different world</h4>
                             <a href=""
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                 <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -203,11 +210,11 @@
                         </div>
                         <div class="card-div">
                             <img class="card-img" src="assets/icon/card-2.svg" alt="icon">
-                            <h4 class="card-title text-white text-center my-sm-4 my-3 ">See your <span
+                            <h4 class="card-title white-text text-center my-sm-4 my-3 ">See your <span
                                     class="text-gradian-color">future </span> with
                                 machine learning</h4>
                             <a href=""
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                 <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -219,11 +226,11 @@
                         </div>
                         <div class="card-div card-div-3">
                             <img class="card-img" src="assets/icon/card-3.svg" alt="icon">
-                            <h4 class="card-title text-white text-center my-sm-4 my-3 "> <span
+                            <h4 class="card-title white-text text-center my-sm-4 my-3 "> <span
                                     class="text-gradian-color"> Innovation</span> today
                                 to lead tomorrow</h4>
                             <a href=""
-                                class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                 <p class="btn-text mb-0">Know More</p><svg width="26" height="13" viewBox="0 0 26 13"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -247,15 +254,15 @@
                     <div class="policy-card">
                         <div class="mt-0">
                             <div class="policy-card-div">
-                                <h3 class="policy-card-title text-white ">Holistic View <br>
+                                <h3 class="policy-card-title white-text ">Holistic View <br>
                                     of Your Data</h3>
-                                <p class="text-p text-white policy-card-content">
+                                <p class="text-p white-text policy-card-content">
                                     Seamlessly access all your essential insurance metrics in one centralized platform.
                                 </p>
                                 <img class="policy-card-bg-img" src="assets/img/policy-card-1.png" alt="img">
                                 <div class=" policy-card-btn-div position-absolute">
                                     <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                         <p class="btn-text mb-0">Know More </p>
                                         <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -270,16 +277,16 @@
                         </div>
                         <div class="mt-0">
                             <div class="policy-card-div">
-                                <h3 class="policy-card-title text-white ">Real-Time <br>
+                                <h3 class="policy-card-title white-text ">Real-Time <br>
                                     Insights</h3>
-                                <p class="text-p text-white policy-card-content">
+                                <p class="text-p white-text policy-card-content">
                                     Stay ahead with up-to-the-minute data that reflects the current state of your
                                     business.
                                 </p>
                                 <img class="policy-card-bg-img" src="assets/img/policy-card-2.png" alt="img">
                                 <div class=" policy-card-btn-div position-absolute">
                                     <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                         <p class="btn-text mb-0">Know More </p>
                                         <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -294,15 +301,15 @@
                         </div>
                         <div class="mt-0">
                             <div class="policy-card-div">
-                                <h3 class="policy-card-title text-white ">Strategic <br>
+                                <h3 class="policy-card-title white-text ">Strategic <br>
                                     Decision Support </h3>
-                                <p class="text-p text-white policy-card-content">
+                                <p class="text-p white-text policy-card-content">
                                     Transform raw data into actionable intelligence for strategic planning.
                                 </p>
                                 <img class="policy-card-bg-img" src="assets/img/policy-card-3.png" alt="img">
                                 <div class=" policy-card-btn-div position-absolute">
                                     <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                         <p class="btn-text mb-0">Know More </p>
                                         <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -317,16 +324,16 @@
                         </div>
                         <div class="mt-0">
                             <div class="policy-card-div">
-                                <h3 class="policy-card-title text-white ">Intuitive User <br>
+                                <h3 class="policy-card-title white-text ">Intuitive User <br>
                                     Experience</h3>
-                                <p class="text-p text-white policy-card-content">
+                                <p class="text-p white-text policy-card-content">
                                     Navigate complex data effortlessly with our user-friendly
                                     interface designed for professionals at all levels.
                                 </p>
                                 <img class="policy-card-bg-img" src="assets/img/policy-card-4.png" alt="img">
                                 <div class=" policy-card-btn-div position-absolute">
                                     <a href=""
-                                        class="btn-know-more d-flex align-items-center gap-2 text-white text-decoration-none">
+                                        class="btn-know-more d-flex align-items-center gap-2 white-text text-decoration-none">
                                         <p class="btn-text mb-0">Know More </p>
                                         <svg width="26" height="13" viewBox="0 0 26 13" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -393,7 +400,7 @@
     <!-- section end  -->
 
     <!-- Footer start -->
-    <footer class="footer">
+    <footer class="footer dark-theme">
         <div class="container">
             <div class="row footer-row">
                 <div class=" col-lg-6 col-12 inmporatant-link-div">

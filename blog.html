@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme-style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -34,7 +35,8 @@
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand site-logo" href="index.html">
-                            <img src="assets/img/site-icon.png" alt="site-logo">
+                            <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                            <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                         </a>
                         <button class="navbar-toggler toggle-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -44,7 +46,8 @@
                             aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
                                 <a class="navbar-brand site-logo" href="#">
-                                    <img src="assets/img/site-icon.png" alt="site-logo">
+                                    <img src="assets/img/site-icon.png" alt="site-logo" class="light-logo">
+                            <img src="assets/img/dark-logo.png" alt="site-logo" class="dark-logo">
                                 </a>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
                                     <i class="fa-solid fa-xmark"></i>
@@ -84,11 +87,15 @@
                                     <li class="nav-item">
                                         <a href="blog.html" class="nav-link main-menu-a active">Blog</a>
                                     </li>
-                                    <li class="nav-item">
+                                 <li class="nav-item">
                                         <a href="contact.html" class="nav-link main-menu-a">Contact Us</a>
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="theme-toggle">
+                            <input class="toggle d-none" id="themeToggle" type="checkbox">
+                            <label class="toggle-button" for="themeToggle"></label>
                         </div>
                     </div>
                 </nav>
@@ -98,7 +105,7 @@
     <!-- header end-->
 
     <main class="bg-dark-blue">
-        <section class="banner-sectrion-blog">
+        <section class="banner-sectrion-blog dark-theme">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-9 col-md-7">
@@ -116,7 +123,7 @@
             </div>
             </div>
         </section>
-        <section class="blog-card-section">
+        <section class="blog-card-section dark-theme">
             <div class="container">
                 <div class="row gy-sm-5 gx-sm-4 gy-3">
                     <div class="col-md-4 col-sm-6">
@@ -126,7 +133,7 @@
                                     <img src="assets/img/blog-1.png" alt="img">
                                 </div>
                                 <div class="bog-card-cotent">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Discovery Phase
                                     </h3>
                                     <p class="about-description">Understanding the business context, objectives, and
@@ -144,7 +151,7 @@
                                     <img src="assets/img/blog-2.png" alt="img">
                                 </div>
                                 <div class="bog-card-cotent">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Data Collection & Ingestion
                                     </h3>
                                     <p class="about-description">Collect from sources and ingest into the new system</p>
@@ -160,7 +167,7 @@
                                     <img src="assets/img/blog-3.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Data Preparation & Cleansing
                                     </h3>
                                     <p class="about-description">Clean data, transform, and enrich.</p>
@@ -176,7 +183,7 @@
                                     <img src="assets/img/blog-4.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Data Modeling & Aggregation
                                     </h3>
                                     <p class="about-description">Data is structured and modeled for efficient querying
@@ -194,7 +201,7 @@
                                     <img src="assets/img/blog-6.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Data Storage & Management
                                     </h3>
                                     <p class="about-description">Processed data is stored in a cloud-native environment.
@@ -211,7 +218,7 @@
                                     <img src="assets/img/blog-7.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Data Access & Security
                                     </h3>
                                     <p class="about-description">Manage data with access control and privileged roles
@@ -228,7 +235,7 @@
                                     <img src="assets/img/blog-8.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Business Intelligence & Reporting
                                     </h3>
                                     <p class="about-description">Dashboards provide insights into performance, trends,
@@ -246,7 +253,7 @@
                                     <img src="assets/img/blog-9.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Optimization & Scaling
                                     </h3>
                                     <p class="about-description">Enhance Carrier’s Operations with AI and Machine
@@ -264,7 +271,7 @@
                                     <img src="assets/img/blog-10.png" alt="img">
                                 </div>
                                 <div class=" bog-card-cotent  ">
-                                    <h3 class="blog-card-title text-white">
+                                    <h3 class="blog-card-title white-text">
                                         Machine Learning & AI Integration
                                     </h3>
                                     <p class="about-description">Data is prepared for data science teams and machine
@@ -280,7 +287,7 @@
     </main>
 
     <!-- Footer start -->
-    <footer class="footer">
+    <footer class="footer dark-theme">
         <div class="container">
             <div class="row footer-row">
                 <div class=" col-lg-6 col-12 inmporatant-link-div">
