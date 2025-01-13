@@ -2032,8 +2032,9 @@
     }
 
     .about-section .tabs a {
-        font-size: 24px;
+        font-size: 14px;
         padding: 08px 06px;
+        text-wrap: nowrap;
     }
 
     .about-section {
@@ -2041,7 +2042,8 @@
     }
 
     .about-section .tabs {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        overflow: auto;
     }
 
     .faq-setion button span {
