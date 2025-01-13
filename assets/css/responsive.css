@@ -1337,6 +1337,11 @@
 }
 
 @media(max-width:575.98px) {
+
+    .container {
+        padding: 0 16px;
+    }
+
     .footer-all-rights-div .contact-us-sub-div.d-flex p {
         max-width: 150px;
         font-size: 18px;
@@ -1360,9 +1365,9 @@
         gap: 24px;
     }
 
-    .bg-dark-blue {
+    /* .bg-dark-blue {
         padding: 0 4px;
-    }
+    } */
 
     .policy-card-div {
         margin: 0px 0 0 0;
@@ -1740,7 +1745,7 @@
     }
 
     .tabs-content-title {
-        font-size: 19px;
+        font-size: 18px;
         line-height: normal;
     }
 
@@ -1751,7 +1756,7 @@
     }
 
     .slider-title-text {
-        font-size: 25px;
+        font-size: 24px;
         line-height: normal;
     }
 
@@ -1792,7 +1797,7 @@
     }
 
     .aboutus-section h1.page-title-duckreek {
-        font-size: 34px;
+        font-size: 24px;
         line-height: normal;
     }
 
@@ -1934,7 +1939,7 @@
     }
 
     .casestudy-detail h1 {
-        font-size: 22px;
+        font-size: 24px;
         line-height: normal;
         margin-bottom: 28px;
     }
@@ -2067,6 +2072,19 @@
         margin-top: 20px;
     }
 
+    .intro-page-banner-section-section {
+       padding: 0;
+    }
+
+    .intro-page-banner-section-section h1 {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .d-flex.contact-iffo-sub-div img {
+        margin-top: 0;
+    }
+
 }
 
 @media(max-width:480.98px) {
@@ -2187,9 +2205,9 @@
         max-width: 200px;
     }
 
-    .link-div a {
+    /* .link-div a {
         font-size: 16px;
-    }
+    } */
 
     .footer-all-rights-div {
         padding: 12px;
