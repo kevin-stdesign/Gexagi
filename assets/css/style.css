@@ -463,7 +463,7 @@ policy-card
 }
 
 .policy-card-title {
-    color: #DFDDF8 !important;
+    color: var(--white);
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
@@ -473,7 +473,10 @@ policy-card
     left: 32px;
     z-index: 2;
     transition: 0.4s all ease-in-out;
+}
 
+.policy-card-title.white-text-strategic {
+    color: #DFDDF8;
 }
 
 .policy-card-div:hover img.policy-card-bg-img {
@@ -484,7 +487,9 @@ policy-card
     background-color: #5192AD;
 }
 
-
+.policy-card-div:hover .policy-card-title.white-text-strategic {
+    color: var(--white);
+}
 
 .policy-card-btn-div {
     bottom: 30px;

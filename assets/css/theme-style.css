@@ -55,7 +55,8 @@
 }
 
 .light-theme .main-header ul.dropdown-menu li a:hover {
-    background: rgb(81 85 91 / 12%);
+    background: #EDEFF5;
+    color: #6006DD !important;
 }
 
 .light-theme .drop-down-ul,
