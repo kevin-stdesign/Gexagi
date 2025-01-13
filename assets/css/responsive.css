@@ -935,7 +935,7 @@
     }
 
     .footer-social-icons svg {
-        height: 48px;
+        height: 32px;
         width: auto;
     }
 
@@ -1117,9 +1117,9 @@
         padding-bottom: 20px;
     }
 
-    .banner-sectrion-blog .row {
+    /* .banner-sectrion-blog .row {
         flex-flow: column-reverse;
-    }
+    } */
 
 
     .aboutus-section h1 {
@@ -1343,8 +1343,8 @@
     }
 
     .footer-all-rights-div .contact-us-sub-div.d-flex p {
-        max-width: 150px;
-        font-size: 18px;
+        max-width: 100%;
+        font-size: 16px;
     }
 
     .footer-all-rights-sub-div .contact-us-sub-div {
@@ -1593,8 +1593,12 @@
     }
 
     .main-page-header {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 42px;
+    }
+
+    .business-growth-section .section-title-h2 {
+        font-size: 24px;
     }
 
     .product-policy .section-title-h2 {
@@ -1616,8 +1620,8 @@
     }
 
     .blog-future-img-div {
-        max-width: unset;
-        height: 250px;
+        max-width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center;
     }
@@ -1830,15 +1834,14 @@
     }
 
     .conatct-page-title {
-        font-size: 32px;
-        line-height: 44px;
+        font-size: 24px;
+        line-height: 32px;
     }
 
     .section-sub-title {
-        font-size: 23px;
-        line-height: 26px;
+        font-size: 18px;
+        line-height: 24px;
         margin-bottom: 5px;
-
     }
 
     .contact-information img {
@@ -1850,7 +1853,7 @@
 
     .text-p-18 {
         font-size: 14px;
-        line-height: 22.4px;
+        line-height: normal;
     }
 
     .form-group.form-input-group {
@@ -1914,12 +1917,13 @@
     }
 
     .use-case-card-section .policy-card-div {
-        max-width: 264px;
+        max-width: 100%;
+        height: 500px;
     }
 
     .usecases-main .page-title-duckreek {
         margin-bottom: 32px;
-        font-size: 34px;
+        font-size: 32px;
         text-align: center;
         line-height: normal;
     }
@@ -2074,6 +2078,26 @@
         margin-top: 20px;
     }
 
+    .contact-us-sub-div .connect-text {
+        font-size: 14px;
+    }
+
+    .footer-all-rights-div .contact-us-sub-div.d-flex p {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .blog-card-main-div {
+        margin-top: 10px;
+    }
+
+    .blog-card-section {
+        padding-bottom: 36px;
+    }
+
+    .btn-outline-light {
+        font-size: 14px;
+    }
     .intro-page-banner-section-section {
        padding: 0;
     }
@@ -2161,6 +2185,11 @@
         grid-template-columns: 1fr;
     }
 
+    .use-case-card-section .policy-card-div {
+        max-width: 100%;
+        height: 420px;
+    }
+
     .solution-section-img-div .solution-sub-div-img:nth-child(1),
     .solution-section-img-div .solution-sub-div-img:nth-child(3) {
         padding-top: 0;
@@ -2234,10 +2263,5 @@
     .faq-setion .accordion-header button {
         font-size: 14px;
         padding: 12px 0;
-    }
-
-    .text-p-18 {
-        font-size: 12px;
-        line-height: normal;
     }
 }
