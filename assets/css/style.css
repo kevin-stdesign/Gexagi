@@ -51,11 +51,19 @@ p {
     --aqua-color: #00D9FF;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 170px;
+}
+
+
+
 .text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 400;
+
+    /* font-weight: 400; */
 }
 
 .bg-dark {
@@ -567,8 +575,8 @@ solution section
     display: flex;
 }
 
-.solution-section-img-div .solution-sub-div-img:nth-child(1),
-.solution-section-img-div .solution-sub-div-img:nth-child(3) {
+.solution-section-img-div .solution-sub-div-img:nth-child(2),
+.solution-section-img-div .solution-sub-div-img:nth-child(4) {
     padding-top: 216px;
 }
 
@@ -593,19 +601,39 @@ Footer
 
 .link-div {
     padding-top: 16px;
+    align-items: start;
 }
 
 .link-div a {
+    position: relative;
     color: var(--footer-link-color);
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     text-decoration: none;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-div a::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    background-color: #ffffff;
+    transition: all 1s ease-in-out;
 }
 
 .link-div a:hover {
-    color: #066AA3;
+    /* color: #066AA3; */
+    color: #ffffff;
+}
+
+.link-div a:hover::after {
+    opacity: 1;
+    transition: 0.3s all ease-in-out;
 }
 
 .link-div a path {
@@ -615,7 +643,6 @@ Footer
 .link-div a:hover path {
     fill: #066AA3;
 }
-
 
 .link-div span {
     margin-right: 4px;
@@ -906,7 +933,8 @@ About page
 }
 
 .solution-sub-div-img:hover img {
-    box-shadow: 0 0 15px 7px #031086;
+    /* box-shadow: 0 0 15px 7px #031086; */
+    box-shadow: 0px 0px 50px 0px #0021F8;
 }
 
 .about-sub-section {
@@ -1182,6 +1210,7 @@ About page
     border: none;
     border-top: 1px solid #00C0F1;
     border-radius: 0;
+    scroll-padding-top: 150px;
 }
 
 .experience-section .btn-requst-demo {
@@ -1800,14 +1829,16 @@ a.text-p-18 {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    border-width: 0 0 1px 0 !important;
+    border: 0;
     border-bottom: 1px solid var(--white);
     padding: 32px 32px 32px 16px;
 }
 
 .tans-ul .tabs-li button:hover {
     color: #00D9FF;
+    border-bottom: 2px solid var(--white);
 }
+
 
 .tabs-arrow {
     transition: 0.3s all ease-in-out;
@@ -1816,8 +1847,6 @@ a.text-p-18 {
 .tans-ul .tabs-li button:hover .tabs-arrow {
     transform: translateX(16px);
 }
-
-
 
 .tans-ul .tabs-li button {
     font-size: 20px;
@@ -1832,6 +1861,7 @@ a.text-p-18 {
 .tans-ul .tabs-li button.active {
     background-color: transparent;
     color: #00D9FF;
+    border-bottom: 2px solid white;
 }
 
 .tabs-main-div {
@@ -1849,7 +1879,7 @@ a.text-p-18 {
 
 .tabs-content-title {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 43.2px;
     color: var(--white);
 }
@@ -1878,14 +1908,14 @@ a.text-p-18 {
 
 .aboutus-section h1.page-title-duckreek {
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 86.4px;
     margin-bottom: 0px;
 }
 
 .slider-title-text {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 64.8px;
     color: var(--white);
     margin-bottom: 32px;
@@ -1941,6 +1971,7 @@ a.text-p-18 {
 .slider-number-div {
     font-size: 72px;
     line-height: 72px;
+    font-weight: 300;
 }
 
 .key-benefits-slider .swiper-button-prev::after {
@@ -2513,7 +2544,8 @@ duck reek
 }
 
 .toggle-button {
-    border: 1px solid rgba(103, 107, 128, 1);
+    /* border: 1px solid rgba(103, 107, 128, 1); */
+    border: 2px solid #ffffff;
     width: 40px;
     height: 24px;
     border-radius: 35px;

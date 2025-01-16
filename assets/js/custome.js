@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   tabs.forEach(tab => {
     tab.addEventListener('click', function () {
+
       let targetTab = this.getAttribute('data-tab');
 
       // Remove active class from all tabs and panels
@@ -90,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Add active class to the clicked tab and the corresponding panel
       this.classList.add('active');
       document.getElementById(targetTab).classList.add('active');
+
     });
   });
 });
@@ -99,21 +101,21 @@ jQuery(".popup-closed-btn").click(function () {
 });
 
 // Toggle Class
-$(document).ready(function() {
-  $('.theme-toggle .toggle').change(function() {
-      $("body").toggleClass("light-theme");
+$(document).ready(function () {
+  $('.theme-toggle .toggle').change(function () {
+    $("body").toggleClass("light-theme");
   });
 });
 
-// offset js 
+document.addEventListener('DOMContentLoaded', function () {
+  var hash = window.location.hash;
+  if (hash) {
+    var targetAccordion = document.querySelector(hash + ' .accordion-collapse');
+    if (targetAccordion) {
+      var collapseInstance = new bootstrap.Collapse(targetAccordion, {
+        toggle: true
+      });
+    }
+  }
+});
 
-function scrollToSection() {
-  const section = document.querySelectorAll('.about-us-content-div');
-  const target = document.querySelectorAll('.about-section .tabs a');
-
-  // Scroll to the target position with a 200px offset
-  section.scrollTo({
-    top: target.offsetTop - 200,  // Scroll to 200px above the target section
-    behavior: 'smooth',  // Smooth scroll effect
-  });
-}
