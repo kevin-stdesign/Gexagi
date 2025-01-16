@@ -175,7 +175,7 @@
                             ensuring that we remain at the forefront of the insurance industry.</p>
                     </div>
                 </div>
-                <div class="about-us-content-div" id="we_do_section">
+                <div class="about-us-content-div portfolio-content" id="we_do_section">
                     <div class="about-text-div-padding-right">
                         <h2 class="about-title mt-4 mt-md-0"><span class="text-gradian-color">What</span> We Do</h2>
                         <p class="about-description">We empower your business with a modern, digital perspective.
@@ -190,7 +190,7 @@
                         <img src="assets/img/about-we-do.png" alt="About We Do Image">
                     </div>
                 </div>
-                <div class="about-us-content-div about-us-content-div-2" id="we_are_section">
+                <div class="about-us-content-div about-us-content-div-2 portfolio-content" id="we_are_section">
                     <div class="about-square-img">
                         <img src="assets/img/about-we-are.png" alt="About We Are Image">
                     </div>
@@ -204,7 +204,7 @@
                             growing and evolving together to make a difference.</p>
                     </div>
                 </div>
-                <div class="about-tab" id="who_we_serve">
+                <div class="about-tab portfolio-content" id="who_we_serve">
                     <div class="we-serve">
                         <h2 class="about-title">Who we <span class="text-gradian-color">Serve</span></h2>
                         <p class="about-description">We aim to help and guide the Insurer community to experience
@@ -588,12 +588,10 @@
         });
     </script>
 
-    <!-- <script>
+    <script>
         $(document).ready(function () {
             // Click event listener for tab links
             $('.tabs a').click(function (e) {
-                e.preventDefault();  // Prevent default anchor behavior
-
                 // Remove 'active' class from all tab links and content
                 $('.tabs a').removeClass('active');
                 $('.tab-pane').removeClass('active');
@@ -604,43 +602,8 @@
             });
         });
 
-    </script> -->
-    <script>
-        $(document).ready(function () {
-            // Function to check which section is in the viewport
-            function updateActiveTab() {
-                var scrollPos = $(document).scrollTop();
-
-                $('.tabs a').each(function () {
-                    var targetSection = $($(this).attr('href'));
-                    var offsetTop = targetSection.offset().top - 100; // Adjust the offset if needed
-                    var offsetBottom = targetSection.offset().top + targetSection.outerHeight();
-
-                    if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
-                        $('.tabs a').removeClass('active');
-                        $(this).addClass('active');
-                    }
-                });
-            }
-
-            // Initial check
-            updateActiveTab();
-
-            // Update active tab on scroll
-            $(window).on('scroll', function () {
-                updateActiveTab();
-            });
-
-            // Smooth scroll when clicking on a tab
-            $('.tabs a').on('click', function (e) {
-                e.preventDefault();
-                var target = $($(this).attr('href'));
-                $('html, body').animate({
-                    scrollTop: target.offset().top
-                }, 50);
-            });
-        });
     </script>
+
 </body>
 
 </html>

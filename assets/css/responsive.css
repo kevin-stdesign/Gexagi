@@ -435,8 +435,8 @@
         padding-top: 50px;
     }
 
-    .solution-section-img-div .solution-sub-div-img:nth-child(1),
-    .solution-section-img-div .solution-sub-div-img:nth-child(3) {
+    .solution-section-img-div .solution-sub-div-img:nth-child(2),
+    .solution-section-img-div .solution-sub-div-img:nth-child(4) {
         padding-top: 0px;
     }
 
@@ -1012,8 +1012,8 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .solution-section-img-div .solution-sub-div-img:nth-child(1),
-    .solution-section-img-div .solution-sub-div-img:nth-child(3) {
+    .solution-section-img-div .solution-sub-div-img:nth-child(2),
+    .solution-section-img-div .solution-sub-div-img:nth-child(4) {
         padding-top: 0px;
     }
 
@@ -1537,8 +1537,8 @@
         text-align: center;
     }
 
-    .solution-section-img-div .solution-sub-div-img:nth-child(1),
-    .solution-section-img-div .solution-sub-div-img:nth-child(3) {
+    .solution-section-img-div .solution-sub-div-img:nth-child(2),
+    .solution-section-img-div .solution-sub-div-img:nth-child(4) {
         padding-top: 0;
     }
 
@@ -2198,8 +2198,8 @@
         height: 420px;
     }
 
-    .solution-section-img-div .solution-sub-div-img:nth-child(1),
-    .solution-section-img-div .solution-sub-div-img:nth-child(3) {
+    .solution-section-img-div .solution-sub-div-img:nth-child(2),
+    .solution-section-img-div .solution-sub-div-img:nth-child(4) {
         padding-top: 0;
     }
 
