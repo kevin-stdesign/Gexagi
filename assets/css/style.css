@@ -1209,7 +1209,7 @@ About page
     background-color: var(--black);
     box-shadow: none !important;
     font-size: 64px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 76.8px;
     color: var(--white);
     padding: 48px 0;
@@ -2173,7 +2173,7 @@ usecase page
     color: var(--white);
     margin-bottom: 24px;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 57.6px;
 }
 

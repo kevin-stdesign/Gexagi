@@ -104,3 +104,16 @@ $(document).ready(function() {
       $("body").toggleClass("light-theme");
   });
 });
+
+// offset js 
+
+function scrollToSection() {
+  const section = document.querySelectorAll('.about-us-content-div');
+  const target = document.querySelectorAll('.about-section .tabs a');
+
+  // Scroll to the target position with a 200px offset
+  section.scrollTo({
+    top: target.offsetTop - 200,  // Scroll to 200px above the target section
+    behavior: 'smooth',  // Smooth scroll effect
+  });
+}
