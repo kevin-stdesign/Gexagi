@@ -549,52 +549,119 @@
         });
     </script>
 
-    <script>
-        $(document).ready(function () {
-            $(document).on("scroll", onScroll);
-            $('.about-us-tabs').on('click', function (e) {
-                e.preventDefault();
-                $(document).off("scroll");
+    <!-- <script>
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+        $('.about-us-tabs').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
 
-                $('.about-us-tabs').removeClass('active');
-                $(this).addClass('active');
+            $('.about-us-tabs').removeClass('active');
+            $(this).addClass('active');
 
-                var target = this.hash;
-                $target = $(target);
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 180
-                }, 1000, 'swing', function () {
-                    window.location.hash = target;
-                    $(document).on("scroll", onScroll);
-                });
+            var target = this.hash;
+            var $target = $(target);
+            var offset = 200; // Adjust this value to the desired space from the top
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top - offset
+            }, 1000, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
             });
         });
+    });
 
-        function onScroll(event) {
-            var scrollPosition = $(document).scrollTop() + 180;
-            var isClassRemoved = false;
+    function onScroll(event) {
+        var scrollPosition = $(document).scrollTop();
+        var offset = 200; // Ensure this matches the offset used above
 
-            $('.about-us-tabs').each(function () {
-                var currentLink = $(this);
-                var refElement = $(currentLink.attr("href"));
-                var nextElement = $(currentLink.attr("href")).next();
-                var refElementHeight = refElement.outerHeight(true);
-                if (refElement.position().top <= scrollPosition && refElement.position().top + refElementHeight > scrollPosition) {
-                    if (!isClassRemoved) {
-                        $('.about-us-tabs').removeClass("active");
-                        currentLink.addClass("active");
-                        isClassRemoved = true;
+        $('.about-us-tabs').each(function () {
+            var currentLink = $(this);
+            var refElement = $(currentLink.attr("href"));
+            var refElementHeight = refElement.outerHeight(true);
+            if (refElement.position().top - offset <= scrollPosition && refElement.position().top - offset + refElementHeight > scrollPosition) {
+                $('.about-us-tabs').removeClass("active");
+                currentLink.addClass("active");
+            }
+        });
+    }
+</script> -->
+
+    <!-- <script>
+        $(document).ready(function () {
+            // Function to check which section is in the viewport
+            function updateActiveTab() {
+                var scrollPos = $(document).scrollTop();
+
+                $('.tabs a').each(function () {
+                    var targetSection = $($(this).attr('href'));
+                    var offsetTop = targetSection.offset().top - 100; // Adjust the offset if needed
+                    var offsetBottom = targetSection.offset().top + targetSection.outerHeight();
+
+                    if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+                        $('.tabs a').removeClass('active');
+                        $(this).addClass('active');
                     }
-                }
-                else if (nextElement.length > 0 && nextElement.position().top <= scrollPosition + nextElement.outerHeight(true)) {
+                });
+            }
 
-                    currentLink.removeClass("active");
-                } else {
-                    currentLink.removeClass("active");
-                }
+            // Initial check
+            updateActiveTab();
+
+            // Update active tab on scroll
+            $(window).on('scroll', function () {
+                updateActiveTab();
             });
-        }
+
+            // Smooth scroll when clicking on a tab
+            $('.tabs a').on('click', function (e) {
+                e.preventDefault();
+                var target = $($(this).attr('href'));
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 50);
+            });
+        });
+    </script> -->
+    
+    <script>
+        $(document).ready(function () {
+            // Function to check which section is in the viewport
+            function updateActiveTab() {
+                var scrollPos = $(document).scrollTop();
+
+                $('.tabs a').each(function () {
+                    var targetSection = $($(this).attr('href'));
+                    var offsetTop = targetSection.offset().top - 180; // Adjusted offset for highlighting
+                    var offsetBottom = targetSection.offset().top + targetSection.outerHeight();
+
+                    if (scrollPos >= offsetTop && scrollPos < offsetBottom) {
+                        $('.about-us-tabs').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                });
+            }
+
+            // Initial check
+            updateActiveTab();
+
+            // Update active tab on scroll
+            $(window).on('scroll', function () {
+                updateActiveTab();
+            });
+
+            // Smooth scroll when clicking on a tab
+            $('.tabs a').on('click', function (e) {
+                e.preventDefault();
+                var target = $($(this).attr('href'));
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 180 // Adjusted offset for smooth scroll
+                }, 50); // Adjust duration if needed
+            });
+        });
     </script>
+
 
 </body>
 
