@@ -53,7 +53,6 @@ p {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
 }
 
 .text-gradian-color {
@@ -827,7 +826,7 @@ About page
     display: flex;
     justify-content: space-between;
     gap: 48px;
-    margin-bottom: 72px;
+    /* margin-bottom: 72px; */
     align-items: center;
     transition: 0.4s all ease-in-out;
 }
@@ -936,15 +935,18 @@ About page
 }
 
 .about-sub-section {
-    padding-top: 48px;
+    margin-top: 0px;
 }
 
 .about-sub-section .about-us-content-div {
+    margin-top: 120px;
+}
+.about-sub-section .about-us-content-div:first-child{
     margin-top: 48px;
 }
 
 .about-us-content-div-2 {
-    padding-top: 72px !important;
+    margin-top: 120px !important;
 }
 
 .about-us-content-div-2 .about-square-img {
