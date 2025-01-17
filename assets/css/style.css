@@ -53,10 +53,8 @@ p {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 170px;
+    scroll-padding-top: 100px;
 }
-
-
 
 .text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
@@ -1862,6 +1860,7 @@ a.text-p-18 {
     background-color: transparent;
     color: #00D9FF;
     border-bottom: 2px solid white;
+    transition: 0.3s all ease-in-out;
 }
 
 .tabs-main-div {
