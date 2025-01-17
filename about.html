@@ -496,43 +496,29 @@
 
     <script>
         $(document).ready(function () {
-            var header = $('header');  // Select the header element
-
-            // Scroll event listener
+            var header = $('header');
             $(window).scroll(function () {
-                sticky();  // Apply sticky functionality
-                activateTab();  // Activate the corresponding tab based on scroll
+                sticky();
+                activateTab();
             });
-
-            // Sticky Header Logic
             function sticky() {
-                var scrollY = window.scrollY;  // Get the vertical offset from the top (scroll position)
-
-                // Add 'sticky' class if the scroll position is greater than 0 (i.e., user has scrolled down)
+                var scrollY = window.scrollY;
                 if (scrollY > 0) {
-                    header.addClass('sticky');  // Add 'sticky' class when scrolled down
+                    header.addClass('sticky');
                 } else {
-                    header.removeClass('sticky');  // Remove 'sticky' class when at the top
+                    header.removeClass('sticky');
                 }
             }
-
-            // Initial check to add sticky class if the page is loaded after scrolling down
-            // This check ensures that if the page is already scrolled down after refresh, sticky class is added
             sticky();
-
-            // Activate Tab Based on Scroll Position
             function activateTab() {
                 var currentScroll = $(window).scrollTop();
 
-                // Loop through all sections and check which one is in the viewport
                 $('main-header').each(function () {
                     var contentTop = $(this).offset().top;
                     var contentBottom = contentTop + $(this).outerHeight();
                     var sectionId = $(this).attr('id');
 
-                    // Check if the section is in the viewport
                     if (currentScroll >= contentTop - 10 && currentScroll < contentBottom) {
-                        // Add active class to the corresponding tab
                         $('a').removeClass('active');
                         $('a[href="#' + sectionId + '"]').addClass('active');
                     }
@@ -543,108 +529,71 @@
 
     <script>
         $(document).ready(function () {
-            var wetabs = $('.callout');  // Select the header element
-            var originalPosition = wetabs.offset().top; // Get the original position of the header
-
-            // Scroll event listener
+            var wetabs = $('.callout');
+            var originalPosition = wetabs.offset().top;
             $(window).scroll(function () {
-                sticky();  // Apply sticky functionality
-                activateTab();  // Activate the corresponding tab based on scroll
+                sticky();
+                activateTab();
             });
 
-            // Sticky Header Logic
             function sticky() {
-                var scrollY = window.scrollY;  // Get the vertical offset from the top (scroll position)
+                var scrollY = window.scrollY;
 
-                // Add 'sticky' class if the scroll position is greater than the original position
                 if (scrollY > originalPosition) {
-                    wetabs.addClass('sticky');  // Add 'sticky' class when scrolled past the original position
+                    wetabs.addClass('sticky');
                 } else {
-                    wetabs.removeClass('sticky');  // Remove 'sticky' class when back at the top
+                    wetabs.removeClass('sticky');
                 }
             }
-
-            // Initial check to add sticky class if the page is loaded after scrolling down
             sticky();
-
-            // Activate Tab Based on Scroll Position
-            // function activateTab() {
-            //     var currentScroll = $(window).scrollTop();
-
-            //     // Loop through all sections and check which one is in the viewport
-            //     $('.callout').each(function () {
-            //         var contentTop = $(this).offset().top;
-            //         var contentBottom = contentTop + $(this).outerHeight();
-            //         var sectionId = $(this).attr('id');
-
-            //         // Check if the section is in the viewport
-            //         if (currentScroll >= contentTop - 10 && currentScroll < contentBottom) {
-            //             // Add active class to the corresponding tab
-            //             $('a').removeClass('active');
-            //             $('a[href="#' + sectionId + '"]').addClass('active');
-            //         }
-            //     });
-            // }
         });
     </script>
 
     <script>
         $(document).ready(function () {
             $(document).on("scroll", onScroll);
-
-            // Click event for the tabs
             $('.about-us-tabs').on('click', function (e) {
                 e.preventDefault();
-                $(document).off("scroll"); // Disable scroll event while clicking
+                $(document).off("scroll");
 
-                // Remove the 'active' class from all tabs
                 $('.about-us-tabs').removeClass('active');
-
-                // Add 'active' class to the clicked tab
                 $(this).addClass('active');
 
                 var target = this.hash;
                 $target = $(target);
                 $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 180 // Scroll 100px above the target
+                    'scrollTop': $target.offset().top - 180
                 }, 1000, 'swing', function () {
                     window.location.hash = target;
-                    $(document).on("scroll", onScroll); // Re-enable scroll event after animation
+                    $(document).on("scroll", onScroll);
                 });
             });
         });
 
         function onScroll(event) {
-            var scrollPosition = $(document).scrollTop() + 180; // Adding 100px offset from top
-            var isClassRemoved = false; // To ensure the class is only removed once
+            var scrollPosition = $(document).scrollTop() + 180;
+            var isClassRemoved = false;
 
             $('.about-us-tabs').each(function () {
                 var currentLink = $(this);
                 var refElement = $(currentLink.attr("href"));
-                var nextElement = $(currentLink.attr("href")).next(); // Get the next section
-
-                // Calculate the total height of the element including margin and padding
+                var nextElement = $(currentLink.attr("href")).next();
                 var refElementHeight = refElement.outerHeight(true);
-
-                // Check if the current section is visible and the next section is not yet visible
                 if (refElement.position().top <= scrollPosition && refElement.position().top + refElementHeight > scrollPosition) {
                     if (!isClassRemoved) {
-                        // Remove active class from all tabs
                         $('.about-us-tabs').removeClass("active");
-                        // Add active class to the current tab
                         currentLink.addClass("active");
                         isClassRemoved = true;
                     }
                 }
                 else if (nextElement.length > 0 && nextElement.position().top <= scrollPosition + nextElement.outerHeight(true)) {
-                    // Remove the class when the next section is in view
+
                     currentLink.removeClass("active");
                 } else {
                     currentLink.removeClass("active");
                 }
             });
         }
-
     </script>
 
 </body>
