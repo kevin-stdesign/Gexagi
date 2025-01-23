@@ -1,6 +1,7 @@
-@media(min-width:1440px) {
+@media(min-width:1441px) {
     .container {
-        max-width: 1296px;
+        max-width: 1920px;
+        padding: 0 84px;
         width: 100%;
         margin: auto;
     }
@@ -12,6 +13,305 @@
     .about-us-content-div {
         justify-content: space-between;
     }
+
+    .home-hero-text {
+        max-width: 889px !important;
+    }
+
+    .card-img {
+        max-height: 120px;
+        max-width: 120px;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-div-3 .card-title,
+    .card-div-2 .card-title {
+        max-width: 90%;
+    }
+
+    .casestudy-detail h1 {
+        line-height: 120%;
+    }
+
+    .aboutus-section h1.page-title-duckreek,
+    .faq-setion .accordion-header button,
+    .main-page-header,
+    .casestudy-detail h1,
+    .about-title,
+    .about-section .page-title-duckreek,
+    .section-title-h2 {
+        font-size: 72px;
+    }
+
+    .slider-title-text,
+    .section-sub-title,
+    .product-policy .section-title-h2,
+    .we-serve .we-serve-sub-div-title,
+    .text-policy-1 {
+        font-size: 56px;
+    }
+
+    .tabs-content-title,
+    .product-policy-div .text-policy-1,
+    .casestudy-description h5,
+    .intro-page-section .intro-title,
+    .about-section .tabs a {
+        font-size: 48px;
+    }
+
+    .icon-name-text {
+        font-size: 40px;
+    }
+
+    .bog-card-cotent h3,
+    .title-24,
+    .casestudy-detail .date-time h5,
+    .casestudy-detail .lable,
+    .fs-32 {
+        font-size: 32px;
+    }
+
+    .bog-card-cotent h3,
+    .intro-page-section .text-p {
+        line-height: 160%;
+    }
+
+    .contact-form h5 {
+        line-height: 180%;
+    }
+
+    .slider-title-text,
+    .key-benefits-section .text-p,
+    .tabs-content-title,
+    .expertise .text-p {
+        line-height: unset;
+    }
+
+    .section-text-p .text-p,
+    .key-benefits-section .swiper-pagination,
+    .key-benefits-section .text-p,
+    .expertise .text-p,
+    .blog-reade-time,
+    .btn-outline-light,
+    .contact-form h5,
+    .text-p-18,
+    .related-insights a,
+    .casestudy-description p,
+    .casestudy-description ul li,
+    .intro-page-section .text-p,
+    .text-p,
+    .about-description,
+    .text-btn-div .text-div p.text-p,
+    .btn-text {
+        font-size: 24px;
+    }
+
+    .contact-form .form-control {
+        font-size: 22px;
+    }
+
+    .reimagining-insurance .container {
+        padding: 0 72px;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        max-width: unset;
+        font-size: 53px;
+    }
+
+    .solution-section .section-title-h2 {
+        max-width: unset;
+    }
+
+    .about-text-div-padding-right,
+    .about-us-content-div-2 .about-square-img,
+    .about-square-img {
+        width: 50%;
+    }
+
+    .about-square-img img {
+        width: 100%;
+    }
+
+    .about-section .tabs {
+        margin-top: 72px;
+    }
+
+    .about-section .callout {
+        padding-bottom: 1px;
+    }
+
+    .pagination p,
+    .pagination a {
+        font-size: 18px !important;
+    }
+
+    .data-collection-chart .apexcharts-xaxis-texts-g tspan,
+    .data-collection-chart .apexcharts-yaxis-texts-g tspan,
+    .discovery-phase-chart .apexcharts-legend-text,
+    .apexcharts-legend-text,
+    .apexcharts-text {
+        font-size: 18px !important;
+    }
+
+    .product-policy-div .text-policy-1,
+    .product-policy .section-title-h2 {
+        line-height: 120%;
+    }
+
+    .product-policy .text-p {
+        font-size: 24px;
+        max-width: 1996px;
+    }
+
+    .product-policy-img-section .swiper {
+        max-width: 1208px;
+    }
+
+    .business-growth-section-img {
+        max-width: 100%;
+    }
+
+    .text-policy-2 {
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    .policy-card-title {
+        font-size: 32px;
+        line-height: 120%;
+    }
+
+    .contact-information img {
+        width: 62px;
+        height: 62px;
+        object-fit: cover;
+    }
+
+    .blog-img {
+        max-width: 100%;
+    }
+
+    .our-blog .banner-sectrion-blog {
+        margin-bottom: -128px;
+    }
+
+    .tans-ul {
+        max-width: 840px;
+    }
+
+    .key-benefits-slider .swiper-button-prev,
+    .key-benefits-slider .swiper-button-next {
+        height: 68px;
+        width: 68px;
+    }
+}
+
+@media(min-width:1680px) {
+
+    .slider-number-div,
+    .our-blog .about-title,
+    .conatct-page-title,
+    .usecases-main .page-title-duckreek,
+    .main-page-header,
+    .solution-section .section-title-h2,
+    .benefits-section .section-title,
+    .banner-section-title {
+        font-size: 88px;
+    }
+
+    .card-title {
+        font-size: 48px;
+    }
+
+    .policy-card-div {
+        height: 694px;
+    }
+
+    .policy-card-title {
+        font-size: 38px;
+    }
+
+    .tans-ul .tabs-li button {
+        font-size: 26px;
+    }
+
+    .policy-card-div .text-p {
+        font-size: 24px;
+    }
+
+    .solution-sub-div-img img {
+        width: 250px;
+        max-width: 250px;
+    }
+
+    .casestudy-detail.section-full-bg::before {
+        min-height: 850px;
+    }
+
+    .product-policy .section-title-h2 {
+        font-size: 72px;
+    }
+
+    .product-policy-div .text-policy-1 {
+        font-size: 68px;
+    }
+
+    .product-policy-img-section .swiper {
+        max-width: 1408px;
+    }
+
+    .our-blog .banner-sectrion-blog {
+        margin-bottom: -78px;
+    }
+
+    .tabs-img-div {
+        max-width: 481px;
+    }
+}
+
+@media(min-width:1880px) {
+
+    .slider-number-div,
+    .our-blog .about-title,
+    .conatct-page-title,
+    .usecases-main .page-title-duckreek,
+    .main-page-header,
+    .solution-section .section-title-h2,
+    .benefits-section .section-title,
+    .banner-section-title {
+        font-size: 100px;
+        line-height: unset;
+    }
+
+    .card-div {
+        min-height: 450px;
+    }
+
+    .policy-card-title {
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    .reimagining-insurance .section-title-h2 {
+        font-size: 72px;
+        letter-spacing: -0.8px;
+    }
+
+    .solution-sub-div-img img {
+        width: 300px;
+        max-width: 300px;
+    }
+
+    .our-blog .banner-sectrion-blog {
+        margin-bottom: -68px;
+    }
+
+    .tans-ul .tabs-li button {
+        font-size: 32px;
+    }
 }
 
 @media(max-width:1399.98px) {
@@ -19,20 +319,12 @@
         gap: 20px;
     }
 
-    .key-benefits-slider-btn {
-        width: 13%;
-    }
-
     .tabs-main-div {
         gap: 50px;
     }
 
     .key-benefits-slider {
-        padding: 30px 0 110px 0;
-    }
-
-    .key-benefits-slider {
-        padding: 30px 0 80px 0;
+        padding-top: 30px;
     }
 
     .contact-main-section {
@@ -47,17 +339,17 @@
         margin-top: 110px;
     }
 
-    .conatct-page-title {
-        font-size: 70px;
-        line-height: 90px;
-    }
-
     .banner-section-title {
         font-size: 65px;
     }
 
     .section-title {
         font-size: 65px;
+    }
+
+    .about-description {
+        margin-bottom: 28px;
+        line-height: normal;
     }
 }
 
@@ -66,7 +358,6 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
     }
-
 
     .link-div a {
         font-size: 16px;
@@ -140,10 +431,6 @@
         line-height: 20px;
     }
 
-    .tans-ul .tabs-li {
-        padding: 27px 32px 27px 16px;
-    }
-
     .tabs-content-title {
         font-size: 27px;
         line-height: 32.2px;
@@ -159,18 +446,12 @@
         max-width: 290px;
     }
 
-    .key-benefits-slider-btn {
-        width: 15%;
-    }
-
     .slider-number-div {
         font-size: 60px;
-        line-height: 60px;
     }
 
     .key-benefits-section .tabs-content-title {
         margin-bottom: 16px;
-        height: unset;
     }
 
     .slider-title-text {
@@ -201,10 +482,6 @@
         margin-bottom: 20px;
     }
 
-    .bg-img-duckreek-section {
-        height: 700px;
-    }
-
     .blog-future-img-div {
         height: 400px;
     }
@@ -215,7 +492,6 @@
 
     .conatct-page-title {
         font-size: 60px;
-        line-height: 80px;
     }
 
     .contact-main-section {
@@ -300,12 +576,8 @@
     }
 
     .faq-content-main-div {
-        gap: 40px;
         padding: 34px 0;
-    }
-
-    .faq-content-main-div {
-        gap: 10px;
+        gap: 18px;
         flex-direction: column;
     }
 
@@ -338,6 +610,7 @@
 
     .policy-card-div {
         margin: 20px 0 0 0;
+        padding: 24px;
     }
 
     .solution-section-img-div {
@@ -361,6 +634,28 @@
         line-height: 50px;
     }
 
+    .usecases-main .page-title-duckreek {
+        font-size: 58px;
+    }
+
+    .blog-cards {
+        grid-column-gap: 48px;
+    }
+
+    .blog-card-main-div {
+        max-width: 280px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        margin-bottom: 18px;
+        line-height: normal;
+    }
+
+    .bog-card-cotent h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
 }
 
 @media(max-width:991.98px) {
@@ -383,7 +678,6 @@
         margin-right: 24px;
     }
 
-
     .spacer {
         display: none;
     }
@@ -395,7 +689,7 @@
     }
 
     .policy-card {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
@@ -437,9 +731,8 @@
 
     .solution-section-img-div .solution-sub-div-img:nth-child(2),
     .solution-section-img-div .solution-sub-div-img:nth-child(4) {
-        padding-top: 0px;
+        margin-top: 0px;
     }
-
 
     .footer-all-rights-sub-div .contact-us-sub-div:last-child {
         margin-bottom: 0px;
@@ -495,7 +788,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* width: 100% !important; */
     }
 
     .main-header .navbar-nav .dropdown-menu {
@@ -550,7 +842,6 @@
     }
 
     .toggle-btn i {
-        /* background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%); */
         color: #D8E4FD;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -574,7 +865,6 @@
         font-size: 47px;
         line-height: 78px;
     }
-
 
     .card-title {
         font-size: 21px;
@@ -620,10 +910,6 @@
         padding-bottom: 26px;
     }
 
-    .blog-card-section .about-description {
-        height: 112px;
-    }
-
     .aboutus-section h1 {
         font-size: 42px;
         line-height: normal;
@@ -647,24 +933,20 @@
 
     .tabs-main-div {
         gap: 30px;
-    }
-
-    .tabs-main-div {
         flex-direction: column;
     }
 
-    .key-benefits-section .tabs-content-title {
-        height: auto;
+    .tans-ul {
+        max-width: 100%;
     }
 
-    .key-benefits-slider-btn {
-        width: 17%;
+    .key-benefits-section .tabs-content-title {
+        font-size: 24px;
     }
 
     .key-benefits-section .text-p {
         font-size: 16px;
         line-height: 25.4px;
-        color: white;
         font-weight: 400;
     }
 
@@ -684,7 +966,7 @@
     }
 
     .key-benefits-slider {
-        padding: 5px 0 80px 0;
+        padding-top: 5px;
     }
 
     .key-benefits-section-2 {
@@ -706,10 +988,6 @@
 
     .key-benefits-section-1 {
         padding: 30px 0 30px 0;
-    }
-
-    .bg-img-duckreek-section {
-        height: unset;
     }
 
     .key-benefits-section.key-benefits-section-3 {
@@ -740,7 +1018,6 @@
 
     .conatct-page-title {
         font-size: 50px;
-        line-height: 58px;
     }
 
     .section-sub-title {
@@ -753,7 +1030,7 @@
     }
 
     .banner-section-title {
-        font-size: 43px;
+        font-size: 41px;
         font-weight: 300;
         line-height: 54px;
     }
@@ -767,7 +1044,6 @@
     }
 
     .policy-card-div-10:hover .policy-card-content {
-        translate: 0px 124px;
         font-size: 15px;
     }
 
@@ -907,7 +1183,7 @@
 
     .benefits-section .section-title {
         margin-top: 40px;
-        line-height: normal;
+        line-height: 150% !important;
     }
 
     .card-img {
@@ -927,11 +1203,36 @@
         line-height: 46px;
     }
 
+    .fs-32 {
+        font-size: 16px;
+    }
+
+    .usecases-main .page-title-duckreek {
+        font-size: 48px;
+        line-height: normal;
+        margin-bottom: 48px;
+    }
+
+    .blog-cards {
+        grid-template-columns: auto auto;
+    }
+
+    .blog-card-main-div {
+        max-width: unset;
+    }
+
+    .key-benefits-slider-btn {
+        margin-top: 28px;
+    }
 }
 
 @media(max-width:767.98px) {
     .footer-all-rights-sub-div .contact-us-sub-div {
         width: 100%;
+    }
+
+    .intro-page-section .intro-title {
+        font-size: 28px;
     }
 
     .footer-social-icons svg {
@@ -1014,7 +1315,7 @@
 
     .solution-section-img-div .solution-sub-div-img:nth-child(2),
     .solution-section-img-div .solution-sub-div-img:nth-child(4) {
-        padding-top: 0px;
+        margin-top: 0px;
     }
 
     .footer-link-sub-div {
@@ -1053,7 +1354,6 @@
         padding: 32px 0 0 0;
     }
 
-
     .contact-us-sub-div {
         display: unset;
         margin-bottom: 20px;
@@ -1071,8 +1371,6 @@
     .solution-section {
         padding: 40px 0 40px 0;
     }
-
-
 
     .data-prepration-chart .apexcharts-legend {
         gap: 0px;
@@ -1121,11 +1419,6 @@
         padding-bottom: 20px;
     }
 
-    /* .banner-sectrion-blog .row {
-        flex-flow: column-reverse;
-    } */
-
-
     .aboutus-section h1 {
         font-size: 32px;
         margin-bottom: 28px;
@@ -1162,13 +1455,8 @@
         min-height: 472px;
     }
 
-    .key-benefits-slider-btn {
-        width: 23%;
-    }
-
     .slider-number-div {
         font-size: 50px;
-        line-height: 50px;
     }
 
     .key-benefits-section-2 {
@@ -1177,10 +1465,6 @@
 
     .key-benefits-section {
         padding: 20px 0;
-    }
-
-    .key-benefits-section .tabs-content-title {
-        height: 60px;
     }
 
     .section-text-p .text-p {
@@ -1233,7 +1517,7 @@
     }
 
     .banner-section-title {
-        font-size: 39px;
+        font-size: 31px;
         line-height: 45px;
     }
 
@@ -1249,7 +1533,6 @@
 
     .conatct-page-title {
         font-size: 40px;
-        line-height: 51px;
     }
 
     .contact-main-section {
@@ -1303,6 +1586,7 @@
 
     .about-description {
         line-height: 20px;
+        margin-bottom: 14px;
     }
 
     .about-us-content-div-2 {
@@ -1338,12 +1622,26 @@
         font-size: 22px;
     }
 
+    .blog-card-main-div {
+        max-width: 234px;
+    }
+
+    .bog-card-cotent {
+        padding: 14px;
+    }
 }
 
 @media(max-width:575.98px) {
+    html {
+        scroll-padding: 97px;
+    }
 
     .container {
         padding: 0 16px;
+    }
+
+    .intro-page-section .intro-title {
+        font-size: 22px;
     }
 
     .footer-all-rights-div .contact-us-sub-div.d-flex p {
@@ -1364,14 +1662,19 @@
         margin-top: 4px !important;
     }
 
+    .main-div-policyxagi {
+        padding-top: 0;
+    }
+
+    .benefits-section-card {
+        padding: 24px 0;
+        margin-top: 0;
+    }
+
     .policy-card {
         grid-template-columns: 1fr 1fr;
         gap: 24px;
     }
-
-    /* .bg-dark-blue {
-        padding: 0 4px;
-    } */
 
     .policy-card-div {
         margin: 0px 0 0 0;
@@ -1405,7 +1708,6 @@
         display: unset;
     }
 
-
     .footer-social-icons {
         gap: 12px;
     }
@@ -1413,7 +1715,6 @@
     .footer-row {
         padding: 24px 4px;
     }
-
 
     .contact-us-sub-div {
         display: unset;
@@ -1447,12 +1748,15 @@
         padding-top: 50px;
     }
 
-
     .banner-section-title {
         font-size: 24px;
         font-weight: 300;
         line-height: 36px;
         padding: 0 12px !important;
+    }
+
+    .banner-section-title br {
+        display: none;
     }
 
     .text-btn-div {
@@ -1485,12 +1789,17 @@
     }
 
     .section-title {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .benefits-sub-div {
-        padding: 24px 12px 16px 12px;
+        padding: 16px;
         margin-bottom: 0px;
+        border-radius: 8px;
+    }
+
+    .benefits-row-1 .benefits-column {
+        padding: 0;
     }
 
     .card-title {
@@ -1514,8 +1823,8 @@
     }
 
     .policy-card-div {
-        height: 400px;
-        padding: 22px;
+        width: 100%;
+        max-height: 470px;
     }
 
     .footer-link-sub-div {
@@ -1539,7 +1848,7 @@
 
     .solution-section-img-div .solution-sub-div-img:nth-child(2),
     .solution-section-img-div .solution-sub-div-img:nth-child(4) {
-        padding-top: 0;
+        margin-top: 0;
     }
 
     .solution-sub-div-img img {
@@ -1564,6 +1873,7 @@
 
     .about-description {
         font-size: 14px;
+        line-height: 26px;
     }
 
     .about-section h4 {
@@ -1572,12 +1882,8 @@
 
     .about-title {
         font-size: 24px;
-        line-height: 50px;
+        line-height: 120%;
         margin-bottom: 18px;
-    }
-
-    .about-description {
-        line-height: 26px;
     }
 
     .about-sub-section .about-us-content-div {
@@ -1597,8 +1903,12 @@
     }
 
     .main-page-header {
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 24px;
+        line-height: 150%;
+    }
+
+    .product-policy {
+        padding-top: 108px;
     }
 
     .business-growth-section .section-title-h2 {
@@ -1606,7 +1916,7 @@
     }
 
     .product-policy .section-title-h2 {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 36px;
     }
 
@@ -1619,7 +1929,6 @@
     }
 
     .blog-card-section .about-description {
-        height: unset;
         padding-bottom: 10px;
     }
 
@@ -1729,7 +2038,6 @@
         min-height: 375px;
     }
 
-
     .slider-use-case-div {
         padding: 24px 0 34px 0;
     }
@@ -1738,10 +2046,12 @@
         font-size: 14px;
         line-height: 16px;
         text-align: start;
+        padding: 22px 12px;
     }
 
-    .tans-ul .tabs-li {
-        padding: 0;
+    .tabs-img-div {
+        max-width: 230px;
+        margin-top: 14px;
     }
 
     .tabs-main-div {
@@ -1766,15 +2076,11 @@
     .slider-title-text {
         font-size: 24px;
         line-height: normal;
+        margin-bottom: 18px;
     }
 
     .key-benefits-section .tabs-content-title {
-        height: unset;
         margin-bottom: 0;
-    }
-
-    .key-benefits-slider-btn {
-        width: 110px;
     }
 
     .key-benefits-slider .swiper-button-prev,
@@ -1813,23 +2119,21 @@
         padding: 260px 0 30px 0;
     }
 
-    .bg-img-duckreek-section {
-        height: unset;
-    }
-
     .key-benefits-section-1 {
         padding: 38px 0 30px 0;
     }
 
     .slider-number-div {
-        font-size: 44px;
+        font-size: 38px;
         line-height: normal;
+        margin-bottom: 12px;
     }
 
     .solution-section .section-title-h2 {
         font-size: 24px;
         margin-bottom: 24px;
-        line-height: 40px;
+        line-height: 120%;
+        padding-bottom: 0;
     }
 
     .card-title {
@@ -1839,7 +2143,6 @@
 
     .conatct-page-title {
         font-size: 24px;
-        line-height: 32px;
     }
 
     .section-sub-title {
@@ -1876,7 +2179,6 @@
     .intro-page-section .text-p {
         font-size: 14px;
         line-height: 25px;
-        margin-top: 15px;
     }
 
     .intro-imf-div img {
@@ -1889,8 +2191,13 @@
     }
 
     .benefits-row-1 .benefits-column img {
-        height: 45px;
+        height: 32px;
+        max-width: 32px;
         width: auto;
+    }
+
+    .benefits-sub-div .text-p {
+        margin-bottom: 0 !important;
     }
 
     .home-baaner-section {
@@ -1910,10 +2217,6 @@
     .product-policy .text-p {
         margin-bottom: 0;
         line-height: 26px;
-    }
-
-    .about-text-div-padding-right {
-        padding-right: 12px;
     }
 
     .about-text-div-padding-left {
@@ -2042,7 +2345,6 @@
     }
 
     .about-section .tabs {
-        /* flex-wrap: wrap; */
         overflow: auto;
     }
 
@@ -2072,7 +2374,7 @@
     }
 
     .reimagining-insurance .section-title-h2 {
-        margin-top: 40px;
+        margin: 0px auto 16px;
     }
 
     .we-serve .we-serve-sub-div-title {
@@ -2102,8 +2404,9 @@
     .btn-outline-light {
         font-size: 14px;
     }
+
     .intro-page-banner-section-section {
-       padding: 0;
+        padding: 0 0 24px;
     }
 
     .intro-page-banner-section-section h1 {
@@ -2119,10 +2422,81 @@
         min-height: 688px;
     }
 
+    .fs-32 {
+        font-size: 14px;
+    }
+
+    .text-policy-1 {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .reimagining-insurance {
+        margin-top: 24px;
+    }
+
+    .home-baaner-section .text-btn-div .text-div p.text-p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .pt-108 {
+        padding-top: 96px !important;
+    }
+
+    .intro-page-banner-section-section .banner-section-title {
+        padding: 0 !important;
+    }
+
+    .about-section {
+        background-size: 100% 82%;
+    }
+
+    .faq-setion .accordion-body img {
+        border-radius: 14px;
+    }
+
+    .title-24 {
+        font-size: 18px;
+    }
+
+    .experience-section .text-policy,
+    .experience-section .btn-requst-demo {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .text-policy-2 {
+        line-height: unset;
+        font-size: 24px;
+    }
+
+    .blog-cards {
+        grid-template-columns: auto;
+        grid-row-gap: 24px
+    }
+
+    .blog-card-main-div {
+        max-width: 100%;
+    }
+
+    .key-benefits-slider .swiper-button-prev,
+    .key-benefits-slider .swiper-button-next {
+        width: 38px;
+        height: 38px;
+    }
+
+    .key-benefits-slider-btn {
+        gap: 14px;
+    }
+
+    .key-benefits-section .swiper-pagination {
+        font-size: 16px;
+    }
 }
 
 @media(max-width:480.98px) {
-
     .policy-card {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -2158,7 +2532,6 @@
     .data-prepration-chart .apexcharts-legend {
         display: none !important;
     }
-
 }
 
 @media (max-width: 360px) {
@@ -2200,12 +2573,11 @@
 
     .solution-section-img-div .solution-sub-div-img:nth-child(2),
     .solution-section-img-div .solution-sub-div-img:nth-child(4) {
-        padding-top: 0;
+        margin-top: 0;
     }
 
-
     .solution-section {
-        padding: 40px 0 24px 0;
+        padding: 0 0 24px 0;
     }
 
     .solution-section-img-div {
@@ -2243,10 +2615,6 @@
         height: 200px;
         max-width: 200px;
     }
-
-    /* .link-div a {
-        font-size: 16px;
-    } */
 
     .footer-all-rights-div {
         padding: 12px;

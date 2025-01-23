@@ -7,17 +7,13 @@
     <title>GEXAGI - Machine Learning AI Integration</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/site-icon.svg">
     <!-- poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- font-ausome i-cone link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
@@ -507,7 +503,6 @@
     </footer>
     <!-- Footer end -->
 
-    <!-- link script -->
     <script src="assets/plugin/jquery/jquery.js"></script>
     <script src="assets/plugin/bootsrap/bootstap.js"></script>
     <script src="assets/plugin/swiper/swiper.js"></script>
@@ -515,56 +510,6 @@
     <script src="assets/plugin/gaps/gaps.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="assets/js/custome.js"></script>
-
-    <!-- Header Add Class  -->
-
-    <script>
-        $(document).ready(function () {
-            var header = $('header');  // Select the header element
-
-            // Scroll event listener
-            $(window).scroll(function () {
-                sticky();  // Apply sticky functionality
-                activateTab();  // Activate the corresponding tab based on scroll
-            });
-
-            // Sticky Header Logic
-            function sticky() {
-                var scrollY = window.scrollY;  // Get the vertical offset from the top (scroll position)
-
-                // Add 'sticky' class if the scroll position is greater than 0 (i.e., user has scrolled down)
-                if (scrollY > 0) {
-                    header.addClass('sticky');  // Add 'sticky' class when scrolled down
-                } else {
-                    header.removeClass('sticky');  // Remove 'sticky' class when at the top
-                }
-            }
-
-            // Initial check to add sticky class if the page is loaded after scrolling down
-            // This check ensures that if the page is already scrolled down after refresh, sticky class is added
-            sticky();
-
-            // Activate Tab Based on Scroll Position
-            function activateTab() {
-                var currentScroll = $(window).scrollTop();
-
-                // Loop through all sections and check which one is in the viewport
-                $('main-header').each(function () {
-                    var contentTop = $(this).offset().top;
-                    var contentBottom = contentTop + $(this).outerHeight();
-                    var sectionId = $(this).attr('id');
-
-                    // Check if the section is in the viewport
-                    if (currentScroll >= contentTop - 10 && currentScroll < contentBottom) {
-                        // Add active class to the corresponding tab
-                        $('a').removeClass('active');
-                        $('a[href="#' + sectionId + '"]').addClass('active');
-                    }
-                });
-            }
-        });
-    </script>
-
     <script>
         var options = {
             chart: {
@@ -601,10 +546,10 @@
             },
             responsive: [
                 {
-                    breakpoint: 768, // Tablet
+                    breakpoint: 768, 
                     options: {
                         chart: {
-                            height: 300, // Further reduced height for mobile
+                            height: 300, 
                             width: 460,
                         },
                         yaxis: {
@@ -629,10 +574,10 @@
                     },
                 },
                 {
-                    breakpoint: 480, // Mobile
+                    breakpoint: 480,
                     options: {
                         chart: {
-                            height: 280, // Further reduced height for mobile
+                            height: 280, 
                             width: 280,
                         },
                         yaxis: {
@@ -715,13 +660,10 @@
                 },
             },
         };
-
         var chart = new ApexCharts(document.querySelector("#machinelearningchart1"), options);
-
         chart.render();
 
-    </script>
-    <script>
+
         var options = {
             series: [{
                 name: "Without AI/ML",
@@ -814,34 +756,34 @@
                         fontWeight: 400,
                         lineHeight: '32.4px',
                     },
-                    maxWidth: 400,  // Allow the Y-axis labels to have a larger width
+                    maxWidth: 400,  
                 },
             },
             responsive: [
                 {
-                    breakpoint: 768, // Tablet
+                    breakpoint: 768,
                     options: {
                         chart: {
-                            height: 300, // Further reduced height for mobile
+                            height: 300,
                             width: 460,
                         },
                         yaxis: {
                             labels: {
-                                maxWidth: 200,  // Allow the Y-axis labels to have a larger width
+                                maxWidth: 200, 
                             },
                         },
                     },
                 },
                 {
-                    breakpoint: 480, // Mobile
+                    breakpoint: 480,
                     options: {
                         chart: {
-                            height: 280, // Further reduced height for mobile
+                            height: 280,
                             width: 280,
                         },
                         yaxis: {
                             labels: {
-                                maxWidth: 50,  // Allow the Y-axis labels to have a larger width
+                                maxWidth: 50, 
                             },
                         },
                     },

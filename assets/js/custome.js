@@ -1,4 +1,3 @@
-
 let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
   slidesPerView: 3,
   spaceBetween: 20,
@@ -38,7 +37,6 @@ let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
 
 let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   slidesPerView: 2,
-  // slidesPerGroup: 2,
   spaceBetween: 90,
   loop: true,
   speed: 600,
@@ -63,32 +61,28 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
       slidesPerView: 2,
     },
     576: {
+      slidesPerGroup: 1,
       spaceBetween: 50,
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
     0: {
       slidesPerGroup: 1,
       spaceBetween: 20,
-      slidesPerView: 1.2,
+      slidesPerView: 1,
     }
   }
 });
 
-// tabs js 
+// Tabs js 
 document.addEventListener('DOMContentLoaded', function () {
   let tabs = document.querySelectorAll('.tabs-2-li');
   let panels = document.querySelectorAll('.tabs-2-content');
 
   tabs.forEach(tab => {
     tab.addEventListener('click', function () {
-
       let targetTab = this.getAttribute('data-tab');
-
-      // Remove active class from all tabs and panels
       tabs.forEach(tab => tab.classList.remove('active'));
       panels.forEach(panel => panel.classList.remove('active'));
-
-      // Add active class to the clicked tab and the corresponding panel
       this.classList.add('active');
       document.getElementById(targetTab).classList.add('active');
 
@@ -119,3 +113,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Navbar Add Class
+$(document).ready(function () {
+  var scrollTop = $(document).scrollTop();
+  if (scrollTop > 14) {
+    $(".main-header").addClass("sticky");
+  }
+
+  $(document).scroll(function () {
+    var scrollTop = $(document).scrollTop();
+    if (scrollTop > 14) {
+      $(".main-header").addClass("sticky");
+    } else {
+      $(".main-header").removeClass("sticky");
+    }
+  });
+});

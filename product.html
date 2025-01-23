@@ -10,17 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- poppins font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- font-ausome i-cone link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -156,11 +152,9 @@
     <section class="business-growth-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 pe-lg-5 pe-md-4 pe-0 col-12  ">
+                <div class="col-md-7 pe-lg-5 pe-md-4 pe-0">
                     <h5 class="text-policy-2 mb-2">Simplify your complex business growth</h5>
-                    <h2 class="section-title-h2 mb-3 mt-2">Transforming Traditional
-                        Insurance Processes into a
-                        Modern, <span class="text-gradian-color">Secure Future</span> with AGI.</h2>
+                    <h2 class="section-title-h2 mb-3 mt-2">Discover insights effortlessly with our <span class="text-gradian-color">Knowledge Graph</span></h2>
                     <p class="text-p text-p-400 white-text mt-4">We have developed a state-of-the-art platform tailored
                         to simplify business operations forinsurers.Our application offers dynamic data visualizations,
                         allowing insurers to explore their business metrics in various ways.
@@ -175,7 +169,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="col-md-6 ps-lg-5 ps-md-4 ps-0 col-12 mt-4 mt-md-0 ">
+                <div class="col-md-5 ps-lg-5 ps-md-4 ps-0 mt-4 mt-md-0 ">
                     <div class="business-growth-section-img px-sm-0 px-3">
                         <img src="assets/img/product-page-2.png" alt="img">
                     </div>
@@ -668,63 +662,12 @@
 </footer>
 <!-- Footer end -->
 
-<!-- link script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/plugin/jquery/jquery.js"></script>
 <script src="assets/plugin/bootsrap/bootstap.js"></script>
 <script src="assets/plugin/gaps/gaps-2.js"></script>
 <script src="assets/plugin/gaps/gaps.js"></script>
 <script src="assets/js/custome.js"></script>
-
-<!-- Header Add Class  -->
-
-<script>
-    $(document).ready(function () {
-        var header = $('header');  // Select the header element
-
-        // Scroll event listener
-        $(window).scroll(function () {
-            sticky();  // Apply sticky functionality
-            activateTab();  // Activate the corresponding tab based on scroll
-        });
-
-        // Sticky Header Logic
-        function sticky() {
-            var scrollY = window.scrollY;  // Get the vertical offset from the top (scroll position)
-
-            // Add 'sticky' class if the scroll position is greater than 0 (i.e., user has scrolled down)
-            if (scrollY > 0) {
-                header.addClass('sticky');  // Add 'sticky' class when scrolled down
-            } else {
-                header.removeClass('sticky');  // Remove 'sticky' class when at the top
-            }
-        }
-
-        // Initial check to add sticky class if the page is loaded after scrolling down
-        // This check ensures that if the page is already scrolled down after refresh, sticky class is added
-        sticky();
-
-        // Activate Tab Based on Scroll Position
-        function activateTab() {
-            var currentScroll = $(window).scrollTop();
-
-            // Loop through all sections and check which one is in the viewport
-            $('main-header').each(function () {
-                var contentTop = $(this).offset().top;
-                var contentBottom = contentTop + $(this).outerHeight();
-                var sectionId = $(this).attr('id');
-
-                // Check if the section is in the viewport
-                if (currentScroll >= contentTop - 10 && currentScroll < contentBottom) {
-                    // Add active class to the corresponding tab
-                    $('a').removeClass('active');
-                    $('a[href="#' + sectionId + '"]').addClass('active');
-                }
-            });
-        }
-    });
-</script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var swiper = new Swiper(".mySwiper", {
@@ -737,8 +680,6 @@
             }
         });
     });
-
-    // Swiper Slider
 </script>
 
 </body>
