@@ -40,7 +40,6 @@ p {
     --black: #000000;
     --light: #EEF0FF;
     --white-10: #F6F6FF;
-
     --dark-blue: #6156DF;
     --black-blue: #19172C;
     --extralight-blue: #7086B0;
@@ -53,14 +52,13 @@ p {
 
 html {
     scroll-behavior: smooth;
+    scroll-padding: 104px;
 }
 
 .text-gradian-color {
     background: linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    /* font-weight: 400; */
 }
 
 .bg-dark {
@@ -76,10 +74,7 @@ html {
     color: var(--white);
 }
 
-/*================
- header
- =================== */
-
+/* header */
 .site-logo {
     max-width: 200px;
     height: auto;
@@ -198,7 +193,6 @@ html {
 .text-p {
     font-size: 16px;
     font-weight: 500;
-
 }
 
 .text-btn-div .text-div p.text-p {
@@ -247,7 +241,11 @@ html {
     }
 }
 
-.btn-know-more::after {
+.btn-know-more p {
+    position: relative;
+}
+
+.btn-know-more p::after {
     position: absolute;
     content: "";
     width: 0%;
@@ -258,8 +256,8 @@ html {
     transition: 0.5s all ease-in-out;
 }
 
-.btn-know-more:hover::after {
-    width: 87px;
+.btn-know-more:hover p::after {
+    width: 100%;
     background-color: var(--dark-blue);
     transition: 0.5s all ease-in-out;
 }
@@ -283,10 +281,7 @@ html {
     color: var(--white);
 }
 
-
-/* ==============================
-Benefits section
-=================================== */
+/* Benefits section */
 .section-title-h2 {
     font-size: 48px;
     font-weight: 300;
@@ -321,7 +316,7 @@ Benefits section
 
 .benefits-section .section-title {
     margin-top: 78px;
-    line-height: 108px;
+    line-height: unset;
 }
 
 .section-title {
@@ -366,8 +361,6 @@ Benefits section
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%) border-box;
 }
 
-
-
 .card-div:hover {
     border: 1px solid transparent;
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
@@ -381,7 +374,7 @@ Benefits section
 }
 
 .text-policy {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 38.4px;
     color: var(--extralight-blue);
@@ -394,9 +387,8 @@ Benefits section
     color: var(--extralight-blue);
 }
 
-
 .text-policy-2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 28.8px;
     color: var(--extralight-blue);
@@ -411,23 +403,14 @@ Benefits section
     max-width: 1128px;
     margin: auto;
     color: var(--white);
-    line-height: 86px;
+    line-height: 120%;
 }
 
 .solution-section .section-title-h2 {
     font-size: 72px;
 }
 
-/* ==========================
-policy-card
-=============================== */
-/* .benefits-section .row.g-4 .col-xl-3:first-child .policy-card-div {
-    margin-left: 0 !important;
-}
-
-.benefits-section .row.g-4 .col-xl-3:last-child .policy-card-div {
-    margin-right: 0 !important;
-} */
+/* policy-card */
 .policy-card {
     display: grid;
     gap: 72px;
@@ -437,21 +420,13 @@ policy-card
 }
 
 .policy-card-div {
-    height: 470px;
+    aspect-ratio: 390/693;
     border-radius: 8px;
     position: relative;
     overflow: hidden;
     transition: 0.4s all ease-in-out;
     padding: 32px;
     margin-top: 0px;
-    /* margin: 0 24px; */
-    cursor: pointer;
-}
-
-.policy-card-div:hover .policy-card-title {
-    top: 22px;
-    transition: 0.4s all ease-in-out;
-    left: 22px;
 }
 
 .policy-card-div img.policy-card-bg-img {
@@ -463,6 +438,7 @@ policy-card
     top: 0;
     left: 0;
     right: 0;
+    z-index: 0;
     transition: 0.4s all ease-in-out;
     border-radius: 8px;
 }
@@ -472,11 +448,8 @@ policy-card
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
-    position: absolute;
-    width: calc(100% - 48px);
-    top: 32px;
-    left: 32px;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
     transition: 0.4s all ease-in-out;
 }
 
@@ -508,17 +481,15 @@ policy-card
 }
 
 .policy-card-content {
-    translate: 300px 84px;
+    transform: translateX(120%);
+    padding-top: 24px;
     transition: 0.5s all ease-in-out;
     font-weight: 400;
 }
 
+.policy-card-div:hover .policy-card-title,
 .policy-card-div:hover .policy-card-content {
-    translate: -8px 84px;
-}
-
-.policy-card-div-10:hover .policy-card-content {
-    translate: 0px 184px;
+    transform: translate(-8px, -8px);
 }
 
 #video-main {
@@ -541,9 +512,7 @@ policy-card
     position: relative;
 }
 
-/* ===============================
-solution section
-================================ */
+/* solution section */
 .solution-section {
     padding: 80px 0 72px 0;
 }
@@ -551,10 +520,6 @@ solution section
 .solution-section .btn-know-more {
     width: fit-content;
 }
-
-/* .solution-sub-div-img {
-    margin: 0 auto;
-} */
 
 .solution-sub-div-img img {
     max-width: 200px;
@@ -574,13 +539,10 @@ solution section
 
 .solution-section-img-div .solution-sub-div-img:nth-child(2),
 .solution-section-img-div .solution-sub-div-img:nth-child(4) {
-    padding-top: 216px;
+    margin-top: 216px;
 }
 
-/* ==========================
-Footer 
-============================= */
-
+/* Footer  */
 .footer {
     background-color: #00031D;
 }
@@ -624,7 +586,6 @@ Footer
 }
 
 .link-div a:hover {
-    /* color: #066AA3; */
     color: #ffffff;
 }
 
@@ -685,7 +646,6 @@ Footer
     border-right: 1px solid var(--white);
 }
 
-
 .footer-all-rights-div {
     background-color: #07003C;
     padding: 16px 0;
@@ -728,36 +688,13 @@ Footer
     stroke: var(--black);
 }
 
-/* ==============
-video animation 
-=============== */
-
-/* .reimagining-insurance {
-    padding-top: 500px;
-} */
-
+/* video animation  */
 .reimagining-insurance {
     position: relative;
     overflow: hidden;
 }
 
-/* .video-div-2 {
-    position: absolute;
-    top: 0;
-    width: inherit;
-    overflow: hidden;
-    height: 200vh;
-    left: 0;
-}
-
-.video-div-2 video {
-    height: inherit;
-} */
-
-/* ===============================
-About page
-================================== */
-
+/* About page  */
 .about-section [data-sticky] {
     position: static;
     width: auto;
@@ -765,8 +702,8 @@ About page
 }
 
 .about-section .sticky {
-    /* border-top: 1px solid #676b80; */
     width: 100%;
+    z-index: 1;
     position: fixed;
     top: 104px;
     transition: 0.4s all ease-in-out;
@@ -782,10 +719,15 @@ About page
     min-height: 90vh;
 }
 
+.intro-page .about-section {
+    background: url(../img/about-bg.png) no-repeat top center / cover;
+    background-size: 100% 70%;
+    height: unset !important;
+}
+
 .about-section {
     background: url(../img/about-bg.png) no-repeat center / cover;
     min-height: 738px;
-    /* margin-bottom: -228px; */
 }
 
 .about-section h4 {
@@ -819,24 +761,16 @@ About page
     font-weight: 400;
     line-height: 32px;
     color: var(--white);
-    margin-bottom: 28px;
+    margin-bottom: 40px;
 }
 
 .about-us-content-div {
     display: flex;
     justify-content: space-between;
     gap: 48px;
-    /* margin-bottom: 72px; */
     align-items: center;
     transition: 0.4s all ease-in-out;
 }
-
-
-/* .about-us-content-div:hover .about-img img,
-.about-us-content-div:hover .about-square-img img {
-    scale: 1.15;
-    transform: rotate(5deg);
-} */
 
 .about-section {
     position: relative;
@@ -865,7 +799,6 @@ About page
     z-index: 1;
     top: 0;
     margin-bottom: 24px;
-    /* margin-top: 24px; */
     padding-top: 24px;
     transition: 0.3s all ease-in-out;
 }
@@ -902,7 +835,6 @@ About page
     transition: all .6s ease-in-out;
 }
 
-
 .about-img img {
     object-fit: cover;
     transition: all .6s ease-in-out;
@@ -930,7 +862,6 @@ About page
 }
 
 .solution-sub-div-img:hover img {
-    /* box-shadow: 0 0 15px 7px #031086; */
     box-shadow: 0px 0px 50px 0px #0021F8;
 }
 
@@ -939,18 +870,11 @@ About page
 }
 
 .about-sub-section .about-us-content-div {
-    margin-top: 120px;
+    padding-top: 120px;
 }
-.about-sub-section .about-us-content-div:first-child{
+
+.about-sub-section .about-us-content-div:first-child {
     margin-top: 48px;
-}
-
-.about-us-content-div-2 {
-    margin-top: 120px !important;
-}
-
-.about-us-content-div-2 .about-square-img {
-    width: 500px;
 }
 
 .about-tab-content {
@@ -959,14 +883,8 @@ About page
     margin-top: 48px;
 }
 
-/*==============================
- About US Page End
- ================================ */
-
-/* ===============================
- Product page 
- ================================== */
-
+/* About US Page End */
+/* Product page  */
 .product-policy {
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 128px 0 0;
@@ -1007,28 +925,15 @@ About page
     max-width: 100%;
 }
 
-
-
 .product-policy .text-p {
     font-weight: 400;
     max-width: 1128px;
     text-align: center;
+    font-size: 18px;
     margin: auto;
     line-height: 36px;
     margin-bottom: 24px;
 }
-
-/* .product-img-div img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.product-img-div img.active {
-    opacity: 1;
-} */
 
 .text-p-400 {
     font-weight: 400;
@@ -1087,7 +992,6 @@ About page
     line-height: 72px;
     text-align: center;
     padding: 24px 0;
-
 }
 
 .card-use-case-title {
@@ -1124,7 +1028,6 @@ About page
     height: 245px;
     filter: brightness(0.7);
     transition: 0.6s all ease-in-out;
-
 }
 
 .slider-use-case-div .swiper-button-prev::after {
@@ -1233,18 +1136,16 @@ About page
     border-bottom: 1px solid #00C0F1;
 }
 
-
 .faq-setion .accordion-header button {
     background-color: var(--black);
     box-shadow: none !important;
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 300;
     line-height: 76.8px;
     color: var(--white);
     padding: 48px 0;
     display: flex;
     justify-content: space-between;
-
 }
 
 .faq-setion .accordion-header button img {
@@ -1276,7 +1177,6 @@ About page
     color: var(--white);
 }
 
-
 .faq-content-main-div .text-p-18 {
     margin-bottom: 20px;
 }
@@ -1298,7 +1198,7 @@ About page
 .faq-content-main-div {
     display: flex;
     justify-content: space-between;
-    gap: 48px;
+    gap: 72px;
     padding: 48px 0;
 }
 
@@ -1307,12 +1207,12 @@ About page
 }
 
 .containt-left {
-    max-width: 700px;
+    max-width: 60%;
     width: 100%;
 }
 
 .containt-right {
-    max-width: 379px;
+    max-width: 40%;
     width: 100%;
 }
 
@@ -1326,10 +1226,7 @@ About page
     max-width: unset;
 }
 
-/* ================================
- blog page 
- =================================== */
-
+/* blog page  */
 .banner-sectrion-blog {
     background: url(../img/about-bg.png) no-repeat center / cover;
     padding: 130px 0 0;
@@ -1360,30 +1257,37 @@ About page
 }
 
 .blog-card-main-div:hover .bog-card-cotent {
-    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, rgba(9, 2, 49, 0.8) 25.96%) !important;
+    animation: bg-change 1.3s 1;
+    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, rgba(9, 2, 49, 0.8) 25.96%);
+}
+
+@keyframes bg-change {
+    to {
+        background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, rgba(9, 2, 49, 1) 25.96%);
+    }
 }
 
 .bog-card-cotent {
     padding: 32px 24px 24px 24px;
-    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, #090231 25.96%);
+    background: linear-gradient(180deg, rgba(9, 2, 49, 0) 4.4%, rgba(9, 2, 49, 1) 25.96%);
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     border-radius: 0 0 16px 16px;
+    transition: all 1s ease-in-out;
 }
 
 .blog-future-img-div {
     border-radius: 20px;
     overflow: hidden;
-    max-width: 360px;
     width: 100%;
-    height: 400px;
     position: relative;
 }
 
 .blog-future-img-div img {
     border-radius: 20px 20px 0 0;
+    object-fit: cover;
     transition: 0.3s all ease-in-out;
 }
 
@@ -1397,16 +1301,15 @@ About page
     background-color: #090231;
     border-radius: 16px;
     position: relative;
+    aspect-ratio: 360/400;
+    width: 100%;
 }
 
 .blog-card-main-div:hover .blog-future-img-div img {
     transform: scale(1.2);
 }
 
-/* =====================
- conatct page 
- ======================== */
-
+/* conatct page  */
 .conatct-text-p {
     font-size: 24px;
     color: var(--white);
@@ -1436,7 +1339,10 @@ About page
     line-height: 54px;
     color: #D69D00;
     padding: 24px 0 64px;
+}
 
+.get-touch-section .text-p-18 span {
+    font-weight: 600;
 }
 
 .contact-information {
@@ -1478,7 +1384,13 @@ About page
 
 .intro-page-section {
     padding-bottom: 32px;
-    padding-top: 90px;
+}
+
+.intro-page-section .intro-title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 180%;
+    color: var(--white);
 }
 
 .intro-page-section .text-p {
@@ -1486,7 +1398,7 @@ About page
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .intro-imf-div {
@@ -1497,7 +1409,6 @@ About page
 .intro-imf-div img {
     border-radius: 24px;
 }
-
 
 /* About US Page Start */
 .section-full-bg {
@@ -1517,7 +1428,7 @@ About page
 }
 
 .pt-108 {
-    padding-top: 108px !important;
+    padding-top: 104px !important;
 }
 
 .aboutus-section {
@@ -1563,7 +1474,6 @@ About page
 }
 
 /* About US Page End */
-
 /* FAQ Page Start */
 .faq-section .subtitle {
     color: var(--white);
@@ -1649,14 +1559,11 @@ About page
 
 /* FAQ Page End */
 
-/* =================================
-Contact Us Page Start 
-=============================== */
-
+/* Contact Us Page Start  */
 .conatct-page-title {
-    font-size: 80px;
+    font-size: 72px;
     font-weight: 400;
-    line-height: 120px;
+    line-height: unset;
     color: var(--white);
 }
 
@@ -1671,7 +1578,6 @@ Contact Us Page Start
     line-height: 60px;
     color: #00FFF0;
     margin-bottom: 24px;
-
 }
 
 .contact-information-2 .section-sub-title {
@@ -1771,7 +1677,6 @@ Contact Us Page Start
     margin-bottom: 0;
 }
 
-
 .btn-outline-light:hover {
     border: 2px solid transparent;
     background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box,
@@ -1790,14 +1695,9 @@ Contact Us Page Start
 }
 
 /* Contact Us Page End */
-
-/* =========================
-Our Expertise
-=========================== */
-
+/* Our Expertise  */
 .expertise .text-p {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 18px;
 }
 
 .text-p-18 {
@@ -1830,18 +1730,21 @@ a.text-p-18 {
     justify-content: space-between;
     align-items: center;
     border: 0;
+    gap: 8px;
     border-bottom: 1px solid var(--white);
     padding: 32px 32px 32px 16px;
 }
 
 .tans-ul .tabs-li button:hover {
     color: #00D9FF;
-    border-bottom: 2px solid var(--white);
+    box-shadow: 0 1px 0 var(--white);
 }
-
 
 .tabs-arrow {
     transition: 0.3s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tans-ul .tabs-li button:hover .tabs-arrow {
@@ -1854,14 +1757,13 @@ a.text-p-18 {
     line-height: 30px;
     color: var(--white);
     text-align: start;
-    /* padding: 0; */
     transition: 0.3s all ease-in-out;
 }
 
 .tans-ul .tabs-li button.active {
     background-color: transparent;
     color: #00D9FF;
-    border-bottom: 2px solid white;
+    box-shadow: 0 1px 0 var(--white);
     transition: 0.3s all ease-in-out;
 }
 
@@ -1879,7 +1781,7 @@ a.text-p-18 {
 }
 
 .tabs-content-title {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 43.2px;
     color: var(--white);
@@ -1896,7 +1798,6 @@ a.text-p-18 {
 .tabs-content-main-div {
     max-width: 700px;
     width: 100%;
-
 }
 
 .bg-img-duckreek-section {
@@ -1904,7 +1805,10 @@ a.text-p-18 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 739px;
+}
+
+.bg-img-duckreek-section .tans-ul {
+    margin-bottom: 0;
 }
 
 .aboutus-section h1.page-title-duckreek {
@@ -1915,12 +1819,11 @@ a.text-p-18 {
 }
 
 .slider-title-text {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 300;
     line-height: 64.8px;
     color: var(--white);
     margin-bottom: 32px;
-
 }
 
 .benefits-section {
@@ -1953,7 +1856,8 @@ a.text-p-18 {
 }
 
 .benefits-row-1 .benefits-column img {
-    height: 65px;
+    max-height: 64px;
+    max-width: 64px;
     width: auto;
 }
 
@@ -1973,6 +1877,7 @@ a.text-p-18 {
     font-size: 72px;
     line-height: 72px;
     font-weight: 300;
+    margin-bottom: 24px;
 }
 
 .key-benefits-slider .swiper-button-prev::after {
@@ -1984,7 +1889,7 @@ a.text-p-18 {
 }
 
 .key-benefits-slider {
-    padding: 30px 0 90px 0;
+    padding-top: 32px;
 }
 
 .key-benefits-slider .swiper-button-next img {
@@ -2002,15 +1907,22 @@ a.text-p-18 {
     padding: 12px;
     border: 1px solid var(--white);
     border-radius: 100%;
-    height: auto;
-    width: auto;
+    height: 48px;
+    width: 48px;
     transition: 0.3s all ease-in-out;
+    position: unset;
+    margin: 0;
+}
+
+.key-benefits-slider-btn .swiper-button-prev {
+    order: -1;
 }
 
 .key-benefits-slider-btn {
-    position: absolute;
-    width: 13%;
-    bottom: 31px;
+    display: flex;
+    margin-top: 42px;
+    gap: 24px;
+    align-items: center;
 }
 
 .swiper-button-next:hover,
@@ -2021,18 +1933,16 @@ a.text-p-18 {
 .swiper-button-next:hover svg path,
 .swiper-button-prev:hover svg path {
     fill: #00D9FF;
-}
-
-.key-benefits-section .slider-title-text {
-    margin-bottom: 0;
+    stroke: #00D9FF;
 }
 
 .key-benefits-section .swiper-pagination {
     color: var(--white);
     width: fit-content;
-    position: absolute;
-    bottom: 15px;
-    left: 168px;
+    position: unset;
+    font-size: 18px;
+    line-height: 150%;
+    margin-left: 8px;
 }
 
 .key-benefits-section .swiper-pagination-current {
@@ -2064,13 +1974,9 @@ a.text-p-18 {
     font-size: 18px;
     font-weight: 400;
     line-height: 32.4px;
-
 }
 
-/* ==========================
-usecase page
-=========================== */
-
+/* usecase page  */
 .use-case-card-section .policy-card-div {
     aspect-ratio: 264/400;
     width: 100%;
@@ -2098,13 +2004,12 @@ usecase page
 
 .usecases-main .page-title-duckreek {
     margin-bottom: 72px;
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 600;
     line-height: 86.4px;
 }
 
 /* Casestudy Detail Page Start  */
-
 .casestudy-detail.section-full-bg::before {
     min-height: 730px;
 }
@@ -2256,11 +2161,8 @@ usecase page
     transition: 0.5s all ease-in-out;
 }
 
-
 /* Casestudy Detail Page End */
-
 /* Discovery Phase Chart */
-
 .discovery-phase-chart {
     max-width: 604px;
     margin: 0 auto 0px;
@@ -2305,7 +2207,6 @@ usecase page
 }
 
 /* Data Collection Chart 1*/
-
 .data-collection-chart .apexcharts-toolbar {
     display: none;
 }
@@ -2358,7 +2259,6 @@ usecase page
 }
 
 /* Data Collection Chart 2*/
-
 .data-collection-line-chart .apexcharts-toolbar {
     display: none;
 }
@@ -2376,7 +2276,6 @@ usecase page
 }
 
 /* Data Prepration Chart*/
-
 .data-prepration-chart .apexcharts-series path {
     stroke: 0;
     stroke-opacity: 0;
@@ -2457,9 +2356,7 @@ usecase page
     margin-bottom: 100px;
 }
 
-
 /* Machine Leaning Chart 2*/
-
 .machine-learning-chart2 .apexcharts-toolbar {
     display: none;
 }
@@ -2506,6 +2403,7 @@ usecase page
 .reimagining-insurance .section-title-h2 {
     margin-bottom: 32px;
     margin-top: 48px;
+    line-height: 120%;
 }
 
 .reimagining-insurance {
@@ -2520,10 +2418,7 @@ usecase page
     color: var(--white);
 }
 
-/* ======================
-duck reek 
-======================= */
-
+/* duck reek  */
 .tabs-1-content {
     display: none;
 }
@@ -2545,7 +2440,6 @@ duck reek
 }
 
 .toggle-button {
-    /* border: 1px solid rgba(103, 107, 128, 1); */
     border: 2px solid #ffffff;
     width: 40px;
     height: 24px;
@@ -2578,4 +2472,20 @@ duck reek
 
 .navbar-brand.site-logo {
     margin-right: auto;
+}
+
+.fs-32 {
+    font-size: 24px;
+}
+
+.product-policy-img-section .swiper {
+    max-width: 1008px;
+    margin: auto;
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 108px;
+    grid-row-gap: 48px;
 }
