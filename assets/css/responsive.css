@@ -57,7 +57,7 @@
     .product-policy-div .text-policy-1,
     .casestudy-description h5,
     .intro-page-section .intro-title,
-    .about-section .tabs a {
+    .about-section .tabs .tab-btn {
         font-size: 48px;
     }
 
@@ -82,11 +82,17 @@
         line-height: 180%;
     }
 
+    .about-section .tabs .tab-btn,
     .slider-title-text,
     .key-benefits-section .text-p,
     .tabs-content-title,
     .expertise .text-p {
         line-height: unset;
+    }
+
+    .about-tab.portfolio-content,
+    .about-sub-section .about-us-content-div {
+        padding-top: 138px;
     }
 
     .section-text-p .text-p,
@@ -137,10 +143,6 @@
 
     .about-section .tabs {
         margin-top: 72px;
-    }
-
-    .about-section .callout {
-        padding-bottom: 1px;
     }
 
     .pagination p,
@@ -206,6 +208,12 @@
     .key-benefits-slider .swiper-button-next {
         height: 68px;
         width: 68px;
+    }
+    .about-section .tabs .tab-btn {
+        border-bottom: 4px solid transparent;
+    }
+    .about-section .tabs .tab-btn:hover, .about-section .tabs .tab-btn.active {
+        border-bottom: 4px solid #0F3384;
     }
 }
 
@@ -655,6 +663,11 @@
     .bog-card-cotent h3 {
         font-size: 18px;
         margin-bottom: 12px;
+    }
+
+    .about-tab.portfolio-content,
+    .about-sub-section .about-us-content-div {
+        padding-top: 60px;
     }
 }
 
@@ -1107,7 +1120,7 @@
         gap: 18px;
     }
 
-    .about-section .tabs a {
+    .about-section .tabs .tab-btn {
         font-size: 24px;
     }
 
@@ -1130,8 +1143,8 @@
     }
 
     .about-section .tabs {
-        padding-top: 0px;
-        margin: 0;
+        padding-top: 0;
+        margin: 42px auto 14px;
     }
 
     .about-title {
@@ -1154,7 +1167,12 @@
     }
 
     .about-us-content-div-2 {
-        padding-top: 12px !important;
+        padding-top: 12px;
+    }
+
+    .about-tab.portfolio-content,
+    .about-sub-section .about-us-content-div {
+        padding-top: 58px;
     }
 
     .about-us-content-div-2 .about-square-img {
@@ -1223,6 +1241,12 @@
 
     .key-benefits-slider-btn {
         margin-top: 28px;
+    }
+    .about-section {
+        padding-top: 114px;
+    }
+    .about-square-img img{
+        max-height: 364px;
     }
 }
 
@@ -1575,13 +1599,9 @@
         font-size: 24px;
     }
 
-    .about-section .tabs a {
+    .about-section .tabs .tab-btn {
         font-size: 21px;
         padding: 11px 6px;
-    }
-
-    .about-sub-section .about-us-content-div {
-        padding-top: 0px;
     }
 
     .about-description {
@@ -1590,7 +1610,11 @@
     }
 
     .about-us-content-div-2 {
-        padding-top: 0px !important;
+        padding-top: 0px;
+    }
+
+    .about-title{
+        font-size: 32px;
     }
 
     .about-tab-content {
@@ -1873,7 +1897,8 @@
 
     .about-description {
         font-size: 14px;
-        line-height: 26px;
+        line-height: 150%;
+        margin-bottom: 0px;
     }
 
     .about-section h4 {
@@ -1881,9 +1906,18 @@
     }
 
     .about-title {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 120%;
-        margin-bottom: 18px;
+        margin-bottom: 12px;
+    }
+
+    .about-tab.portfolio-content, .about-sub-section .about-us-content-div {
+        padding-top: 52px;
+    }
+
+    .about-sub-section .about-us-content-div:first-child{
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .about-sub-section .about-us-content-div {
@@ -1892,10 +1926,6 @@
 
     .about-square-img {
         height: unset;
-    }
-
-    .about-section {
-        min-height: 678px;
     }
 
     .we-do-are {
@@ -2312,13 +2342,8 @@
         padding: 109px 0 48px 0;
     }
 
-    .about-description {
-        margin-bottom: 0px;
-    }
-
     .about-section .sticky {
-        top: 98px;
-        left: 0;
+        top: 97px;
     }
 
     .about-us-content-div {
@@ -2334,9 +2359,10 @@
         padding-top: 28px;
     }
 
-    .about-section .tabs a {
+    .about-section .tabs .tab-btn {
         font-size: 14px;
-        padding: 08px 06px;
+        padding: 8px 4px;
+        letter-spacing: -0.3px;
         text-wrap: nowrap;
     }
 
@@ -2345,7 +2371,7 @@
     }
 
     .about-section .tabs {
-        overflow: auto;
+        margin: 12px auto 0;
     }
 
     .faq-setion button span {
@@ -2378,7 +2404,7 @@
     }
 
     .we-serve .we-serve-sub-div-title {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 300;
         line-height: 36px;
         margin-top: 20px;
@@ -2449,7 +2475,7 @@
         padding: 0 !important;
     }
 
-    .about-section {
+    .intro-page .about-section {
         background-size: 100% 82%;
     }
 

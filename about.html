@@ -7,13 +7,13 @@
     <title>GEXAGI - About</title>
     <link rel="icon" type="image/x-icon" href="assets/icon/site-icon.svg">
     <!-- poppins font -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bangers&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- font-ausome i-cone link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
     <!-- custume link  -->
     <link rel="stylesheet" href="assets/plugin/bootsrap/bootstrap.css">
     <link rel="stylesheet" href="assets/plugin/swiper/swiper.css">
@@ -124,18 +124,14 @@
                         <img src="assets/img/about-img1.png" alt="About Image">
                     </div>
                 </div>
-                <!-- <div class="callout" id="wetabs">
-                    <div class="tabs">
-                        <a class="about-us-tabs" href="#we_do_section">What We Do</a>
-                        <a class="about-us-tabs" href="#we_are_section">Who We Are</a>
-                        <a class="about-us-tabs" href="#who_we_serve">Who We Serve</a>
-                    </div>
-                </div> -->
                 <div class="callout">
                     <nav class="tabs">
-                        <a class="we-do-btn" href="#we_do_section">What We Do</a>
-                        <a class="who-are-btn" href="#we_are_section">Who We Are</a>
-                        <a class="we-serve-btn" href="#who_we_serve">Who We Serve</a>
+                        <!-- <a class="tab-btn we-do-btn" href="#we_do_section">What We Do</a>
+                        <a class="tab-btn who-are-btn" href="#we_are_section">Who We Are</a>
+                        <a class="tab-btn we-serve-btn" href="#who_we_serve">Who We Serve</a> -->
+                        <div class="tab-btn we-do-btn">What We Do</div>
+                        <div class="tab-btn who-are-btn">Who We Are</div>
+                        <div class="tab-btn we-serve-btn">Who We Serve</div>
                     </nav>
                 </div>
             </div>
@@ -180,7 +176,7 @@
                 </div>
                 <div class="about-us-content-div portfolio-content" id="we_do_section">
                     <div class="about-text-div-padding-right">
-                        <h2 class="about-title mt-4 mt-md-0"><span class="text-gradian-color">What</span> We Do</h2>
+                        <h2 class="about-title"><span class="text-gradian-color">What</span> We Do</h2>
                         <p class="about-description">We empower your business with a modern, digital perspective.
                             Drawing on our deep software engineering legacy, strategic advisory capabilities, and
                             user-centered design principles, we enhance every stage of the insurance value chain. We
@@ -193,13 +189,13 @@
                         <img src="assets/img/about-we-do.png" alt="About We Do Image">
                     </div>
                 </div>
-                
+
                 <div class="about-us-content-div about-us-content-div-2 portfolio-content" id="we_are_section">
                     <div class="about-square-img">
                         <img src="assets/img/about-we-are.png" alt="About We Are Image">
                     </div>
                     <div class="about-text-div-padding-right">
-                        <h2 class="about-title mt-4 mt-md-0">Who <span class="text-gradian-color">We</span> Are</h2>
+                        <h2 class="about-title">Who <span class="text-gradian-color">We</span> Are</h2>
                         <p class="about-description">At GeXAGI, we believe we&#39;re at our best when our employees
                             align their personal purpose with the company’s mission. It’s about uniting all our goals,
                             visions, and passions to propel the company’s growth, while making a meaningful impact on
@@ -496,7 +492,7 @@
     <script src="assets/js/custome.js"></script>
 
     <script>
-         $(document).ready(function () {
+        $(document).ready(function () {
             var wetabs = $('.callout');
             var originalPosition = wetabs.offset().top;
             $(window).scroll(function () {
@@ -515,7 +511,12 @@
             }
             sticky();
         });
+
         
+        const sections = document.querySelectorAll('#we_do_section, #we_are_section, #who_we_serve');
+        const buttons = document.querySelectorAll('.we-do-btn, .who-are-btn, .we-serve-btn');
+        let activeSection = null;
+
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('#we_do_section, #we_are_section, #who_we_serve');
             const buttons = document.querySelectorAll('.we-do-btn, .who-are-btn, .we-serve-btn');
@@ -528,21 +529,88 @@
                 const windowHeight = window.innerHeight;
 
                 if (windowTop >= sectionTop - windowHeight / 2 && windowTop <= sectionTop + sectionHeight / 2) {
-                if (activeSection !== section) {
-                    sections.forEach(prevSection => {
-                    prevSection.classList.remove('active');
-                    });
-                    buttons.forEach(button => {
-                    button.classList.remove('active');
-                    });
-                    section.classList.add('active');
-                    buttons[index].classList.add('active'); 
+                    if (activeSection !== section) {
+                        sections.forEach(prevSection => {
+                            prevSection.classList.remove('active');
+                        });
 
-                    activeSection = section;
-                }
+                        buttons.forEach(button => {
+                            button.classList.remove('active');
+                        });
+
+                        section.classList.add('active');
+                        buttons[index].classList.add('active');
+                        activeSection = section;
+                    }
                 }
             });
+
+            let isAnySectionInView = false;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const windowTop = window.scrollY;
+                const windowHeight = window.innerHeight;
+
+                if (windowTop >= sectionTop - windowHeight / 2 && windowTop <= sectionTop + sectionHeight / 2) {
+                    isAnySectionInView = true;
+                }
+            });
+
+            if (!isAnySectionInView) {
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+            }
         });
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                const targetSection = sections[index];
+                const buttonRect = button.getBoundingClientRect();
+
+                let offset = buttonRect.height;
+
+                const parent = button.closest('.callout.sticky');
+                if (window.innerWidth > 1440) {
+                    if (parent) {} else {
+                        offset += 229;
+                    }
+                }
+                if (window.innerWidth <= 1440) {
+                    if (parent) {
+                        offset += 50;
+                    } else {
+                        offset += 229;
+                    }
+                }
+                if (window.innerWidth < 1200) {
+                    offset += 50;
+                }
+                if (window.innerWidth < 992) {
+                    if (parent) {
+                        offset -= 50;
+                    } else {
+                        offset -= 115;
+                    }
+                }
+                if (window.innerWidth < 576) {
+                    if (parent) {} else {
+                        offset -= 45;
+                    }
+                }
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
     </script>
 </body>
 
