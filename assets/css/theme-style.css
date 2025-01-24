@@ -145,14 +145,6 @@
     background-color: var(--black) !important;
 }
 
-.light-theme .callout.sticky .tabs{
-    background-color: var(--white) ;
-}
-
-.light-theme .about-section .callout.sticky .tabs a:hover,
-.light-theme .about-section .callout.sticky .tabs a.active{
-    color: var(--black);
-}
 .light-theme .contact-form .form-control{
     box-shadow: 0px 4px 4px 0px #b9b9b940;
 }
