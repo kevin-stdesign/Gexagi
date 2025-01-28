@@ -65,9 +65,9 @@
     --white: #6006DD;
 }
 
-.light-theme .toggle-button {
+/* .light-theme .toggle-button {
     box-shadow: 0 0 0 1px #000;
-}
+} */
 
 .light-theme .main-header .down-arrow {
     filter: brightness(0.2);

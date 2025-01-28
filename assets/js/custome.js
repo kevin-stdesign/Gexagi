@@ -96,10 +96,24 @@ jQuery(".popup-closed-btn").click(function () {
 
 // Toggle Class
 $(document).ready(function () {
+  if (localStorage.getItem('theme') === 'light') {
+    $("body").addClass("light-theme");
+    $('.theme-toggle .toggle').prop('checked', true);
+  } else {
+    $("body").removeClass("light-theme");
+    $('.theme-toggle .toggle').prop('checked', false); 
+  }
+
   $('.theme-toggle .toggle').change(function () {
     $("body").toggleClass("light-theme");
+    if ($("body").hasClass("light-theme")) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
   });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   var hash = window.location.hash;
@@ -129,3 +143,31 @@ $(document).ready(function () {
     }
   });
 });
+
+// Navbar Aimation
+// var beforeScroll = 0;
+// var afterScroll;
+// var $navbar = $('.main-header');
+
+// $(window).on("scroll", function(){
+//   afterScroll = $(this).scrollTop();
+
+//   if (afterScroll === 0) {
+//     $navbar.removeClass('slideDown');
+//   }
+
+//   if (beforeScroll < afterScroll) {
+//     $navbar.removeClass('slideDown').addClass('slideUp');
+//   } 
+//   else if (beforeScroll > afterScroll) {
+//     $navbar.removeClass('slideUp').addClass('slideDown');
+//   }
+  
+//   if (afterScroll < 50) {
+//     $navbar.removeClass('slideDown');
+//   }
+
+//   beforeScroll = afterScroll;
+// });
+
+
