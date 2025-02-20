@@ -1,6 +1,7 @@
 .light-theme .dark-theme>*,
 .light-theme .dark-theme,
 .light-theme {
+    --secondary: #00FFF0;
     --white: #ffffff;
     --black: #000000;
     --light: #EEF0FF;
@@ -14,17 +15,21 @@
     --footer-link-color: #A6B7DB;
     --footer-link-title: #CCD8F1;
     --aqua-color: #00D9FF;
+    --gradian-text : linear-gradient(90.01deg, #00FFF0 19.51%, #588DFF 43.04%, #FB537B 74.99%, #F9AF7C 99.99%);
 }
 
 .light-theme.bg-dark,
 .light-theme .main-header,
 .light-theme div:not(.dark-theme):not(div),
 .light-theme .bg-dark-blue {
+    --secondary: #07CEC2;
     --white: #000000;
     --white-10: #000000;
     --black: #ffffff;
     --light: #000000;
     --extralight-blue: rgba(81, 85, 91, 1);
+
+    --gradian-text : linear-gradient(89.91deg, #07CEC2 0%, #588DFF 29%, #FB537B 69%, #F9AF7C 100%);
 }
 
 .light-theme .btn-know-more svg path {
@@ -147,4 +152,14 @@
 
 .light-theme .contact-form .form-control{
     box-shadow: 0px 4px 4px 0px #b9b9b940;
+}
+
+.light-theme .main-header.sticky{
+    border-bottom-color: var(--white-10);
+}
+
+.light-theme .text-gradian-color{
+    background: var(--gradian-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

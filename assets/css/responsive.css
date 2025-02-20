@@ -1,4 +1,20 @@
-@media(min-width:1441px) {
+@media(min-width:1480px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1416px;
+    }
+
+    .solution-cards .solution.solution-four .img{
+        max-height: 192px;
+    }
+}
+
+/* Old */
+/* @media(min-width:1441px) {
     .container {
         max-width: 1920px;
         padding: 0 84px;
@@ -42,7 +58,7 @@
     .about-title,
     .about-section .page-title-duckreek,
     .section-title-h2 {
-        font-size: 72px;
+        font-size: 67px;
     }
 
     .slider-title-text,
@@ -58,11 +74,11 @@
     .casestudy-description h5,
     .intro-page-section .intro-title,
     .about-section .tabs .tab-btn {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .icon-name-text {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .bog-card-cotent h3,
@@ -165,7 +181,7 @@
     }
 
     .product-policy .text-p {
-        font-size: 24px;
+        font-size: 23px;
         max-width: 1996px;
     }
 
@@ -243,11 +259,28 @@
     .solution:nth-child(3){
         margin-bottom: 266px;
     }
-}
+    .requestdemo-section p,
+    .requstdemo-btn{
+        font-size: 32px;
+    }
+    .requestdemo-content {
+        max-width: 1104px;
+        padding: 42px;
+    }
 
-@media(min-width:1680px) {
+}  */
 
-    .slider-number-div,
+/* Old */
+/* @media(min-width:1680px) {
+
+    .container {
+        max-width: 1920px;
+        padding: 0 84px;
+        width: 100%;
+        margin: auto;
+    }
+
+     .slider-number-div,
     .our-blog .about-title,
     .conatct-page-title,
     .usecases-main .page-title-duckreek,
@@ -257,7 +290,6 @@
     .banner-section-title {
         font-size: 88px;
     }
-
     .card-title {
         font-size: 48px;
     }
@@ -291,7 +323,7 @@
 
     .section-title-h2,
     .product-policy .section-title-h2 {
-        font-size: 72px;
+        font-size: 67px;
     }
 
     .product-policy-div .text-policy-1 {
@@ -332,6 +364,318 @@
     .solution:nth-child(1),
     .solution:nth-child(3){
         margin-bottom: 316px;
+    } 
+}   */
+
+@media(min-width:1680px) {
+    .container {
+        max-width: 1920px;
+        padding: 0 84px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .slider-number-div,
+    .our-blog .about-title,
+    .conatct-page-title,
+    .usecases-main .page-title-duckreek,
+    .main-page-header,
+    .solution-section .section-title-h2,
+    .benefits-section .section-title,
+    .banner-section-title {
+        font-size: 84px;
+    }
+
+    .card-title {
+        font-size: 40px;
+    }
+
+    .tans-ul .tabs-li button {
+        font-size: 26px;
+    }
+
+    .policy-card-div .text-p {
+        font-size: 24px;
+    }
+
+    .solution-sub-div-img img {
+        width: 250px;
+        max-width: 250px;
+    }
+
+    .casestudy-detail.section-full-bg::before {
+        min-height: 850px;
+    }
+
+    .section-title-h2,
+    .product-policy .section-title-h2 {
+        font-size: 67px;
+    }
+
+    .product-policy-div .text-policy-1 {
+        font-size: 68px;
+    }
+
+    .product-policy-img-section .swiper {
+        max-width: 1408px;
+    }
+
+    .our-blog .banner-sectrion-blog {
+        margin-bottom: -78px;
+    }
+
+    .tabs-img-div {
+        max-width: 481px;
+    }
+
+    .main-div-policyxagi .section-title-h2 {
+        font-size: 64px;
+        max-width: 1655px;
+    }
+
+    .solution-cards .solution {
+        max-width: 300px;
+    }
+
+    .solution-cards span {
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    .solution-cards .solution.solution-four span {
+        font-size: 36px;
+    }
+
+    .solution-cards .solution.solution-four .img{
+        max-height: 192px;
+    }
+
+
+
+    .solution:nth-child(2),
+    .solution:nth-child(4) {
+        margin-top: 316px;
+    }
+
+    .solution:nth-child(1),
+    .solution:nth-child(3) {
+        margin-bottom: 316px;
+    }
+
+    .about-text-div-padding-right {
+        max-width: 50%;
+    }
+
+    .about-us-content-div {
+        justify-content: space-between;
+    }
+
+    .home-hero-text {
+        max-width: 889px !important;
+    }
+
+    .card-img {
+        max-height: 120px;
+        max-width: 120px;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-div-3 .card-title,
+    .card-div-2 .card-title {
+        max-width: 90%;
+    }
+
+    .casestudy-detail h1 {
+        line-height: 120%;
+    }
+
+    .aboutus-section h1.page-title-duckreek,
+    .faq-setion .accordion-header button,
+    .casestudy-detail h1,
+    .about-title,
+    .about-section .page-title-duckreek {
+        font-size: 67px;
+    }
+
+    .slider-title-text,
+    .section-sub-title,
+    .we-serve .we-serve-sub-div-title {
+        font-size: 56px;
+    }
+
+    .text-policy-1 {
+        font-size: 52px;
+    }
+
+    .tabs-content-title,
+    .casestudy-description h5,
+    .intro-page-section .intro-title,
+    .about-section .tabs .tab-btn {
+        font-size: 42px;
+    }
+
+    .icon-name-text {
+        font-size: 26px;
+    }
+
+    .bog-card-cotent h3,
+    .title-24,
+    .casestudy-detail .date-time h5,
+    .casestudy-detail .lable,
+    .fs-32.text-p,
+    .fs-32 {
+        font-size: 32px;
+    }
+
+    .bog-card-cotent h3,
+    .intro-page-section .text-p {
+        line-height: 160%;
+    }
+
+    .contact-form h5 {
+        line-height: 180%;
+    }
+
+    .about-section .tabs .tab-btn,
+    .slider-title-text,
+    .key-benefits-section .text-p,
+    .tabs-content-title,
+    .expertise .text-p {
+        line-height: unset;
+    }
+
+    .about-tab.portfolio-content,
+    .about-sub-section .about-us-content-div {
+        padding-top: 138px;
+    }
+
+    .section-text-p .text-p,
+    .key-benefits-section .swiper-pagination,
+    .key-benefits-section .text-p,
+    .expertise .text-p,
+    .blog-reade-time,
+    .btn-outline-light,
+    .contact-form h5,
+    .text-p-18,
+    .related-insights a,
+    .casestudy-description p,
+    .casestudy-description ul li,
+    .intro-page-section .text-p,
+    .text-p,
+    .about-description,
+    .text-btn-div .text-div p.text-p {
+        font-size: 24px;
+    }
+
+    .btn-text {
+        font-size: 21px;
+    }
+
+    .contact-form .form-control {
+        font-size: 22px;
+    }
+
+    .reimagining-insurance .container {
+        padding: 0 72px;
+    }
+
+    .section-title-h2 {
+        max-width: 1575px;
+    }
+
+    .solution-section .section-title-h2 {
+        max-width: unset;
+    }
+
+    .about-text-div-padding-right,
+    .about-us-content-div-2 .about-square-img,
+    .about-square-img {
+        width: 50%;
+    }
+
+    .about-square-img img {
+        max-width: 100%;
+    }
+
+    .about-section .tabs {
+        margin-top: 72px;
+    }
+
+    .pagination p,
+    .pagination a {
+        font-size: 18px !important;
+    }
+
+    .data-collection-chart .apexcharts-xaxis-texts-g tspan,
+    .data-collection-chart .apexcharts-yaxis-texts-g tspan,
+    .discovery-phase-chart .apexcharts-legend-text,
+    .apexcharts-legend-text,
+    .apexcharts-text {
+        font-size: 18px !important;
+    }
+
+    .product-policy-div .text-policy-1,
+    .product-policy .section-title-h2 {
+        line-height: 120%;
+    }
+
+    .product-policy .text-p {
+        font-size: 23px;
+        max-width: 1996px;
+    }
+
+    .business-growth-section-img {
+        max-width: 100%;
+    }
+
+    .text-policy-2 {
+        font-size: 48px;
+        line-height: 120%;
+    }
+
+    .contact-information img {
+        width: 62px;
+        height: 62px;
+        object-fit: cover;
+    }
+
+    .blog-img {
+        max-width: 100%;
+    }
+
+    .tans-ul {
+        max-width: 840px;
+    }
+
+    .key-benefits-slider .swiper-button-prev,
+    .key-benefits-slider .swiper-button-next {
+        height: 68px;
+        width: 68px;
+    }
+
+    .about-section .tabs .tab-btn {
+        border-bottom: 4px solid transparent;
+    }
+
+    .about-section .tabs .tab-btn:hover,
+    .about-section .tabs .tab-btn.active {
+        border-bottom: 4px solid #0F3384;
+    }
+
+    .requestdemo-section p,
+    .requstdemo-btn {
+        font-size: 32px;
+    }
+
+    .requestdemo-content {
+        max-width: 1104px;
+        padding: 42px;
+    }
+    .social-links a{
+        width: 48px;
+        height: 48px;
     }
 }
 
@@ -345,7 +689,7 @@
     .solution-section .section-title-h2,
     .benefits-section .section-title,
     .banner-section-title {
-        font-size: 100px;
+        font-size: 94px;
         line-height: unset;
     }
 
@@ -354,13 +698,12 @@
     }
 
     .policy-card-title {
-        font-size: 40px;
+        font-size: 32px;
         line-height: 120%;
     }
 
     .reimagining-insurance .section-title-h2 {
-        font-size: 72px;
-        letter-spacing: -0.8px;
+        font-size: 64px;
     }
 
     .solution-sub-div-img img {
@@ -374,6 +717,9 @@
 
     .tans-ul .tabs-li button {
         font-size: 32px;
+    }
+    .section-title-h2{
+        font-size: 72px;
     }
 }
 
@@ -614,10 +960,6 @@
         text-wrap: nowrap;
     }
 
-    .casestudy-detailimg {
-        height: 380px;
-    }
-
     .about-text-div-padding-right {
         max-width: 440px;
         width: 100%;
@@ -758,7 +1100,6 @@
 
     .policy-card-div {
         margin: 0;
-        height: 369px;
     }
 
     .experience-section .text-policy {
@@ -1196,7 +1537,7 @@
 
     .about-section .tabs {
         padding-top: 0;
-        margin: 42px auto 14px;
+        margin: 42px auto 0;
     }
 
     .about-title {
@@ -1277,6 +1618,7 @@
         font-size: 48px;
         line-height: normal;
         margin-bottom: 48px;
+        margin-top: 32px;
     }
 
     .blog-cards {
@@ -1290,23 +1632,41 @@
     .key-benefits-slider-btn {
         margin-top: 28px;
     }
+
     .about-section:not(.intro-page-banner-section-section) {
         padding-top: 114px;
     }
-    .solution-cards .solution.solution-four span{
+
+    .solution-cards .solution.solution-four span {
         font-size: 15px;
     }
-    .solution-cards span{
+
+    .solution-cards span {
         font-size: 18px;
     }
-    .solution:nth-child(2), .solution:nth-child(4) {
+
+    .solution:nth-child(2),
+    .solution:nth-child(4) {
         margin-top: 178px;
     }
-    .solution:nth-child(1), .solution:nth-child(3) {
+
+    .solution:nth-child(1),
+    .solution:nth-child(3) {
         margin-bottom: 178px;
     }
-    .solution-cards{
+
+    .solution-cards {
         margin-top: 42px;
+    }
+
+    .requstdemo-btn,
+    .requestdemo-section p {
+        font-size: 19px;
+        line-height: 28px;
+    }
+
+    .requestdemo-content {
+        padding: 28px;
     }
 }
 
@@ -1360,7 +1720,7 @@
         object-fit: contain;
         transform: scale(1) !important;
     }
-    
+
     .experience-section .text-policy {
         font-size: 18px;
         font-weight: 600;
@@ -1397,14 +1757,6 @@
         gap: 40px;
     }
 
-    .link-div a {
-        font-size: 18px;
-    }
-
-    .contact-us-sub-div p {
-        font-size: 18px;
-    }
-
     .footer-all-rights-div {
         padding: 18px;
     }
@@ -1425,13 +1777,8 @@
         margin: 8px 0;
     }
 
-    .footer-row {
-        padding: 32px 0 0 0;
-    }
-
     .contact-us-sub-div {
         display: unset;
-        margin-bottom: 20px;
     }
 
     .contact-us-sub-div .connect-text {
@@ -1637,10 +1984,6 @@
         gap: 0;
     }
 
-    .casestudy-detailimg {
-        height: 280px;
-    }
-
     .casestudy-detail h1 {
         font-size: 28px;
     }
@@ -1664,7 +2007,7 @@
         padding-top: 0px;
     }
 
-    .about-title{
+    .about-title {
         font-size: 32px;
     }
 
@@ -1704,22 +2047,42 @@
     .bog-card-cotent {
         padding: 14px;
     }
-    .solution-cards{
+
+    .solution-cards {
         flex-wrap: wrap;
     }
+
     .solution:nth-child(1),
-    .solution:nth-child(3){
+    .solution:nth-child(3) {
         order: -1;
     }
+
     .solution:nth-child(4),
-    .solution:nth-child(3){
+    .solution:nth-child(3) {
         margin-bottom: unset;
         margin-top: 216px;
     }
+
     .solution:nth-child(1),
-    .solution:nth-child(2){
+    .solution:nth-child(2) {
         margin-top: unset;
         margin-bottom: 216px;
+    }
+
+    .requestdemo-content {
+        flex-direction: column;
+    }
+
+    .requestdemo-section p {
+        text-align: center;
+    }
+
+    .requestdemo-section {
+        padding: 42px 0;
+    }
+
+    .link-div-title {
+        margin-bottom: 16px;
     }
 }
 
@@ -1905,11 +2268,6 @@
         line-height: 23px;
     }
 
-    .policy-card-div {
-        width: 100%;
-        max-height: 470px;
-    }
-
     .footer-link-sub-div {
         flex-direction: column;
         gap: 4px;
@@ -1970,11 +2328,12 @@
         margin-bottom: 12px;
     }
 
-    .about-tab.portfolio-content, .about-sub-section .about-us-content-div {
+    .about-tab.portfolio-content,
+    .about-sub-section .about-us-content-div {
         padding-top: 52px;
     }
 
-    .about-sub-section .about-us-content-div:first-child{
+    .about-sub-section .about-us-content-div:first-child {
         margin-top: 0;
         padding-top: 0;
     }
@@ -1997,7 +2356,7 @@
     }
 
     .product-policy {
-        padding-top: 108px;
+        padding-top: 104px;
     }
 
     .business-growth-section .section-title-h2 {
@@ -2312,16 +2671,11 @@
         padding-left: 12px;
     }
 
-    .use-case-card-section .policy-card-div {
-        max-width: 100%;
-        height: 500px;
-    }
-
     .usecases-main .page-title-duckreek {
         margin-bottom: 32px;
         font-size: 32px;
-        text-align: center;
         line-height: normal;
+        margin-top: 24px;
     }
 
     .usecases-main .slider-use-case-div {
@@ -2331,6 +2685,7 @@
 
     .use-case-card-section.banner-sectrion-blog {
         margin-bottom: 34px;
+        padding-top: 96px;
     }
 
     .casestudy-detail .lable {
@@ -2345,10 +2700,13 @@
     }
 
     .casestudy-detail .date-time {
-        flex-direction: column;
-        gap: 4px;
+        flex-wrap: wrap;
+        row-gap: 4px;
+        column-gap: 18px;
         padding-bottom: 12px;
         margin-bottom: 28px;
+        padding-top: 0;
+        align-items: start;
     }
 
     .casestudy-detail .date-time h5 {
@@ -2356,8 +2714,8 @@
     }
 
     .casestudy-detailimg {
-        height: 200px;
         margin-bottom: 34px;
+        border-radius: 14px;
     }
 
     .casestudy-detail.section-full-bg::before {
@@ -2385,8 +2743,7 @@
         gap: 8px;
     }
 
-    .casestudy-description,
-    .casestudy-detailimg {
+    .casestudy-description {
         margin-bottom: 42px;
     }
 
@@ -2449,6 +2806,10 @@
 
     .faq-content-main-div .text-p-18 {
         margin-bottom: 12px;
+    }
+
+    .main-header.sticky {
+        padding: 14px 12px;
     }
 
     .main-header {
@@ -2576,19 +2937,61 @@
     .key-benefits-section .swiper-pagination {
         font-size: 16px;
     }
+
     .solution:nth-child(4),
     .solution:nth-child(1),
     .solution:nth-child(2),
-    .solution:nth-child(3){
+    .solution:nth-child(3) {
         margin: 0 auto;
     }
+
     .solution-cards .solution.solution-four span,
-    .solution-cards span{
+    .solution-cards span {
         font-size: 16px;
     }
-    .solution-cards{
+
+    .solution-cards {
         margin-top: 0;
         gap: 24px;
+    }
+
+    .faq-setion .accordion-item-4 {
+        border-bottom-width: 1px;
+    }
+
+    .faq-setion .accordion-item {
+        border-top-width: 1px;
+    }
+
+    .requestdemo-section p br {
+        display: none;
+    }
+
+    .requstdemo-btn,
+    .requestdemo-section p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .requestdemo-content,
+    .requestdemo-content::after {
+        border-radius: 40px;
+    }
+
+    .requestdemo-section {
+        padding: 24px 0;
+    }
+
+    .requstdemo-btn {
+        padding: 12px;
+    }
+
+    .product-policy .main-page-header{
+        margin-top: 0;
+    }
+    .product-policy{
+        padding-top: 96px;
     }
 }
 
@@ -2660,11 +3063,6 @@
         display: grid;
         gap: 24px;
         grid-template-columns: 1fr;
-    }
-
-    .use-case-card-section .policy-card-div {
-        max-width: 100%;
-        height: 420px;
     }
 
     .solution-section-img-div .solution-sub-div-img:nth-child(2),

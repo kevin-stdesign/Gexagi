@@ -38,6 +38,7 @@ let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
 let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   slidesPerView: 2,
   spaceBetween: 90,
+  slidesPerGroup: 1,
   loop: true,
   speed: 600,
   pagination: {
@@ -56,7 +57,7 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   },
   breakpoints: {
     768: {
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 90,
       slidesPerView: 2,
     },
@@ -99,17 +100,22 @@ $(document).ready(function () {
   if (localStorage.getItem('theme') === 'light') {
     $("body").addClass("light-theme");
     $('.theme-toggle .toggle').prop('checked', true);
+    $('.theme-tooltip').html('Dark theme');
+    
   } else {
     $("body").removeClass("light-theme");
     $('.theme-toggle .toggle').prop('checked', false); 
+    $('.theme-tooltip').html('Light theme');
   }
 
   $('.theme-toggle .toggle').change(function () {
     $("body").toggleClass("light-theme");
     if ($("body").hasClass("light-theme")) {
       localStorage.setItem('theme', 'light');
+      $('.theme-tooltip').html('Dark theme');
     } else {
       localStorage.setItem('theme', 'dark');
+      $('.theme-tooltip').html('Light theme');
     }
   });
 });
