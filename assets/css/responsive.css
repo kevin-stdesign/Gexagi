@@ -1673,6 +1673,7 @@
 @media(max-width:767.98px) {
     .footer-all-rights-sub-div .contact-us-sub-div {
         width: 100%;
+        justify-content: center;
     }
 
     .intro-page-section .intro-title {
@@ -1687,6 +1688,8 @@
     .footer-all-rights-sub-div {
         display: flex;
         flex-direction: column-reverse;
+        row-gap: 14px;
+        text-align: center;
     }
 
     .btn-div {
@@ -1767,8 +1770,8 @@
 
     .footer-all-rights-sub-div .contact-us-sub-div:last-child {
         margin-bottom: 0px;
-        justify-content: space-between;
-        align-items: center;
+        gap: 8px;
+        flex-direction: column;
     }
 
     .footer-social-icons {

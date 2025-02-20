@@ -726,6 +726,21 @@ html {
     stroke: var(--black);
 }
 
+.footer-social-icons .facebook:hover svg{
+    fill: var(--white);
+    background: var(--white);
+    border-radius: 100%;
+}
+
+.footer-social-icons .facebook:hover svg path:nth-child(2){
+    fill: var(--black);
+}
+
+.footer-social-icons .twitter:hover svg rect,
+.footer-social-icons .twitter:hover svg path {
+    stroke: var(--black);
+}
+
 /* video animation  */
 .reimagining-insurance {
     position: relative;

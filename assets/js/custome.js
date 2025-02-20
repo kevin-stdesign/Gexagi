@@ -35,10 +35,49 @@ let slider_use_case = new Swiper(".mySwiper.slider-use-case", {
   }
 });
 
+// let swiper = new Swiper(".mySwiper.key-benefits-slider", {
+//   slidesPerView: 2,
+//   spaceBetween: 90,
+//   slidesPerGroup: 2,
+//   // loop: true,
+//   speed: 600,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     type: "fraction",
+//     formatFractionCurrent: function (number) {
+//       return number < 10 ? "0" + number : number;
+//     },
+//     formatFractionTotal: function (number) {
+//       return number < 10 ? "0" + number : number;
+//     },
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerGroup: 2,
+//       spaceBetween: 90,
+//       slidesPerView: 2,
+//     },
+//     576: {
+//       slidesPerGroup: 1,
+//       spaceBetween: 50,
+//       slidesPerView: 1,
+//     },
+//     0: {
+//       slidesPerGroup: 1,
+//       spaceBetween: 20,
+//       slidesPerView: 1,
+//     }
+//   }
+// });
+
 let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   slidesPerView: 2,
   spaceBetween: 90,
-  slidesPerGroup: 1,
+  slidesPerGroup: 2,
   loop: true,
   speed: 600,
   pagination: {
@@ -57,7 +96,7 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
   },
   breakpoints: {
     768: {
-      slidesPerGroup: 1,
+      slidesPerGroup: 2,
       spaceBetween: 90,
       slidesPerView: 2,
     },
@@ -71,8 +110,36 @@ let swiper = new Swiper(".mySwiper.key-benefits-slider", {
       spaceBetween: 20,
       slidesPerView: 1,
     }
+  },
+  on: {
+    init: function () {
+      const totalSlides = this.slides.length; 
+      if (totalSlides % 2 !== 0) {
+        const emptySlide = document.createElement('div');
+        emptySlide.classList.add('swiper-slide');
+        emptySlide.classList.add('empty-slide');
+        this.appendSlide(emptySlide);
+      }
+    },
+    resize: function () {
+      if (window.innerWidth < 768) {
+        const emptySlide = document.querySelector('.empty-slide');
+        if (emptySlide) {
+          this.removeSlide(this.slides.length - 1);
+        }
+      } else {
+        const totalSlides = this.slides.length;
+        if (totalSlides % 2 === 0 && !document.querySelector('.empty-slide')) {
+          const emptySlide = document.createElement('div');
+          emptySlide.classList.add('swiper-slide');
+          emptySlide.classList.add('empty-slide');
+          this.appendSlide(emptySlide);
+        }
+      }
+    }
   }
 });
+
 
 // Tabs js 
 document.addEventListener('DOMContentLoaded', function () {
